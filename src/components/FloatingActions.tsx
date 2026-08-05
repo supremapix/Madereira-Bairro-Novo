@@ -9,7 +9,11 @@ import {
   MessageCircle,
   ArrowUp,
   Sparkles,
-  ExternalLink
+  ExternalLink,
+  RefreshCw,
+  ImageIcon,
+  MapPin,
+  Star
 } from 'lucide-react';
 import { COMPANY_DATA } from '../data/company';
 
@@ -17,10 +21,37 @@ interface FloatingActionsProps {
   onOpenBudget?: () => void;
 }
 
+// 19 Persuasive Sales Copy Variations for Madeireira Bairro Novo
+const SALES_COPY_VARIATIONS = [
+  "🌲 Encontrei a melhor Madeireira de Pinus Tratado em Curitiba! Preço direto da fábrica e entrega expressa na obra. Confira:",
+  "🏡 Quer construir ou reformar com economia e durabilidade? Veja a linha completa de Pinus Autoclavado da Madeireira Bairro Novo:",
+  "🔨 A estrutura da sua obra precisa de qualidade garantida. Confira os caibros, vigas e pontaletes de Pinus em Curitiba:",
+  "🪵 Pergolado dos sonhos? Na Madeireira Bairro Novo você encontra kits e vigas encorpadas de Pinus Tratado em até 10x no cartão!",
+  "⚡ Precisando de madeirite ou tabuado de Pinus para sua obra hoje? Pronta entrega garantida em Curitiba e Região Metropolitana:",
+  "⭐ Recomendo a Madeireira Bairro Novo! Atendimento especializado, orçamento rápido via WhatsApp e madeiras tratadas em autoclave:",
+  "📐 Projetos residenciais e comerciais com acabamento impecável em Pinus. Veja os modelos e faça seu orçamento sem compromisso:",
+  "🌿 Madeira ecológica, renovável e com garantia de fábrica contra cupins e podridão. Acesse o catálogo oficial da Madeireira Bairro Novo:",
+  "🏗️ Economize até 35% na estrutura do seu telhado com a madeira de Pinus Tratada da Madeireira Bairro Novo em Curitiba:",
+  "🛠️ Deck de Pinus Autoclavado resistente ao sol e chuva! Transforme sua área externa com a Madeireira Bairro Novo:",
+  "🔥 Ofertas exclusivas de Pinus Seco em Estufa para marcenaria e construção civil. Faça uma cotação instantânea:",
+  "🏆 Tradição e confiança em Curitiba! Conheça a Madeireira Bairro Novo e garanta o melhor material para sua edificação:",
+  "💡 Dica de ouro para quem vai reformar: Pinus tratado em autoclave com o menor preço da região. Veja mais detalhes:",
+  "🚚 Entrega super rápida em Curitiba, São José dos Pinhais, Colombo, Pinhais e Araucária. Solicite seu orçamento agora:",
+  "🪵 Ripados, sarrafos e tábuas de Pinus com corte sob medida e seleção de primeira qualidade. Clique para conferir:",
+  "🥇 O melhor custo-benefício em madeira de Pinus na região metropolitana de Curitiba. Atendimento humanizado 24h:",
+  "✨ Confira este catálogo imperdível da Madeireira Bairro Novo para arquitetura e construção sustentável:",
+  "📱 Peça seu orçamento direto pelo WhatsApp sem burocracia e com envio no mesmo dia em Curitiba e Região:",
+  "🏡 Sua obra merece o melhor Pinus Tratado com padrão de exportação. Confira e compartilhe essa oportunidade:"
+];
+
 export function FloatingActions({ onOpenBudget }: FloatingActionsProps) {
   const [shareOpen, setShareOpen] = useState(false);
   const [copied, setCopied] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
+  const [copyIndex, setCopyIndex] = useState(0);
+
+  // Default share image requested by user
+  const defaultShareImage = 'https://scontent.xx.fbcdn.net/v/t39.105495-1/766072255_38212309061693551_1328780198815347107_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=107&_nc_ohc=Zn09XOmaMMUQ7kNvwFVDBH5&sdl=0&ccb=14-4&oh=00_AQFHhrQg_b_YggahvY1TKyfkrJtpP7VyiCR4WwZVG9aLCA&oe=6A793ACE&_nc_sid=a21977';
 
   // Current page URL and Title dynamically updated
   const [currentUrl, setCurrentUrl] = useState('');
@@ -50,21 +81,33 @@ export function FloatingActions({ onOpenBudget }: FloatingActionsProps) {
     };
   }, []);
 
-  // Default image parameter for Pinterest
-  const defaultMediaImage = 'https://madeireirabairronovo.com.br/icon-512.png';
   const companyName = COMPANY_DATA.name;
 
-  // Semantic message for sharing / copying
-  const semanticShareText = `Estou indicando o melhor ${companyName}: ${currentTitle}`;
-  const fullCopyMessage = `Estou indicando o melhor ${companyName}: ${currentTitle} (${currentUrl})`;
+  // Active Sales Copy text
+  const activeSalesCopy = SALES_COPY_VARIATIONS[copyIndex];
 
-  // Handlers
+  // Rotate to the next version each time user requests or shares
+  const handleRotateCopy = () => {
+    setCopyIndex((prev) => (prev + 1) % SALES_COPY_VARIATIONS.length);
+  };
+
+  const handleOpenShare = () => {
+    if (!shareOpen) {
+      // Advance to next sales variation when opening menu
+      handleRotateCopy();
+    }
+    setShareOpen(!shareOpen);
+  };
+
+  // Full semantic message including Sales Text, Image URL and Page URL
+  const fullCopyMessage = `${activeSalesCopy}\n\n📸 Ver Imagem: ${defaultShareImage}\n🌐 Link do Site: ${currentUrl}`;
+
+  // Copy Handler
   const handleCopyLink = async () => {
     try {
       if (navigator.clipboard && navigator.clipboard.writeText) {
         await navigator.clipboard.writeText(fullCopyMessage);
       } else {
-        // Fallback for older browsers
         const textarea = document.createElement('textarea');
         textarea.value = fullCopyMessage;
         document.body.appendChild(textarea);
@@ -73,9 +116,13 @@ export function FloatingActions({ onOpenBudget }: FloatingActionsProps) {
         document.body.removeChild(textarea);
       }
       setCopied(true);
-      setTimeout(() => setCopied(false), 3000);
+      // Advance copy variation after copying so next copy has a new text variation!
+      setTimeout(() => {
+        setCopied(false);
+        handleRotateCopy();
+      }, 2500);
     } catch (err) {
-      console.error('Erro ao copiar link:', err);
+      console.error('Erro ao copiar texto e imagem:', err);
     }
   };
 
@@ -86,14 +133,14 @@ export function FloatingActions({ onOpenBudget }: FloatingActionsProps) {
     });
   };
 
-  // Social Sharing Links Configuration
+  // Social Sharing Links Configuration using current sales copy and image
   const socialShares = [
     {
       name: 'WhatsApp',
       color: 'from-emerald-600 to-emerald-500 hover:from-emerald-500 hover:to-emerald-400 border-emerald-400/50',
       textColor: 'text-emerald-300',
       url: `https://api.whatsapp.com/send?text=${encodeURIComponent(
-        `${semanticShareText}\n${currentUrl}`
+        `${activeSalesCopy}\n\n📸 Ver Foto: ${defaultShareImage}\n🌐 ${currentUrl}`
       )}`,
       icon: (
         <svg className="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24">
@@ -117,8 +164,8 @@ export function FloatingActions({ onOpenBudget }: FloatingActionsProps) {
       color: 'from-stone-900 to-stone-800 hover:from-stone-800 hover:to-stone-700 border-stone-600',
       textColor: 'text-stone-200',
       url: `https://twitter.com/intent/tweet?text=${encodeURIComponent(
-        semanticShareText
-      )}&url=${encodeURIComponent(currentUrl)}`,
+        `${activeSalesCopy} ${currentUrl}`
+      )}`,
       icon: (
         <svg className="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24">
           <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
@@ -131,8 +178,8 @@ export function FloatingActions({ onOpenBudget }: FloatingActionsProps) {
       textColor: 'text-red-300',
       url: `https://pinterest.com/pin/create/button/?url=${encodeURIComponent(
         currentUrl
-      )}&media=${encodeURIComponent(defaultMediaImage)}&description=${encodeURIComponent(
-        semanticShareText
+      )}&media=${encodeURIComponent(defaultShareImage)}&description=${encodeURIComponent(
+        activeSalesCopy
       )}`,
       icon: (
         <svg className="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24">
@@ -158,7 +205,7 @@ export function FloatingActions({ onOpenBudget }: FloatingActionsProps) {
       color: 'from-stone-900 to-stone-950 hover:from-stone-800 hover:to-stone-900 border-amber-400/40',
       textColor: 'text-amber-300',
       url: `https://www.threads.net/intent/post?text=${encodeURIComponent(
-        `${semanticShareText} ${currentUrl}`
+        `${activeSalesCopy}\n${defaultShareImage}\n${currentUrl}`
       )}`,
       icon: (
         <svg className="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24">
@@ -182,19 +229,24 @@ export function FloatingActions({ onOpenBudget }: FloatingActionsProps) {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.85, y: 20 }}
               transition={{ type: 'spring', damping: 22, stiffness: 350 }}
-              className="absolute bottom-16 left-0 mb-3 w-[300px] sm:w-[350px] p-5 rounded-3xl bg-stone-950/95 backdrop-blur-2xl border border-amber-400/50 shadow-[0_20px_50px_rgba(0,0,0,0.9)] z-50 text-stone-100 space-y-4"
+              className="absolute bottom-16 left-0 mb-3 w-[320px] sm:w-[360px] p-5 rounded-3xl bg-stone-950/95 backdrop-blur-2xl border border-amber-400/60 shadow-[0_20px_50px_rgba(0,0,0,0.9)] z-50 text-stone-100 space-y-4"
             >
               {/* Header */}
               <div className="flex items-center justify-between pb-3 border-b border-stone-800">
                 <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 rounded-full bg-amber-500/10 border border-amber-400/30 flex items-center justify-center">
+                  <div className="w-8 h-8 rounded-full bg-amber-500/20 border border-amber-400/40 flex items-center justify-center">
                     <Share2 className="w-4 h-4 text-amber-400" />
                   </div>
                   <div>
-                    <h4 className="text-xs font-black uppercase tracking-wider text-amber-400">
-                      Compartilhar Página
-                    </h4>
-                    <p className="text-[10px] text-stone-400 font-medium truncate max-w-[200px]">
+                    <div className="flex items-center gap-1.5">
+                      <h4 className="text-xs font-black uppercase tracking-wider text-amber-400">
+                        Compartilhar Oferta
+                      </h4>
+                      <span className="text-[9px] bg-amber-500/20 text-amber-300 border border-amber-400/30 px-1.5 py-0.2 rounded-full font-bold">
+                        Viga #{copyIndex + 1}/19
+                      </span>
+                    </div>
+                    <p className="text-[10px] text-stone-400 font-medium truncate max-w-[210px]">
                       {currentTitle}
                     </p>
                   </div>
@@ -209,6 +261,35 @@ export function FloatingActions({ onOpenBudget }: FloatingActionsProps) {
                 </button>
               </div>
 
+              {/* Standard Shared Image Preview Box */}
+              <div className="relative rounded-2xl overflow-hidden border border-amber-400/30 bg-stone-900 group/img flex flex-col">
+                <div className="relative h-28 w-full overflow-hidden">
+                  <img
+                    src={defaultShareImage}
+                    alt="Madeira de Pinus Bairro Novo"
+                    className="w-full h-full object-cover group-hover/img:scale-105 transition-transform duration-500"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-stone-950 via-transparent to-black/30" />
+                  <div className="absolute top-2 left-2 bg-stone-950/80 backdrop-blur-md border border-amber-400/60 px-2 py-0.5 rounded-full text-[9px] font-extrabold text-amber-300 uppercase tracking-wider flex items-center gap-1">
+                    <ImageIcon className="w-3 h-3 text-amber-400" />
+                    <span>Imagem Incluída</span>
+                  </div>
+                </div>
+
+                {/* Sales Copy Text Display Box */}
+                <div className="p-2.5 bg-stone-900/90 text-[11px] text-stone-200 font-medium leading-relaxed italic border-t border-stone-800/80 flex items-start justify-between gap-2">
+                  <p className="line-clamp-2">"{activeSalesCopy}"</p>
+                  <button
+                    onClick={handleRotateCopy}
+                    className="shrink-0 p-1.5 rounded-lg bg-stone-800 hover:bg-stone-700 text-amber-400 border border-amber-400/40 transition-all hover:rotate-180 duration-500 active:scale-95"
+                    title="Alternar Versão do Texto (19 Disponíveis)"
+                  >
+                    <RefreshCw className="w-3.5 h-3.5" />
+                  </button>
+                </div>
+              </div>
+
               {/* Social Networks Grid */}
               <div className="grid grid-cols-2 gap-2">
                 {socialShares.map((social) => (
@@ -217,6 +298,7 @@ export function FloatingActions({ onOpenBudget }: FloatingActionsProps) {
                     href={social.url}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={handleRotateCopy}
                     className={`flex items-center gap-2.5 px-3 py-2.5 rounded-xl bg-gradient-to-r ${social.color} text-white font-bold text-xs shadow-md border transition-all active:scale-95 group/soc`}
                   >
                     {social.icon}
@@ -226,28 +308,63 @@ export function FloatingActions({ onOpenBudget }: FloatingActionsProps) {
                 ))}
               </div>
 
-              {/* Copy Semantic Link Button */}
-              <div className="pt-2 border-t border-stone-800/80">
+              {/* Prominent Direct Links: Ir Até a Empresa & Avaliar a Empresa */}
+              <div className="grid grid-cols-2 gap-2 pt-2 border-t border-stone-800">
+                <a
+                  href={COMPANY_DATA.social.directionsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-1.5 px-3 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-stone-950 font-black text-xs shadow-md border border-amber-300 transition-all active:scale-95"
+                >
+                  <MapPin className="w-4 h-4 text-stone-950 fill-stone-950/20 shrink-0" />
+                  <span className="truncate">Ir até a Empresa</span>
+                </a>
+
+                <a
+                  href={COMPANY_DATA.social.reviewUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-1.5 px-3 py-2.5 rounded-xl bg-amber-950/60 hover:bg-amber-900/80 text-amber-300 font-black text-xs shadow-md border border-amber-400/60 transition-all active:scale-95"
+                >
+                  <Star className="w-4 h-4 text-amber-400 fill-amber-400 shrink-0" />
+                  <span className="truncate">Avaliar no Google</span>
+                </a>
+              </div>
+
+              {/* Copy Semantic Link & Image Text Button */}
+              <div className="pt-2 border-t border-stone-800/80 space-y-2">
                 <button
                   onClick={handleCopyLink}
                   className={`w-full flex items-center justify-center gap-2 px-4 py-3 rounded-2xl text-xs font-black transition-all shadow-lg border ${
                     copied
                       ? 'bg-emerald-600 text-white border-emerald-400 ring-2 ring-emerald-400/40'
-                      : 'bg-stone-900 hover:bg-stone-850 text-stone-200 hover:text-white border-amber-400/60 hover:border-amber-300'
+                      : 'bg-stone-900 hover:bg-stone-850 text-stone-200 hover:text-white border-amber-400/80 hover:border-amber-300'
                   }`}
                 >
                   {copied ? (
                     <>
                       <Check className="w-4 h-4 text-white stroke-[3] animate-bounce" />
-                      <span>Link Copiado com Sucesso!</span>
+                      <span>Texto, Imagem e Link Copiados!</span>
                     </>
                   ) : (
                     <>
                       <Copy className="w-4 h-4 text-amber-400 shrink-0" />
-                      <span>Copiar Link da Página</span>
+                      <span>Copiar Texto + Foto + Link</span>
                     </>
                   )}
                 </button>
+
+                {/* Option to cycle text manually */}
+                <div className="flex items-center justify-between text-[10px] text-stone-400 px-1 pt-1">
+                  <span>19 Versões de Vendas</span>
+                  <button
+                    onClick={handleRotateCopy}
+                    className="text-amber-400 hover:text-amber-300 underline font-bold flex items-center gap-1 cursor-pointer"
+                  >
+                    <RefreshCw className="w-2.5 h-2.5" />
+                    <span>Mudar Para Próxima Versão</span>
+                  </button>
+                </div>
               </div>
             </motion.div>
           )}
@@ -259,7 +376,7 @@ export function FloatingActions({ onOpenBudget }: FloatingActionsProps) {
           <div className="absolute -inset-2 rounded-2xl bg-amber-400/30 opacity-75 blur-lg group-hover:opacity-100 animate-pulse transition-opacity pointer-events-none" />
 
           <button
-            onClick={() => setShareOpen(!shareOpen)}
+            onClick={handleOpenShare}
             aria-label="Compartilhar esta página"
             className={`relative flex items-center gap-2.5 px-4 py-3.5 rounded-2xl bg-stone-950 hover:bg-stone-900 text-white font-black text-xs shadow-[0_10px_30px_rgba(0,0,0,0.8)] border border-amber-400/80 hover:border-amber-300 transition-all duration-300 active:scale-95 ${
               shareOpen ? 'ring-2 ring-amber-400/60' : ''

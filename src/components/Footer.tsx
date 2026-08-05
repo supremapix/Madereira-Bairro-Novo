@@ -8,7 +8,9 @@ import {
   Clock,
   ShieldCheck,
   ChevronRight,
-  ExternalLink
+  ExternalLink,
+  Star,
+  Navigation
 } from 'lucide-react';
 import { COMPANY_DATA } from '../data/company';
 import { PRODUCTS_DATA } from '../data/products';
@@ -102,15 +104,28 @@ export function Footer({ onOpenBudget }: { onOpenBudget?: () => void }) {
                 {COMPANY_DATA.address.neighborhood} - {COMPANY_DATA.address.city} / {COMPANY_DATA.address.state}
               </p>
               <p className="text-xs text-stone-400">CEP: {COMPANY_DATA.address.cep}</p>
-              <a
-                href={COMPANY_DATA.social.googleMaps}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-xs text-amber-400 hover:underline font-semibold pt-1"
-              >
-                <span>Ver rota no Google Maps</span>
-                <ExternalLink className="w-3 h-3" />
-              </a>
+              
+              <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
+                <a
+                  href={COMPANY_DATA.social.directionsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-amber-500 hover:bg-amber-400 text-stone-950 font-black px-3.5 py-2 rounded-xl text-xs inline-flex items-center justify-center gap-1.5 shadow-md transition-all hover:scale-105 active:scale-95"
+                >
+                  <Navigation className="w-3.5 h-3.5 fill-stone-950 text-stone-950" />
+                  <span>Ir até a Empresa</span>
+                </a>
+
+                <a
+                  href={COMPANY_DATA.social.reviewUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-stone-950 hover:bg-stone-900 text-amber-300 hover:text-white font-black px-3.5 py-2 rounded-xl text-xs inline-flex items-center justify-center gap-1.5 border border-amber-400/60 shadow-md transition-all hover:scale-105 active:scale-95"
+                >
+                  <Star className="w-3.5 h-3.5 text-amber-400 fill-amber-400" />
+                  <span>Avaliar a Empresa</span>
+                </a>
+              </div>
             </div>
 
             <div className="space-y-2">

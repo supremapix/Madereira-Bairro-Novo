@@ -32,6 +32,8 @@ export interface CompanyInfo {
     instagram?: string;
     facebook?: string;
     googleMaps: string;
+    directionsUrl: string;
+    reviewUrl: string;
   };
 }
 

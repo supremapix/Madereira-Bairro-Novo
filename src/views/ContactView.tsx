@@ -1,6 +1,6 @@
 import { EnhancedSEO } from '../components/EnhancedSEO';
 import { COMPANY_DATA } from '../data/company';
-import { MapPin, Phone, MessageCircle, Mail, Clock, ExternalLink, Send } from 'lucide-react';
+import { MapPin, Phone, MessageCircle, Mail, Clock, ExternalLink, Send, Star, Navigation } from 'lucide-react';
 
 export function ContactView({ onOpenBudget }: { onOpenBudget?: () => void }) {
   return (
@@ -87,15 +87,27 @@ export function ContactView({ onOpenBudget }: { onOpenBudget?: () => void }) {
                 </div>
               </div>
 
-              <a
-                href={COMPANY_DATA.social.googleMaps}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full bg-stone-950 hover:bg-stone-900 text-white font-bold py-3 px-4 rounded-2xl text-xs flex items-center justify-center gap-2 shadow-md border border-amber-400/60 hover:border-amber-300 transition-colors min-h-[44px]"
-              >
-                <span>Abrir no Google Maps</span>
-                <ExternalLink className="w-4 h-4 text-amber-400" />
-              </a>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                <a
+                  href={COMPANY_DATA.social.directionsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full bg-amber-500 hover:bg-amber-400 text-stone-950 font-black py-3 px-4 rounded-2xl text-xs flex items-center justify-center gap-2 shadow-md transition-all hover:scale-105 active:scale-95 min-h-[46px]"
+                >
+                  <Navigation className="w-4 h-4 text-stone-950 fill-stone-950" />
+                  <span>Ir até a Empresa (Rotas)</span>
+                </a>
+
+                <a
+                  href={COMPANY_DATA.social.reviewUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full bg-stone-950 hover:bg-stone-900 text-amber-300 font-black py-3 px-4 rounded-2xl text-xs flex items-center justify-center gap-2 shadow-md border border-amber-400/60 hover:border-amber-300 transition-all hover:scale-105 active:scale-95 min-h-[46px]"
+                >
+                  <Star className="w-4 h-4 text-amber-400 fill-amber-400" />
+                  <span>Avaliar no Google</span>
+                </a>
+              </div>
             </div>
 
             {/* Right Map Embed & Action Box */}

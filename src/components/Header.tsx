@@ -13,7 +13,9 @@ import {
   BookOpen,
   ShoppingBag,
   Award,
-  Sparkles
+  Sparkles,
+  Star,
+  Navigation
 } from 'lucide-react';
 import { COMPANY_DATA } from '../data/company';
 
@@ -93,13 +95,23 @@ export function Header({ onOpenBudget }: { onOpenBudget?: () => void }) {
               </div>
 
               <a
-                href="https://maps.google.com/?q=R.+Coronel+Joaquim+Antônio+de+Azevedo,+1459+-+Curitiba"
+                href={COMPANY_DATA.social.directionsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 bg-stone-950/10 hover:bg-stone-950/20 px-3 py-1 rounded-full font-black text-stone-950 transition-all hover:scale-105"
+                className="inline-flex items-center gap-1.5 bg-amber-500 text-stone-950 hover:bg-amber-400 px-3 py-1 rounded-full font-black text-xs transition-all hover:scale-105 shadow-md"
               >
-                <MapPin className="w-3.5 h-3.5 text-stone-950" />
-                <span>ENDEREÇO: R. Coronel Joaquim Antônio de Azevedo, 1459 - Curitiba</span>
+                <Navigation className="w-3.5 h-3.5 fill-stone-950 text-stone-950" />
+                <span>IR ATÉ A EMPRESA (ROTAS GOOGLE)</span>
+              </a>
+
+              <a
+                href={COMPANY_DATA.social.reviewUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 bg-stone-950 text-amber-300 hover:bg-stone-900 border border-amber-400/50 px-3 py-1 rounded-full font-black text-xs transition-all hover:scale-105 shadow-md"
+              >
+                <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
+                <span>AVALIAR A EMPRESA NO GOOGLE</span>
               </a>
 
               <div className="inline-flex items-center gap-1.5">
@@ -312,6 +324,28 @@ export function Header({ onOpenBudget }: { onOpenBudget?: () => void }) {
                   >
                     <Phone className="w-5 h-5 text-amber-400 stroke-[2]" />
                     Ligar Agora
+                  </a>
+                </div>
+
+                <div className="grid grid-cols-2 gap-3 mt-2.5">
+                  <a
+                    href={COMPANY_DATA.social.directionsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-amber-500 hover:bg-amber-400 text-stone-950 font-black py-3 px-3 rounded-xl flex items-center justify-center gap-2 text-xs shadow-md min-h-[48px]"
+                  >
+                    <Navigation className="w-4 h-4 fill-stone-950 text-stone-950 shrink-0" />
+                    <span>Ir até a Empresa</span>
+                  </a>
+
+                  <a
+                    href={COMPANY_DATA.social.reviewUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-stone-950 hover:bg-stone-900 text-amber-300 font-black border border-amber-400/60 py-3 px-3 rounded-xl flex items-center justify-center gap-2 text-xs shadow-md min-h-[48px]"
+                  >
+                    <Star className="w-4 h-4 text-amber-400 fill-amber-400 shrink-0" />
+                    <span>Avaliar no Google</span>
                   </a>
                 </div>
                 <p className="text-xs font-black text-amber-400 mt-2.5 text-center tracking-wide">

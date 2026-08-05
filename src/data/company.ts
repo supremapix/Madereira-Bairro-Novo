@@ -33,6 +33,8 @@ export const COMPANY_DATA: CompanyInfo = {
   social: {
     instagram: 'https://instagram.com/madeireirabairronovo',
     facebook: 'https://facebook.com/madeireirabairronovo',
-    googleMaps: 'https://maps.google.com/?q=Rua+Coronel+Joaquim+Ant%C3%B4nio+de+Azevedo+1459+Curitiba+PR'
+    googleMaps: 'https://maps.app.goo.gl/cCwvjeDfxpL8RkZMA',
+    directionsUrl: 'https://maps.app.goo.gl/cCwvjeDfxpL8RkZMA',
+    reviewUrl: 'https://share.google/T0GeF0fCaOZZz7oNt'
   }
 };

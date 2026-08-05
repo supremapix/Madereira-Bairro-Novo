@@ -60,30 +60,49 @@ export function HomeView({ onOpenBudget }: { onOpenBudget?: (slug?: string) => v
       {/* Hero Section */}
       <Hero onOpenBudget={() => onOpenBudget?.()} />
 
-      {/* Main Cornerstone Pinus Highlight Bar */}
-      <section className="bg-amber-500/10 border-y border-amber-200 py-8 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="flex items-center gap-4 text-left">
-            <div className="w-14 h-14 rounded-2xl bg-amber-500 text-stone-950 flex items-center justify-center shrink-0 font-black shadow-md">
-              <Trees className="w-8 h-8 stroke-[2.25]" />
+      {/* Main Cornerstone Pinus Highlight Bar - Premium Luxury Animated Fusion Bar */}
+      <section className="relative bg-stone-950 text-stone-100 py-10 px-4 sm:px-6 lg:px-8 overflow-hidden border-y border-amber-500/30">
+        {/* Animated Golden Fusion Borders */}
+        <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-amber-400/90 to-transparent animate-border-glow pointer-events-none" />
+        <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-amber-500/0 via-amber-400/90 to-amber-500/0 animate-border-glow shadow-[0_0_15px_rgba(245,158,11,0.6)] pointer-events-none" />
+
+        {/* Subtle Ambient Gold Warmth & Radial Glows */}
+        <div className="absolute inset-0 bg-gradient-to-r from-amber-500/10 via-amber-400/5 to-amber-500/10 pointer-events-none" />
+        <div className="absolute -left-20 top-1/2 -translate-y-1/2 w-80 h-40 bg-amber-500/15 blur-[90px] rounded-full pointer-events-none" />
+        <div className="absolute -right-20 top-1/2 -translate-y-1/2 w-80 h-40 bg-amber-500/15 blur-[90px] rounded-full pointer-events-none" />
+
+        <div className="relative max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-6 sm:gap-8 z-10">
+          <div className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-5">
+            {/* Animated Icon Box with Golden Aura */}
+            <div className="relative group shrink-0">
+              <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-amber-400 via-amber-500 to-amber-300 opacity-70 blur-md group-hover:opacity-100 transition-opacity duration-500 animate-shimmer-pulse" />
+              <div className="relative w-16 h-16 rounded-2xl bg-stone-900 border border-amber-400/60 text-amber-400 flex items-center justify-center font-black shadow-2xl">
+                <Trees className="w-9 h-9 stroke-[2] drop-shadow-[0_2px_8px_rgba(245,158,11,0.5)]" />
+              </div>
             </div>
-            <div>
-              <h2 className="text-xl sm:text-2xl font-black text-stone-900">
-                Especialistas em Madeira de Pinus
+
+            <div className="space-y-1.5">
+              <div className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[0.2em] text-amber-400/90">
+                <Sparkles className="w-3.5 h-3.5 text-amber-400 fill-amber-400" />
+                <span>Referência Nacional em Madeira Nobre de Pinus</span>
+              </div>
+              <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight font-display">
+                Especialistas em <span className="text-amber-400 font-editorial italic font-normal">Madeira de Pinus</span>
               </h2>
-              <p className="text-xs sm:text-sm text-stone-700">
-                A solução sustentável, econômica e durável mais vendida do Paraná para obras e reformas.
+              <p className="text-xs sm:text-sm text-stone-300 max-w-2xl font-normal leading-relaxed">
+                A solução sustentável, econômica e de altíssima durabilidade mais vendida do Paraná para obras de alto padrão e marcenaria fina.
               </p>
             </div>
           </div>
 
-          <div className="flex flex-wrap items-center gap-3">
+          <div className="flex flex-wrap items-center justify-center sm:justify-start gap-4 shrink-0">
             <Link
               to="/produto/madeira-de-pinus"
-              className="bg-amber-500 hover:bg-amber-400 text-stone-950 font-black px-6 py-3 rounded-xl text-xs sm:text-sm shadow-md transition-all active:scale-95 flex items-center gap-2 min-h-[44px]"
+              className="group relative inline-flex items-center justify-center gap-2.5 bg-amber-500 hover:bg-amber-400 text-stone-950 font-black px-7 py-3.5 rounded-2xl text-xs sm:text-sm shadow-[0_10px_25px_rgba(245,158,11,0.3)] hover:shadow-[0_15px_35px_rgba(245,158,11,0.5)] transition-all duration-300 active:scale-95 min-h-[48px] overflow-hidden border border-amber-300"
             >
-              <span>Saber Mais Sobre Pinus</span>
-              <ChevronRight className="w-4 h-4" />
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out pointer-events-none" />
+              <span className="relative z-10 tracking-wide">Saber Mais Sobre Pinus</span>
+              <ChevronRight className="w-4 h-4 relative z-10 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
         </div>

@@ -123,21 +123,24 @@ export function Header({ onOpenBudget }: { onOpenBudget?: () => void }) {
 
       {/* Main Glassmorphic Sticky Header with Luxury Animated Fusion Borders */}
       <header
-        className={`sticky top-0 z-40 transition-all duration-300 relative overflow-hidden ${
+        className={`sticky top-0 z-40 transition-all duration-300 relative ${
           isScrolled
             ? 'bg-stone-950/95 backdrop-blur-xl shadow-[0_10px_30px_rgba(0,0,0,0.8)] py-2.5'
             : 'bg-stone-950/90 backdrop-blur-lg py-3.5'
         }`}
       >
-        {/* Animated Top Golden Light Line - Luxury Fusion */}
-        <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-amber-400/80 to-transparent animate-border-glow pointer-events-none" />
+        {/* Overflow-hidden container for background glow effects */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          {/* Animated Top Golden Light Line - Luxury Fusion */}
+          <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-amber-400/80 to-transparent animate-border-glow" />
 
-        {/* Animated Bottom Golden Light Line & Glow - Luxury Fusion */}
-        <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-amber-500/0 via-amber-400/90 to-amber-500/0 animate-border-glow shadow-[0_0_15px_rgba(245,158,11,0.6)] pointer-events-none" />
-        <div className="absolute bottom-0 left-1/4 right-1/4 h-[2px] bg-gradient-to-r from-transparent via-amber-300 to-transparent animate-shimmer-pulse pointer-events-none blur-[1px]" />
+          {/* Animated Bottom Golden Light Line & Glow - Luxury Fusion */}
+          <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-amber-500/0 via-amber-400/90 to-amber-500/0 animate-border-glow shadow-[0_0_15px_rgba(245,158,11,0.6)]" />
+          <div className="absolute bottom-0 left-1/4 right-1/4 h-[2px] bg-gradient-to-r from-transparent via-amber-300 to-transparent animate-shimmer-pulse blur-[1px]" />
 
-        {/* Subtle Ambient Gold Hue */}
-        <div className="absolute inset-0 bg-gradient-to-r from-amber-500/5 via-amber-400/10 to-amber-500/5 pointer-events-none" />
+          {/* Subtle Ambient Gold Hue */}
+          <div className="absolute inset-0 bg-gradient-to-r from-amber-500/5 via-amber-400/10 to-amber-500/5" />
+        </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between relative z-10">
           {/* Logo with wood grain motif & Luxury Animated Border Frame */}

@@ -220,7 +220,7 @@ export function FloatingActions({ onOpenBudget }: FloatingActionsProps) {
       {/* =========================================================================
           1. CANTO INFERIOR ESQUERDO: BOTÃO DE COMPARTILHAMENTO FLUTUANTE & POPUP
          ========================================================================= */}
-      <div className="fixed bottom-5 left-5 z-50">
+      <div className="fixed bottom-3 left-3 sm:bottom-5 sm:left-5 z-40">
         {/* Share Modal Popup */}
         <AnimatePresence>
           {shareOpen && (
@@ -229,7 +229,7 @@ export function FloatingActions({ onOpenBudget }: FloatingActionsProps) {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.85, y: 20 }}
               transition={{ type: 'spring', damping: 22, stiffness: 350 }}
-              className="absolute bottom-16 left-0 mb-3 w-[320px] sm:w-[360px] p-5 rounded-3xl bg-stone-950/95 backdrop-blur-2xl border border-amber-400/60 shadow-[0_20px_50px_rgba(0,0,0,0.9)] z-50 text-stone-100 space-y-4"
+              className="absolute bottom-14 left-0 mb-2 w-[300px] sm:w-[360px] p-4 sm:p-5 rounded-3xl bg-stone-950/95 backdrop-blur-2xl border border-amber-400/60 shadow-[0_20px_50px_rgba(0,0,0,0.9)] z-50 text-stone-100 space-y-3.5"
             >
               {/* Header */}
               <div className="flex items-center justify-between pb-3 border-b border-stone-800">
@@ -246,7 +246,7 @@ export function FloatingActions({ onOpenBudget }: FloatingActionsProps) {
                         Viga #{copyIndex + 1}/19
                       </span>
                     </div>
-                    <p className="text-[10px] text-stone-400 font-medium truncate max-w-[210px]">
+                    <p className="text-[10px] text-stone-400 font-medium truncate max-w-[190px] sm:max-w-[210px]">
                       {currentTitle}
                     </p>
                   </div>
@@ -263,7 +263,7 @@ export function FloatingActions({ onOpenBudget }: FloatingActionsProps) {
 
               {/* Standard Shared Image Preview Box */}
               <div className="relative rounded-2xl overflow-hidden border border-amber-400/30 bg-stone-900 group/img flex flex-col">
-                <div className="relative h-28 w-full overflow-hidden">
+                <div className="relative h-24 sm:h-28 w-full overflow-hidden">
                   <img
                     src={defaultShareImage}
                     alt="Madeira de Pinus Bairro Novo"
@@ -299,7 +299,7 @@ export function FloatingActions({ onOpenBudget }: FloatingActionsProps) {
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={handleRotateCopy}
-                    className={`flex items-center gap-2.5 px-3 py-2.5 rounded-xl bg-gradient-to-r ${social.color} text-white font-bold text-xs shadow-md border transition-all active:scale-95 group/soc`}
+                    className={`flex items-center gap-2.5 px-3 py-2 rounded-xl bg-gradient-to-r ${social.color} text-white font-bold text-xs shadow-md border transition-all active:scale-95 group/soc`}
                   >
                     {social.icon}
                     <span className="truncate">{social.name}</span>
@@ -314,9 +314,9 @@ export function FloatingActions({ onOpenBudget }: FloatingActionsProps) {
                   href={COMPANY_DATA.social.directionsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-1.5 px-3 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-stone-950 font-black text-xs shadow-md border border-amber-300 transition-all active:scale-95"
+                  className="flex items-center justify-center gap-1.5 px-2.5 py-2 rounded-xl bg-amber-500 hover:bg-amber-400 text-stone-950 font-black text-xs shadow-md border border-amber-300 transition-all active:scale-95"
                 >
-                  <MapPin className="w-4 h-4 text-stone-950 fill-stone-950/20 shrink-0" />
+                  <MapPin className="w-3.5 h-3.5 text-stone-950 fill-stone-950/20 shrink-0" />
                   <span className="truncate">Ir até a Empresa</span>
                 </a>
 
@@ -324,9 +324,9 @@ export function FloatingActions({ onOpenBudget }: FloatingActionsProps) {
                   href={COMPANY_DATA.social.reviewUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-1.5 px-3 py-2.5 rounded-xl bg-amber-950/60 hover:bg-amber-900/80 text-amber-300 font-black text-xs shadow-md border border-amber-400/60 transition-all active:scale-95"
+                  className="flex items-center justify-center gap-1.5 px-2.5 py-2 rounded-xl bg-amber-950/60 hover:bg-amber-900/80 text-amber-300 font-black text-xs shadow-md border border-amber-400/60 transition-all active:scale-95"
                 >
-                  <Star className="w-4 h-4 text-amber-400 fill-amber-400 shrink-0" />
+                  <Star className="w-3.5 h-3.5 text-amber-400 fill-amber-400 shrink-0" />
                   <span className="truncate">Avaliar no Google</span>
                 </a>
               </div>
@@ -335,7 +335,7 @@ export function FloatingActions({ onOpenBudget }: FloatingActionsProps) {
               <div className="pt-2 border-t border-stone-800/80 space-y-2">
                 <button
                   onClick={handleCopyLink}
-                  className={`w-full flex items-center justify-center gap-2 px-4 py-3 rounded-2xl text-xs font-black transition-all shadow-lg border ${
+                  className={`w-full flex items-center justify-center gap-2 px-3 py-2.5 rounded-2xl text-xs font-black transition-all shadow-lg border ${
                     copied
                       ? 'bg-emerald-600 text-white border-emerald-400 ring-2 ring-emerald-400/40'
                       : 'bg-stone-900 hover:bg-stone-850 text-stone-200 hover:text-white border-amber-400/80 hover:border-amber-300'
@@ -355,14 +355,14 @@ export function FloatingActions({ onOpenBudget }: FloatingActionsProps) {
                 </button>
 
                 {/* Option to cycle text manually */}
-                <div className="flex items-center justify-between text-[10px] text-stone-400 px-1 pt-1">
+                <div className="flex items-center justify-between text-[10px] text-stone-400 px-1 pt-0.5">
                   <span>19 Versões de Vendas</span>
                   <button
                     onClick={handleRotateCopy}
                     className="text-amber-400 hover:text-amber-300 underline font-bold flex items-center gap-1 cursor-pointer"
                   >
                     <RefreshCw className="w-2.5 h-2.5" />
-                    <span>Mudar Para Próxima Versão</span>
+                    <span>Mudar Próxima Versão</span>
                   </button>
                 </div>
               </div>
@@ -372,18 +372,17 @@ export function FloatingActions({ onOpenBudget }: FloatingActionsProps) {
 
         {/* Floating Share Main Trigger Button */}
         <div className="relative group">
-          {/* Pulsing Backlight Glow */}
-          <div className="absolute -inset-2 rounded-2xl bg-amber-400/30 opacity-75 blur-lg group-hover:opacity-100 animate-pulse transition-opacity pointer-events-none" />
+          <div className="absolute -inset-1 rounded-2xl bg-amber-400/20 opacity-60 blur-md group-hover:opacity-100 transition-opacity pointer-events-none" />
 
           <button
             onClick={handleOpenShare}
             aria-label="Compartilhar esta página"
-            className={`relative flex items-center gap-2.5 px-4 py-3.5 rounded-2xl bg-stone-950 hover:bg-stone-900 text-white font-black text-xs shadow-[0_10px_30px_rgba(0,0,0,0.8)] border border-amber-400/80 hover:border-amber-300 transition-all duration-300 active:scale-95 ${
+            className={`relative flex items-center gap-2 px-3 py-2 sm:px-4 sm:py-2.5 rounded-2xl bg-stone-950 hover:bg-stone-900 text-white font-black text-xs shadow-xl border border-amber-400/80 hover:border-amber-300 transition-all duration-300 active:scale-95 ${
               shareOpen ? 'ring-2 ring-amber-400/60' : ''
             }`}
           >
-            <Share2 className="w-5 h-5 text-amber-400 shrink-0 group-hover:rotate-12 transition-transform" />
-            <span className="hidden sm:inline tracking-wider uppercase text-[11px]">
+            <Share2 className="w-4 h-4 text-amber-400 shrink-0 group-hover:rotate-12 transition-transform" />
+            <span className="hidden sm:inline tracking-wider uppercase text-[10px]">
               Compartilhar
             </span>
           </button>
@@ -391,23 +390,23 @@ export function FloatingActions({ onOpenBudget }: FloatingActionsProps) {
       </div>
 
       {/* =========================================================================
-          2. CANTO INFERIOR DIREITO: BOTAO VOLTAR AO TOPO, LIGAR AGORA E WHATSAPP 24H
+          2. CANTO INFERIOR DIREITO: BOTAO VOLTAR AO TOPO & BARRA AGRUPADA DE CONTATO
          ========================================================================= */}
-      <div className="fixed bottom-5 right-5 z-50 flex flex-col items-end gap-3">
+      <div className="fixed bottom-3 right-3 sm:bottom-5 sm:right-5 z-40 flex flex-col items-end gap-2">
         {/* Voltar ao Topo (Back to Top) Button - Appears on Scroll > 300px */}
         <AnimatePresence>
           {showScrollTop && (
             <motion.button
-              initial={{ opacity: 0, scale: 0.6, y: 15 }}
+              initial={{ opacity: 0, scale: 0.6, y: 10 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.6, y: 15 }}
-              whileHover={{ scale: 1.08 }}
-              whileTap={{ scale: 0.92 }}
+              exit={{ opacity: 0, scale: 0.6, y: 10 }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
               onClick={handleScrollToTop}
               aria-label="Voltar ao topo da página"
-              className="group flex items-center gap-2 bg-stone-950 hover:bg-stone-900 text-white font-extrabold px-3.5 py-2.5 rounded-xl text-xs shadow-xl border border-stone-700 hover:border-amber-400/70 transition-all cursor-pointer backdrop-blur-md"
+              className="group flex items-center gap-1.5 bg-stone-950/90 hover:bg-stone-900 text-white font-extrabold px-3 py-1.5 rounded-xl text-xs shadow-md border border-stone-800 hover:border-amber-400/70 transition-all cursor-pointer backdrop-blur-md"
             >
-              <ArrowUp className="w-4 h-4 text-amber-400 stroke-[3] group-hover:-translate-y-1 transition-transform" />
+              <ArrowUp className="w-3.5 h-3.5 text-amber-400 stroke-[2.5] group-hover:-translate-y-0.5 transition-transform" />
               <span className="hidden sm:inline text-[10px] uppercase tracking-wider font-extrabold text-stone-200">
                 Topo
               </span>
@@ -415,57 +414,42 @@ export function FloatingActions({ onOpenBudget }: FloatingActionsProps) {
           )}
         </AnimatePresence>
 
-        {/* Quick Contacts Column Stack */}
-        <div className="flex flex-col items-end gap-2.5">
+        {/* Grouped WhatsApp + Phone Action Dock Bar */}
+        <div className="flex items-center gap-1.5 p-1 bg-stone-950/95 backdrop-blur-xl border border-stone-800/80 shadow-[0_10px_30px_rgba(0,0,0,0.85)] rounded-2xl">
           {/* Botão "Ligar Agora" (tel:) */}
           <a
             href={`tel:${COMPANY_DATA.phones.landlineRaw}`}
-            className="group relative flex items-center gap-2.5 px-4 py-3 rounded-2xl bg-gradient-to-r from-amber-500 via-amber-600 to-amber-500 hover:from-amber-400 hover:to-amber-500 text-stone-950 font-black text-xs shadow-xl border border-amber-300 transition-all duration-300 hover:scale-105 active:scale-95"
+            title={`Ligar para ${COMPANY_DATA.phones.landline}`}
+            className="group flex items-center gap-1.5 px-3 py-2 rounded-xl bg-amber-500 hover:bg-amber-400 text-stone-950 font-black text-xs transition-all active:scale-95 shadow-sm"
           >
-            <div className="w-7 h-7 rounded-xl bg-stone-950/20 flex items-center justify-center shrink-0">
-              <PhoneCall className="w-4 h-4 text-stone-950 animate-bounce stroke-[2.5]" />
-            </div>
-            <div className="flex flex-col text-left leading-tight">
-              <span className="text-[10px] font-extrabold uppercase opacity-85">Ligar Agora</span>
-              <span className="text-xs font-black tracking-wide">{COMPANY_DATA.phones.landline}</span>
-            </div>
+            <PhoneCall className="w-3.5 h-3.5 text-stone-950 stroke-[2.5] shrink-0" />
+            <span className="text-xs font-black tracking-wide">Ligar</span>
+            <span className="hidden md:inline text-[10px] font-bold opacity-80 border-l border-stone-950/20 pl-1.5">
+              {COMPANY_DATA.phones.landline}
+            </span>
           </a>
 
-          {/* Botão "WhatsApp 24h" */}
-          <div className="relative group">
-            {/* Pulsing Light Effect / Ambient Glow */}
-            <div className="absolute -inset-1 rounded-2xl bg-emerald-500/40 opacity-75 blur-md group-hover:opacity-100 animate-pulse transition-opacity pointer-events-none" />
+          {/* Botão "WhatsApp" */}
+          <a
+            href={`https://wa.me/${COMPANY_DATA.phones.whatsappRaw}?text=${encodeURIComponent(
+              `Olá! Vi o site da ${companyName} e gostaria de solicitar um orçamento rápido de madeira de pinus.`
+            )}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Atendimento WhatsApp 24h"
+            className="group relative flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-black text-xs transition-all active:scale-95 shadow-sm"
+          >
+            <span className="relative flex h-2 w-2 shrink-0">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-200 opacity-90"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
+            </span>
 
-            <a
-              href={`https://wa.me/${COMPANY_DATA.phones.whatsappRaw}?text=${encodeURIComponent(
-                `Olá! Vi o site da ${companyName} e gostaria de solicitar um orçamento rápido de madeira de pinus.`
-              )}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="relative flex items-center gap-3 px-4 py-3.5 rounded-2xl bg-gradient-to-r from-emerald-600 via-emerald-500 to-emerald-600 hover:from-emerald-500 hover:to-emerald-400 text-white font-extrabold text-xs shadow-[0_10px_30px_rgba(16,185,129,0.4)] border border-emerald-300/80 transition-all duration-300 hover:scale-105 active:scale-95"
-            >
-              {/* Green Blinking "Online Agora" Indicator Light */}
-              <span className="relative flex h-3.5 w-3.5 shrink-0">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-200 opacity-90"></span>
-                <span className="relative inline-flex rounded-full h-3.5 w-3.5 bg-white border-2 border-emerald-600"></span>
-              </span>
-
-              {/* Animated Message Icon */}
-              <MessageCircle className="w-5 h-5 fill-white text-emerald-600 stroke-[1.5] group-hover:scale-110 transition-transform shrink-0" />
-
-              <div className="flex flex-col text-left leading-tight">
-                <div className="flex items-center gap-1.5">
-                  <span className="text-xs font-black tracking-wide">WhatsApp 24h</span>
-                  <span className="text-[9px] bg-emerald-950/40 text-emerald-200 font-extrabold px-1.5 py-0.5 rounded-md uppercase border border-emerald-400/30">
-                    Online
-                  </span>
-                </div>
-                <span className="text-[10px] font-bold text-emerald-100 opacity-90">
-                  Resposta Imediata
-                </span>
-              </div>
-            </a>
-          </div>
+            <MessageCircle className="w-3.5 h-3.5 fill-white text-emerald-600 stroke-[1.5] shrink-0" />
+            <span className="text-xs font-black tracking-wide">WhatsApp</span>
+            <span className="hidden md:inline text-[9px] bg-emerald-950/50 text-emerald-200 font-extrabold px-1.5 py-0.5 rounded uppercase">
+              24h
+            </span>
+          </a>
         </div>
       </div>
     </>

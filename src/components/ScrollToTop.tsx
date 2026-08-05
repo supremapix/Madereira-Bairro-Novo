@@ -36,7 +36,7 @@ export function ScrollToTop() {
           whileTap={{ scale: 0.9 }}
           onClick={scrollToTop}
           aria-label="Voltar ao topo da página"
-          className="fixed bottom-6 left-6 z-40 group flex items-center gap-2 bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 text-stone-950 font-black p-3.5 sm:px-4 sm:py-3 rounded-2xl shadow-2xl shadow-amber-500/40 border border-amber-300 transition-all cursor-pointer"
+          className="fixed bottom-6 left-6 z-40 group flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-stone-950 font-black p-3.5 sm:px-4 sm:py-3 rounded-2xl shadow-2xl shadow-amber-500/30 border border-amber-300 transition-all cursor-pointer"
         >
           <span className="relative flex h-3 w-3">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-stone-950 opacity-75"></span>

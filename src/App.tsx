@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { AnimatePresence, motion } from 'motion/react';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { FloatingContacts } from './components/FloatingContacts';
@@ -20,6 +21,66 @@ import { NotFoundView } from './views/NotFoundView';
 import { getLocationBySlug } from './data/locations';
 import { PRODUCTS_DATA } from './data/products';
 
+/**
+ * ScrollToTopOnNavigation
+ * Mandatory hook/component that scrolls viewport directly to top / hero section
+ * whenever route or page parameters change.
+ */
+function ScrollToTopOnNavigation() {
+  const { pathname, search } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'instant'
+    });
+  }, [pathname, search]);
+
+  return null;
+}
+
+/**
+ * AnimatedRoutes
+ * Wraps page navigation in premium Motion transitions with subtle scale & fade effects.
+ */
+function AnimatedRoutes({ onOpenBudget }: { onOpenBudget: (slug?: string) => void }) {
+  const location = useLocation();
+
+  return (
+    <AnimatePresence mode="wait">
+      <motion.div
+        key={location.pathname}
+        initial={{ opacity: 0, y: 16 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -16 }}
+        transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
+      >
+        <Routes location={location}>
+          <Route path="/" element={<HomeView onOpenBudget={onOpenBudget} />} />
+          <Route path="/produtos" element={<ProductsListView onOpenBudget={onOpenBudget} />} />
+          <Route path="/produto/:slug" element={<ProductDetailView onOpenBudget={onOpenBudget} />} />
+          <Route path="/regioes-atendidas" element={<LocationsListView />} />
+          <Route path="/bairro/:slug" element={<LocationDetailView onOpenBudget={onOpenBudget} />} />
+          <Route path="/cidade/:slug" element={<LocationDetailView onOpenBudget={onOpenBudget} />} />
+          <Route path="/blog" element={<BlogListView />} />
+          <Route path="/blog/:slug" element={<BlogPostView onOpenBudget={onOpenBudget} />} />
+          <Route path="/sobre" element={<AboutView onOpenBudget={onOpenBudget} />} />
+          <Route path="/contato" element={<ContactView onOpenBudget={onOpenBudget} />} />
+
+          {/* Catch-all route to handle legacy or direct slug patterns safely */}
+          <Route
+            path="*"
+            element={
+              <FallbackRouteHandler onOpenBudget={onOpenBudget} />
+            }
+          />
+        </Routes>
+      </motion.div>
+    </AnimatePresence>
+  );
+}
+
 function AppContent() {
   const [budgetOpen, setBudgetOpen] = useState(false);
   const [budgetSlug, setBudgetSlug] = useState<string | undefined>();
@@ -31,31 +92,15 @@ function AppContent() {
 
   return (
     <div className="min-h-screen bg-white text-stone-900 flex flex-col font-sans selection:bg-amber-500 selection:text-stone-950">
+      {/* Scroll strictly to top hero section on navigation */}
+      <ScrollToTopOnNavigation />
+
       {/* Header */}
       <Header onOpenBudget={() => handleOpenBudget()} />
 
       {/* Main Content Area */}
-      <main className="flex-1">
-        <Routes>
-          <Route path="/" element={<HomeView onOpenBudget={handleOpenBudget} />} />
-          <Route path="/produtos" element={<ProductsListView onOpenBudget={handleOpenBudget} />} />
-          <Route path="/produto/:slug" element={<ProductDetailView onOpenBudget={handleOpenBudget} />} />
-          <Route path="/regioes-atendidas" element={<LocationsListView />} />
-          <Route path="/bairro/:slug" element={<LocationDetailView onOpenBudget={handleOpenBudget} />} />
-          <Route path="/cidade/:slug" element={<LocationDetailView onOpenBudget={handleOpenBudget} />} />
-          <Route path="/blog" element={<BlogListView />} />
-          <Route path="/blog/:slug" element={<BlogPostView onOpenBudget={handleOpenBudget} />} />
-          <Route path="/sobre" element={<AboutView onOpenBudget={handleOpenBudget} />} />
-          <Route path="/contato" element={<ContactView onOpenBudget={handleOpenBudget} />} />
-
-          {/* Catch-all route to handle legacy or direct slug patterns safely */}
-          <Route
-            path="*"
-            element={
-              <FallbackRouteHandler onOpenBudget={handleOpenBudget} />
-            }
-          />
-        </Routes>
+      <main className="flex-1 overflow-x-hidden">
+        <AnimatedRoutes onOpenBudget={handleOpenBudget} />
       </main>
 
       {/* Footer */}

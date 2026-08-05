@@ -14,6 +14,23 @@ async function startServer() {
 
   app.use(express.json());
 
+  // Serve static files from public directory (favicons, robots, sitemaps)
+  const publicPath = path.join(process.cwd(), 'public');
+  if (fs.existsSync(publicPath)) {
+    app.use(express.static(publicPath, { maxAge: '1d' }));
+  }
+
+  // Explicit Favicon routes for Google Search crawler
+  app.get('/favicon.ico', (req, res) => {
+    const icoPath = path.join(publicPath, 'favicon.ico');
+    if (fs.existsSync(icoPath)) {
+      res.setHeader('Content-Type', 'image/x-icon');
+      res.sendFile(icoPath);
+    } else {
+      res.status(404).end();
+    }
+  });
+
   // API Health Check
   app.get('/api/health', (req, res) => {
     res.json({

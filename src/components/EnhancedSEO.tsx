@@ -116,7 +116,7 @@ export function EnhancedSEO({
       name: COMPANY_DATA.name,
       legalName: COMPANY_DATA.legalName,
       url: COMPANY_DATA.canonicalUrl,
-      logo: `${COMPANY_DATA.canonicalUrl}/logo.png`,
+      logo: `${COMPANY_DATA.canonicalUrl}/icon-512.png`,
       image: ogImage,
       telephone: COMPANY_DATA.phones.landline,
       email: COMPANY_DATA.email,

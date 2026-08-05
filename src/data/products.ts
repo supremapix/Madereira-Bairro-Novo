@@ -407,8 +407,8 @@ export const PRODUCTS_DATA: Product[] = [
       'Proteção completa contra cupins e podridão',
       'Custo viável para projetos de qualquer porte'
     ],
-    imageUrl: 'https://tekmadbrasil.com.br/wp-content/uploads/2025/05/Tekmad-madeiras-tratadas-Pergolado-de-pinus-tratado-rolico.jpg',
-    imageAlt: 'Estrutura de pergolado de pinus em jardim em Curitiba',
+    imageUrl: 'https://scontent.xx.fbcdn.net/v/t39.105495-1/767597696_1070961578919620_5714635009289176605_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=108&_nc_ohc=ZGob85vmPZQQ7kNvwF7i55_&sdl=0&ccb=14-4&oh=00_AQGJ7S04iRiv9r4eFWOx111rzLu0qXddb8riLay_muoNFQ&oe=6A791A2F&_nc_sid=a21977',
+    imageAlt: 'Estrutura e kits de madeira para pergolado de pinus autoclavado',
     treatmentType: 'Autoclavado (CCA)',
     isCornerstoneProduct: true
   },

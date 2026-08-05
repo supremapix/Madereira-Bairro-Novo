@@ -20,8 +20,22 @@ export function Footer({ onOpenBudget }: { onOpenBudget?: () => void }) {
   const sampleNeighborhoods = OFFICIAL_NEIGHBORHOODS.slice(0, 8);
 
   return (
-    <footer className="bg-stone-950 text-stone-300 border-t border-amber-900/30 pt-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+    <footer className="relative bg-stone-950 text-stone-300 border-t border-amber-900/40 pt-12 overflow-hidden">
+      {/* Background Video - Highly visible with wood texture motion */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover pointer-events-none opacity-70 brightness-105 contrast-110"
+      >
+        <source src="https://img.supremasite.com.br/madeira.mp4" type="video/mp4" />
+      </video>
+
+      {/* Dark Gradient Overlay for Text Readability */}
+      <div className="absolute inset-0 bg-stone-950/75 bg-gradient-to-t from-stone-950 via-stone-950/80 to-stone-950/60 pointer-events-none" />
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
         {/* Top Company Identity & Fast CTA */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 pb-12 border-b border-stone-800">
           <div className="lg:col-span-5 space-y-4">

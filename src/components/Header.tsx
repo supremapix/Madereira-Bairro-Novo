@@ -63,41 +63,61 @@ export function Header({ onOpenBudget }: { onOpenBudget?: () => void }) {
 
   return (
     <>
-      {/* Top Banner Bar for Quick Contact & Accessibility */}
-      <div className="bg-stone-900 text-stone-300 text-xs py-2 px-4 border-b border-stone-800">
-        <div className="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
-          <div className="flex items-center gap-4 flex-wrap">
-            <span className="inline-flex items-center gap-1 text-amber-400 font-medium">
-              <Award className="w-3.5 h-3.5 text-amber-500" />
-              Líder em Madeira de Pinus no Paraná
-            </span>
-            <span className="hidden md:inline text-stone-500">•</span>
-            <span className="hidden md:inline-flex items-center gap-1.5 text-stone-300">
-              <MapPin className="w-3.5 h-3.5 text-amber-500" />
-              R. Coronel Joaquim Antônio de Azevedo, 1459 - Curitiba
-            </span>
-          </div>
+      {/* Animated Marquee Top Banner Bar */}
+      <div className="bg-gradient-to-r from-amber-600 via-amber-500 to-amber-600 text-stone-950 text-xs font-black py-2.5 overflow-hidden shadow-md relative border-b border-amber-600/40 select-none">
+        <div className="flex w-max animate-marquee space-x-8 hover:[animation-play-state:paused] whitespace-nowrap items-center">
+          {/* Render ticker items twice for seamless continuous infinite loop */}
+          {[1, 2].map((groupIndex) => (
+            <div key={groupIndex} className="flex items-center space-x-8">
+              <Link
+                to="/produtos"
+                className="inline-flex items-center gap-1.5 bg-stone-950 text-amber-400 hover:bg-stone-900 px-3 py-1 rounded-full shadow transition-all hover:scale-105 active:scale-95 font-black uppercase text-[11px] tracking-wide"
+              >
+                <Sparkles className="w-3.5 h-3.5 text-amber-400 fill-amber-400" />
+                <span>🔥 PROMOÇÕES HOJE: CONFIRA O CATÁLOGO COMPLETO</span>
+              </Link>
 
-          <div className="flex items-center gap-4 text-xs">
-            <a
-              href={`tel:${COMPANY_DATA.phones.landlineRaw}`}
-              className="hover:text-amber-400 transition-colors flex items-center gap-1 font-medium"
-            >
-              <Phone className="w-3.5 h-3.5 text-amber-500" />
-              <span className="hidden sm:inline">{COMPANY_DATA.phones.landline}</span>
-            </a>
-            <a
-              href={`https://wa.me/${COMPANY_DATA.phones.whatsappRaw}?text=${encodeURIComponent(
-                'Olá! Gostaria de um orçamento de madeira de pinus.'
-              )}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-emerald-400 hover:text-emerald-300 transition-colors font-bold flex items-center gap-1"
-            >
-              <MessageCircle className="w-3.5 h-3.5 fill-emerald-400 text-stone-900" />
-              WhatsApp: {COMPANY_DATA.phones.whatsapp}
-            </a>
-          </div>
+              <a
+                href={`https://wa.me/${COMPANY_DATA.phones.whatsappRaw}?text=${encodeURIComponent(
+                  'Olá! Vi as promoções no site e gostaria de solicitar um orçamento de madeira.'
+                )}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 bg-emerald-900 text-emerald-100 hover:bg-emerald-800 px-3 py-1 rounded-full shadow transition-all hover:scale-105 active:scale-95 font-bold"
+              >
+                <MessageCircle className="w-3.5 h-3.5 fill-emerald-400 text-emerald-950" />
+                <span>WHATSAPP VENDAS: {COMPANY_DATA.phones.whatsapp} (CLIQUE AQUI)</span>
+              </a>
+
+              <a
+                href="https://maps.google.com/?q=R.+Coronel+Joaquim+Antônio+de+Azevedo,+1459+-+Curitiba"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 bg-stone-900/15 hover:bg-stone-900/30 px-3 py-1 rounded-full font-extrabold text-stone-950 transition-all hover:scale-105"
+              >
+                <MapPin className="w-3.5 h-3.5 text-stone-900" />
+                <span>ENDEREÇO: R. Coronel Joaquim Antônio de Azevedo, 1459 - Curitiba (ABRIR MAPA)</span>
+              </a>
+
+              <a
+                href={`tel:${COMPANY_DATA.phones.landlineRaw}`}
+                className="inline-flex items-center gap-1.5 bg-stone-900/15 hover:bg-stone-900/30 px-3 py-1 rounded-full font-extrabold text-stone-950 transition-all hover:scale-105"
+              >
+                <Phone className="w-3.5 h-3.5 text-stone-900" />
+                <span>TELEFONE FIXO: {COMPANY_DATA.phones.landline} (LIGAR AGORA)</span>
+              </a>
+
+              <Link
+                to="/regioes-atendidas"
+                className="inline-flex items-center gap-1.5 bg-stone-950 text-stone-100 hover:bg-stone-900 px-3 py-1 rounded-full shadow transition-all hover:scale-105 font-bold"
+              >
+                <Award className="w-3.5 h-3.5 text-amber-400" />
+                <span>🚚 PRONTA ENTREGA EM 75 BAIRROS DE CURITIBA E REGIÃO</span>
+              </Link>
+
+              <span className="text-stone-950/40 font-bold">•</span>
+            </div>
+          ))}
         </div>
       </div>
 
@@ -205,26 +225,8 @@ export function Header({ onOpenBudget }: { onOpenBudget?: () => void }) {
             })}
           </nav>
 
-          {/* Desktop Right CTA */}
-          <div className="hidden lg:flex items-center gap-3">
-            <button
-              onClick={onOpenBudget}
-              className="bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-500 hover:to-amber-600 text-stone-950 font-bold px-5 py-2.5 rounded-xl shadow-md shadow-amber-950/30 transition-all hover:scale-[1.02] active:scale-[0.98] flex items-center gap-2 text-sm"
-            >
-              <Sparkles className="w-4 h-4 fill-stone-950" />
-              Solicitar Orçamento
-            </button>
-          </div>
-
-          {/* Mobile Menu Trigger - Extra High Contrast and Big Button for Accessibility */}
+          {/* Mobile Menu Trigger */}
           <div className="flex lg:hidden items-center gap-2">
-            <button
-              onClick={onOpenBudget}
-              className="bg-amber-500 text-stone-950 font-bold px-3 py-2 rounded-lg text-xs flex items-center gap-1 active:scale-95"
-            >
-              <Sparkles className="w-3.5 h-3.5 fill-stone-950" />
-              Orçamento
-            </button>
             <button
               onClick={() => setMobileMenuOpen(true)}
               aria-label="Abrir Menu de Navegação"

@@ -28,7 +28,7 @@ Se a madeira for ficar em contato com o solo, chuva ou umidade constante, prefir
     readTime: '5 min',
     category: 'Dicas de Construção',
     tags: ['Pinus', 'Guia de Compra', 'Construção Civil', 'Curitiba'],
-    imageUrl: 'https://images.unsplash.com/photo-1546484475-7f7bd55792da?auto=format&fit=crop&w=1000&q=80',
+    imageUrl: 'https://scontent.xx.fbcdn.net/v/t39.105495-1/763701057_1034073502931524_678965708184336439_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=104&_nc_ohc=TbWurg-2SD4Q7kNvwH_wwJy&sdl=0&ccb=14-4&oh=00_AQE3V1UNyvYiNkNNLljY9Tcivm6t6mmk_buVvEO4ZCc6GQ&oe=6A7862F8&_nc_sid=a21977',
     imageAlt: 'Série de tábuas de pinus selecionadas e alinhadas',
     relatedProducts: ['madeira-de-pinus', 'tabuas', 'pinus-tratado']
   },
@@ -58,7 +58,7 @@ Para obras provisórias ou ambientes internos secos, o Pinus comum é imbatível
     readTime: '4 min',
     category: 'Tratamento de Madeira',
     tags: ['Pinus Tratado', 'Autoclave', 'Durabilidade', 'Cupins'],
-    imageUrl: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1000&q=80',
+    imageUrl: 'https://scontent.xx.fbcdn.net/v/t39.105495-1/763847653_1931789624161484_955820512592270728_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=108&_nc_ohc=ULcNa9qPUD8Q7kNvwFA8OZ8&sdl=0&ccb=14-4&oh=00_AQFzqMJf9OxHDQNzEz7cZ42zwSyvKarka5nsCMPsjhovWA&oe=6A78717E&_nc_sid=a21977',
     imageAlt: 'Comparativo de acabamento de pinus tratado em autoclave',
     relatedProducts: ['pinus-tratado', 'pinus-autoclavado', 'deck']
   },
@@ -83,7 +83,7 @@ Sempre compre ripas e caibros secos para evitar que o telhado desalinhe após a 
     readTime: '6 min',
     category: 'Telhados e Coberturas',
     tags: ['Telhado', 'Vigas', 'Caibros', 'Ripas', 'Cobertura'],
-    imageUrl: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=80',
+    imageUrl: 'https://scontent.xx.fbcdn.net/v/t39.105495-1/762917108_1618443756432680_3948687350193773016_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=108&_nc_ohc=3gAmouC_PdcQ7kNvwHfzJSq&sdl=0&ccb=14-4&oh=00_AQFFJLUcnwYvuDnupnBv7DRybpvRyLc6udo75glnlbucow&oe=6A785EB9&_nc_sid=a21977',
     imageAlt: 'Estrutura de telhado de madeira montada em residência',
     relatedProducts: ['caibros', 'ripas', 'vigas', 'madeira-para-telhado']
   },
@@ -108,7 +108,7 @@ Para manter a cor radiante, recomenda-se a aplicação anual de **Stain Impregna
     readTime: '4 min',
     category: 'Projetos e Decks',
     tags: ['Deck', 'Pinus Autoclavado', 'Piscinas', 'Jardim'],
-    imageUrl: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1000&q=80',
+    imageUrl: 'https://scontent.xx.fbcdn.net/v/t39.105495-1/762834414_952251111289997_3962927882972819318_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=105&_nc_ohc=iyylysgUM1oQ7kNvwGuwsNq&sdl=0&ccb=14-4&oh=00_AQFPYrl_inoivBwjPXVXFj5w2Sc75wVpbQNOTbnI2G4OHg&oe=6A787021&_nc_sid=a21977',
     imageAlt: 'Deck de pinus instalado ao lado de jardim residencial',
     relatedProducts: ['deck', 'barrotes', 'pinus-autoclavado']
   },
@@ -132,7 +132,7 @@ Utilize conectores metálicos galvanizados e parafusos estruturais para garantir
     readTime: '5 min',
     category: 'Projetos e Decks',
     tags: ['Pergolado', 'Pinus Tratado', 'Jardim', 'Arquitetura'],
-    imageUrl: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=1000&q=80',
+    imageUrl: 'https://scontent.xx.fbcdn.net/v/t39.105495-1/763263269_4507204106201898_7940654478795407383_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=106&_nc_ohc=AYigzUQM9cAQ7kNvwEBc0z2&sdl=0&ccb=14-4&oh=00_AQHc0NVzpIiySVoRxcKoaGXPu9U7-6GY-jA-RebKFjltQg&oe=6A786AED&_nc_sid=a21977',
     imageAlt: 'Pergolado de madeira de pinus autoclavado em espaço gourmet',
     relatedProducts: ['pergolado', 'vigas', 'pinus-autoclavado']
   },
@@ -156,7 +156,7 @@ Solicite seu orçamento direto pelo WhatsApp da Bairro Novo Comércio de Madeira
     readTime: '4 min',
     category: 'Orçamentos',
     tags: ['Preços', 'Tabela', 'Curitiba', 'Orçamento'],
-    imageUrl: 'https://images.unsplash.com/photo-1541888946425-d0fbb186a5b7?auto=format&fit=crop&w=1000&q=80',
+    imageUrl: 'https://scontent.xx.fbcdn.net/v/t39.105495-1/763214440_1379196801017072_2053039819215510251_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=108&_nc_ohc=Fh7bdka6wK8Q7kNvwH9M9kL&sdl=0&ccb=14-4&oh=00_AQF_1BU8F238XM3gGhIyZeOZuZSQEPvtnFznfuFD67fVdA&oe=6A7862AE&_nc_sid=a21977',
     imageAlt: 'Depósito de madeira de pinus com pronta entrega em Curitiba',
     relatedProducts: ['madeira-de-pinus', 'madeira-para-construcao']
   },
@@ -181,7 +181,7 @@ Lixe a madeira no sentido dos veios para remover farpas e pó. Certifique-se de 
     readTime: '4 min',
     category: 'Manutenção',
     tags: ['Conservação', 'Verniz', 'Stain', 'Pintura'],
-    imageUrl: 'https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&w=1000&q=80',
+    imageUrl: 'https://scontent.xx.fbcdn.net/v/t39.105495-1/762998206_1351532853830862_8385965624638348975_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=106&_nc_ohc=yxAnZ1xbSjoQ7kNvwFh8zMv&sdl=0&ccb=14-4&oh=00_AQEFY_UIS6RxXd_U3FZ_X9crYxhkOLRGD7tZLB1rPZXhrA&oe=6A786323&_nc_sid=a21977',
     imageAlt: 'Aplicação de stain protetor em prancha de pinus',
     relatedProducts: ['madeira-beneficiada', 'deck']
   },
@@ -210,7 +210,7 @@ Para a maioria das aplicações urbanas em Curitiba, o Pinus se destaca pelo exc
     readTime: '5 min',
     category: 'Comparativos',
     tags: ['Pinus', 'Eucalipto', 'Comparativo', 'Construção'],
-    imageUrl: 'https://images.unsplash.com/photo-1520699049698-acd2fccb8cc8?auto=format&fit=crop&w=1000&q=80',
+    imageUrl: 'https://scontent.xx.fbcdn.net/v/t39.105495-1/764065718_1530182254879959_2665302352023743728_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=103&_nc_ohc=VVkCazVFMr8Q7kNvwEYbv_Y&sdl=0&ccb=14-4&oh=00_AQH_dYLaEFyCsI--LUwaHT-8ez5eLITBbBf4-VTjDIj5eg&oe=6A785C89&_nc_sid=a21977',
     imageAlt: 'Serraria de pinus sustentável no Paraná',
     relatedProducts: ['madeira-de-pinus', 'pinus-tratado']
   },
@@ -232,7 +232,7 @@ Os chalés no estilo A-Frame e construções em sistema Wood Frame ganharam enor
     readTime: '5 min',
     category: 'Projetos e Decks',
     tags: ['Chalés', 'A-Frame', 'Wood Frame', 'Turismo'],
-    imageUrl: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=1000&q=80',
+    imageUrl: 'https://scontent.xx.fbcdn.net/v/t39.105495-1/764800438_1405598378109491_8519804919165767808_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=111&_nc_ohc=MOwFq8IyyVMQ7kNvwHHXqPd&sdl=0&ccb=14-4&oh=00_AQG-y2EprvJoVaODX9ozVzQ1xlFyeTLAtwRpD5ccV6yCxg&oe=6A785755&_nc_sid=a21977',
     imageAlt: 'Chalé de madeira integrado à natureza no Paraná',
     relatedProducts: ['pinus-autoclavado', 'vigas', 'compensado']
   },
@@ -249,7 +249,7 @@ Coberturas industriais e comerciais exigem estruturas capazes de vencer vãos li
     readTime: '4 min',
     category: 'Telhados e Coberturas',
     tags: ['Cobertura', 'Galpões', 'Engenharia', 'Vigas'],
-    imageUrl: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=80',
+    imageUrl: 'https://cdn.fbsbx.com/v/t65.102178-21/764906453_27674795098836788_3271074921704185512_n.jpg/cobertura_industrial_pinus.webp?_nc_ht=cdn.fbsbx.com&_nc_ohc=1tSxQdLhtokQ7kNvwEtD3vA&sdl=0&ccb=14-4&oh=00_AQFXahvcGMDG0iOGJGy0kiXWhG3wMM1zorIimKhkmZ_4QA&oe=6A748B4B&_nc_sid=4ee932',
     imageAlt: 'Estrutura de cobertura de grande porte em madeira',
     relatedProducts: ['vigas', 'caibros', 'madeira-para-telhado']
   },
@@ -266,7 +266,7 @@ Galpões para depósito, máquinas agrícolas e avicultura demandam materiais re
     readTime: '4 min',
     category: 'Construção Civil',
     tags: ['Galpões', 'Rural', 'Pinus Autoclavado', 'Logística'],
-    imageUrl: 'https://images.unsplash.com/photo-1541888946425-d0fbb186a5b7?auto=format&fit=crop&w=1000&q=80',
+    imageUrl: 'https://scontent.xx.fbcdn.net/v/t39.105495-1/764217303_1319199123620379_3580214717680874817_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=103&_nc_ohc=8QOIaycRJH4Q7kNvwH9Pbp8&sdl=0&ccb=14-4&oh=00_AQGJ9N3R5_idlts3NZMevq1vtbYjBuMwU5T2JvpQJsbFrw&oe=6A787DCD&_nc_sid=a21977',
     imageAlt: 'Galpão construído com estrutura de pinus autoclavado',
     relatedProducts: ['pinus-autoclavado', 'vigas', 'escoras']
   },
@@ -283,7 +283,7 @@ O controle do uso da madeira no canteiro de obras é vital para manter o orçame
     readTime: '5 min',
     category: 'Construção Civil',
     tags: ['Construção Civil', 'Economia', 'Obras', 'Canteiro'],
-    imageUrl: 'https://images.unsplash.com/photo-1508873696983-2df515122519?auto=format&fit=crop&w=1000&q=80',
+    imageUrl: 'https://scontent.xx.fbcdn.net/v/t39.105495-1/764006194_2101145300613747_6240605454197075279_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=103&_nc_ohc=DWWDMAhQs1kQ7kNvwFX5QRy&sdl=0&ccb=14-4&oh=00_AQEce118XGOpWNJAHs7YOy3hH8cLhPa_NrYTCee0bfXzlA&oe=6A787D82&_nc_sid=a21977',
     imageAlt: 'Uso de madeira de pinus e madeirite no canteiro de obra',
     relatedProducts: ['madeirite', 'escoras', 'formas-para-concreto']
   }

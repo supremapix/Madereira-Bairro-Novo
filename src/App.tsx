@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { FloatingContacts } from './components/FloatingContacts';
+import { ScrollToTop } from './components/ScrollToTop';
 import { BudgetModal } from './components/BudgetModal';
 
 import { HomeView } from './views/HomeView';
@@ -62,6 +63,9 @@ function AppContent() {
 
       {/* Smart Radial Floating Contact Options */}
       <FloatingContacts onOpenBudget={() => handleOpenBudget()} />
+
+      {/* Eye-catching Scroll To Top Button */}
+      <ScrollToTop />
 
       {/* Quick Budget Modal */}
       <BudgetModal

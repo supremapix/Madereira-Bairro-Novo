@@ -110,15 +110,15 @@ export function HomeView({ onOpenBudget }: { onOpenBudget?: (slug?: string) => v
             </p>
           </div>
 
-          {/* Category Filter Pills */}
-          <div className="flex items-center justify-center gap-2 flex-wrap pt-2">
+          {/* Category Filter Pills - Optimized for Mobile Carousel & Desktop Wrap */}
+          <div className="flex items-center gap-2 overflow-x-auto pb-3 pt-2 px-1 sm:flex-wrap sm:justify-center sm:overflow-x-visible no-scrollbar -mx-4 sm:mx-0 px-4 sm:px-0">
             {categories.map((cat) => (
               <button
                 key={cat}
                 onClick={() => setSelectedCategory(cat)}
-                className={`px-4 py-2 rounded-xl text-xs font-bold transition-all min-h-[40px] ${
+                className={`px-4 py-2.5 rounded-xl text-xs font-bold transition-all shrink-0 whitespace-nowrap min-h-[42px] flex items-center justify-center ${
                   selectedCategory === cat
-                    ? 'bg-amber-500 text-stone-950 shadow-lg scale-105'
+                    ? 'bg-amber-500 text-stone-950 shadow-lg scale-105 font-black border border-amber-400'
                     : 'bg-stone-900 text-stone-300 hover:bg-stone-800 border border-stone-800'
                 }`}
               >

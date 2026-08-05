@@ -64,14 +64,14 @@ export function Header({ onOpenBudget }: { onOpenBudget?: () => void }) {
   return (
     <>
       {/* Animated Marquee Top Banner Bar */}
-      <div className="bg-gradient-to-r from-amber-600 via-amber-500 to-amber-600 text-stone-950 text-xs font-black py-2.5 overflow-hidden shadow-md relative border-b border-amber-600/40 select-none">
+      <div className="bg-amber-400 text-stone-950 text-xs font-black py-2.5 overflow-hidden shadow-lg relative border-b border-amber-500 select-none">
         <div className="flex w-max animate-marquee space-x-8 hover:[animation-play-state:paused] whitespace-nowrap items-center">
           {/* Render ticker items twice for seamless continuous infinite loop */}
           {[1, 2].map((groupIndex) => (
             <div key={groupIndex} className="flex items-center space-x-8">
               <Link
                 to="/produtos"
-                className="inline-flex items-center gap-1.5 bg-stone-950 text-amber-400 hover:bg-stone-900 px-3 py-1 rounded-full shadow transition-all hover:scale-105 active:scale-95 font-black uppercase text-[11px] tracking-wide"
+                className="inline-flex items-center gap-1.5 bg-stone-950 text-amber-300 hover:bg-stone-900 border border-amber-400/30 px-3 py-1 rounded-full shadow-md transition-all hover:scale-105 active:scale-95 font-black uppercase text-[11px] tracking-wide"
               >
                 <Sparkles className="w-3.5 h-3.5 text-amber-400 fill-amber-400" />
                 <span>🔥 PROMOÇÕES HOJE: CONFIRA O CATÁLOGO COMPLETO</span>
@@ -83,7 +83,7 @@ export function Header({ onOpenBudget }: { onOpenBudget?: () => void }) {
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 bg-emerald-900 text-emerald-100 hover:bg-emerald-800 px-3 py-1 rounded-full shadow transition-all hover:scale-105 active:scale-95 font-bold"
+                className="inline-flex items-center gap-1.5 bg-emerald-950 text-emerald-300 hover:bg-emerald-900 border border-emerald-500/40 px-3 py-1 rounded-full shadow-md transition-all hover:scale-105 active:scale-95 font-black"
               >
                 <MessageCircle className="w-3.5 h-3.5 fill-emerald-400 text-emerald-950" />
                 <span>WHATSAPP VENDAS: {COMPANY_DATA.phones.whatsapp} (CLIQUE AQUI)</span>
@@ -93,29 +93,29 @@ export function Header({ onOpenBudget }: { onOpenBudget?: () => void }) {
                 href="https://maps.google.com/?q=R.+Coronel+Joaquim+Antônio+de+Azevedo,+1459+-+Curitiba"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 bg-stone-900/15 hover:bg-stone-900/30 px-3 py-1 rounded-full font-extrabold text-stone-950 transition-all hover:scale-105"
+                className="inline-flex items-center gap-1.5 bg-stone-950/10 hover:bg-stone-950/20 px-3 py-1 rounded-full font-black text-stone-950 transition-all hover:scale-105"
               >
-                <MapPin className="w-3.5 h-3.5 text-stone-900" />
+                <MapPin className="w-3.5 h-3.5 text-stone-950" />
                 <span>ENDEREÇO: R. Coronel Joaquim Antônio de Azevedo, 1459 - Curitiba (ABRIR MAPA)</span>
               </a>
 
               <a
                 href={`tel:${COMPANY_DATA.phones.landlineRaw}`}
-                className="inline-flex items-center gap-1.5 bg-stone-900/15 hover:bg-stone-900/30 px-3 py-1 rounded-full font-extrabold text-stone-950 transition-all hover:scale-105"
+                className="inline-flex items-center gap-1.5 bg-stone-950/10 hover:bg-stone-950/20 px-3 py-1 rounded-full font-black text-stone-950 transition-all hover:scale-105"
               >
-                <Phone className="w-3.5 h-3.5 text-stone-900" />
+                <Phone className="w-3.5 h-3.5 text-stone-950" />
                 <span>TELEFONE FIXO: {COMPANY_DATA.phones.landline} (LIGAR AGORA)</span>
               </a>
 
               <Link
                 to="/regioes-atendidas"
-                className="inline-flex items-center gap-1.5 bg-stone-950 text-stone-100 hover:bg-stone-900 px-3 py-1 rounded-full shadow transition-all hover:scale-105 font-bold"
+                className="inline-flex items-center gap-1.5 bg-stone-950 text-stone-100 hover:bg-stone-900 px-3 py-1 rounded-full shadow-md transition-all hover:scale-105 font-black"
               >
                 <Award className="w-3.5 h-3.5 text-amber-400" />
                 <span>🚚 PRONTA ENTREGA EM 75 BAIRROS DE CURITIBA E REGIÃO</span>
               </Link>
 
-              <span className="text-stone-950/40 font-bold">•</span>
+              <span className="text-stone-950/40 font-black">•</span>
             </div>
           ))}
         </div>

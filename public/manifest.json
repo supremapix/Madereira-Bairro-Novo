@@ -1,0 +1,17 @@
+{
+  "short_name": "Bairro Novo",
+  "name": "Madeireira Bairro Novo Curitiba",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#0c0a09",
+  "theme_color": "#d97706",
+  "display": "standalone",
+  "orientation": "portrait",
+  "description": "Venda de Madeira de Pinus, Pinus Tratado, Caibros, Vigas e Madeirite em Curitiba e RMC."
+}

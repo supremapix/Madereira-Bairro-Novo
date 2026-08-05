@@ -1,0 +1,32 @@
+User-agent: *
+Allow: /
+
+# LLM & AI Search Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Copilot
+Allow: /
+
+# Sitemaps
+Sitemap: https://madeireirabairronovo.com.br/sitemap.xml
+Sitemap: https://madeireirabairronovo.com.br/sitemap-pages.xml
+Sitemap: https://madeireirabairronovo.com.br/sitemap-products.xml
+Sitemap: https://madeireirabairronovo.com.br/sitemap-blog.xml
+Sitemap: https://madeireirabairronovo.com.br/sitemap-images.xml
+Sitemap: https://madeireirabairronovo.com.br/sitemap-locations.xml

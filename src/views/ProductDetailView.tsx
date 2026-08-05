@@ -7,7 +7,7 @@ import {
   ShieldCheck,
   Truck,
   MessageCircle,
-  Sparkles,
+  Calculator,
   Ruler,
   Layers
 } from 'lucide-react';
@@ -142,7 +142,7 @@ export function ProductDetailView({ onOpenBudget }: { onOpenBudget?: (slug?: str
                     onClick={() => onOpenBudget?.(product.slug)}
                     className="w-full bg-stone-950 hover:bg-stone-900 text-white font-bold py-3 rounded-xl text-xs sm:text-sm shadow-md border border-amber-400/60 hover:border-amber-300 flex items-center justify-center gap-2 active:scale-95 transition-all min-h-[46px]"
                   >
-                    <Sparkles className="w-4 h-4 text-amber-400" />
+                    <Calculator className="w-4 h-4 text-amber-400" />
                     <span>Cotar Produto</span>
                   </button>
 

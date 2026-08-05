@@ -3,7 +3,7 @@ import { EnhancedSEO } from '../components/EnhancedSEO';
 import { BLOG_POSTS_DATA } from '../data/blog';
 import { PRODUCTS_DATA } from '../data/products';
 import { COMPANY_DATA } from '../data/company';
-import { Clock, User, Calendar, ArrowLeft, MessageCircle } from 'lucide-react';
+import { Clock, User, Calendar, ArrowLeft, MessageCircle, Calculator } from 'lucide-react';
 
 export function BlogPostView({ onOpenBudget }: { onOpenBudget?: (slug?: string) => void }) {
   const { slug } = useParams<{ slug: string }>();
@@ -124,9 +124,10 @@ export function BlogPostView({ onOpenBudget }: { onOpenBudget?: (slug?: string) 
                     </div>
                     <button
                       onClick={() => onOpenBudget?.(prod.slug)}
-                      className="bg-amber-500 text-stone-950 font-bold px-3 py-1.5 rounded-lg text-xs hover:bg-amber-400"
+                      className="bg-amber-500 hover:bg-amber-400 text-stone-950 font-bold px-3 py-1.5 rounded-lg text-xs flex items-center gap-1 transition-colors shrink-0"
                     >
-                      Cotar
+                      <Calculator className="w-3.5 h-3.5 text-stone-950" />
+                      <span>Cotar</span>
                     </button>
                   </div>
                 ))}

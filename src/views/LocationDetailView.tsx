@@ -11,7 +11,8 @@ import {
   ShieldCheck,
   MessageCircle,
   Sparkles,
-  ChevronRight
+  ChevronRight,
+  Calculator
 } from 'lucide-react';
 
 export function LocationDetailView({ onOpenBudget }: { onOpenBudget?: (slug?: string) => void }) {
@@ -173,9 +174,10 @@ export function LocationDetailView({ onOpenBudget }: { onOpenBudget?: (slug?: st
                   </div>
                   <button
                     onClick={() => onOpenBudget?.(p.slug)}
-                    className="bg-amber-500 hover:bg-amber-400 text-stone-950 font-bold px-3 py-2 rounded-xl text-xs shrink-0"
+                    className="bg-amber-500 hover:bg-amber-400 text-stone-950 font-bold px-3.5 py-2 rounded-xl text-xs shrink-0 flex items-center gap-1.5 shadow-sm active:scale-95 transition-all"
                   >
-                    Cotar
+                    <Calculator className="w-3.5 h-3.5 text-stone-950" />
+                    <span>Cotar</span>
                   </button>
                 </div>
               ))}

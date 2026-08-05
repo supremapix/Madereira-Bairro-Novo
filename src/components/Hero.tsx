@@ -67,7 +67,7 @@ export function Hero({ onOpenBudget }: { onOpenBudget?: () => void }) {
             </div>
             <div className="flex items-center justify-center gap-2.5 bg-stone-950/80 backdrop-blur-xl p-4 rounded-2xl border border-amber-500/20 shadow-xl hover:border-amber-400/40 transition-colors">
               <ShieldCheck className="w-4 h-4 text-amber-400 shrink-0" />
-              <span className="tracking-wide">Tratamento Autoclave CCA</span>
+              <span className="tracking-wide">Pinus Serrado In Natura</span>
             </div>
             <div className="flex items-center justify-center gap-2.5 bg-stone-950/80 backdrop-blur-xl p-4 rounded-2xl border border-amber-500/20 shadow-xl hover:border-amber-400/40 transition-colors">
               <Award className="w-4 h-4 text-amber-400 shrink-0" />

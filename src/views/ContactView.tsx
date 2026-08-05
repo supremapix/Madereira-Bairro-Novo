@@ -1,6 +1,6 @@
 import { EnhancedSEO } from '../components/EnhancedSEO';
 import { COMPANY_DATA } from '../data/company';
-import { MapPin, Phone, MessageCircle, Mail, Clock, ExternalLink, Send, Star, Navigation } from 'lucide-react';
+import { MapPin, Phone, MessageCircle, Mail, Clock, ExternalLink, Calculator, Star, Navigation } from 'lucide-react';
 
 export function ContactView({ onOpenBudget }: { onOpenBudget?: () => void }) {
   return (
@@ -131,7 +131,7 @@ export function ContactView({ onOpenBudget }: { onOpenBudget?: () => void }) {
                   onClick={onOpenBudget}
                   className="bg-stone-950 hover:bg-stone-900 text-white font-bold px-7 py-3 rounded-2xl text-xs sm:text-sm shadow-md inline-flex items-center gap-2 border border-amber-400/60 hover:border-amber-300 min-h-[46px]"
                 >
-                  <Send className="w-4 h-4 text-amber-400" />
+                  <Calculator className="w-4 h-4 text-amber-400" />
                   <span>Solicitar Orçamento</span>
                 </button>
               </div>

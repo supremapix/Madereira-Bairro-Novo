@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, ShieldCheck, Check, Sparkles } from 'lucide-react';
+import { ArrowRight, ShieldCheck, Check, Sparkles, Calculator } from 'lucide-react';
 import { Product } from '../types';
 
 export function ProductCard({
@@ -93,7 +93,7 @@ export function ProductCard({
               onClick={() => onOpenBudget?.(product.slug)}
               className="group/btn bg-stone-950 hover:bg-stone-900 text-white font-bold py-2.5 px-3 rounded-xl text-xs flex items-center justify-center gap-1.5 shadow-md border border-amber-400/80 hover:border-amber-300 transition-all active:scale-95 min-h-[44px]"
             >
-              <Sparkles className="w-3.5 h-3.5 text-amber-400 shrink-0 group-hover/btn:rotate-12 transition-transform" />
+              <Calculator className="w-3.5 h-3.5 text-amber-400 shrink-0 group-hover/btn:rotate-12 transition-transform" />
               <span className="tracking-wide">Cotar Agora</span>
             </button>
           </div>

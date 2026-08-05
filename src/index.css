@@ -35,3 +35,36 @@
 .animate-marquee:hover {
   animation-play-state: paused;
 }
+
+@keyframes borderGlowSweep {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-border-glow {
+  background-size: 200% 200%;
+  animation: borderGlowSweep 5s ease infinite;
+}
+
+@keyframes shimmerPulse {
+  0%, 100% {
+    opacity: 0.5;
+    transform: scaleX(0.95);
+  }
+  50% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+.animate-shimmer-pulse {
+  animation: shimmerPulse 3s ease-in-out infinite;
+}
+

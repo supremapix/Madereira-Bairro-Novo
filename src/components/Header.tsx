@@ -121,19 +121,29 @@ export function Header({ onOpenBudget }: { onOpenBudget?: () => void }) {
         </div>
       </div>
 
-      {/* Main Glassmorphic Sticky Header */}
+      {/* Main Glassmorphic Sticky Header with Luxury Animated Fusion Borders */}
       <header
-        className={`sticky top-0 z-40 transition-all duration-300 ${
+        className={`sticky top-0 z-40 transition-all duration-300 relative overflow-hidden ${
           isScrolled
-            ? 'bg-stone-900/90 backdrop-blur-md shadow-lg shadow-black/20 border-b border-amber-900/20 py-2.5'
-            : 'bg-stone-900/95 border-b border-stone-800 py-3.5'
+            ? 'bg-stone-950/95 backdrop-blur-xl shadow-[0_10px_30px_rgba(0,0,0,0.8)] py-2.5'
+            : 'bg-stone-950/90 backdrop-blur-lg py-3.5'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-          {/* Logo with wood grain motif */}
+        {/* Animated Top Golden Light Line - Luxury Fusion */}
+        <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-amber-400/80 to-transparent animate-border-glow pointer-events-none" />
+
+        {/* Animated Bottom Golden Light Line & Glow - Luxury Fusion */}
+        <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gradient-to-r from-amber-500/0 via-amber-400/90 to-amber-500/0 animate-border-glow shadow-[0_0_15px_rgba(245,158,11,0.6)] pointer-events-none" />
+        <div className="absolute bottom-0 left-1/4 right-1/4 h-[2px] bg-gradient-to-r from-transparent via-amber-300 to-transparent animate-shimmer-pulse pointer-events-none blur-[1px]" />
+
+        {/* Subtle Ambient Gold Hue */}
+        <div className="absolute inset-0 bg-gradient-to-r from-amber-500/5 via-amber-400/10 to-amber-500/5 pointer-events-none" />
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between relative z-10">
+          {/* Logo with wood grain motif & Luxury Animated Border Frame */}
           <Link to="/" className="flex items-center gap-3 group">
-            <div className="relative w-11 h-11 rounded-xl bg-amber-600 p-0.5 shadow-md group-hover:scale-105 transition-transform">
-              <div className="w-full h-full bg-stone-950 rounded-[10px] flex items-center justify-center text-amber-500 group-hover:text-amber-400 transition-colors">
+            <div className="relative w-11 h-11 rounded-xl p-[1px] bg-gradient-to-br from-amber-300 via-amber-500 to-amber-700 animate-border-glow shadow-[0_0_15px_rgba(245,158,11,0.25)] group-hover:scale-105 transition-transform">
+              <div className="w-full h-full bg-stone-950 rounded-[10px] flex items-center justify-center text-amber-400 group-hover:text-amber-300 transition-colors">
                 <Trees className="w-6 h-6 stroke-[2.25]" />
               </div>
             </div>
@@ -141,7 +151,7 @@ export function Header({ onOpenBudget }: { onOpenBudget?: () => void }) {
               <span className="block text-lg sm:text-xl font-black text-stone-100 tracking-tight leading-none group-hover:text-amber-400 transition-colors">
                 BAIRRO NOVO
               </span>
-              <span className="block text-[11px] font-semibold text-amber-500 tracking-widest uppercase">
+              <span className="block text-[11px] font-semibold text-amber-400 tracking-widest uppercase opacity-90">
                 Comércio de Madeiras
               </span>
             </div>
@@ -182,16 +192,17 @@ export function Header({ onOpenBudget }: { onOpenBudget?: () => void }) {
                           animate={{ opacity: 1, y: 0, scale: 1 }}
                           exit={{ opacity: 0, y: 8, scale: 0.95 }}
                           transition={{ duration: 0.15 }}
-                          className="absolute top-full left-0 w-64 bg-stone-900/95 backdrop-blur-xl border border-stone-800 rounded-xl shadow-2xl py-2 mt-1 z-50"
+                          className="absolute top-full left-0 w-64 bg-stone-950/95 backdrop-blur-xl border border-amber-500/30 rounded-2xl shadow-[0_15px_40px_rgba(0,0,0,0.9)] py-2 mt-2 z-50 overflow-hidden"
                         >
-                          <div className="px-3 py-1.5 text-xs font-bold uppercase text-amber-500 tracking-wider border-b border-stone-800">
+                          <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-amber-400 to-transparent animate-border-glow" />
+                          <div className="px-4 py-2 text-xs font-bold uppercase text-amber-400 tracking-wider border-b border-stone-800/80">
                             Produtos em Destaque
                           </div>
                           {quickProducts.map((p) => (
                             <Link
                               key={p.path}
                               to={p.path}
-                              className="block px-4 py-2.5 text-sm text-stone-300 hover:text-amber-400 hover:bg-amber-950/30 transition-colors font-medium border-l-2 border-transparent hover:border-amber-500"
+                              className="block px-4 py-2.5 text-sm text-stone-300 hover:text-amber-300 hover:bg-amber-950/30 transition-colors font-medium border-l-2 border-transparent hover:border-amber-400"
                             >
                               {p.name}
                             </Link>

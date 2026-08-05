@@ -3,8 +3,7 @@ import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'motion/react';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
-import { FloatingContacts } from './components/FloatingContacts';
-import { ScrollToTop } from './components/ScrollToTop';
+import { FloatingActions } from './components/FloatingActions';
 import { BudgetModal } from './components/BudgetModal';
 
 import { HomeView } from './views/HomeView';
@@ -106,11 +105,8 @@ function AppContent() {
       {/* Footer */}
       <Footer onOpenBudget={() => handleOpenBudget()} />
 
-      {/* Smart Radial Floating Contact Options */}
-      <FloatingContacts onOpenBudget={() => handleOpenBudget()} />
-
-      {/* Eye-catching Scroll To Top Button */}
-      <ScrollToTop />
+      {/* Floating Share, Quick Contact and Back to Top Actions */}
+      <FloatingActions onOpenBudget={() => handleOpenBudget()} />
 
       {/* Quick Budget Modal */}
       <BudgetModal

@@ -27,20 +27,20 @@ export function Footer({ onOpenBudget }: { onOpenBudget?: () => void }) {
         loop
         muted
         playsInline
-        className="absolute inset-0 w-full h-full object-cover pointer-events-none opacity-70 brightness-105 contrast-110"
+        className="absolute inset-0 w-full h-full object-cover pointer-events-none opacity-90 brightness-110 contrast-105"
       >
         <source src="https://img.supremasite.com.br/madeira.mp4" type="video/mp4" />
       </video>
 
-      {/* Dark Gradient Overlay for Text Readability */}
-      <div className="absolute inset-0 bg-stone-950/75 bg-gradient-to-t from-stone-950 via-stone-950/80 to-stone-950/60 pointer-events-none" />
+      {/* Balanced Overlay for Text Readability & High Video Visibility */}
+      <div className="absolute inset-0 bg-stone-950/45 bg-gradient-to-t from-stone-950 via-stone-950/50 to-stone-950/30 pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
         {/* Top Company Identity & Fast CTA */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 pb-12 border-b border-stone-800">
           <div className="lg:col-span-5 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-600 to-amber-800 p-0.5 shadow-lg">
+              <div className="w-12 h-12 rounded-xl bg-amber-600 p-0.5 shadow-lg">
                 <div className="w-full h-full bg-stone-950 rounded-[10px] flex items-center justify-center text-amber-500">
                   <Trees className="w-7 h-7 stroke-[2.25]" />
                 </div>

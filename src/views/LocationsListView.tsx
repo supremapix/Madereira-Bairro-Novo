@@ -20,16 +20,16 @@ export function LocationsListView() {
         keywords={['Bairros de Curitiba Madeireira', 'Entrega de Madeira Curitiba', 'Cidades RMC Madeireira']}
       />
 
-      <div className="bg-stone-950 text-stone-100 min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+      <div className="bg-white text-stone-900 min-h-screen py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto space-y-10">
           <div className="text-center space-y-3 max-w-3xl mx-auto">
-            <span className="text-xs font-black uppercase tracking-widest text-amber-500 bg-amber-500/10 border border-amber-500/20 px-3.5 py-1 rounded-full">
+            <span className="text-xs font-black uppercase tracking-widest text-amber-800 bg-amber-100 border border-amber-300 px-3.5 py-1 rounded-full">
               Logística Local
             </span>
-            <h1 className="text-3xl sm:text-5xl font-black text-stone-100">
+            <h1 className="text-3xl sm:text-5xl font-black text-stone-900">
               Regiões Atendidas pela Bairro Novo Madeiras
             </h1>
-            <p className="text-sm text-stone-300">
+            <p className="text-sm text-stone-600">
               Entregamos com frota própria em todos os 75 bairros oficiais de Curitiba, comunidades populares e municípios vizinhos da RMC.
             </p>
           </div>
@@ -42,14 +42,14 @@ export function LocationsListView() {
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               placeholder="Digite o nome do seu bairro ou cidade (ex: Batel, Sítio Cercado, São José)..."
-              className="w-full bg-stone-900 border border-stone-800 focus:border-amber-500 rounded-2xl pl-12 pr-4 py-3 text-sm text-stone-100 focus:outline-none transition-colors"
+              className="w-full bg-stone-50 border border-stone-300 focus:border-amber-500 rounded-2xl pl-12 pr-4 py-3 text-sm text-stone-900 focus:outline-none transition-colors shadow-sm"
             />
           </div>
 
           {searchTerm ? (
             /* Search Results Grid */
             <div className="space-y-4">
-              <h2 className="text-lg font-bold text-amber-400">
+              <h2 className="text-lg font-bold text-amber-800">
                 Resultados para "{searchTerm}" ({filtered.length})
               </h2>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 text-xs">
@@ -57,7 +57,7 @@ export function LocationsListView() {
                   <Link
                     key={item.id}
                     to={`/${item.type === 'bairro' ? 'bairro' : 'cidade'}/${item.slug}`}
-                    className="p-3 rounded-xl bg-stone-900 hover:bg-amber-950/40 text-stone-200 hover:text-amber-400 border border-stone-800 transition-colors text-center line-clamp-1"
+                    className="p-3 rounded-xl bg-stone-50 hover:bg-amber-100 text-stone-800 hover:text-amber-900 border border-stone-200 transition-colors text-center line-clamp-1 font-medium"
                   >
                     {item.name}
                   </Link>
@@ -68,9 +68,9 @@ export function LocationsListView() {
             /* Standard Full Categorized Grids */
             <div className="space-y-8">
               {/* Curitiba Official Neighborhoods */}
-              <div className="bg-stone-900 p-6 sm:p-8 rounded-3xl border border-stone-800 space-y-4">
-                <h2 className="text-xl font-bold text-amber-400 flex items-center gap-2">
-                  <MapPin className="w-5 h-5 text-amber-500" />
+              <div className="bg-stone-50 p-6 sm:p-8 rounded-3xl border border-stone-200 shadow-sm space-y-4">
+                <h2 className="text-xl font-bold text-amber-800 flex items-center gap-2">
+                  <MapPin className="w-5 h-5 text-amber-600" />
                   Todos os 75 Bairros Oficiais de Curitiba
                 </h2>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 text-xs">
@@ -80,7 +80,7 @@ export function LocationsListView() {
                       <Link
                         key={b}
                         to={`/bairro/${slug}`}
-                        className="p-2.5 rounded-xl bg-stone-950 hover:bg-amber-950/40 text-stone-300 hover:text-amber-400 border border-stone-800 transition-colors text-center line-clamp-1"
+                        className="p-2.5 rounded-xl bg-white hover:bg-amber-100 text-stone-800 hover:text-amber-900 border border-stone-200 transition-colors text-center line-clamp-1"
                       >
                         {b}
                       </Link>
@@ -90,9 +90,9 @@ export function LocationsListView() {
               </div>
 
               {/* Popular Communities */}
-              <div className="bg-stone-900 p-6 sm:p-8 rounded-3xl border border-stone-800 space-y-4">
-                <h2 className="text-xl font-bold text-amber-400 flex items-center gap-2">
-                  <Users className="w-5 h-5 text-amber-500" />
+              <div className="bg-stone-50 p-6 sm:p-8 rounded-3xl border border-stone-200 shadow-sm space-y-4">
+                <h2 className="text-xl font-bold text-amber-800 flex items-center gap-2">
+                  <Users className="w-5 h-5 text-amber-600" />
                   Comunidades e Vilas Populares
                 </h2>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 text-xs">
@@ -102,7 +102,7 @@ export function LocationsListView() {
                       <Link
                         key={c}
                         to={`/bairro/${slug}`}
-                        className="p-2.5 rounded-xl bg-stone-950 hover:bg-amber-950/40 text-stone-300 hover:text-amber-400 border border-stone-800 transition-colors text-center line-clamp-1"
+                        className="p-2.5 rounded-xl bg-white hover:bg-amber-100 text-stone-800 hover:text-amber-900 border border-stone-200 transition-colors text-center line-clamp-1"
                       >
                         {c}
                       </Link>
@@ -112,9 +112,9 @@ export function LocationsListView() {
               </div>
 
               {/* RMC Cities */}
-              <div className="bg-stone-900 p-6 sm:p-8 rounded-3xl border border-stone-800 space-y-4">
-                <h2 className="text-xl font-bold text-amber-400 flex items-center gap-2">
-                  <Truck className="w-5 h-5 text-amber-500" />
+              <div className="bg-stone-50 p-6 sm:p-8 rounded-3xl border border-stone-200 shadow-sm space-y-4">
+                <h2 className="text-xl font-bold text-amber-800 flex items-center gap-2">
+                  <Truck className="w-5 h-5 text-amber-600" />
                   Cidades da Região Metropolitana
                 </h2>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 text-xs">
@@ -124,7 +124,7 @@ export function LocationsListView() {
                       <Link
                         key={city}
                         to={`/cidade/${slug}`}
-                        className="p-3 rounded-xl bg-stone-950 hover:bg-amber-950/40 text-stone-300 hover:text-amber-400 border border-stone-800 transition-colors text-center font-bold line-clamp-1"
+                        className="p-3 rounded-xl bg-white hover:bg-amber-100 text-stone-800 hover:text-amber-900 border border-stone-200 transition-colors text-center font-bold line-clamp-1"
                       >
                         {city}
                       </Link>

@@ -173,7 +173,7 @@ _Enviado através do site madeireirabairronovo.com.br_`;
               <div className="pt-2">
                 <button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-500 hover:to-emerald-400 text-white font-black py-3.5 rounded-xl text-sm shadow-xl flex items-center justify-center gap-2 active:scale-98 transition-all min-h-[48px]"
+                  className="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3.5 rounded-xl text-sm shadow-xl flex items-center justify-center gap-2 active:scale-98 transition-all min-h-[48px]"
                 >
                   <Send className="w-4 h-4" />
                   <span>Enviar Orçamento</span>

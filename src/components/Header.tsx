@@ -132,7 +132,7 @@ export function Header({ onOpenBudget }: { onOpenBudget?: () => void }) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           {/* Logo with wood grain motif */}
           <Link to="/" className="flex items-center gap-3 group">
-            <div className="relative w-11 h-11 rounded-xl bg-gradient-to-br from-amber-600 to-amber-800 p-0.5 shadow-md group-hover:scale-105 transition-transform">
+            <div className="relative w-11 h-11 rounded-xl bg-amber-600 p-0.5 shadow-md group-hover:scale-105 transition-transform">
               <div className="w-full h-full bg-stone-950 rounded-[10px] flex items-center justify-center text-amber-500 group-hover:text-amber-400 transition-colors">
                 <Trees className="w-6 h-6 stroke-[2.25]" />
               </div>
@@ -374,7 +374,7 @@ export function Header({ onOpenBudget }: { onOpenBudget?: () => void }) {
                   setMobileMenuOpen(false);
                   onOpenBudget?.();
                 }}
-                className="w-full bg-gradient-to-r from-amber-500 to-amber-600 text-stone-950 font-black py-3.5 rounded-2xl text-base shadow-xl mt-4 flex items-center justify-center gap-2 active:scale-98 min-h-[52px]"
+                className="w-full bg-amber-500 hover:bg-amber-400 text-stone-950 font-black py-3.5 rounded-2xl text-base shadow-xl mt-4 flex items-center justify-center gap-2 active:scale-98 min-h-[52px]"
               >
                 <Sparkles className="w-5 h-5 fill-stone-950" />
                 <span>Solicitar Orçamento</span>

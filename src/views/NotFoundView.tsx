@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { EnhancedSEO } from '../components/EnhancedSEO';
-import { Home, ShoppingBag, MapPin, Search } from 'lucide-react';
+import { Home, ShoppingBag, MapPin } from 'lucide-react';
 
 export function NotFoundView() {
   return (
@@ -11,15 +11,15 @@ export function NotFoundView() {
         noIndex={true}
       />
 
-      <div className="bg-stone-950 text-stone-100 min-h-[70vh] flex items-center justify-center py-16 px-4">
-        <div className="max-w-md w-full bg-stone-900 border border-stone-800 rounded-3xl p-8 text-center space-y-6">
-          <div className="w-16 h-16 rounded-2xl bg-amber-500/10 text-amber-500 flex items-center justify-center mx-auto text-2xl font-black">
+      <div className="bg-white text-stone-900 min-h-[70vh] flex items-center justify-center py-16 px-4">
+        <div className="max-w-md w-full bg-stone-50 border border-stone-200 rounded-3xl p-8 text-center space-y-6 shadow-sm">
+          <div className="w-16 h-16 rounded-2xl bg-amber-500/10 text-amber-600 flex items-center justify-center mx-auto text-2xl font-black">
             404
           </div>
 
           <div className="space-y-2">
-            <h1 className="text-2xl font-black text-stone-100">Página Não Encontrada</h1>
-            <p className="text-xs text-stone-400">
+            <h1 className="text-2xl font-black text-stone-900">Página Não Encontrada</h1>
+            <p className="text-xs text-stone-600">
               A URL que você tentou acessar não existe ou foi alterada. Utilize um dos links abaixo para voltar ao site.
             </p>
           </div>
@@ -27,7 +27,7 @@ export function NotFoundView() {
           <div className="grid grid-cols-1 gap-2.5 text-xs font-bold">
             <Link
               to="/"
-              className="bg-amber-500 text-stone-950 p-3 rounded-xl flex items-center justify-center gap-2 hover:bg-amber-400"
+              className="bg-amber-500 text-stone-950 p-3 rounded-xl flex items-center justify-center gap-2 hover:bg-amber-400 shadow-sm"
             >
               <Home className="w-4 h-4" />
               <span>Voltar para a Página Inicial</span>
@@ -35,17 +35,17 @@ export function NotFoundView() {
 
             <Link
               to="/produtos"
-              className="bg-stone-800 text-stone-200 p-3 rounded-xl flex items-center justify-center gap-2 hover:bg-stone-700 border border-stone-700"
+              className="bg-white text-stone-800 p-3 rounded-xl flex items-center justify-center gap-2 hover:bg-stone-100 border border-stone-200 shadow-sm"
             >
-              <ShoppingBag className="w-4 h-4 text-amber-500" />
+              <ShoppingBag className="w-4 h-4 text-amber-600" />
               <span>Ver Catálogo de Produtos</span>
             </Link>
 
             <Link
               to="/regioes-atendidas"
-              className="bg-stone-800 text-stone-200 p-3 rounded-xl flex items-center justify-center gap-2 hover:bg-stone-700 border border-stone-700"
+              className="bg-white text-stone-800 p-3 rounded-xl flex items-center justify-center gap-2 hover:bg-stone-100 border border-stone-200 shadow-sm"
             >
-              <MapPin className="w-4 h-4 text-amber-500" />
+              <MapPin className="w-4 h-4 text-amber-600" />
               <span>Ver Regiões de Entrega</span>
             </Link>
           </div>

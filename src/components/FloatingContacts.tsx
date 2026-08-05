@@ -123,7 +123,7 @@ export function FloatingContacts({ onOpenBudget }: { onOpenBudget?: () => void }
         className={`group relative flex items-center justify-center p-4 rounded-2xl shadow-2xl transition-all duration-300 border active:scale-95 min-w-[56px] min-h-[56px] ${
           isOpen
             ? 'bg-stone-800 text-stone-200 border-amber-500/50'
-            : 'bg-gradient-to-r from-emerald-600 to-emerald-500 text-white border-emerald-400/40 hover:scale-105 shadow-emerald-950/40'
+            : 'bg-emerald-600 hover:bg-emerald-500 text-white border-emerald-400/40 hover:scale-105 shadow-emerald-950/40'
         }`}
       >
         {!isOpen && (

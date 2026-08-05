@@ -527,7 +527,7 @@ export const PRODUCTS_DATA: Product[] = [
       'Proporciona visual refinado e moderno',
       'Facilidade imediata na aplicação de tinta e verniz'
     ],
-    imageUrl: 'https://chaledemadeira.com/wp-content/uploads/2024/03/Madeira-Aparelhada-o-que-e-Entenda-o-processo-e-precos.jpg',
+    imageUrl: 'https://scontent.xx.fbcdn.net/v/t39.105495-1/767031641_892050616913117_3088667599027889773_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=105&_nc_ohc=UXQxrjdbc9IQ7kNvwF70HqS&sdl=0&ccb=14-4&oh=00_AQFr7V_dn8X6YEoemqOj0qNTpSYLsq9QkpcqteBK8sOuzQ&oe=6A7923DB&_nc_sid=a21977',
     imageAlt: 'Pranchas de pinus beneficiado e aparelhado para marcenaria',
     treatmentType: 'Beneficiado'
   },

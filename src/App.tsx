@@ -30,7 +30,7 @@ function AppContent() {
   };
 
   return (
-    <div className="min-h-screen bg-stone-950 text-stone-100 flex flex-col font-sans selection:bg-amber-500 selection:text-stone-950">
+    <div className="min-h-screen bg-white text-stone-900 flex flex-col font-sans selection:bg-amber-500 selection:text-stone-950">
       {/* Header */}
       <Header onOpenBudget={() => handleOpenBudget()} />
 

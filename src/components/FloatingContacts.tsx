@@ -22,7 +22,7 @@ export function FloatingContacts({ onOpenBudget }: { onOpenBudget?: () => void }
       href: `https://wa.me/${COMPANY_DATA.phones.whatsappRaw}?text=${encodeURIComponent(
         'Olá! Gostaria de cotar madeira de pinus com entrega rápida.'
       )}`,
-      color: 'bg-emerald-600 text-white hover:bg-emerald-500',
+      color: 'bg-stone-950 text-white hover:bg-stone-900 border border-emerald-400/60 hover:border-emerald-300',
       isExternal: true
     },
     {
@@ -30,7 +30,7 @@ export function FloatingContacts({ onOpenBudget }: { onOpenBudget?: () => void }
       label: 'Ligar para Fixo',
       icon: Phone,
       href: `tel:${COMPANY_DATA.phones.landlineRaw}`,
-      color: 'bg-amber-600 text-stone-950 hover:bg-amber-500',
+      color: 'bg-stone-950 text-white hover:bg-stone-900 border border-amber-400/60 hover:border-amber-300',
       isExternal: false
     },
     {
@@ -38,7 +38,7 @@ export function FloatingContacts({ onOpenBudget }: { onOpenBudget?: () => void }
       label: 'Como Chegar (Maps)',
       icon: MapPin,
       href: COMPANY_DATA.social.googleMaps,
-      color: 'bg-blue-600 text-white hover:bg-blue-500',
+      color: 'bg-stone-950 text-white hover:bg-stone-900 border border-blue-400/60 hover:border-blue-300',
       isExternal: true
     },
     {
@@ -49,7 +49,7 @@ export function FloatingContacts({ onOpenBudget }: { onOpenBudget?: () => void }
         setIsOpen(false);
         onOpenBudget?.();
       },
-      color: 'bg-amber-500 text-stone-950 hover:bg-amber-400 font-bold',
+      color: 'bg-stone-950 text-white hover:bg-stone-900 border border-amber-400/80 hover:border-amber-300 font-bold',
       isExternal: false
     },
     {
@@ -57,7 +57,7 @@ export function FloatingContacts({ onOpenBudget }: { onOpenBudget?: () => void }
       label: 'Enviar E-mail',
       icon: Mail,
       href: `mailto:${COMPANY_DATA.email}`,
-      color: 'bg-stone-800 text-stone-200 hover:bg-stone-700',
+      color: 'bg-stone-950 text-stone-200 hover:bg-stone-900 border border-stone-700 hover:border-amber-400/50',
       isExternal: false
     }
   ];
@@ -122,8 +122,8 @@ export function FloatingContacts({ onOpenBudget }: { onOpenBudget?: () => void }
         aria-label="Abrir Opções de Contato"
         className={`group relative flex items-center justify-center p-4 rounded-2xl shadow-2xl transition-all duration-300 border active:scale-95 min-w-[56px] min-h-[56px] ${
           isOpen
-            ? 'bg-stone-800 text-stone-200 border-amber-500/50'
-            : 'bg-emerald-600 hover:bg-emerald-500 text-white border-emerald-400/40 hover:scale-105 shadow-emerald-950/40'
+            ? 'bg-stone-900 text-stone-200 border-amber-500/50'
+            : 'bg-stone-950 hover:bg-stone-900 text-white border-amber-400/70 hover:border-amber-300 shadow-[0_10px_30px_rgba(0,0,0,0.8)]'
         }`}
       >
         {!isOpen && (

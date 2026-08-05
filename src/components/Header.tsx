@@ -77,17 +77,20 @@ export function Header({ onOpenBudget }: { onOpenBudget?: () => void }) {
                 <span>PROMOÇÕES HOJE: CATÁLOGO COMPLETO</span>
               </Link>
 
-              <a
-                href={`https://wa.me/${COMPANY_DATA.phones.whatsappRaw}?text=${encodeURIComponent(
-                  'Olá! Vi as promoções no site e gostaria de solicitar um orçamento de madeira.'
-                )}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 bg-emerald-950 text-emerald-300 hover:bg-emerald-900 border border-emerald-500/40 px-3 py-1 rounded-full shadow-md transition-all hover:scale-105 active:scale-95 font-black"
-              >
-                <MessageCircle className="w-3.5 h-3.5 fill-emerald-400 text-emerald-950" />
-                <span>WHATSAPP VENDAS: {COMPANY_DATA.phones.whatsapp}</span>
-              </a>
+              <div className="inline-flex items-center gap-1.5">
+                <a
+                  href={`https://wa.me/${COMPANY_DATA.phones.whatsappRaw}?text=${encodeURIComponent(
+                    'Olá! Vi as promoções no site e gostaria de solicitar um orçamento de madeira.'
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 bg-emerald-950 text-emerald-300 hover:bg-emerald-900 border border-emerald-500/40 px-3 py-1 rounded-full shadow-md transition-all hover:scale-105 active:scale-95 font-black"
+                >
+                  <MessageCircle className="w-3.5 h-3.5 fill-emerald-400 text-emerald-950" />
+                  <span>WHATSAPP VENDAS</span>
+                </a>
+                <span className="font-extrabold text-stone-950 text-xs">(41) 3013-4692</span>
+              </div>
 
               <a
                 href="https://maps.google.com/?q=R.+Coronel+Joaquim+Antônio+de+Azevedo,+1459+-+Curitiba"
@@ -99,13 +102,16 @@ export function Header({ onOpenBudget }: { onOpenBudget?: () => void }) {
                 <span>ENDEREÇO: R. Coronel Joaquim Antônio de Azevedo, 1459 - Curitiba</span>
               </a>
 
-              <a
-                href={`tel:${COMPANY_DATA.phones.landlineRaw}`}
-                className="inline-flex items-center gap-1.5 bg-stone-950/10 hover:bg-stone-950/20 px-3 py-1 rounded-full font-black text-stone-950 transition-all hover:scale-105"
-              >
-                <Phone className="w-3.5 h-3.5 text-stone-950" />
-                <span>TELEFONE FIXO: {COMPANY_DATA.phones.landline}</span>
-              </a>
+              <div className="inline-flex items-center gap-1.5">
+                <a
+                  href={`tel:${COMPANY_DATA.phones.landlineRaw}`}
+                  className="inline-flex items-center gap-1.5 bg-stone-950/10 hover:bg-stone-950/20 px-3 py-1 rounded-full font-black text-stone-950 transition-all hover:scale-105"
+                >
+                  <Phone className="w-3.5 h-3.5 text-stone-950" />
+                  <span>LIGAR FIXO</span>
+                </a>
+                <span className="font-extrabold text-stone-950 text-xs">(41) 3013-4692</span>
+              </div>
 
               <Link
                 to="/regioes-atendidas"
@@ -295,19 +301,22 @@ export function Header({ onOpenBudget }: { onOpenBudget?: () => void }) {
                     )}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 px-3 rounded-xl flex items-center justify-center gap-2 text-sm shadow-md min-h-[52px]"
+                    className="bg-stone-950 hover:bg-stone-900 text-white font-bold border border-emerald-400/60 py-3 px-3 rounded-xl flex items-center justify-center gap-2 text-sm shadow-md min-h-[52px]"
                   >
-                    <MessageCircle className="w-5 h-5 fill-white" />
+                    <MessageCircle className="w-5 h-5 text-emerald-400 stroke-[2]" />
                     WhatsApp
                   </a>
                   <a
                     href={`tel:${COMPANY_DATA.phones.landlineRaw}`}
-                    className="bg-amber-600 hover:bg-amber-500 text-stone-950 font-bold py-3 px-3 rounded-xl flex items-center justify-center gap-2 text-sm shadow-md min-h-[52px]"
+                    className="bg-stone-950 hover:bg-stone-900 text-white font-bold border border-amber-400/60 py-3 px-3 rounded-xl flex items-center justify-center gap-2 text-sm shadow-md min-h-[52px]"
                   >
-                    <Phone className="w-5 h-5" />
+                    <Phone className="w-5 h-5 text-amber-400 stroke-[2]" />
                     Ligar Agora
                   </a>
                 </div>
+                <p className="text-xs font-black text-amber-400 mt-2.5 text-center tracking-wide">
+                  Fixo e WhatsApp: (41) 3013-4692
+                </p>
               </div>
 
               <div className="text-xs font-black uppercase text-amber-500 tracking-wider px-2 pt-2">
@@ -388,9 +397,9 @@ export function Header({ onOpenBudget }: { onOpenBudget?: () => void }) {
                   setMobileMenuOpen(false);
                   onOpenBudget?.();
                 }}
-                className="w-full bg-amber-500 hover:bg-amber-400 text-stone-950 font-black py-3.5 rounded-2xl text-base shadow-xl mt-4 flex items-center justify-center gap-2 active:scale-98 min-h-[52px]"
+                className="w-full bg-stone-950 hover:bg-stone-900 text-white font-bold border border-amber-400/60 hover:border-amber-300 py-3.5 rounded-2xl text-base shadow-xl mt-4 flex items-center justify-center gap-2 active:scale-98 min-h-[52px]"
               >
-                <Sparkles className="w-5 h-5 fill-stone-950" />
+                <Sparkles className="w-5 h-5 text-amber-400" />
                 <span>Solicitar Orçamento</span>
               </button>
 

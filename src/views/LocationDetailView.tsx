@@ -103,9 +103,9 @@ export function LocationDetailView({ onOpenBudget }: { onOpenBudget?: (slug?: st
             <div className="flex flex-col sm:flex-row items-center gap-3 pt-2">
               <button
                 onClick={() => onOpenBudget?.()}
-                className="w-full sm:w-auto bg-amber-500 hover:bg-amber-400 text-stone-950 font-black px-7 py-3 rounded-xl text-xs sm:text-sm shadow-md flex items-center justify-center gap-2 active:scale-95 transition-all min-h-[46px]"
+                className="w-full sm:w-auto bg-stone-950 hover:bg-stone-900 text-white font-bold px-7 py-3 rounded-xl text-xs sm:text-sm shadow-md border border-amber-400/60 hover:border-amber-300 flex items-center justify-center gap-2 active:scale-95 transition-all min-h-[46px]"
               >
-                <Sparkles className="w-4 h-4 fill-stone-950" />
+                <Sparkles className="w-4 h-4 text-amber-400" />
                 <span>Solicitar Orçamento</span>
               </button>
 
@@ -115,9 +115,9 @@ export function LocationDetailView({ onOpenBudget }: { onOpenBudget?: (slug?: st
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-7 py-3 rounded-xl text-xs sm:text-sm shadow-md flex items-center justify-center gap-2 active:scale-95 transition-all min-h-[46px]"
+                className="w-full sm:w-auto bg-stone-950 hover:bg-stone-900 text-white font-bold px-7 py-3 rounded-xl text-xs sm:text-sm shadow-md border border-emerald-400/60 hover:border-emerald-300 flex items-center justify-center gap-2 active:scale-95 transition-all min-h-[46px]"
               >
-                <MessageCircle className="w-4 h-4 fill-white stroke-[1.5]" />
+                <MessageCircle className="w-4 h-4 text-emerald-400 stroke-[2]" />
                 <span>WhatsApp Directo</span>
               </a>
             </div>

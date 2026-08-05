@@ -173,10 +173,10 @@ _Enviado através do site madeireirabairronovo.com.br_`;
               <div className="pt-2">
                 <button
                   type="submit"
-                  className="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3.5 rounded-xl text-sm shadow-xl flex items-center justify-center gap-2 active:scale-98 transition-all min-h-[48px]"
+                  className="w-full bg-stone-950 hover:bg-stone-900 text-white font-bold py-3.5 rounded-xl text-sm shadow-xl border border-amber-400/60 hover:border-amber-300 flex items-center justify-center gap-2 active:scale-98 transition-all min-h-[48px]"
                 >
-                  <Send className="w-4 h-4" />
-                  <span>Enviar Orçamento</span>
+                  <Send className="w-4 h-4 text-amber-400" />
+                  <span>Enviar Orçamento por WhatsApp</span>
                 </button>
               </div>
 

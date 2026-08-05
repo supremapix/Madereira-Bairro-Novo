@@ -66,20 +66,21 @@ export function ProductCard({
           <span className="text-emerald-700 font-bold text-[11px]">Pronta Entrega</span>
         </div>
 
-        {/* Action Buttons - Solid Single Colors */}
+        {/* Action Buttons - Black background, white text, elegant golden border */}
         <div className="grid grid-cols-2 gap-2 pt-2">
           <Link
             to={`/produto/${product.slug}`}
-            className="bg-stone-100 hover:bg-stone-200 text-stone-800 font-bold py-2.5 px-3 rounded-xl text-xs flex items-center justify-center gap-1 transition-colors border border-stone-200 min-h-[44px]"
+            className="bg-stone-900 hover:bg-stone-800 text-stone-200 font-bold py-2.5 px-3 rounded-xl text-xs flex items-center justify-center gap-1.5 transition-all border border-stone-700 hover:border-amber-400/60 min-h-[44px]"
           >
-            <span>Ver Detalhes</span>
-            <ArrowRight className="w-3.5 h-3.5" />
+            <span>Detalhes</span>
+            <ArrowRight className="w-3.5 h-3.5 text-amber-400" />
           </Link>
 
           <button
             onClick={() => onOpenBudget?.(product.slug)}
-            className="bg-amber-500 hover:bg-amber-400 text-stone-950 font-black py-2.5 px-3 rounded-xl text-xs flex items-center justify-center gap-1 shadow-md transition-all active:scale-95 min-h-[44px]"
+            className="bg-stone-950 hover:bg-stone-900 text-white font-bold py-2.5 px-3 rounded-xl text-xs flex items-center justify-center gap-1.5 shadow-md border border-amber-400/60 hover:border-amber-300 transition-all active:scale-95 min-h-[44px]"
           >
+            <Sparkles className="w-3.5 h-3.5 text-amber-400 shrink-0" />
             <span>Cotar Agora</span>
           </button>
         </div>

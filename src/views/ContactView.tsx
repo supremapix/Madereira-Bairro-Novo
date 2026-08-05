@@ -7,7 +7,7 @@ export function ContactView({ onOpenBudget }: { onOpenBudget?: () => void }) {
     <>
       <EnhancedSEO
         title="Contato e Endereço | Madeireira Bairro Novo Curitiba"
-        description="Fale com a Madeireira Bairro Novo em Curitiba. Endereço: Rua Coronel Joaquim Antônio de Azevedo, 1459, Sítio Cercado. Telefones: (41) 3013-4692 / WhatsApp (41) 99121-7114."
+        description="Fale com a Madeireira Bairro Novo em Curitiba. Endereço: Rua Coronel Joaquim Antônio de Azevedo, 1459, Sítio Cercado. Telefone Fixo e WhatsApp: (41) 3013-4692."
         canonicalPath="/contato"
         keywords={['Contato Madeireira Bairro Novo', 'Telefone Madeireira Curitiba', 'Endereço Sítio Cercado']}
       />
@@ -91,10 +91,10 @@ export function ContactView({ onOpenBudget }: { onOpenBudget?: () => void }) {
                 href={COMPANY_DATA.social.googleMaps}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full bg-amber-500 hover:bg-amber-400 text-stone-950 font-black py-3 px-4 rounded-2xl text-xs flex items-center justify-center gap-2 shadow-md transition-colors min-h-[44px]"
+                className="w-full bg-stone-950 hover:bg-stone-900 text-white font-bold py-3 px-4 rounded-2xl text-xs flex items-center justify-center gap-2 shadow-md border border-amber-400/60 hover:border-amber-300 transition-colors min-h-[44px]"
               >
                 <span>Abrir no Google Maps</span>
-                <ExternalLink className="w-4 h-4" />
+                <ExternalLink className="w-4 h-4 text-amber-400" />
               </a>
             </div>
 
@@ -117,9 +117,9 @@ export function ContactView({ onOpenBudget }: { onOpenBudget?: () => void }) {
                 </p>
                 <button
                   onClick={onOpenBudget}
-                  className="bg-emerald-600 hover:bg-emerald-500 text-white font-black px-7 py-3 rounded-2xl text-xs sm:text-sm shadow-md inline-flex items-center gap-2 min-h-[46px]"
+                  className="bg-stone-950 hover:bg-stone-900 text-white font-bold px-7 py-3 rounded-2xl text-xs sm:text-sm shadow-md inline-flex items-center gap-2 border border-amber-400/60 hover:border-amber-300 min-h-[46px]"
                 >
-                  <Send className="w-4 h-4" />
+                  <Send className="w-4 h-4 text-amber-400" />
                   <span>Solicitar Orçamento</span>
                 </button>
               </div>

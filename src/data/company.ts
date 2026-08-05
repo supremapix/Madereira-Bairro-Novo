@@ -17,8 +17,8 @@ export const COMPANY_DATA: CompanyInfo = {
   phones: {
     landline: '(41) 3013-4692',
     landlineRaw: '554130134692',
-    whatsapp: '(41) 99121-7114',
-    whatsappRaw: '5541991217114'
+    whatsapp: '(41) 3013-4692',
+    whatsappRaw: '554130134692'
   },
   email: 'bairronovomadeiras@gmail.com',
   hours: {

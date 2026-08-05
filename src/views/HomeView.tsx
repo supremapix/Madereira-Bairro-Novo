@@ -98,11 +98,11 @@ export function HomeView({ onOpenBudget }: { onOpenBudget?: (slug?: string) => v
           <div className="flex flex-wrap items-center justify-center sm:justify-start gap-4 shrink-0">
             <Link
               to="/produto/madeira-de-pinus"
-              className="group relative inline-flex items-center justify-center gap-2.5 bg-amber-500 hover:bg-amber-400 text-stone-950 font-black px-7 py-3.5 rounded-2xl text-xs sm:text-sm shadow-[0_10px_25px_rgba(245,158,11,0.3)] hover:shadow-[0_15px_35px_rgba(245,158,11,0.5)] transition-all duration-300 active:scale-95 min-h-[48px] overflow-hidden border border-amber-300"
+              className="group relative inline-flex items-center justify-center gap-2.5 bg-stone-950 hover:bg-stone-900 text-white font-bold px-7 py-3.5 rounded-2xl text-xs sm:text-sm shadow-xl hover:shadow-[0_10px_30px_rgba(245,158,11,0.25)] transition-all duration-300 active:scale-95 min-h-[48px] overflow-hidden border border-amber-400/60 hover:border-amber-300"
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out pointer-events-none" />
-              <span className="relative z-10 tracking-wide">Saber Mais Sobre Pinus</span>
-              <ChevronRight className="w-4 h-4 relative z-10 group-hover:translate-x-1 transition-transform" />
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-amber-400/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out pointer-events-none" />
+              <span className="relative z-10 tracking-wide text-white">Saber Mais Sobre Pinus</span>
+              <ChevronRight className="w-4 h-4 text-amber-400 relative z-10 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
         </div>
@@ -132,11 +132,11 @@ export function HomeView({ onOpenBudget }: { onOpenBudget?: (slug?: string) => v
                   onClick={() => setSelectedCategory(cat)}
                   className={`px-4 py-2.5 rounded-xl text-xs font-bold transition-all shrink-0 whitespace-nowrap min-h-[42px] flex items-center justify-center gap-2 ${
                     selectedCategory === cat
-                      ? 'bg-amber-500 text-stone-950 shadow-md font-black border border-amber-400 scale-[1.02]'
+                      ? 'bg-stone-950 text-white shadow-lg font-black border border-amber-400 scale-[1.02]'
                       : 'bg-white text-stone-700 hover:text-amber-600 hover:bg-stone-100 border border-stone-200'
                   }`}
                 >
-                  <Trees className={`w-3.5 h-3.5 ${selectedCategory === cat ? 'text-stone-950' : 'text-amber-600'}`} />
+                  <Trees className={`w-3.5 h-3.5 ${selectedCategory === cat ? 'text-amber-400' : 'text-amber-600'}`} />
                   <span>{cat}</span>
                 </button>
               ))}
@@ -454,9 +454,10 @@ export function HomeView({ onOpenBudget }: { onOpenBudget?: (slug?: string) => v
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
             <button
               onClick={() => onOpenBudget?.()}
-              className="w-full sm:w-auto bg-amber-500 hover:bg-amber-400 text-stone-950 font-black px-7 py-3.5 rounded-2xl text-sm shadow-xl transition-all active:scale-95 min-h-[50px]"
+              className="w-full sm:w-auto bg-stone-950 hover:bg-stone-900 text-white font-bold px-7 py-3.5 rounded-2xl text-sm shadow-xl border border-amber-400/60 hover:border-amber-300 transition-all active:scale-95 flex items-center justify-center gap-2 min-h-[50px]"
             >
-              Solicitar Orçamento
+              <Sparkles className="w-4 h-4 text-amber-400" />
+              <span>Solicitar Orçamento</span>
             </button>
             <a
               href={`https://wa.me/${COMPANY_DATA.phones.whatsappRaw}?text=${encodeURIComponent(
@@ -464,9 +465,9 @@ export function HomeView({ onOpenBudget }: { onOpenBudget?: (slug?: string) => v
               )}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-7 py-3.5 rounded-2xl text-sm shadow-xl transition-all active:scale-95 flex items-center justify-center gap-2 min-h-[50px]"
+              className="w-full sm:w-auto bg-stone-950 hover:bg-stone-900 text-white font-bold px-7 py-3.5 rounded-2xl text-sm shadow-xl border border-emerald-400/60 hover:border-emerald-300 transition-all active:scale-95 flex items-center justify-center gap-2 min-h-[50px]"
             >
-              <MessageCircle className="w-4 h-4 fill-white stroke-[1.5]" />
+              <MessageCircle className="w-4 h-4 text-emerald-400 stroke-[2]" />
               <span>WhatsApp Directo</span>
             </a>
           </div>

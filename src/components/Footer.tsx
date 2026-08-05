@@ -59,26 +59,33 @@ export function Footer({ onOpenBudget }: { onOpenBudget?: () => void }) {
               Distribuidora especialista em <strong>Madeira de Pinus</strong>, Pinus Tratado Autoclavado, Tábuas, Caibros, Vigas e Madeirite. Atendendo Curitiba e toda a Região Metropolitana com qualidade, agilidade e sustentabilidade.
             </p>
 
-            <div className="flex items-center gap-3 pt-2">
-              <a
-                href={`https://wa.me/${COMPANY_DATA.phones.whatsappRaw}?text=${encodeURIComponent(
-                  'Olá! Gostaria de cotar madeira de pinus com a Bairro Novo.'
-                )}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-4 py-2.5 rounded-xl text-xs flex items-center gap-2 shadow-md transition-all active:scale-95"
-              >
-                <MessageCircle className="w-4 h-4 fill-white" />
-                WhatsApp: {COMPANY_DATA.phones.whatsapp}
-              </a>
+            <div className="space-y-2 pt-2">
+              <div className="flex flex-wrap items-center gap-3">
+                <a
+                  href={`https://wa.me/${COMPANY_DATA.phones.whatsappRaw}?text=${encodeURIComponent(
+                    'Olá! Gostaria de cotar madeira de pinus com a Bairro Novo.'
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-stone-950 hover:bg-stone-900 text-white font-bold px-4 py-2.5 rounded-xl text-xs flex items-center gap-2 border border-emerald-400/60 hover:border-emerald-300 shadow-md transition-all active:scale-95"
+                >
+                  <MessageCircle className="w-4 h-4 text-emerald-400 stroke-[2]" />
+                  <span>WhatsApp</span>
+                </a>
 
-              <a
-                href={`tel:${COMPANY_DATA.phones.landlineRaw}`}
-                className="bg-stone-800 hover:bg-stone-700 text-stone-200 font-bold px-4 py-2.5 rounded-xl text-xs flex items-center gap-2 border border-stone-700 transition-colors"
-              >
-                <Phone className="w-4 h-4 text-amber-500" />
-                {COMPANY_DATA.phones.landline}
-              </a>
+                <a
+                  href={`tel:${COMPANY_DATA.phones.landlineRaw}`}
+                  className="bg-stone-950 hover:bg-stone-900 text-white font-bold px-4 py-2.5 rounded-xl text-xs flex items-center gap-2 border border-amber-400/60 hover:border-amber-300 shadow-md transition-colors active:scale-95"
+                >
+                  <Phone className="w-4 h-4 text-amber-400 stroke-[2]" />
+                  <span>Ligar Agora</span>
+                </a>
+              </div>
+
+              <p className="text-xs font-bold text-amber-400 flex items-center gap-1.5 pt-1">
+                <Phone className="w-3.5 h-3.5 text-amber-400" />
+                <span>Fixo & WhatsApp: (41) 3013-4692</span>
+              </p>
             </div>
           </div>
 

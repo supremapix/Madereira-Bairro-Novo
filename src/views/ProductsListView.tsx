@@ -72,11 +72,11 @@ export function ProductsListView({ onOpenBudget }: { onOpenBudget?: (slug?: stri
                   onClick={() => setSelectedCategory(cat)}
                   className={`px-4 py-2 rounded-xl text-xs font-bold transition-all min-h-[38px] flex items-center gap-1.5 ${
                     selectedCategory === cat
-                      ? 'bg-amber-500 text-stone-950 shadow-md font-black border border-amber-400'
+                      ? 'bg-stone-950 text-white shadow-lg font-black border border-amber-400'
                       : 'bg-white text-stone-700 hover:text-amber-700 hover:bg-stone-100 border border-stone-200'
                   }`}
                 >
-                  <Trees className={`w-3.5 h-3.5 ${selectedCategory === cat ? 'text-stone-950' : 'text-amber-600'}`} />
+                  <Trees className={`w-3.5 h-3.5 ${selectedCategory === cat ? 'text-amber-400' : 'text-amber-600'}`} />
                   <span>{cat}</span>
                 </button>
               ))}

@@ -36,14 +36,14 @@ export function ScrollToTop() {
           whileTap={{ scale: 0.9 }}
           onClick={scrollToTop}
           aria-label="Voltar ao topo da página"
-          className="fixed bottom-6 left-6 z-40 group flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-stone-950 font-black p-3.5 sm:px-4 sm:py-3 rounded-2xl shadow-2xl shadow-amber-500/30 border border-amber-300 transition-all cursor-pointer"
+          className="fixed bottom-6 left-6 z-40 group flex items-center gap-2 bg-stone-950 hover:bg-stone-900 text-white font-bold p-3.5 sm:px-4 sm:py-3 rounded-2xl shadow-2xl border border-amber-400/70 hover:border-amber-300 transition-all cursor-pointer"
         >
           <span className="relative flex h-3 w-3">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-stone-950 opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-3 w-3 bg-stone-950"></span>
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-3 w-3 bg-amber-400"></span>
           </span>
 
-          <ArrowUp className="w-5 h-5 stroke-[3] group-hover:-translate-y-1 transition-transform" />
+          <ArrowUp className="w-5 h-5 text-amber-400 stroke-[2.5] group-hover:-translate-y-1 transition-transform" />
 
           <span className="hidden sm:inline text-xs uppercase tracking-wider font-extrabold pr-1">
             Voltar ao Topo

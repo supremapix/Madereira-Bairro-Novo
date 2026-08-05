@@ -56,7 +56,7 @@ export function Hero({ onOpenBudget }: { onOpenBudget?: () => void }) {
 
           {/* Subtitle */}
           <p className="text-base sm:text-lg lg:text-xl text-stone-200 leading-relaxed font-normal max-w-3xl mx-auto drop-shadow-sm">
-            Tradição em madeira serrada, beneficiada e autoclavado de alta durabilidade. Atendimento personalizado com frota própria em todos os <strong>75 bairros de Curitiba e Região Metropolitana</strong>.
+            Tradição e excelência em madeira de Pinus serrada in natura para caixaria, telhados e estruturas. Atendimento personalizado com frota própria em todos os <strong>75 bairros de Curitiba e Região Metropolitana</strong>.
           </p>
 
           {/* Key Differentiators - Elegant Glassmorphic Badges */}

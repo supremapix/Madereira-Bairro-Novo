@@ -21,27 +21,27 @@ interface FloatingActionsProps {
   onOpenBudget?: () => void;
 }
 
-// 19 Persuasive Sales Copy Variations for Madeireira Bairro Novo
+// 19 Persuasive Sales Copy Variations for Madeireira Bairro Novo (Madeira de Pinus Serrada In Natura)
 const SALES_COPY_VARIATIONS = [
-  "🌲 Encontrei a melhor Madeireira de Pinus Tratado em Curitiba! Preço direto da fábrica e entrega expressa na obra. Confira:",
-  "🏡 Quer construir ou reformar com economia e durabilidade? Veja a linha completa de Pinus Autoclavado da Madeireira Bairro Novo:",
-  "🔨 A estrutura da sua obra precisa de qualidade garantida. Confira os caibros, vigas e pontaletes de Pinus em Curitiba:",
-  "🪵 Pergolado dos sonhos? Na Madeireira Bairro Novo você encontra kits e vigas encorpadas de Pinus Tratado em até 10x no cartão!",
-  "⚡ Precisando de madeirite ou tabuado de Pinus para sua obra hoje? Pronta entrega garantida em Curitiba e Região Metropolitana:",
-  "⭐ Recomendo a Madeireira Bairro Novo! Atendimento especializado, orçamento rápido via WhatsApp e madeiras tratadas em autoclave:",
-  "📐 Projetos residenciais e comerciais com acabamento impecável em Pinus. Veja os modelos e faça seu orçamento sem compromisso:",
-  "🌿 Madeira ecológica, renovável e com garantia de fábrica contra cupins e podridão. Acesse o catálogo oficial da Madeireira Bairro Novo:",
-  "🏗️ Economize até 35% na estrutura do seu telhado com a madeira de Pinus Tratada da Madeireira Bairro Novo em Curitiba:",
-  "🛠️ Deck de Pinus Autoclavado resistente ao sol e chuva! Transforme sua área externa com a Madeireira Bairro Novo:",
-  "🔥 Ofertas exclusivas de Pinus Seco em Estufa para marcenaria e construção civil. Faça uma cotação instantânea:",
-  "🏆 Tradição e confiança em Curitiba! Conheça a Madeireira Bairro Novo e garanta o melhor material para sua edificação:",
-  "💡 Dica de ouro para quem vai reformar: Pinus tratado em autoclave com o menor preço da região. Veja mais detalhes:",
+  "🌲 Encontrei a melhor Madeireira de Pinus Serrado em Curitiba! Preço direto da distribuidora e entrega rápida no canteiro de obras. Confira:",
+  "🏡 Quer construir a estrutura da sua obra com máxima economia? Veja a linha completa de Madeira de Pinus In Natura da Madeireira Bairro Novo:",
+  "🔨 A estrutura do seu telhado precisa de qualidade garantida. Confira caibros, vigas, ripas e pontaletes de Pinus em Curitiba:",
+  "🪵 Precisa de vigas e caibros de Pinus de alta resistência? Na Madeireira Bairro Novo você encontra bitolas padronizadas com entrega rápida!",
+  "⚡ Precisando de tábuas para caixaria e formas de concreto na sua obra hoje? Pronta entrega garantida em Curitiba e Região Metropolitana:",
+  "⭐ Recomendo a Madeireira Bairro Novo! Atendimento especializado, orçamento rápido via WhatsApp e madeira de Pinus selecionada:",
+  "📐 Projetos residenciais e comerciais com o melhor aproveitamento em Pinus Serrado. Veja as opções e solicite cotação sem compromisso:",
+  "🌿 Madeira sustentável de reflorestamento com excelente acabamento e corte reto. Acesse o catálogo oficial da Madeireira Bairro Novo:",
+  "🏗️ Economize no engradamento do seu telhado com a madeira de Pinus Serrada In Natura da Madeireira Bairro Novo em Curitiba:",
+  "🛠️ Caibros e sarrafos de Pinus para travamentos e estruturas! Fornecimento garantido para sua construção na Madeireira Bairro Novo:",
+  "🔥 Ofertas exclusivas em tábuas de caixaria, vigas e escoras para laje em Curitiba. Faça uma cotação instantânea pelo WhatsApp:",
+  "🏆 Tradição e confiança em Curitiba! Conheça a Madeireira Bairro Novo e garanta a melhor madeira de Pinus para sua edificação:",
+  "💡 Dica para quem vai construir ou reformar: Madeira de Pinus serrada in natura com o menor preço da região. Veja mais detalhes:",
   "🚚 Entrega super rápida em Curitiba, São José dos Pinhais, Colombo, Pinhais e Araucária. Solicite seu orçamento agora:",
-  "🪵 Ripados, sarrafos e tábuas de Pinus com corte sob medida e seleção de primeira qualidade. Clique para conferir:",
-  "🥇 O melhor custo-benefício em madeira de Pinus na região metropolitana de Curitiba. Atendimento humanizado 24h:",
-  "✨ Confira este catálogo imperdível da Madeireira Bairro Novo para arquitetura e construção sustentável:",
-  "📱 Peça seu orçamento direto pelo WhatsApp sem burocracia e com envio no mesmo dia em Curitiba e Região:",
-  "🏡 Sua obra merece o melhor Pinus Tratado com padrão de exportação. Confira e compartilhe essa oportunidade:"
+  "🪵 Ripas, sarrafos, vigas e tábuas de Pinus com seleção de primeira qualidade e corte preciso. Clique para conferir:",
+  "🥇 O melhor custo-benefício em madeira de Pinus para caixaria e telhados na região de Curitiba. Atendimento ágil 24h:",
+  "✨ Confira o catálogo de Madeira de Pinus Serrada da Madeireira Bairro Novo para obras e estruturas:",
+  "📱 Peça seu orçamento de madeira de Pinus direto pelo WhatsApp sem burocracia e com envio no mesmo dia em Curitiba e Região:",
+  "🏡 Sua obra merece a melhor Madeira de Pinus Serrada com entrega pontual no canteiro. Confira e compartilhe essa oportunidade:"
 ];
 
 export function FloatingActions({ onOpenBudget }: FloatingActionsProps) {

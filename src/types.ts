@@ -51,7 +51,7 @@ export interface Product {
   imageUrl: string;
   imageAlt: string;
   priceStartingFrom?: string;
-  treatmentType: 'Autoclavado (CCA)' | 'Serrado In Natura' | 'Seco em Estufa' | 'Beneficiado' | 'Geral';
+  treatmentType: 'Serrado In Natura' | 'Bruta de Serra' | 'Seco em Estufa' | 'Geral';
   isCornerstoneProduct?: boolean;
 }
 

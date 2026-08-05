@@ -18,9 +18,9 @@ export function BlogListView() {
     <>
       <EnhancedSEO
         title="Blog e Guia Técnico de Madeira de Pinus em Curitiba"
-        description="Artigos, dicas de construção, comparações de pinus tratado vs in natura, instruções para telhados, decks e pergolados."
+        description="Artigos, dicas de construção, instruções para telhados, caixarias e cálculo de vigas e caibros de Pinus."
         canonicalPath="/blog"
-        keywords={['Blog de Madeira', 'Dicas Pinus', 'Guia Telhado', 'Como fazer deck de pinus']}
+        keywords={['Blog de Madeira', 'Dicas Pinus', 'Guia Telhado', 'Madeira para Caixaria']}
       />
 
       <div className="bg-white text-stone-900 min-h-screen py-12 px-4 sm:px-6 lg:px-8">
@@ -33,7 +33,7 @@ export function BlogListView() {
               Blog da Bairro Novo Madeiras
             </h1>
             <p className="text-sm text-stone-600">
-              Aprenda a escolher, dimensionar, tratar e conservar madeira de pinus para suas obras e projetos em Curitiba.
+              Aprenda a escolher, dimensionar e utilizar madeira de pinus serrada em suas obras e projetos em Curitiba.
             </p>
           </div>
 
@@ -43,7 +43,7 @@ export function BlogListView() {
               type="text"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              placeholder="Buscar por assunto (ex: telhado, deck, preco, cupim)..."
+              placeholder="Buscar por assunto (ex: telhado, caibro, viga, caixaria)..."
               className="w-full bg-stone-50 border border-stone-300 focus:border-amber-500 rounded-2xl pl-12 pr-4 py-3 text-sm text-stone-900 focus:outline-none transition-colors shadow-sm"
             />
           </div>

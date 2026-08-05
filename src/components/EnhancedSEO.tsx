@@ -28,7 +28,7 @@ export function EnhancedSEO({
 
   const metaDescription =
     description ||
-    'Madeireira Bairro Novo em Curitiba - PR. Distribuidora especialista em Madeira de Pinus, Pinus Tratado Autoclavado, Caibros, Vigas, Tábuas, Madeirite e Decks com entrega rápida em Curitiba e RMC.';
+    'Madeireira Bairro Novo em Curitiba - PR. Distribuidora especialista em Madeira de Pinus Serrada In Natura, Caibros, Vigas, Tábuas de Caixaria, Ripas e Escoras com entrega rápida em Curitiba e RMC.';
 
   const canonicalUrl = `${COMPANY_DATA.canonicalUrl}${canonicalPath}`;
   const ogImage = imageUrl || `${COMPANY_DATA.canonicalUrl}/og-image.jpg`;
@@ -36,14 +36,12 @@ export function EnhancedSEO({
   const defaultKeywords = [
     'Madeira de Pinus',
     'Madeira de Pinus Curitiba',
-    'Pinus Tratado',
-    'Pinus Autoclavado',
+    'Madeira de Pinus In Natura',
     'Madeireira Bairro Novo',
     'Caibros e Vigas Curitiba',
     'Tábuas para Caixaria',
-    'Madeirite Resinado Plastificado',
-    'Deck de Pinus',
-    'Pergolado de Pinus',
+    'Ripas e Sarrafos de Pinus',
+    'Escoras de Laje Curitiba',
     'Madeira para Telhado',
     'Sítio Cercado Madeireira',
     'Madeira de Construção Curitiba'

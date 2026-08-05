@@ -7,7 +7,7 @@ export function AboutView({ onOpenBudget }: { onOpenBudget?: () => void }) {
     <>
       <EnhancedSEO
         title="Quem Somos | Bairro Novo Comércio de Madeiras Ltda."
-        description="Conheça a história e estrutura da Madeireira Bairro Novo em Curitiba - PR. Especialistas em Madeira de Pinus sustentável, autoclave CCA e fornecimento para obras e marcenarias."
+        description="Conheça a história e estrutura da Madeireira Bairro Novo em Curitiba - PR. Especialistas em Madeira de Pinus Serrada In Natura para obras, caixarias e telhados."
         canonicalPath="/sobre"
         keywords={['Quem Somos Bairro Novo', 'Madeireira Curitiba CNPJ', 'Sítio Cercado Madeiras']}
       />
@@ -22,14 +22,14 @@ export function AboutView({ onOpenBudget }: { onOpenBudget?: () => void }) {
               Sobre a Bairro Novo Comércio de Madeiras
             </h1>
             <p className="text-sm sm:text-base text-stone-600 max-w-2xl mx-auto">
-              Sua parceira de confiança em fornecimento de <strong>Madeira de Pinus</strong> e produtos para construção civil em Curitiba e Região Metropolitana.
+              Sua parceira de confiança em fornecimento de <strong>Madeira de Pinus Serrada In Natura</strong> e produtos para construção civil em Curitiba e Região Metropolitana.
             </p>
           </div>
 
           <div className="bg-stone-50 rounded-3xl p-8 sm:p-12 border border-stone-200 shadow-sm space-y-6">
             <h2 className="text-2xl font-black text-amber-800">Nossa História e Compromisso</h2>
             <p className="text-sm text-stone-700 leading-relaxed">
-              Localizada no Sítio Cercado (Bairro Novo) em Curitiba, a <strong>Bairro Novo Comércio de Madeiras Ltda. (CNPJ: 44.205.587/0001-40)</strong> se consolidou como referência no mercado paranaense na distribuição de Madeira de Pinus, Pinus Tratado em Autoclave, Caibros, Vigas, Tábuas, Madeirite e Decks.
+              Localizada no Sítio Cercado (Bairro Novo) em Curitiba, a <strong>Bairro Novo Comércio de Madeiras Ltda. (CNPJ: 44.205.587/0001-40)</strong> se consolidou como referência no mercado paranaense na distribuição de Madeira de Pinus Serrada, Caibros, Vigas, Ripas, Sarrafos, Tábuas de Caixaria e Escoras para laje.
             </p>
             <p className="text-sm text-stone-700 leading-relaxed">
               Com foco em sustentabilidade, trabalhamos exclusivamente com madeira proveniente de florestas renováveis de reflorestamento. Nossa estrutura conta com frota própria para garantir entregas pontuais diretamente nos canteiros de obras de Curitiba e RMC.
@@ -51,9 +51,9 @@ export function AboutView({ onOpenBudget }: { onOpenBudget?: () => void }) {
               <div className="w-12 h-12 rounded-2xl bg-emerald-500/10 text-emerald-600 flex items-center justify-center">
                 <ShieldCheck className="w-6 h-6 stroke-[2.25]" />
               </div>
-              <h3 className="text-xl font-bold text-stone-900">Processo Autoclavado CCA</h3>
+              <h3 className="text-xl font-bold text-stone-900">Seleção e Corte de Precisão</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
-                Utilizamos tecnologia industrial de autoclave em vácuo-pressão com imunizante CCA, garantindo madeira imune a cupins e apodrecimento por mais de 15 anos.
+                Nossas peças são serradas em bitolas padronizadas com alinhamento e secagem adequados para aplicação rápida em fundações, caixarias de concreto e coberturas.
               </p>
             </div>
           </div>

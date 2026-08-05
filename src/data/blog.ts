@@ -4,24 +4,21 @@ export const BLOG_POSTS_DATA: BlogPost[] = [
   {
     id: 'como-escolher-madeira-de-pinus',
     slug: 'como-escolher-madeira-de-pinus',
-    title: 'Como Escolher Madeira de Pinus para Sua Obra ou Marcenaria em Curitiba',
-    excerpt: 'Guia completo sobre nós, alinhamento, secagem e bitolas corretas na escolha do Pinus ideal.',
+    title: 'Como Escolher Madeira de Pinus para Sua Obra em Curitiba',
+    excerpt: 'Guia completo sobre alinhamento, secagem e bitolas corretas na escolha do Pinus serrado in natura.',
     content: `
-A Madeira de Pinus é a principal escolha na construção civil e marcenaria do Paraná devido ao seu valor acessível, sustentabilidade e facilidade de manuseio. No entanto, para garantir o melhor resultado em sua obra, é fundamental saber avaliar a qualidade das peças.
+A Madeira de Pinus é a principal escolha na construção civil do Paraná devido ao seu valor acessível, sustentabilidade e facilidade de manuseio. No entanto, para garantir o melhor resultado em sua obra, é fundamental saber avaliar a qualidade das peças.
 
 ### 1. Observe a Presença de Nós
 Existem dois tipos principais de nós no Pinus:
-- **Nós firmes (vivos):** São parte integrante da madeira e não comprometem a resistência mecânica em estruturas leves.
-- **Nós soltos (mortos):** Podem se soltar com o tempo. Para estruturas de carga (vigas e caibros), dê preferência a peças sem nós soltos.
+- **Nós firmes (vivos):** São parte integrante da madeira e não comprometem a resistência mecânica em estruturas de caixaria e engradamento.
+- **Nós soltos (mortos):** Podem se soltar com o tempo. Para estruturas de carga (vigas e caibros), dê preferência a peças selecionadas.
 
-### 2. Verifique o Alinhamento e o Empenamento
-Madeiras bem armazenadas e secas corretamente mantêm o alinhamento reto. Ao escolher tábuas e sarrafos, olhe ao longo do comprimento para verificar se não há encurvamento acentuado.
+### 2. Verifique o Alinhamento
+Madeiras armazenadas e secas corretamente mantêm o alinhamento reto. Ao escolher tábuas e sarrafos para caixarias, olhe ao longo do comprimento para verificar se não há encurvamento acentuado.
 
-### 3. Secagem e Nível de Umidade
-Madeira de Pinus muito úmida (fresca de serra) pode retrair ligeiramente ao secar no ambiente. Para marcenaria e acabamentos internos, utilize Pinus seco em estufa ou aparelhado. Para caixarias e fôrmas de concreto de uso imediato, o Pinus verde/bruto oferece excelente custo-benefício.
-
-### 4. Escolha o Tratamento Adequado
-Se a madeira for ficar em contato com o solo, chuva ou umidade constante, prefira o **Pinus Tratado em Autoclave (CCA)**. O tratamento preserva as fibras contra cupins e fungos por mais de 15 anos.
+### 3. Bitolas e Aplicações no Canteiro
+Para caixarias e fôrmas de concreto, utilize tábuas brutas de 15cm a 30cm com sarrafos de travamento. Para estruturas de telhado, vigas e caibros de Pinus in natura oferecem excelente sustentação com peso reduzido.
     `,
     author: 'Engenharia de Madeiras Bairro Novo',
     date: '2026-07-28',
@@ -30,37 +27,7 @@ Se a madeira for ficar em contato com o solo, chuva ou umidade constante, prefir
     tags: ['Pinus', 'Guia de Compra', 'Construção Civil', 'Curitiba'],
     imageUrl: 'https://scontent.xx.fbcdn.net/v/t39.105495-1/763701057_1034073502931524_678965708184336439_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=104&_nc_ohc=TbWurg-2SD4Q7kNvwH_wwJy&sdl=0&ccb=14-4&oh=00_AQE3V1UNyvYiNkNNLljY9Tcivm6t6mmk_buVvEO4ZCc6GQ&oe=6A7862F8&_nc_sid=a21977',
     imageAlt: 'Série de tábuas de pinus selecionadas e alinhadas',
-    relatedProducts: ['madeira-de-pinus', 'tabuas', 'pinus-tratado']
-  },
-  {
-    id: 'pinus-tratado-ou-comum',
-    slug: 'pinus-tratado-ou-comum',
-    title: 'Pinus Tratado ou Comum: Qual Escolher para Seu Projeto?',
-    excerpt: 'Entenda as diferenças entre o Pinus in natura e o Pinus autoclavado e onde aplicar cada um.',
-    content: `
-Ao planejar uma construção ou reforma, surge frequentemente a dúvida: devo usar Pinus comum (in natura) ou investir no Pinus Tratado em autoclave?
-
-### Pinus Comum (In Natura)
-O Pinus comum é cortado, desdobrado e comercializado sem imunização química profunda.
-- **Principais usos:** Caixarias de concreto, fôrmas provisórias, escoramentos, embalagens, paletes e móveis para áreas cobertas e secas.
-- **Vantagens:** Menor custo inicial e facilidade de manuseio.
-
-### Pinus Tratado em Autoclave (CCA)
-Submetido ao processo vácuo-pressão em usinas de preservação, impregnando a madeira com compostos de Cobre, Cromo e Arsênio.
-- **Principais usos:** Decks de piscina, pergolados, cercas, mourões, chalés e estruturas externas expostas à chuva e ao sol.
-- **Vantagens:** Imunidade total a cupins e fungos apodrecedores com garantia superior a 15 anos.
-
-### Conclusão
-Para obras provisórias ou ambientes internos secos, o Pinus comum é imbatível no preço. Para áreas externas e estruturas definitivas expostas ao clima de Curitiba, o Pinus Tratado é indispensável.
-    `,
-    author: 'Equipe Bairro Novo Madeiras',
-    date: '2026-07-20',
-    readTime: '4 min',
-    category: 'Tratamento de Madeira',
-    tags: ['Pinus Tratado', 'Autoclave', 'Durabilidade', 'Cupins'],
-    imageUrl: 'https://scontent.xx.fbcdn.net/v/t39.105495-1/763847653_1931789624161484_955820512592270728_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=108&_nc_ohc=ULcNa9qPUD8Q7kNvwFA8OZ8&sdl=0&ccb=14-4&oh=00_AQFzqMJf9OxHDQNzEz7cZ42zwSyvKarka5nsCMPsjhovWA&oe=6A78717E&_nc_sid=a21977',
-    imageAlt: 'Comparativo de acabamento de pinus tratado em autoclave',
-    relatedProducts: ['pinus-tratado', 'pinus-autoclavado', 'deck']
+    relatedProducts: ['madeira-de-pinus', 'tabuas', 'caibros']
   },
   {
     id: 'madeira-para-telhado',
@@ -73,10 +40,10 @@ O telhado é uma das etapas mais importantes da edificação. O engradamento pre
 ### Componentes da Estrutura
 1. **Terças / Vigas:** Sustentam os caibros e distribuem o peso nas paredes ou tesouras. Recomenda-se vigas de Pinus 5x15cm ou 5x20cm.
 2. **Caibros:** Instalados no sentido da queda d'água, espaçados em média a cada 50cm. Bitolas comuns: 5x5cm e 5x7cm.
-3. **Ripas:** Fixadas transversalmente sobre os caibros para dar apoio às telhas. Bitolas comuns: 2x5cm.
+3. **Ripas:** Fixadas transversalmente sobre os caibros para dar apoio às telhas. Bitolas comuns: 1,2x5cm ou 2x5cm.
 
 ### Dica Bairro Novo
-Sempre compre ripas e caibros secos para evitar que o telhado desalinhe após a montagem. Aplique cupinicida nas superfícies se utilizar madeira in natura.
+Sempre compre ripas e caibros de boa qualidade para evitar que o telhado desalinhe após a montagem.
     `,
     author: 'Engenharia de Madeiras',
     date: '2026-07-15',
@@ -88,66 +55,17 @@ Sempre compre ripas e caibros secos para evitar que o telhado desalinhe após a 
     relatedProducts: ['caibros', 'ripas', 'vigas', 'madeira-para-telhado']
   },
   {
-    id: 'deck-de-pinus',
-    slug: 'deck-de-pinus',
-    title: 'Deck de Pinus Autoclavado: Beleza e Durabilidade com Economia',
-    excerpt: 'Como construir e manter um deck de madeira elegante gastando até 60% menos em Curitiba.',
-    content: `
-Os decks de madeira valorizam imóveis e criam espaços de lazer acolhedores. Durante anos, utilizaram-se apenas madeiras nobres de alto valor. Hoje, o **Deck de Pinus Autoclavado** se consolidou como a opção inteligente e sustentável.
-
-### Vantagens do Deck de Pinus Autoclavado
-- **Custo Acessível:** Economia expressiva frente a espécies nativas sem perder o charme natural.
-- **Conforto Térmico:** A madeira de Pinus não retém calor excessivo sob o sol de verão.
-- **Instalação Prática:** Réguas padronizadas em 2,8x10cm com cantos arredondados.
-
-### Manutenção Recomendada
-Para manter a cor radiante, recomenda-se a aplicação anual de **Stain Impregnante** com filtro solar. Diferente do verniz comum, o stain penetra nos poros sem descascar.
-    `,
-    author: 'Design de Exteriores Bairro Novo',
-    date: '2026-07-10',
-    readTime: '4 min',
-    category: 'Projetos e Decks',
-    tags: ['Deck', 'Pinus Autoclavado', 'Piscinas', 'Jardim'],
-    imageUrl: 'https://scontent.xx.fbcdn.net/v/t39.105495-1/762834414_952251111289997_3962927882972819318_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=105&_nc_ohc=iyylysgUM1oQ7kNvwGuwsNq&sdl=0&ccb=14-4&oh=00_AQFPYrl_inoivBwjPXVXFj5w2Sc75wVpbQNOTbnI2G4OHg&oe=6A787021&_nc_sid=a21977',
-    imageAlt: 'Deck de pinus instalado ao lado de jardim residencial',
-    relatedProducts: ['deck', 'barrotes', 'pinus-autoclavado']
-  },
-  {
-    id: 'pergolado-de-pinus',
-    slug: 'pergolado-de-pinus',
-    title: 'Pergolado de Pinus: Projetos, Vigas e Passo a Passo para Sua Garagem ou Jardim',
-    excerpt: 'Tudo o que você precisa saber para construir um pergolado resistente usando Pinus Tratado.',
-    content: `
-O pergolado é uma estrutura que agrega estilo, sombreamento e sofisticação a jardins, varandas e garagens.
-
-### Peças Essenciais para o Pergolado
-- **Pilares:** Mourões ou vigas quadradas de 10x10cm, 15x15cm ou 20x20cm em Pinus Autoclavado.
-- **Vigas Principais:** Vigas de 5x15cm ou 5x20cm fixadas no topo dos pilares.
-- **Ripas de Sombreamento:** Sarrafos de 3x5cm ou 5x5cm dispostos para criar o efeito de sombra agradável.
-
-Utilize conectores metálicos galvanizados e parafusos estruturais para garantir rigidez absoluta contra rajadas de vento.
-    `,
-    author: 'Equipe Bairro Novo Madeiras',
-    date: '2026-07-02',
-    readTime: '5 min',
-    category: 'Projetos e Decks',
-    tags: ['Pergolado', 'Pinus Tratado', 'Jardim', 'Arquitetura'],
-    imageUrl: 'https://scontent.xx.fbcdn.net/v/t39.105495-1/763263269_4507204106201898_7940654478795407383_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=106&_nc_ohc=AYigzUQM9cAQ7kNvwEBc0z2&sdl=0&ccb=14-4&oh=00_AQHc0NVzpIiySVoRxcKoaGXPu9U7-6GY-jA-RebKFjltQg&oe=6A786AED&_nc_sid=a21977',
-    imageAlt: 'Pergolado de madeira de pinus autoclavado em espaço gourmet',
-    relatedProducts: ['pergolado', 'vigas', 'pinus-autoclavado']
-  },
-  {
     id: 'quanto-custa-madeira-de-pinus',
     slug: 'quanto-custa-madeira-de-pinus',
-    title: 'Quanto Custa Madeira de Pinus em Curitiba? Tabela de Valores e Fatores de Preço',
-    excerpt: 'Entenda como são calculados os preços de tábuas, caibros, vigas e metros cúbicos em 2026.',
+    title: 'Quanto Custa Madeira de Pinus em Curitiba? Fatores de Preço e Economia',
+    excerpt: 'Entenda como são calculados os preços de tábuas, caibros, vigas e entregas no canteiro.',
     content: `
-O preço da Madeira de Pinus em Curitiba é influenciado por fatores como bitola, tratamento (autoclave vs in natura) e acabamento (bruto vs aparelhado).
+O preço da Madeira de Pinus em Curitiba é extremamente competitivo, sendo a solução de melhor custo-benefício para estruturas e caixarias.
 
 ### Fatores que Alteram o Preço
-1. **Grau de Beneficiamento:** Peças aparelhadas de 4 faces exigem processo de usinagem e possuem valor por peça superior à madeira bruta de serra.
-2. **Tratamento em Autoclave:** O processo químico CCA adiciona proteção de longo prazo, elevando em média 20% a 30% o custo da peça in natura, com retorno garantido pela longevidade.
-3. **Volume de Compra:** Compras no atacado para canteiros de obra possuem descontos por lote e frete unificado.
+1. **Bitola e Metragem:** Peças encorpadas como vigas de 5x20cm possuem valores por metro linear superiores a sarrafos e ripas de menor seção.
+2. **Volume de Compra:** Compras no atacado para canteiros de obra possuem descontos por lote e frete unificado.
+3. **Logística e Entrega:** Entregas rápidas com frota própria garantem que sua obra não fique parada.
 
 Solicite seu orçamento direto pelo WhatsApp da Bairro Novo Comércio de Madeiras!
     `,
@@ -163,120 +81,33 @@ Solicite seu orçamento direto pelo WhatsApp da Bairro Novo Comércio de Madeira
   {
     id: 'como-conservar-madeira',
     slug: 'como-conservar-madeira',
-    title: 'Como Conservar Madeira de Pinus por Décadas: Seladores, Vernizes e Stains',
-    excerpt: 'Aprenda os segredos do acabamento correto para proteger sua madeira contra cupins e Sol.',
+    title: 'Como Conservar Madeira de Pinus na Sua Obra',
+    excerpt: 'Aprenda os cuidados essenciais de armazenamento e proteção no canteiro de obras.',
     content: `
-A conservação adequada garante que a estrutura ou móvel de Pinus permaneça impecável por anos.
+A conservação adequada garante que as tábuas, caibros e vigas de Pinus permaneçam alinhados e prontos para uso.
 
-### 1. Preparação da Superfície
-Lixe a madeira no sentido dos veios para remover farpas e pó. Certifique-se de que a madeira esteja totalmente seca.
+### 1. Empilhamento Correto
+Armazene as peças sobre pontaletes elevados do solo para evitar contato direto com a umidade da terra ou piso úmido.
 
-### 2. Escolha do Produto
-- **Stain Impregnante:** Ideal para áreas externas (decks, pergolados, cercas). Não forma filme, penetra na madeira e hidrorepele a água.
-- **Verniz Marítimo:** Ótimo para áreas internas ou semi-cobertas que necessitam de brilho e proteção contra desgastes.
-- **Selador:** Indicado para móveis e peças internas de marcenaria antes da aplicação de cera ou verniz sintético.
+### 2. Cobertura Provisória
+Em canteiros de obra abertos, utilize lonas de proteção para cobrir os lotes de madeira em dias de chuva forte prolongada.
     `,
     author: 'Técnico em Acabamentos',
     date: '2026-06-18',
     readTime: '4 min',
     category: 'Manutenção',
-    tags: ['Conservação', 'Verniz', 'Stain', 'Pintura'],
+    tags: ['Conservação', 'Armazenamento', 'Construção'],
     imageUrl: 'https://scontent.xx.fbcdn.net/v/t39.105495-1/762998206_1351532853830862_8385965624638348975_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=106&_nc_ohc=yxAnZ1xbSjoQ7kNvwFh8zMv&sdl=0&ccb=14-4&oh=00_AQEFY_UIS6RxXd_U3FZ_X9crYxhkOLRGD7tZLB1rPZXhrA&oe=6A786323&_nc_sid=a21977',
-    imageAlt: 'Aplicação de stain protetor em prancha de pinus',
-    relatedProducts: ['madeira-beneficiada', 'deck']
-  },
-  {
-    id: 'pinus-ou-eucalipto',
-    slug: 'pinus-ou-eucalipto',
-    title: 'Pinus ou Eucalipto: Qual A Melhor Opção para a Sua Obra?',
-    excerpt: 'Análise detalhada sobre peso, trabalhabilidade, custo e densidade de cada espécie.',
-    content: `
-Pinus e Eucalipto são as duas espécies de reflorestamento mais populares no Brasil. Cada uma apresenta características específicas para a construção civil.
-
-### Pinus (Conífera)
-- **Características:** Madeira mais leve, de fibra longa, fácil de serrar, pregar e parafusar sem rachar.
-- **Principais usos:** Caixarias, telhados, decks, pergolados, móveis e compensados.
-- **Destaque:** Excelente aceitação de tratamento em autoclave.
-
-### Eucalipto (Folhosa)
-- **Características:** Madeira mais densa e pesada, de alta dureza mecânica.
-- **Principais usos:** Estacas rurais, postes e estruturas pesadas.
-- **Atenção:** Pode rachar mais facilmente durante a fixação com pregos se não for pré-furado.
-
-Para a maioria das aplicações urbanas em Curitiba, o Pinus se destaca pelo excelente manuseio e custo atrativo.
-    `,
-    author: 'Engenharia de Madeiras',
-    date: '2026-06-10',
-    readTime: '5 min',
-    category: 'Comparativos',
-    tags: ['Pinus', 'Eucalipto', 'Comparativo', 'Construção'],
-    imageUrl: 'https://scontent.xx.fbcdn.net/v/t39.105495-1/764065718_1530182254879959_2665302352023743728_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=103&_nc_ohc=VVkCazVFMr8Q7kNvwEYbv_Y&sdl=0&ccb=14-4&oh=00_AQH_dYLaEFyCsI--LUwaHT-8ez5eLITBbBf4-VTjDIj5eg&oe=6A785C89&_nc_sid=a21977',
-    imageAlt: 'Serraria de pinus sustentável no Paraná',
-    relatedProducts: ['madeira-de-pinus', 'pinus-tratado']
-  },
-  {
-    id: 'madeira-para-chales',
-    slug: 'madeira-para-chales',
-    title: 'Madeira para Chalés A-Frame e Casas de Madeira: Estrutura e Isolamento',
-    excerpt: 'Descubra como projetar chalés modernos usando Pinus Autoclavado com conforto térmico.',
-    content: `
-Os chalés no estilo A-Frame e construções em sistema Wood Frame ganharam enorme destaque no turismo e habitação sustentável na Região Metropolitana de Curitiba e Serra do Mar.
-
-### Por que usar Pinus em Chalés?
-- **Isolamento Térmico Natural:** A madeira possui baixíssima condutividade térmica, mantendo o interior aconchegante no inverno curitibano.
-- **Rapidez de Montagem:** Estruturas pré-cortadas permitem erguer um chalé em poucas semanas.
-- **Pinus Autoclavado para Paredes e Piso:** Garante resistência total contra cupins e umidade do solo.
-    `,
-    author: 'Arquitetura Sustentável',
-    date: '2026-05-28',
-    readTime: '5 min',
-    category: 'Projetos e Decks',
-    tags: ['Chalés', 'A-Frame', 'Wood Frame', 'Turismo'],
-    imageUrl: 'https://scontent.xx.fbcdn.net/v/t39.105495-1/764800438_1405598378109491_8519804919165767808_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=111&_nc_ohc=MOwFq8IyyVMQ7kNvwHHXqPd&sdl=0&ccb=14-4&oh=00_AQG-y2EprvJoVaODX9ozVzQ1xlFyeTLAtwRpD5ccV6yCxg&oe=6A785755&_nc_sid=a21977',
-    imageAlt: 'Chalé de madeira integrado à natureza no Paraná',
-    relatedProducts: ['pinus-autoclavado', 'vigas', 'compensado']
-  },
-  {
-    id: 'madeira-para-cobertura',
-    slug: 'madeira-para-cobertura',
-    title: 'Madeira para Cobertura Industrial e Comercial: Soluções de Grande Vão',
-    excerpt: 'Especificação de vigas e tesouras de Pinus para galpões e estruturas de grande porte.',
-    content: `
-Coberturas industriais e comerciais exigem estruturas capazes de vencer vãos livres sem apoios intermediários excessivos. As vigas de Pinus tratadas e selecionadas são opções econômicas e altamente eficientes.
-    `,
-    author: 'Engenharia Estrutural',
-    date: '2026-05-18',
-    readTime: '4 min',
-    category: 'Telhados e Coberturas',
-    tags: ['Cobertura', 'Galpões', 'Engenharia', 'Vigas'],
-    imageUrl: 'https://cdn.fbsbx.com/v/t65.102178-21/764906453_27674795098836788_3271074921704185512_n.jpg/cobertura_industrial_pinus.webp?_nc_ht=cdn.fbsbx.com&_nc_ohc=1tSxQdLhtokQ7kNvwEtD3vA&sdl=0&ccb=14-4&oh=00_AQFXahvcGMDG0iOGJGy0kiXWhG3wMM1zorIimKhkmZ_4QA&oe=6A748B4B&_nc_sid=4ee932',
-    imageAlt: 'Estrutura de cobertura de grande porte em madeira',
-    relatedProducts: ['vigas', 'caibros', 'madeira-para-telhado']
-  },
-  {
-    id: 'madeira-para-galpoes',
-    slug: 'madeira-para-galpoes',
-    title: 'Madeira para Galpões Rurais e Industriais em Curitiba e RMC',
-    excerpt: 'Kits de madeira para pilares, terças e travamentos de galpões agrícolas e logísticos.',
-    content: `
-Galpões para depósito, máquinas agrícolas e avicultura demandam materiais resistentes e de baixo custo de manutenção. O Pinus Autoclavado se encaixa perfeitamente nessas exigências.
-    `,
-    author: 'Equipe Bairro Novo Madeiras',
-    date: '2026-05-10',
-    readTime: '4 min',
-    category: 'Construção Civil',
-    tags: ['Galpões', 'Rural', 'Pinus Autoclavado', 'Logística'],
-    imageUrl: 'https://scontent.xx.fbcdn.net/v/t39.105495-1/764217303_1319199123620379_3580214717680874817_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=103&_nc_ohc=8QOIaycRJH4Q7kNvwH9Pbp8&sdl=0&ccb=14-4&oh=00_AQGJ9N3R5_idlts3NZMevq1vtbYjBuMwU5T2JvpQJsbFrw&oe=6A787DCD&_nc_sid=a21977',
-    imageAlt: 'Galpão construído com estrutura de pinus autoclavado',
-    relatedProducts: ['pinus-autoclavado', 'vigas', 'escoras']
+    imageAlt: 'Armazenamento de pranchas de pinus no canteiro de obras',
+    relatedProducts: ['madeira-de-pinus', 'tabuas']
   },
   {
     id: 'madeira-para-construcao-civil',
     slug: 'madeira-para-construcao-civil',
     title: 'Madeira para Construção Civil: Reduzindo Custos no Canteiro de Obras',
-    excerpt: 'Estratégias de reaproveitamento de fôrmas, pontaletes e tábuas para otimizar seu orçamento.',
+    excerpt: 'Estratégias para otimizar o uso de tábuas de caixaria, pontaletes e escoramento.',
     content: `
-O controle do uso da madeira no canteiro de obras é vital para manter o orçamento sob controle e evitar desperdícios. Entenda como otimizar o uso do Madeirite, das Tábuas e do Escoramento em Curitiba.
+O controle do uso da madeira no canteiro de obras é vital para manter o orçamento sob controle e evitar desperdícios. Entenda como otimizar a compra de tábuas de caixaria, vigas e escoras para laje em Curitiba.
     `,
     author: 'Mestre de Obras Bairro Novo',
     date: '2026-05-02',
@@ -284,7 +115,7 @@ O controle do uso da madeira no canteiro de obras é vital para manter o orçame
     category: 'Construção Civil',
     tags: ['Construção Civil', 'Economia', 'Obras', 'Canteiro'],
     imageUrl: 'https://scontent.xx.fbcdn.net/v/t39.105495-1/764006194_2101145300613747_6240605454197075279_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=103&_nc_ohc=DWWDMAhQs1kQ7kNvwFX5QRy&sdl=0&ccb=14-4&oh=00_AQEce118XGOpWNJAHs7YOy3hH8cLhPa_NrYTCee0bfXzlA&oe=6A787D82&_nc_sid=a21977',
-    imageAlt: 'Uso de madeira de pinus e madeirite no canteiro de obra',
-    relatedProducts: ['madeirite', 'escoras', 'formas-para-concreto']
+    imageAlt: 'Uso de madeira de pinus no canteiro de obra',
+    relatedProducts: ['escoras', 'formas-para-concreto', 'tabuas']
   }
 ];

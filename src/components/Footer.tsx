@@ -58,7 +58,7 @@ export function Footer({ onOpenBudget }: { onOpenBudget?: () => void }) {
             </div>
 
             <p className="text-sm text-stone-400 leading-relaxed max-w-md">
-              Distribuidora especialista em <strong>Madeira de Pinus</strong>, Pinus Tratado Autoclavado, Tábuas, Caibros, Vigas e Madeirite. Atendendo Curitiba e toda a Região Metropolitana com qualidade, agilidade e sustentabilidade.
+              Distribuidora especialista em <strong>Madeira de Pinus (In Natura)</strong>, Tábuas de Caixaria, Caibros, Vigas, Ripas e Escoras para Laje. Atendendo Curitiba e toda a Região Metropolitana com qualidade, agilidade e sustentabilidade.
             </p>
 
             <div className="space-y-2 pt-2">

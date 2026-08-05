@@ -29,11 +29,9 @@ export function HomeView({ onOpenBudget }: { onOpenBudget?: (slug?: string) => v
   const categories = [
     'Todos',
     'Madeira de Pinus',
-    'Pinus Tratado',
     'Madeira para Telhado',
     'Madeira para Construção',
-    'Madeirite e Compensado',
-    'Deck e Pergolado'
+    'Caixaria e Fôrmas'
   ];
 
   const filteredProducts =
@@ -45,14 +43,14 @@ export function HomeView({ onOpenBudget }: { onOpenBudget?: (slug?: string) => v
     <>
       <EnhancedSEO
         title="Madeira de Pinus em Curitiba - PR | Madeireira Bairro Novo"
-        description="Madeireira Bairro Novo em Curitiba - PR. Distribuidora líder de Madeira de Pinus, Pinus Tratado Autoclavado, Caibros, Vigas, Tábuas, Madeirite e Decks. Pronta entrega em todos os 75 bairros e Região Metropolitana."
+        description="Madeireira Bairro Novo em Curitiba - PR. Distribuidora especialista em Madeira de Pinus Serrada In Natura, Caibros, Vigas, Ripas e Tábuas de Caixaria. Pronta entrega em todos os 75 bairros e Região Metropolitana."
         canonicalPath="/"
         keywords={[
           'Madeira de Pinus Curitiba',
           'Madeireira Sítio Cercado',
-          'Pinus Tratado Curitiba',
-          'Pinus Autoclavado',
+          'Madeira de Pinus In Natura',
           'Caibros e Vigas Curitiba',
+          'Tábuas para Caixaria',
           'Madeira para Telhado'
         ]}
       />
@@ -119,7 +117,7 @@ export function HomeView({ onOpenBudget }: { onOpenBudget?: (slug?: string) => v
               Catálogo de Produtos em Curitiba
             </h2>
             <p className="text-sm sm:text-base text-stone-600">
-              Fornecemos desde peças brutas para canteiro de obras até tábuas aparelhadas e Pinus Tratado Autoclavado para acabamentos.
+              Fornecemos linha completa de Madeira de Pinus Serrada In Natura para caixarias de obras, telhados, caibros e vigamentos.
             </p>
           </div>
 
@@ -196,9 +194,9 @@ export function HomeView({ onOpenBudget }: { onOpenBudget?: (slug?: string) => v
               <div className="w-12 h-12 rounded-2xl bg-emerald-500/10 text-emerald-600 flex items-center justify-center">
                 <ShieldCheck className="w-6 h-6 stroke-[2.25]" />
               </div>
-              <h3 className="text-xl font-bold text-stone-900">Pinus Autoclavado CCA</h3>
+              <h3 className="text-xl font-bold text-stone-900">Seleção e Bitolas Padronizadas</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
-                Tratamento preservativo industrial em vácuo-pressão que imuniza totalmente a madeira contra cupins, brocas e apodrecimento com garantia superior a 15 anos.
+                Bitolas precisas de tábuas, caibros e vigas com excelente alinhamento para otimizar o tempo e a montagem no canteiro de obras.
               </p>
             </div>
 

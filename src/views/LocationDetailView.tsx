@@ -29,14 +29,14 @@ export function LocationDetailView({ onOpenBudget }: { onOpenBudget?: (slug?: st
     <>
       <EnhancedSEO
         title={`Madeira de Pinus em ${location.name} - Curitiba / PR`}
-        description={`Madeireira Bairro Novo com entrega rápida de Madeira de Pinus, Pinus Tratado Autoclavado, Caibros, Vigas e Madeirite no bairro/cidade de ${location.name}. Solicite seu orçamento com frete direto!`}
+        description={`Madeireira Bairro Novo com entrega rápida de Madeira de Pinus Serrada In Natura, Caibros, Vigas, Ripas e Tábuas de Caixaria no bairro/cidade de ${location.name}. Solicite seu orçamento com frete direto!`}
         canonicalPath={`/${isBairro ? 'bairro' : 'cidade'}/${location.slug}`}
         keywords={[
           `Madeira de Pinus ${location.name}`,
           `Madeireira em ${location.name}`,
-          `Pinus Tratado ${location.name}`,
           `Caibros e Vigas ${location.name}`,
-          `Madeirite ${location.name}`
+          `Tábuas para Caixaria ${location.name}`,
+          `Escoras de Laje ${location.name}`
         ]}
       />
 

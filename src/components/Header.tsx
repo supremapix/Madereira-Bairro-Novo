@@ -54,12 +54,12 @@ export function Header({ onOpenBudget }: { onOpenBudget?: () => void }) {
   ];
 
   const quickProducts = [
-    { name: 'Madeira de Pinus', path: '/produto/madeira-de-pinus' },
-    { name: 'Pinus Tratado', path: '/produto/pinus-tratado' },
-    { name: 'Pinus Autoclavado', path: '/produto/pinus-autoclavado' },
-    { name: 'Tábuas e Caibros', path: '/produto/tabuas' },
-    { name: 'Madeirite e Compensado', path: '/produto/madeirite' },
-    { name: 'Decks e Pergolados', path: '/produto/deck' },
+    { name: 'Madeira de Pinus (In Natura)', path: '/produto/madeira-de-pinus' },
+    { name: 'Tábuas para Caixaria', path: '/produto/tabuas' },
+    { name: 'Caibros de Pinus', path: '/produto/caibros' },
+    { name: 'Vigas Estruturais', path: '/produto/vigas' },
+    { name: 'Ripas e Sarrafos', path: '/produto/ripas' },
+    { name: 'Escoras para Laje', path: '/produto/escoras' },
     { name: 'Ver Todos os Produtos', path: '/produtos' }
   ];
 

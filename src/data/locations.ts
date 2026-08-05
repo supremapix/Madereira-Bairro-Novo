@@ -52,10 +52,10 @@ export const LOCATIONS_DATA: LocationItem[] = [
       type: 'bairro' as const,
       zone: 'Curitiba',
       estimatedDeliveryTime: 'Entrega rápida no mesmo dia ou até 24h',
-      description: `Atendimento completo em venda e entrega de Madeira de Pinus, Pinus Tratado Autoclavado, Caibros, Vigas e Madeirite no bairro ${name}, Curitiba - PR. Frota própria para descarregamento rápido na sua obra ou marcenaria.`,
+      description: `Atendimento completo em venda e entrega de Madeira de Pinus Serrada, Caibros, Vigas, Tábuas de Caixaria e Escoras no bairro ${name}, Curitiba - PR. Frota própria para descarregamento rápido na sua obra.`,
       highlights: [
         `Entrega garantida no bairro ${name}`,
-        'Pinus tratado em autoclave com garantia contra cupins',
+        'Madeira de Pinus serrada in natura de reflorestamento',
         'Tábuas para caixaria e fôrmas com preços de distribuidora',
         'Atendimento rápido via WhatsApp e telefone'
       ]
@@ -88,10 +88,10 @@ export const LOCATIONS_DATA: LocationItem[] = [
       type: 'cidade' as const,
       zone: 'Região Metropolitana de Curitiba',
       estimatedDeliveryTime: 'Entrega agendada diária (24h a 48h)',
-      description: `Venda e distribuição de Madeira de Pinus, Decks Autoclavados, Pergolados, Vigas e Madeirite para o município de ${name} - PR. Logística rápida atendendo canteiros de obras e projetos rurais.`,
+      description: `Venda e distribuição de Madeira de Pinus Serrada, Caibros, Vigas, Ripas, Tábuas de Caixaria e Escoras para o município de ${name} - PR. Logística rápida atendendo canteiros de obras.`,
       highlights: [
         `Atendimento prioritário em ${name} - PR`,
-        'Fornecimento de Pinus Autoclavado para pergolados, decks e cercas',
+        'Fornecimento de Madeira de Pinus para telhados e caixarias',
         'Carregamento completo direto da nossa distribuidora',
         'Suporte técnico e orçamento rápido sem compromisso'
       ]

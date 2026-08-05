@@ -11,13 +11,9 @@ export function ProductsListView({ onOpenBudget }: { onOpenBudget?: (slug?: stri
   const categories = [
     'Todos',
     'Madeira de Pinus',
-    'Pinus Tratado',
     'Madeira para Telhado',
     'Madeira para Construção',
-    'Madeira Serrada',
-    'Madeira Beneficiada',
-    'Madeirite e Compensado',
-    'Deck e Pergolado'
+    'Caixaria e Fôrmas'
   ];
 
   const filtered = PRODUCTS_DATA.filter((p) => {
@@ -31,8 +27,8 @@ export function ProductsListView({ onOpenBudget }: { onOpenBudget?: (slug?: stri
   return (
     <>
       <EnhancedSEO
-        title="Catálogo de Madeiras e Pinus em Curitiba - PR"
-        description="Confira todas as 19 opções de Madeira de Pinus, Pinus Autoclavado, Caibros, Vigas, Ripas, Tábuas e Madeirite com entrega rápida em Curitiba e Região Metropolitana."
+        title="Catálogo de Madeira de Pinus em Curitiba - PR"
+        description="Confira todas as opções de Madeira de Pinus Serrada In Natura, Caibros, Vigas, Ripas, Sarrafos, Tábuas de Caixaria e Escoras com entrega rápida em Curitiba e Região Metropolitana."
         canonicalPath="/produtos"
         keywords={['Catálogo de Madeiras', 'Produtos Madeireira Curitiba', 'Madeira de Pinus']}
       />
@@ -48,7 +44,7 @@ export function ProductsListView({ onOpenBudget }: { onOpenBudget?: (slug?: stri
               Produtos de Madeira de Pinus em Curitiba
             </h1>
             <p className="text-sm text-stone-600">
-              Madeiras brutas, aparelhadas, tratadas em autoclave e chapas de compensado/madeirite para todos os portes de projetos.
+              Madeira de Pinus Serrada In Natura para telhados, caixarias de concreto, estruturas e fundações de obras.
             </p>
           </div>
 
@@ -60,7 +56,7 @@ export function ProductsListView({ onOpenBudget }: { onOpenBudget?: (slug?: stri
                 type="text"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                placeholder="Buscar por nome, produto ou uso (ex: caibro, deck, telhado)..."
+                placeholder="Buscar por nome, produto ou uso (ex: caibro, viga, telhado, caixaria)..."
                 className="w-full bg-white border border-stone-300 focus:border-amber-500 rounded-2xl pl-12 pr-4 py-3 text-sm text-stone-900 focus:outline-none transition-colors shadow-sm"
               />
             </div>

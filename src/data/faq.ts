@@ -7,8 +7,8 @@ export const FAQ_DATA: FAQItem[] = [
     category: 'Entrega e Logística'
   },
   {
-    question: 'Qual a diferença entre Pinus comum e Pinus Tratado Autoclavado (CCA)?',
-    answer: 'O Pinus comum (in natura) é ideal para uso em caixarias temporárias, fôrmas e áreas internas secas. Já o Pinus Autoclavado passa por tratamento industrial em autoclave sob vácuo-pressão com imunizante CCA, garantindo proteção máxima contra cupins, insetos e apodrecimento mesmo exposto à chuva e ao solo por mais de 15 anos.',
+    question: 'Quais os tipos de Madeira de Pinus comercializados pela Madeireira Bairro Novo?',
+    answer: 'Trabalhamos exclusivamente com Madeira de Pinus Serrada In Natura (bruta) selecionada de reflorestamento, perfeita para caixarias de concreto, fôrmas, fundações, vigamentos, caibros, ripas, sarrafos e escoras para lajes.',
     category: 'Produtos e Tratamento'
   },
   {
@@ -22,8 +22,8 @@ export const FAQ_DATA: FAQItem[] = [
     category: 'Atendimento e Condições'
   },
   {
-    question: 'Vocês possuem peças de Pinus sob medida ou aplainadas (beneficiadas)?',
-    answer: 'Sim! Além da linha bruta para caixaria de obras, temos uma ampla linha de Madeira Beneficiada (S4S), aplainada e pronta para marcenaria, pergolados, decks e revestimentos decorativos.',
+    question: 'Vocês trabalham com bitolas padronizadas e entrega no canteiro de obras?',
+    answer: 'Sim! Fornecemos tábuas, caibros, vigas, sarrafos, ripas e escoras em bitolas padronizadas com alta precisão de corte e agilidade na entrega direta no seu canteiro de obras.',
     category: 'Produtos e Tratamento'
   },
   {

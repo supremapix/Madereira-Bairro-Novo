@@ -17,9 +17,9 @@ export const REVIEWS_DATA: CustomerReview[] = [
     location: 'Pinheirinho, Curitiba - PR',
     rating: 5,
     date: '2026-07-18',
-    comment: 'O Pinus beneficiado de 4 faces deles é o melhor de Curitiba. Peças lisas, secas e sem nós soltos. Ganhei muito tempo na marcenaria.',
+    comment: 'A madeira de Pinus serrada in natura deles é excelente para engradamentos. Peças alinhadas e secas. Ganhei muito tempo na obra.',
     verifiedPurchase: true,
-    productMentioned: 'Madeira Beneficiada'
+    productMentioned: 'Madeira de Pinus'
   },
   {
     id: '3',
@@ -27,9 +27,9 @@ export const REVIEWS_DATA: CustomerReview[] = [
     location: 'Batel, Curitiba - PR',
     rating: 5,
     date: '2026-07-11',
-    comment: 'Fizemos um deck de Pinus Autoclavado ao redor da nossa piscina. O acabamento ficou maravilhoso e economizamos mais da metade do valor de outras madeiras.',
+    comment: 'Compramos vigas e caibros para a estrutura do nosso telhado. O acabamento ficou ótimo e economizamos significativamente no orçamento.',
     verifiedPurchase: true,
-    productMentioned: 'Deck de Pinus Autoclavado'
+    productMentioned: 'Vigas e Caibros'
   },
   {
     id: '4',
@@ -37,9 +37,9 @@ export const REVIEWS_DATA: CustomerReview[] = [
     location: 'São José dos Pinhais - PR',
     rating: 5,
     date: '2026-06-29',
-    comment: 'Parceria de anos. Fornecem vigas, caibros e madeirite para todas as nossas obras. Atendimento atencioso pelo WhatsApp e cumprem rigorosamente o prazo.',
+    comment: 'Parceria de anos. Fornecem vigas, caibros e tábuas para caixaria para todas as nossas obras. Atendimento atencioso pelo WhatsApp e cumprem o prazo.',
     verifiedPurchase: true,
-    productMentioned: 'Kit para Telhado e Madeirite'
+    productMentioned: 'Kit para Telhado e Tábuas'
   },
   {
     id: '5',

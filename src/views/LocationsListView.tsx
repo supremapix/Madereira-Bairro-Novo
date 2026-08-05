@@ -15,7 +15,7 @@ export function LocationsListView() {
     <>
       <EnhancedSEO
         title="Regiões Atendidas em Curitiba e Região Metropolitana - PR"
-        description="Confira a lista completa dos 75 bairros de Curitiba e 15 cidades da Região Metropolitana com entrega rápida de Madeira de Pinus, Vigas, Caibros e Madeirite."
+        description="Confira a lista completa dos 75 bairros de Curitiba e 15 cidades da Região Metropolitana com entrega rápida de Madeira de Pinus Serrada In Natura, Vigas, Caibros, Ripas e Tábuas de Caixaria."
         canonicalPath="/regioes-atendidas"
         keywords={['Bairros de Curitiba Madeireira', 'Entrega de Madeira Curitiba', 'Cidades RMC Madeireira']}
       />

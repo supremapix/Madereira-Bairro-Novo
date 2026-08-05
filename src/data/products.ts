@@ -256,7 +256,7 @@ export const PRODUCTS_DATA: Product[] = [
       'Custo reduzido em relação a vigas metálicas ou de concreto',
       'Fácil montagem e fixação com suportes metálicos'
     ],
-    imageUrl: 'https://geamadeirastratadas.com.br/wp-content/uploads/2023/02/VIGA-PINUS-TRATADO-10x20x300-cm-690x690.jpg',
+    imageUrl: 'https://scontent.xx.fbcdn.net/v/t39.105495-1/764863184_1743858136806327_8541049091019597092_n.webp?_nc_ht=scontent.xx.fbcdn.net&_nc_cat=103&_nc_ohc=rGnjPIi8AOIQ7kNvwGPph51&sdl=0&ccb=14-4&oh=00_AQHYk20lEiCwKw1WpnhZsIcenGajfl7Vl-mpES-SobGVFw&oe=6A7883B2&_nc_sid=a21977',
     imageAlt: 'Vigas de pinus para sustentação de coberturas em obras',
     treatmentType: 'Serrado In Natura'
   },

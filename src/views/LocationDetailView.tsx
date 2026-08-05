@@ -106,10 +106,10 @@ export function LocationDetailView({ onOpenBudget }: { onOpenBudget?: (slug?: st
             <div className="flex flex-col sm:flex-row items-center gap-3 pt-2">
               <button
                 onClick={() => onOpenBudget?.()}
-                className="w-full sm:w-auto bg-amber-500 hover:bg-amber-400 text-stone-950 font-black px-8 py-3.5 rounded-xl text-sm shadow-xl flex items-center justify-center gap-2 active:scale-95 transition-all min-h-[50px]"
+                className="w-full sm:w-auto bg-amber-500 hover:bg-amber-400 text-stone-950 font-black px-7 py-3 rounded-xl text-xs sm:text-sm shadow-xl flex items-center justify-center gap-2 active:scale-95 transition-all min-h-[46px]"
               >
                 <Sparkles className="w-4 h-4 fill-stone-950" />
-                SOLICITAR ORÇAMENTO PARA {location.name.toUpperCase()}
+                <span>Solicitar Orçamento</span>
               </button>
 
               <a
@@ -118,10 +118,10 @@ export function LocationDetailView({ onOpenBudget }: { onOpenBudget?: (slug?: st
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-7 py-3.5 rounded-xl text-sm shadow-xl flex items-center justify-center gap-2 active:scale-95 transition-all min-h-[50px]"
+                className="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-7 py-3 rounded-xl text-xs sm:text-sm shadow-xl flex items-center justify-center gap-2 active:scale-95 transition-all min-h-[46px]"
               >
                 <MessageCircle className="w-4 h-4 fill-white stroke-[1.5]" />
-                WhatsApp do Atendente
+                <span>WhatsApp Directo</span>
               </a>
             </div>
           </div>

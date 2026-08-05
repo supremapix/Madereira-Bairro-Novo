@@ -142,10 +142,10 @@ export function ProductDetailView({ onOpenBudget }: { onOpenBudget?: (slug?: str
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
                   <button
                     onClick={() => onOpenBudget?.(product.slug)}
-                    className="w-full bg-amber-500 hover:bg-amber-400 text-stone-950 font-black py-4 rounded-xl text-sm shadow-xl flex items-center justify-center gap-2 active:scale-95 transition-all min-h-[52px]"
+                    className="w-full bg-amber-500 hover:bg-amber-400 text-stone-950 font-black py-3 rounded-xl text-xs sm:text-sm shadow-xl flex items-center justify-center gap-2 active:scale-95 transition-all min-h-[46px]"
                   >
-                    <Sparkles className="w-5 h-5 fill-stone-950" />
-                    SOLICITAR ORÇAMENTO
+                    <Sparkles className="w-4 h-4 fill-stone-950" />
+                    <span>Cotar Produto</span>
                   </button>
 
                   <a
@@ -154,10 +154,10 @@ export function ProductDetailView({ onOpenBudget }: { onOpenBudget?: (slug?: str
                     )}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-4 rounded-xl text-sm shadow-xl flex items-center justify-center gap-2 active:scale-95 transition-all min-h-[52px]"
+                    className="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 rounded-xl text-xs sm:text-sm shadow-xl flex items-center justify-center gap-2 active:scale-95 transition-all min-h-[46px]"
                   >
-                    <MessageCircle className="w-5 h-5 fill-white stroke-[1.5]" />
-                    WhatsApp Direto
+                    <MessageCircle className="w-4 h-4 fill-white stroke-[1.5]" />
+                    <span>WhatsApp Directo</span>
                   </a>
                 </div>
               </div>

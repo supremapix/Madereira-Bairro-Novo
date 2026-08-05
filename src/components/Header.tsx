@@ -74,7 +74,7 @@ export function Header({ onOpenBudget }: { onOpenBudget?: () => void }) {
                 className="inline-flex items-center gap-1.5 bg-stone-950 text-amber-300 hover:bg-stone-900 border border-amber-400/30 px-3 py-1 rounded-full shadow-md transition-all hover:scale-105 active:scale-95 font-black uppercase text-[11px] tracking-wide"
               >
                 <Sparkles className="w-3.5 h-3.5 text-amber-400 fill-amber-400" />
-                <span>🔥 PROMOÇÕES HOJE: CONFIRA O CATÁLOGO COMPLETO</span>
+                <span>PROMOÇÕES HOJE: CATÁLOGO COMPLETO</span>
               </Link>
 
               <a
@@ -86,7 +86,7 @@ export function Header({ onOpenBudget }: { onOpenBudget?: () => void }) {
                 className="inline-flex items-center gap-1.5 bg-emerald-950 text-emerald-300 hover:bg-emerald-900 border border-emerald-500/40 px-3 py-1 rounded-full shadow-md transition-all hover:scale-105 active:scale-95 font-black"
               >
                 <MessageCircle className="w-3.5 h-3.5 fill-emerald-400 text-emerald-950" />
-                <span>WHATSAPP VENDAS: {COMPANY_DATA.phones.whatsapp} (CLIQUE AQUI)</span>
+                <span>WHATSAPP VENDAS: {COMPANY_DATA.phones.whatsapp}</span>
               </a>
 
               <a
@@ -96,7 +96,7 @@ export function Header({ onOpenBudget }: { onOpenBudget?: () => void }) {
                 className="inline-flex items-center gap-1.5 bg-stone-950/10 hover:bg-stone-950/20 px-3 py-1 rounded-full font-black text-stone-950 transition-all hover:scale-105"
               >
                 <MapPin className="w-3.5 h-3.5 text-stone-950" />
-                <span>ENDEREÇO: R. Coronel Joaquim Antônio de Azevedo, 1459 - Curitiba (ABRIR MAPA)</span>
+                <span>ENDEREÇO: R. Coronel Joaquim Antônio de Azevedo, 1459 - Curitiba</span>
               </a>
 
               <a
@@ -104,7 +104,7 @@ export function Header({ onOpenBudget }: { onOpenBudget?: () => void }) {
                 className="inline-flex items-center gap-1.5 bg-stone-950/10 hover:bg-stone-950/20 px-3 py-1 rounded-full font-black text-stone-950 transition-all hover:scale-105"
               >
                 <Phone className="w-3.5 h-3.5 text-stone-950" />
-                <span>TELEFONE FIXO: {COMPANY_DATA.phones.landline} (LIGAR AGORA)</span>
+                <span>TELEFONE FIXO: {COMPANY_DATA.phones.landline}</span>
               </a>
 
               <Link
@@ -112,7 +112,7 @@ export function Header({ onOpenBudget }: { onOpenBudget?: () => void }) {
                 className="inline-flex items-center gap-1.5 bg-stone-950 text-stone-100 hover:bg-stone-900 px-3 py-1 rounded-full shadow-md transition-all hover:scale-105 font-black"
               >
                 <Award className="w-3.5 h-3.5 text-amber-400" />
-                <span>🚚 PRONTA ENTREGA EM 75 BAIRROS DE CURITIBA E REGIÃO</span>
+                <span>ENTREGA EM 75 BAIRROS DE CURITIBA E REGIÃO</span>
               </Link>
 
               <span className="text-stone-950/40 font-black">•</span>
@@ -374,10 +374,10 @@ export function Header({ onOpenBudget }: { onOpenBudget?: () => void }) {
                   setMobileMenuOpen(false);
                   onOpenBudget?.();
                 }}
-                className="w-full bg-gradient-to-r from-amber-500 to-amber-600 text-stone-950 font-black py-4 rounded-2xl text-lg shadow-xl mt-4 flex items-center justify-center gap-2 active:scale-98 min-h-[60px]"
+                className="w-full bg-gradient-to-r from-amber-500 to-amber-600 text-stone-950 font-black py-3.5 rounded-2xl text-base shadow-xl mt-4 flex items-center justify-center gap-2 active:scale-98 min-h-[52px]"
               >
-                <Sparkles className="w-6 h-6 fill-stone-950" />
-                SOLICITAR ORÇAMENTO DE MADEIRA
+                <Sparkles className="w-5 h-5 fill-stone-950" />
+                <span>Solicitar Orçamento</span>
               </button>
 
               <div className="text-center pt-4 text-xs text-stone-400">

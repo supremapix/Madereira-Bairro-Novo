@@ -91,9 +91,9 @@ export function ContactView({ onOpenBudget }: { onOpenBudget?: () => void }) {
                 href={COMPANY_DATA.social.googleMaps}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full bg-amber-500 hover:bg-amber-400 text-stone-950 font-black py-3.5 px-4 rounded-2xl text-xs flex items-center justify-center gap-2 shadow-lg transition-colors"
+                className="w-full bg-amber-500 hover:bg-amber-400 text-stone-950 font-black py-3 px-4 rounded-2xl text-xs flex items-center justify-center gap-2 shadow-lg transition-colors min-h-[44px]"
               >
-                <span>ABRIR ROTAS NO GOOGLE MAPS</span>
+                <span>Abrir no Google Maps</span>
                 <ExternalLink className="w-4 h-4" />
               </a>
             </div>
@@ -117,10 +117,10 @@ export function ContactView({ onOpenBudget }: { onOpenBudget?: () => void }) {
                 </p>
                 <button
                   onClick={onOpenBudget}
-                  className="bg-emerald-600 hover:bg-emerald-500 text-white font-black px-8 py-4 rounded-2xl text-sm shadow-xl inline-flex items-center gap-2"
+                  className="bg-emerald-600 hover:bg-emerald-500 text-white font-black px-7 py-3 rounded-2xl text-xs sm:text-sm shadow-xl inline-flex items-center gap-2 min-h-[46px]"
                 >
                   <Send className="w-4 h-4" />
-                  <span>PREENCHER COTADOR DE MADEIRA</span>
+                  <span>Solicitar Orçamento</span>
                 </button>
               </div>
             </div>

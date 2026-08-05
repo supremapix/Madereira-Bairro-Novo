@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { EnhancedSEO } from '../components/EnhancedSEO';
 import { ProductCard } from '../components/ProductCard';
 import { PRODUCTS_DATA } from '../data/products';
-import { Search } from 'lucide-react';
+import { Search, Trees } from 'lucide-react';
 
 export function ProductsListView({ onOpenBudget }: { onOpenBudget?: (slug?: string) => void }) {
   const [searchTerm, setSearchTerm] = useState('');
@@ -53,9 +53,9 @@ export function ProductsListView({ onOpenBudget }: { onOpenBudget?: (slug?: stri
           </div>
 
           {/* Search & Filter Bar */}
-          <div className="bg-stone-900 p-4 sm:p-6 rounded-3xl border border-stone-800 space-y-4">
+          <div className="bg-stone-900/90 backdrop-blur-md p-4 sm:p-6 rounded-3xl border border-stone-800 shadow-2xl space-y-5">
             <div className="relative max-w-md mx-auto">
-              <Search className="absolute left-4 top-3.5 w-5 h-5 text-stone-400" />
+              <Search className="absolute left-4 top-3.5 w-5 h-5 text-amber-500" />
               <input
                 type="text"
                 value={searchTerm}
@@ -70,13 +70,14 @@ export function ProductsListView({ onOpenBudget }: { onOpenBudget?: (slug?: stri
                 <button
                   key={cat}
                   onClick={() => setSelectedCategory(cat)}
-                  className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all ${
+                  className={`px-4 py-2 rounded-xl text-xs font-bold transition-all min-h-[38px] flex items-center gap-1.5 ${
                     selectedCategory === cat
-                      ? 'bg-amber-500 text-stone-950 shadow-md'
-                      : 'bg-stone-950 text-stone-300 hover:bg-stone-800 border border-stone-800'
+                      ? 'bg-amber-500 text-stone-950 shadow-md font-black border border-amber-400'
+                      : 'bg-stone-950 text-stone-300 hover:text-amber-400 hover:bg-stone-800 border border-stone-800'
                   }`}
                 >
-                  {cat}
+                  <Trees className={`w-3.5 h-3.5 ${selectedCategory === cat ? 'text-stone-950' : 'text-amber-500'}`} />
+                  <span>{cat}</span>
                 </button>
               ))}
             </div>

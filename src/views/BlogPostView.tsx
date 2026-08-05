@@ -148,10 +148,10 @@ export function BlogPostView({ onOpenBudget }: { onOpenBudget?: (slug?: string) 
               )}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-6 py-3.5 rounded-2xl text-sm shadow-xl"
+              className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-6 py-3 rounded-2xl text-xs sm:text-sm shadow-xl min-h-[44px]"
             >
-              <MessageCircle className="w-5 h-5 fill-white stroke-[1.5]" />
-              <span>Chamar Especialista no WhatsApp</span>
+              <MessageCircle className="w-4 h-4 fill-white stroke-[1.5]" />
+              <span>Atendimento WhatsApp</span>
             </a>
           </div>
         </div>

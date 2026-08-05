@@ -110,21 +110,24 @@ export function HomeView({ onOpenBudget }: { onOpenBudget?: (slug?: string) => v
             </p>
           </div>
 
-          {/* Category Filter Pills - Optimized for Mobile Carousel & Desktop Wrap */}
-          <div className="flex items-center gap-2 overflow-x-auto pb-3 pt-2 px-1 sm:flex-wrap sm:justify-center sm:overflow-x-visible no-scrollbar -mx-4 sm:mx-0 px-4 sm:px-0">
-            {categories.map((cat) => (
-              <button
-                key={cat}
-                onClick={() => setSelectedCategory(cat)}
-                className={`px-4 py-2.5 rounded-xl text-xs font-bold transition-all shrink-0 whitespace-nowrap min-h-[42px] flex items-center justify-center ${
-                  selectedCategory === cat
-                    ? 'bg-amber-500 text-stone-950 shadow-lg scale-105 font-black border border-amber-400'
-                    : 'bg-stone-900 text-stone-300 hover:bg-stone-800 border border-stone-800'
-                }`}
-              >
-                {cat}
-              </button>
-            ))}
+          {/* Category Filter Pills - Personalized & Elegant Bar */}
+          <div className="bg-stone-900/90 backdrop-blur-md p-2.5 rounded-2xl border border-stone-800 shadow-2xl max-w-full overflow-x-auto no-scrollbar scroll-smooth">
+            <div className="flex items-center gap-2 sm:flex-wrap sm:justify-center min-w-max sm:min-w-0">
+              {categories.map((cat) => (
+                <button
+                  key={cat}
+                  onClick={() => setSelectedCategory(cat)}
+                  className={`px-4 py-2.5 rounded-xl text-xs font-bold transition-all shrink-0 whitespace-nowrap min-h-[42px] flex items-center justify-center gap-2 ${
+                    selectedCategory === cat
+                      ? 'bg-amber-500 text-stone-950 shadow-md shadow-amber-500/20 font-black border border-amber-400 scale-[1.02]'
+                      : 'bg-stone-950/60 text-stone-300 hover:text-amber-400 hover:bg-stone-800 border border-stone-800/80'
+                  }`}
+                >
+                  <Trees className={`w-3.5 h-3.5 ${selectedCategory === cat ? 'text-stone-950' : 'text-amber-500'}`} />
+                  <span>{cat}</span>
+                </button>
+              ))}
+            </div>
           </div>
 
           {/* Products Grid */}
@@ -438,9 +441,9 @@ export function HomeView({ onOpenBudget }: { onOpenBudget?: (slug?: string) => v
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
             <button
               onClick={() => onOpenBudget?.()}
-              className="w-full sm:w-auto bg-amber-500 hover:bg-amber-400 text-stone-950 font-black px-8 py-4 rounded-2xl text-base shadow-2xl transition-all active:scale-95 min-h-[56px]"
+              className="w-full sm:w-auto bg-amber-500 hover:bg-amber-400 text-stone-950 font-black px-7 py-3.5 rounded-2xl text-sm shadow-2xl transition-all active:scale-95 min-h-[50px]"
             >
-              SOLICITAR ORÇAMENTO RÁPIDO
+              Solicitar Orçamento
             </button>
             <a
               href={`https://wa.me/${COMPANY_DATA.phones.whatsappRaw}?text=${encodeURIComponent(
@@ -448,10 +451,10 @@ export function HomeView({ onOpenBudget }: { onOpenBudget?: (slug?: string) => v
               )}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-8 py-4 rounded-2xl text-base shadow-2xl transition-all active:scale-95 flex items-center justify-center gap-2 min-h-[56px]"
+              className="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-7 py-3.5 rounded-2xl text-sm shadow-2xl transition-all active:scale-95 flex items-center justify-center gap-2 min-h-[50px]"
             >
-              <MessageCircle className="w-5 h-5 fill-white stroke-[1.5]" />
-              Falar no WhatsApp
+              <MessageCircle className="w-4 h-4 fill-white stroke-[1.5]" />
+              <span>WhatsApp Directo</span>
             </a>
           </div>
         </div>

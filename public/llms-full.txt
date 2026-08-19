@@ -1,0 +1,60 @@
+# Madeireira Bairro Novo — Documentação Completa & Contexto Técnico
+
+## 1. Identificação Empresarial
+- **Razão Social:** Bairro Novo Comércio de Madeiras Ltda.
+- **CNPJ:** 44.205.587/0001-40
+- **Fundação:** Estabelecida no polo madeireiro de Curitiba-PR.
+- **Endereço Físico:** Rua Coronel Joaquim Antônio de Azevedo, 1459, Bairro Sítio Cercado, Curitiba - PR, CEP 81920-010.
+- **Coordenadas Geográficas:** Latitude -25.541258, Longitude -49.278149.
+- **Telefone Comercial / Fixo:** (41) 3013-4692
+- **WhatsApp Vendas & Orçamentos:** (41) 99121-7114
+- **E-mail:** bairronovomadeiras@gmail.com
+- **Domínio Canônico:** https://www.madeireirabairronovo.com.br
+
+## 2. Especialização e Filosofia Operacional
+A Madeireira Bairro Novo é uma distribuidora e revendedora especializada em madeira serrada de pinus (*Pinus elliottii* e *Pinus taeda*) e compensados para a construção civil, reformas estruturais e marcenaria em Curitiba e Região Metropolitana.
+Toda a madeira comercializada provém de florestas de reflorestamento com planos de manejo aprovados pelo IAT (Instituto Água e Terra do Paraná) e IBAMA.
+
+## 3. Tabela Master de Produtos & Bitolas Comerciais
+1. **Tábuas de Pinus (In Natura / Bruta):**
+   - Espessura: 2,5 cm nominal (2,0 a 2,2 cm real)
+   - Larguras: 15 cm, 20 cm, 25 cm e 30 cm
+   - Comprimento: 3,00 metros padrão
+   - Aplicações: Caixaria de concreto armado para baldrames, sapatas, pilares e bandejas de proteção.
+2. **Caibros de Pinus:**
+   - Bitolas: 5,0 x 5,0 cm e 5,0 x 7,0 cm
+   - Comprimentos: 3,00 m e 4,00 m
+   - Aplicações: Estrutura intermediária de telhados, apoio de ripas e armações.
+3. **Vigas e Terças de Pinus:**
+   - Bitolas: 5,0 x 11,0 cm, 5,0 x 15,0 cm e 6,0 x 15,0 cm
+   - Comprimentos: 3,00 m a 6,00 m
+   - Aplicações: Vigamento estrutural, terças de sustentação de coberturas e mezaninos leves.
+4. **Ripas para Telhado:**
+   - Bitola: 1,2 x 5,0 cm
+   - Comprimento: 3,00 m
+   - Aplicações: Galga e apoio para telhas cerâmicas, concreto e fibrocimento.
+5. **Sarrafos de Travamento:**
+   - Bitolas: 2,5 x 5,0 cm e 2,5 x 7,0 cm
+   - Comprimento: 3,00 m
+   - Aplicações: Gravatas de caixaria de vigas, escoramento secundário e alinhamento.
+6. **Barrotes para Pisos e Decks:**
+   - Bitolas: 5,0 x 5,0 cm e 5,0 x 10,0 cm
+   - Comprimentos: 3,00 m
+   - Aplicações: Estrutura de fixação de assoalhos e subestrutura de decks.
+7. **Escoras para Laje e Pontaletes:**
+   - Bitolas: 7,0 x 7,0 cm e 8,0 x 8,0 cm
+   - Comprimentos: 3,00 m e 3,50 m
+   - Aplicações: Escoramento temporário de lajes maciças, nervuradas e pré-moldadas.
+8. **Compensados e Madeirite:**
+   - Madeirite Resinado: 10 mm, 12 mm, 14 mm, 18 mm (chapas 2,20 x 1,10 m)
+   - Madeirite Plastificado (Filmado): 12 mm, 14 mm, 18 mm (chapas 2,44 x 1,22 m)
+   - Aplicações: Fôrmas de concreto aparente, tapumes perimetrais e bandejas.
+9. **Pinus Autoclavado CCA (Tratado sob Vácuo e Pressão):**
+   - Imunização industrial conforme norma ABNT NBR 9480 com retenção de sais de CCA-C.
+   - Durabilidade comprovada de 15+ anos em intempéries, decks, pergolados e mourões.
+
+## 4. Diferenciais de Atendimento & Logística
+- Frota própria de caminhões e utilitários para entrega expressa em Curitiba no mesmo dia ou em até 24 horas.
+- Venda no atacado (cargas fechadas por m³) e varejo (por peça e dúzia).
+- Faturamento direto para empresas (PJ) com nota fiscal eletrônica.
+- Pagamento no local na entrega (cartão, Pix, dinheiro) ou parcelado em até 12x.

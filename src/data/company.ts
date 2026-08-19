@@ -1,10 +1,10 @@
 import { CompanyInfo } from '../types';
 
 export const COMPANY_DATA: CompanyInfo = {
-  name: 'Bairro Novo Comércio de Madeiras',
+  name: 'Madeireira Bairro Novo',
   legalName: 'Bairro Novo Comércio de Madeiras Ltda.',
   cnpj: '44.205.587/0001-40',
-  canonicalUrl: 'https://madeireirabairronovo.com.br',
+  canonicalUrl: 'https://www.madeireirabairronovo.com.br',
   address: {
     street: 'Rua Coronel Joaquim Antônio de Azevedo',
     number: '1459',
@@ -12,13 +12,13 @@ export const COMPANY_DATA: CompanyInfo = {
     city: 'Curitiba',
     state: 'PR',
     cep: '81920-010',
-    formatted: 'Rua Coronel Joaquim Antônio de Azevedo, 1459 - Curitiba – PR, CEP 81920-010'
+    formatted: 'Rua Coronel Joaquim Antônio de Azevedo, 1459 - Sítio Cercado, Curitiba – PR, CEP 81920-010'
   },
   phones: {
     landline: '(41) 3013-4692',
     landlineRaw: '554130134692',
-    whatsapp: '(41) 3013-4692',
-    whatsappRaw: '554130134692'
+    whatsapp: '(41) 99121-7114',
+    whatsappRaw: '5541991217114'
   },
   email: 'bairronovomadeiras@gmail.com',
   hours: {

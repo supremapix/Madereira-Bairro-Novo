@@ -24,9 +24,9 @@ User-agent: Copilot
 Allow: /
 
 # Sitemaps
-Sitemap: https://madeireirabairronovo.com.br/sitemap.xml
-Sitemap: https://madeireirabairronovo.com.br/sitemap-pages.xml
-Sitemap: https://madeireirabairronovo.com.br/sitemap-products.xml
-Sitemap: https://madeireirabairronovo.com.br/sitemap-blog.xml
-Sitemap: https://madeireirabairronovo.com.br/sitemap-images.xml
-Sitemap: https://madeireirabairronovo.com.br/sitemap-locations.xml
+Sitemap: https://www.madeireirabairronovo.com.br/sitemap.xml
+Sitemap: https://www.madeireirabairronovo.com.br/sitemap-pages.xml
+Sitemap: https://www.madeireirabairronovo.com.br/sitemap-products.xml
+Sitemap: https://www.madeireirabairronovo.com.br/sitemap-blog.xml
+Sitemap: https://www.madeireirabairronovo.com.br/sitemap-images.xml
+Sitemap: https://www.madeireirabairronovo.com.br/sitemap-locations.xml

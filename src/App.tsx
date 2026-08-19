@@ -7,6 +7,9 @@ import { FloatingActions } from './components/FloatingActions';
 import { BudgetModal } from './components/BudgetModal';
 
 import { HomeView } from './views/HomeView';
+import { PillarPageView } from './views/PillarPageView';
+import { PricesPageView } from './views/PricesPageView';
+import { MeasurementsPageView } from './views/MeasurementsPageView';
 import { ProductsListView } from './views/ProductsListView';
 import { ProductDetailView } from './views/ProductDetailView';
 import { LocationsListView } from './views/LocationsListView';
@@ -57,6 +60,9 @@ function AnimatedRoutes({ onOpenBudget }: { onOpenBudget: (slug?: string) => voi
       >
         <Routes location={location}>
           <Route path="/" element={<HomeView onOpenBudget={onOpenBudget} />} />
+          <Route path="/madeira-de-pinus" element={<PillarPageView onOpenBudget={onOpenBudget} />} />
+          <Route path="/precos" element={<PricesPageView onOpenBudget={onOpenBudget} />} />
+          <Route path="/medidas" element={<MeasurementsPageView onOpenBudget={onOpenBudget} />} />
           <Route path="/produtos" element={<ProductsListView onOpenBudget={onOpenBudget} />} />
           <Route path="/produto/:slug" element={<ProductDetailView onOpenBudget={onOpenBudget} />} />
           <Route path="/regioes-atendidas" element={<LocationsListView />} />

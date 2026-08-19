@@ -41,12 +41,14 @@ export function Header({ onOpenBudget }: { onOpenBudget?: () => void }) {
 
   const navLinks = [
     { label: 'Início', path: '/' },
+    { label: 'Madeira de Pinus', path: '/madeira-de-pinus' },
+    { label: 'Preços', path: '/precos' },
+    { label: 'Medidas & m³', path: '/medidas' },
     {
       label: 'Produtos',
       path: '/produtos',
       hasDropdown: true
     },
-    { label: 'Madeira de Pinus', path: '/produto/madeira-de-pinus' },
     { label: 'Regiões Atendidas', path: '/regioes-atendidas' },
     { label: 'Sobre Nós', path: '/sobre' },
     { label: 'Blog', path: '/blog' },
@@ -54,13 +56,18 @@ export function Header({ onOpenBudget }: { onOpenBudget?: () => void }) {
   ];
 
   const quickProducts = [
-    { name: 'Madeira de Pinus (In Natura)', path: '/produto/madeira-de-pinus' },
-    { name: 'Tábuas para Caixaria', path: '/produto/tabuas' },
-    { name: 'Caibros de Pinus', path: '/produto/caibros' },
-    { name: 'Vigas Estruturais', path: '/produto/vigas' },
-    { name: 'Ripas e Sarrafos', path: '/produto/ripas' },
-    { name: 'Escoras para Laje', path: '/produto/escoras' },
-    { name: 'Ver Todos os Produtos', path: '/produtos' }
+    { name: 'Madeira de Pinus (Guia & Bitolas)', path: '/madeira-de-pinus' },
+    { name: 'Tábuas para Caixaria (15, 20, 25, 30cm)', path: '/produto/tabuas' },
+    { name: 'Caibros de Pinus (5x5 e 5x7cm)', path: '/produto/caibros' },
+    { name: 'Vigas Estruturais (5x11 a 6x15cm)', path: '/produto/vigas' },
+    { name: 'Ripas para Telhado (1,2x5cm)', path: '/produto/ripas' },
+    { name: 'Sarrafos de Travamento (2,5x5 e 2,5x7cm)', path: '/produto/sarrafos' },
+    { name: 'Barrotes para Piso e Deck (5x5 e 5x10cm)', path: '/produto/barrotes' },
+    { name: 'Escoras para Laje (7x7 e 8x8cm)', path: '/produto/escoras' },
+    { name: 'Madeirite Resinado e Plastificado', path: '/produto/madeirite' },
+    { name: 'Deck de Pinus Autoclavado CCA', path: '/produto/deck' },
+    { name: 'Madeira para Pergolado Tratado', path: '/produto/pergolado' },
+    { name: 'Ver Catálogo Completo', path: '/produtos' }
   ];
 
   return (

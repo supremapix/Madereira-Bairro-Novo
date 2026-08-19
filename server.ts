@@ -55,14 +55,25 @@ async function startServer() {
 
   app.get('/sitemap-pages.xml', (req, res) => {
     res.header('Content-Type', 'application/xml');
-    const pages = ['', '/produtos', '/regioes-atendidas', '/blog', '/sobre', '/contato'];
+    const pages = [
+      '',
+      '/madeira-de-pinus',
+      '/precos',
+      '/medidas',
+      '/produtos',
+      '/regioes-atendidas',
+      '/blog',
+      '/sobre',
+      '/contato'
+    ];
     const urls = pages
       .map(
         (p) => `
   <url>
     <loc>${COMPANY_DATA.canonicalUrl}${p}</loc>
-    <changefreq>daily</changefreq>
-    <priority>${p === '' ? '1.0' : '0.8'}</priority>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>${p === '' || p === '/madeira-de-pinus' ? 'daily' : 'weekly'}</changefreq>
+    <priority>${p === '' || p === '/madeira-de-pinus' ? '1.0' : p === '/precos' || p === '/medidas' || p === '/produtos' ? '0.9' : '0.8'}</priority>
   </url>`
       )
       .join('');
@@ -144,11 +155,19 @@ async function startServer() {
     const distPath = path.join(process.cwd(), 'dist');
     app.use(express.static(distPath));
 
-    // Express v4 fallback catch-all
+    // Express v4 route handler that serves route-specific pre-rendered HTML first
     app.get('*', (req, res) => {
-      const indexPath = path.join(distPath, 'index.html');
-      if (fs.existsSync(indexPath)) {
-        res.sendFile(indexPath);
+      const cleanPath = req.path.replace(/^\/+|\/+$/g, '');
+      const routeSpecificPath = path.join(distPath, cleanPath, 'index.html');
+      const directHtmlPath = path.join(distPath, `${cleanPath}.html`);
+      const defaultIndexPath = path.join(distPath, 'index.html');
+
+      if (cleanPath && fs.existsSync(routeSpecificPath)) {
+        res.sendFile(routeSpecificPath);
+      } else if (cleanPath && fs.existsSync(directHtmlPath)) {
+        res.sendFile(directHtmlPath);
+      } else if (fs.existsSync(defaultIndexPath)) {
+        res.sendFile(defaultIndexPath);
       } else {
         res.status(404).send('Not Found');
       }

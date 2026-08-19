@@ -93,14 +93,27 @@ export function HomeView({ onOpenBudget }: { onOpenBudget?: (slug?: string) => v
             </div>
           </div>
 
-          <div className="flex flex-wrap items-center justify-center sm:justify-start gap-4 shrink-0">
+          <div className="flex flex-wrap items-center justify-center sm:justify-start gap-3 shrink-0">
             <Link
-              to="/produto/madeira-de-pinus"
-              className="group relative inline-flex items-center justify-center gap-2.5 bg-stone-950 hover:bg-stone-900 text-white font-bold px-7 py-3.5 rounded-2xl text-xs sm:text-sm shadow-xl hover:shadow-[0_10px_30px_rgba(245,158,11,0.25)] transition-all duration-300 active:scale-95 min-h-[48px] overflow-hidden border border-amber-400/60 hover:border-amber-300"
+              to="/madeira-de-pinus"
+              className="group relative inline-flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-400 text-stone-950 font-black px-5 py-3 rounded-2xl text-xs sm:text-sm shadow-xl transition-all duration-300 active:scale-95 min-h-[46px]"
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-amber-400/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out pointer-events-none" />
-              <span className="relative z-10 tracking-wide text-white">Saber Mais Sobre Pinus</span>
-              <ChevronRight className="w-4 h-4 text-amber-400 relative z-10 group-hover:translate-x-1 transition-transform" />
+              <span>Guia da Madeira de Pinus</span>
+              <ChevronRight className="w-4 h-4 text-stone-950 group-hover:translate-x-1 transition-transform" />
+            </Link>
+
+            <Link
+              to="/precos"
+              className="inline-flex items-center justify-center gap-2 bg-stone-900 hover:bg-stone-800 text-amber-300 font-bold px-4 py-3 rounded-2xl text-xs sm:text-sm border border-amber-500/40 transition-colors min-h-[46px]"
+            >
+              <span>Tabela de Preços</span>
+            </Link>
+
+            <Link
+              to="/medidas"
+              className="inline-flex items-center justify-center gap-2 bg-stone-900 hover:bg-stone-800 text-stone-200 font-bold px-4 py-3 rounded-2xl text-xs sm:text-sm border border-stone-800 transition-colors min-h-[46px]"
+            >
+              <span>Calculadora de m³</span>
             </Link>
           </div>
         </div>

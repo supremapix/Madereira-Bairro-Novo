@@ -107,7 +107,7 @@ _Enviado através do site madeireirabairronovo.com.br_`;
                     required
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
-                    placeholder="(41) 99999-9999"
+                    placeholder="(41) 99121-7114"
                     className="w-full bg-stone-950 border border-stone-800 focus:border-amber-500 rounded-xl px-4 py-3 text-sm text-stone-100 focus:outline-none transition-colors"
                   />
                 </div>

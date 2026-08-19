@@ -37,6 +37,15 @@ export interface CompanyInfo {
   };
 }
 
+export interface ProductPriceItem {
+  dimension: string;
+  unit: string;
+  priceRef?: string;
+  pricePerUnitText: string;
+  pricePerM3Text?: string;
+  notes?: string;
+}
+
 export interface Product {
   id: string;
   slug: string;
@@ -51,8 +60,13 @@ export interface Product {
   imageUrl: string;
   imageAlt: string;
   priceStartingFrom?: string;
-  treatmentType: 'Serrado In Natura' | 'Bruta de Serra' | 'Seco em Estufa' | 'Geral';
+  treatmentType: 'Serrado In Natura' | 'Bruta de Serra' | 'Seco em Estufa' | 'Tratado Autoclavado (CCA)' | 'Geral';
   isCornerstoneProduct?: boolean;
+  lengthMeters?: string;
+  approximateMoisture?: string;
+  indicatedUse?: string;
+  faq?: { question: string; answer: string }[];
+  prices?: ProductPriceItem[];
 }
 
 export interface LocationItem {
@@ -60,12 +74,19 @@ export interface LocationItem {
   slug: string;
   name: string;
   type: 'bairro' | 'cidade';
-  zone?: string; // e.g. "Zona Sul", "Zona Norte", "Região Metropolitana"
-  cepRange?: string;
+  zone?: string;
+  distanceFromDepot?: string;
   estimatedDeliveryTime: string;
-  popularLandmarks?: string[];
+  mainRoutes?: string[];
+  constructionProfile?: string;
+  popularProducts?: string[];
   description: string;
   highlights: string[];
+  uniqueContentHtml?: string;
+  coordinates?: {
+    latitude: number;
+    longitude: number;
+  };
 }
 
 export interface BlogPost {
@@ -76,6 +97,7 @@ export interface BlogPost {
   content: string;
   author: string;
   date: string;
+  dateModified?: string;
   readTime: string;
   category: string;
   tags: string[];
@@ -100,3 +122,4 @@ export interface CustomerReview {
   verifiedPurchase: boolean;
   productMentioned?: string;
 }
+

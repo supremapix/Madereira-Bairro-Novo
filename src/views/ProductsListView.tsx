@@ -8,13 +8,7 @@ export function ProductsListView({ onOpenBudget }: { onOpenBudget?: (slug?: stri
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('Todos');
 
-  const categories = [
-    'Todos',
-    'Madeira de Pinus',
-    'Madeira para Telhado',
-    'Madeira para Construção',
-    'Caixaria e Fôrmas'
-  ];
+  const categories = ['Todos', ...Array.from(new Set(PRODUCTS_DATA.map((p) => p.category)))];
 
   const filtered = PRODUCTS_DATA.filter((p) => {
     const matchesCat = selectedCategory === 'Todos' || p.category === selectedCategory;

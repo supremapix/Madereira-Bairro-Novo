@@ -14,8 +14,8 @@ export const PRODUCTS_DATA: Product[] = [
     lengthMeters: '3,00m a 6,00m',
     approximateMoisture: 'In natura (verde/seca ao ar) e autoclavada CCA',
     indicatedUse: 'Fôrmas de concreto, vigas e caibros de telhado, escoramento de lajes, decks de piscina e pergolados',
-    imageUrl: 'https://images.unsplash.com/photo-1546484396-fb3fc6f95f98?auto=format&fit=crop&w=1000&q=80',
-    imageAlt: 'Lote de madeira de pinus serrada e selecionada em pátio de distribuidora',
+    imageUrl: 'https://img.supremasite.com.br/madeiras/pinus_timber_stack.webp',
+    imageAlt: 'Lote de madeira de pinus serrada in natura selecionada no pátio da Madeireira Bairro Novo em Curitiba',
     dimensionsAvailable: [
       'Tábuas: 2,5x15cm, 2,5x20cm, 2,5x25cm, 2,5x30cm (3m)',
       'Caibros: 5x5cm e 5x7cm (3m e 4m)',
@@ -75,8 +75,8 @@ export const PRODUCTS_DATA: Product[] = [
     lengthMeters: '3,00 metros padrão',
     approximateMoisture: 'In natura (verde/seca ao ar)',
     indicatedUse: 'Caixarias de vigas baldrames, colunas, canaletas, andaimes e tapumes',
-    imageUrl: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1000&q=80',
-    imageAlt: 'Pilha de tábuas de pinus brutas para caixaria de obras em Curitiba',
+    imageUrl: 'https://img.supremasite.com.br/madeiras/pine_boards_formwork_yard.webp',
+    imageAlt: 'Pilha de tábuas de pinus serradas e empilhadas para caixaria de vigas, baldrames e fôrmas de concreto',
     dimensionsAvailable: [
       'Tábua de Pinus 30cm (2,5 x 30 cm x 3,00m)',
       'Tábua de Pinus 25cm (2,5 x 25 cm x 3,00m)',
@@ -132,8 +132,8 @@ export const PRODUCTS_DATA: Product[] = [
     lengthMeters: '3,00m e 4,00m',
     approximateMoisture: 'Seco ao ar / in natura',
     indicatedUse: 'Estruturação de telhados, suporte de ripas, pontaletes e escoramentos leves',
-    imageUrl: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1000&q=80',
-    imageAlt: 'Caibros de pinus retos empilhados para engradamento de telhados',
+    imageUrl: 'https://img.supremasite.com.br/madeiras/pine_roof_framework.webp',
+    imageAlt: 'Caibros de pinus maciços instalados no engradamento estrutural de telhado residencial',
     dimensionsAvailable: [
       'Caibro de Pinus 5x5 cm (2" x 2") em 3,00m e 4,00m',
       'Caibro de Pinus 5x7 cm (2" x 3") em 3,00m e 4,00m'
@@ -187,8 +187,8 @@ export const PRODUCTS_DATA: Product[] = [
     lengthMeters: '3,00m, 4,00m, 5,00m e 6,00m',
     approximateMoisture: 'Seco ao ar',
     indicatedUse: 'Terças de telhado, vigas cumeeiras, barrotes de mezanino e travamento estrutural',
-    imageUrl: 'https://images.unsplash.com/photo-1541888946425-d0fbb18086f6?auto=format&fit=crop&w=1000&q=80',
-    imageAlt: 'Vigas de pinus robustas para montagem de coberturas e mezaninos',
+    imageUrl: 'https://img.supremasite.com.br/madeiras/pine_beams_lumberyard.webp',
+    imageAlt: 'Vigas de pinus estruturais maciças para sustentação de telhados, coberturas e mezaninos',
     dimensionsAvailable: [
       'Viga 5x11 cm (3m, 4m, 5m)',
       'Viga 5x12 cm (3m, 4m, 5m)',
@@ -243,8 +243,8 @@ export const PRODUCTS_DATA: Product[] = [
     lengthMeters: '3,00 metros',
     approximateMoisture: 'Seco ao ar',
     indicatedUse: 'Galgamento transversal de telhados e fixação de telhas',
-    imageUrl: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=1000&q=80',
-    imageAlt: 'Fardos de ripas de pinus alinhadas para assentamento de telhas',
+    imageUrl: 'https://img.supremasite.com.br/madeiras/pine_slat_bundle.webp',
+    imageAlt: 'Ripas de pinus 1,2x5cm alinhadas para galgamento e fixação de telhas cerâmicas e concreto',
     dimensionsAvailable: ['Ripa 1,2 x 5,0 cm x 3,00m (fardos amarrados)'],
     features: [
       'Espessura uniforme que evita telhas desencaixadas',
@@ -293,8 +293,8 @@ export const PRODUCTS_DATA: Product[] = [
     lengthMeters: '3,00 metros',
     approximateMoisture: 'In natura',
     indicatedUse: 'Gravatas de caixaria, travamento de vigas e pilares, guias de régua para contrapiso',
-    imageUrl: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1000&q=80',
-    imageAlt: 'Sarrafos de pinus utilizados no travamento de caixarias em Curitiba',
+    imageUrl: 'https://img.supremasite.com.br/madeiras/pine_slat_bundle.webp',
+    imageAlt: 'Sarrafos de pinus aparelhados para travamento e gravatas de caixarias de concreto',
     dimensionsAvailable: [
       'Sarrafo 2,5 x 5,0 cm x 3,00m',
       'Sarrafo 2,5 x 7,0 cm x 3,00m'
@@ -347,8 +347,8 @@ export const PRODUCTS_DATA: Product[] = [
     lengthMeters: '3,00 metros',
     approximateMoisture: 'Seco ao ar ou tratado CCA',
     indicatedUse: 'Barrotamento de pisos, base de decks e nivelamento de contrapisos irregulares',
-    imageUrl: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1000&q=80',
-    imageAlt: 'Barrotes de pinus alinhados para suporte de assoalhos e pisos',
+    imageUrl: 'https://img.supremasite.com.br/madeiras/pine_joists_lumberyard.webp',
+    imageAlt: 'Barrotes de pinus serrados para nivelamento de pisos de madeira, assoalhos e base de decks',
     dimensionsAvailable: [
       'Barrote 5x5 cm x 3,00m',
       'Barrote 5x7 cm x 3,00m',
@@ -401,8 +401,8 @@ export const PRODUCTS_DATA: Product[] = [
     lengthMeters: '3,00m e 3,50m',
     approximateMoisture: 'In natura',
     indicatedUse: 'Escoramento de lajes treliçadas, lajes maciças, vigas aéreas e reforço provisório',
-    imageUrl: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=80',
-    imageAlt: 'Escoras de pinus maciças montadas para sustentação de laje de concreto',
+    imageUrl: 'https://img.supremasite.com.br/madeiras/pine_props_stack.webp',
+    imageAlt: 'Escoras de pinus 7x7cm e pontaletes resistentes para sustentação de lajes e fôrmas de vigas',
     dimensionsAvailable: [
       'Escora de Pinus 7x7 cm (3,00m e 3,50m)',
       'Escora de Pinus 8x8 cm (3,00m e 3,50m)'
@@ -455,8 +455,8 @@ export const PRODUCTS_DATA: Product[] = [
     lengthMeters: 'Chapas 1,10x2,20m e 1,22x2,44m',
     approximateMoisture: 'Compensado prensado e selado',
     indicatedUse: 'Fôrmas de lajes, vigas de concreto aparente, painéis de vedação e tapumes de obras',
-    imageUrl: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=1000&q=80',
-    imageAlt: 'Chapas de madeirite resinado e plastificado para formas de concreto',
+    imageUrl: 'https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&w=1000&q=80',
+    imageAlt: 'Chapas de madeirite resinado e plastificado fenólico para fôrmas de lajes e concreto aparente',
     dimensionsAvailable: [
       'Madeirite Resinado: 6mm, 10mm, 12mm, 14mm, 17mm (1,10x2,20m)',
       'Madeirite Plastificado: 12mm, 14mm, 17mm, 18mm (1,10x2,20m e 1,22x2,44m)'
@@ -510,8 +510,8 @@ export const PRODUCTS_DATA: Product[] = [
     lengthMeters: '3,00 metros padrão',
     approximateMoisture: 'Autoclavado e seco',
     indicatedUse: 'Decks de piscinas, spas, varandas gourmet, caminhos de jardim, quiosques e passarelas',
-    imageUrl: 'https://images.unsplash.com/photo-1546484396-fb3fc6f95f98?auto=format&fit=crop&w=1000&q=80',
-    imageAlt: 'Deck de pinus autoclavado instalado em área de lazer e piscina em Curitiba',
+    imageUrl: 'https://img.supremasite.com.br/madeiras/cca_treated_deck_pool.webp',
+    imageAlt: 'Deck de pinus autoclavado tratado CCA instalado em área externa de lazer ao redor de piscina',
     dimensionsAvailable: [
       'Régua de Deck 2,5 x 10,0 cm x 3,00m (cantos boleados)',
       'Régua de Deck 2,5 x 15,0 cm x 3,00m (lisa ou frisada antiderrapante)',
@@ -566,8 +566,8 @@ export const PRODUCTS_DATA: Product[] = [
     lengthMeters: '3,00m a 6,00m',
     approximateMoisture: 'Tratado sob pressão CCA',
     indicatedUse: 'Pergolados de jardim, garagens abertas para carros, gazebos gourmet, pórticos e caramanchões',
-    imageUrl: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1000&q=80',
-    imageAlt: 'Pergolado de madeira de pinus tratado em jardim residencial em Curitiba',
+    imageUrl: 'https://img.supremasite.com.br/madeiras/greenish_pine_pergola_garden.webp',
+    imageAlt: 'Estrutura de pergolado de madeira de pinus tratado CCA em jardim residencial e área externa',
     dimensionsAvailable: [
       'Pilares / Mourões: 10x10cm, 12x12cm e 15x15cm (3,00m e 4,00m)',
       'Vigas Mestras: 5x15cm e 5x20cm (3m a 6m)',

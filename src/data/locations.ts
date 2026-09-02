@@ -7,7 +7,7 @@ export const CURITIBA_REGIONAL_ZONES = [
     deliveryTime: 'Entrega Imediata (1 a 2 horas)',
     deliveryRateNote: 'Frete reduzido ou grátis para compras acima do mínimo',
     description: 'Região onde está instalado o depósito central da Madeireira Bairro Novo, garantindo agilidade recorde no fornecimento para canteiros residenciais e comerciais.',
-    neighborhoods: ['Sítio Cercado', 'Ganchinho', 'Umbará']
+    neighborhoods: ['Sítio Cercado', 'Ganchinho', 'Umbará', 'Bairro Novo']
   },
   {
     id: 'regional-pinheirinho',
@@ -31,7 +31,7 @@ export const CURITIBA_REGIONAL_ZONES = [
     deliveryTime: 'Entrega no mesmo dia ou até 24h',
     deliveryRateNote: 'Rotas contínuas pelo Contorno Sul',
     description: 'Maior polo industrial do estado, com demanda massiva de madeira de pinus para caixas, pallets, embalagens industriais e reformas de galpões.',
-    neighborhoods: ['CIC (Cidade Industrial de Curitiba)', 'Augusta', 'Riviera', 'São Miguel']
+    neighborhoods: ['CIC (Cidade Industrial de Curitiba)', 'Jardim Gabineto', 'Augusta', 'Riviera', 'São Miguel']
   },
   {
     id: 'regional-portao',
@@ -88,8 +88,8 @@ export const CORE_PRIORITY_NEIGHBORHOODS: LocationItem[] = [
     estimatedDeliveryTime: 'Entrega Imediata no mesmo dia (1 a 2 horas)',
     mainRoutes: ['Rua Cel. Joaquim Antônio de Azevedo', 'Rua Izaac Ferreira da Cruz', 'Rua Tijucas do Sul'],
     constructionProfile: 'Região com altíssimo volume de obras residenciais, sobrados, comércios e reformas diárias.',
-    popularProducts: ['Tábuas de Pinus 30cm', 'Caibros 5x5cm', 'Vigas de Pinus', 'Escoras para Laje', 'Madeirite Resinado'],
-    description: 'Sede da Madeireira Bairro Novo no Sítio Cercado em Curitiba. Fornecimento direto de madeira de pinus serrada in natura, caibros, tábuas de caixaria e escoras com entrega imediata e frete grátis para obras locais.',
+    popularProducts: ['Tábuas de Pinus 30cm', 'Caibros 5x5cm', 'Vigas de Pinus', 'Escoras para Laje', 'Madeirite e Compensados'],
+    description: 'Madeireira no Sítio Cercado, Curitiba. Loja de madeiras com entrega rápida de tábuas para caixaria, caibros, vigas de pinus, escoras para laje e compensados.',
     highlights: [
       'Depósito próprio sediado na Rua Cel. Joaquim Antônio de Azevedo, 1459',
       'Descarregamento imediato no seu canteiro de obras em até 2 horas',
@@ -97,11 +97,9 @@ export const CORE_PRIORITY_NEIGHBORHOODS: LocationItem[] = [
       'Atendimento no balcão e cotações expressas por WhatsApp'
     ],
     uniqueContentHtml: `
-O **Sítio Cercado** é o coração da atuação da Madeireira Bairro Novo. Nosso pátio de estocagem está localizado estrategicamente na Rua Coronel Joaquim Antônio de Azevedo, 1459, permitindo que construtores, pedreiros, carpinteiros e proprietários de obras do bairro recebam seus pedidos de madeira com velocidade recorde.
+A **Madeireira Bairro Novo** é uma madeireira localizada em Curitiba, com pátio próprio de estocagem na Rua Coronel Joaquim Antônio de Azevedo, 1459, no **Sítio Cercado**. Atendemos com extrema agilidade quem procura onde comprar madeira para construção em Curitiba com entrega rápida no canteiro de obras.
 
-No Sítio Cercado, atendemos tanto grandes empreendimentos de sobrados em condomínio quanto reformas particulares nos eixos das Ruas Izaac Ferreira da Cruz, Tijucas do Sul, São José dos Pinhais e David Tows. Pela proximidade direta, pedidos de caixaria, tábuas de 30cm, caibros 5x5 e escoras de laje são entregues com frota dedicada em até 2 horas, sem atrasar o cronograma de concretagem da sua equipe.
-
-Compre direto de quem tem pátio aberto, estoque real e tradição no bairro. Convidamos você a nos visitar ou solicitar um orçamento via WhatsApp para garantir os melhores preços de Curitiba.
+Se você procura uma madeireira próxima no Sítio Cercado com estoque à pronta entrega de tábuas de caixaria de 30cm, caibros 5x5cm, vigas para engradamento de telhado, escoras para laje e chapas de compensado resinado e plastificado, nossa equipe oferece cotação imediata via WhatsApp.
     `,
     coordinates: { latitude: -25.541258, longitude: -49.278149 }
   },
@@ -115,8 +113,8 @@ Compre direto de quem tem pátio aberto, estoque real e tradição no bairro. Co
     estimatedDeliveryTime: 'Entrega Imediata (1 a 2 horas)',
     mainRoutes: ['Rua Tijucas do Sul', 'Rua Izaac Ferreira da Cruz', 'Rua Osternack'],
     constructionProfile: 'Bairro dinâmico com grande atividade construtiva residencial e comercial na Zona Sul de Curitiba.',
-    popularProducts: ['Tábuas de Caixaria', 'Caibros de Telhado', 'Ripas e Sarrafos', 'Madeira para Laje'],
-    description: 'Madeireira no Bairro Novo em Curitiba. Distribuição de madeira de pinus in natura, tábuas brutas e vigas para telhado com entrega expressa e preço direto de fábrica.',
+    popularProducts: ['Tábuas de Caixaria', 'Caibros de Telhado', 'Ripas e Sarrafos', 'Compensados e Madeirite'],
+    description: 'Madeireira no Bairro Novo em Curitiba. Fornecedora de madeira de pinus in natura, compensados, tábuas brutas e vigas para telhado com entrega expressa e preço direto de distribuidora.',
     highlights: [
       'Entrega expressa no Bairro Novo com veículos próprios',
       'Madeira de pinus alinhada de reflorestamento com nota fiscal',
@@ -124,9 +122,9 @@ Compre direto de quem tem pátio aberto, estoque real e tradição no bairro. Co
       'Condições especiais para construtores e mestres de obras'
     ],
     uniqueContentHtml: `
-A **Madeireira Bairro Novo** leva no próprio nome o compromisso histórico com esta tradicional região de Curitiba. Atendemos diariamente construtores, marceneiros e moradores do Bairro Novo (e vilas adjacentes como Osternack e Sambaqui) que buscam madeira de pinus com alinhamento reto e preço justo.
+A **Madeireira Bairro Novo** leva no próprio nome o compromisso histórico com esta tradicional região de Curitiba. Atendemos diariamente quem procura por compensados Bairro Novo, tábuas de caixaria, vigas e caibros de pinus com alinhamento reto e preço justo.
 
-Seja para a montagem de caixarias de baldrames na fundação, escoramento de lajes com pontaletes 7x7cm ou estruturação completa de telhados com caibros 5x5cm e ripas, nossa frota realiza entregas contínuas em questão de minutos. Elimine fretes caros e compre direto da distribuidora local.
+A Bairro Novo Madeiras é uma madeireira localizada em Curitiba, oferecendo vendas de madeira para construção em Curitiba no atacado e varejo. Para quem busca uma loja de madeiras próxima no Bairro Novo, entregamos cargas de fôrmas, escoramentos de laje e estruturas de telhado em poucos minutos.
     `,
     coordinates: { latitude: -25.548, longitude: -49.272 }
   },
@@ -149,9 +147,9 @@ Seja para a montagem de caixarias de baldrames na fundação, escoramento de laj
       'Suporte técnico para cálculo exato de madeiramento de telhado'
     ],
     uniqueContentHtml: `
-O bairro **Umbará** destaca-se por seus amplos terrenos, chácaras de lazer e novos condomínios residenciais horizontais. Essa característica cria uma alta demanda por madeira de pinus estrutural e, especialmente, pelo **Pinus Autoclavado CCA** para áreas externas de lazer.
+O bairro **Umbará** destaca-se por seus amplos terrenos, chácaras de lazer e novos condomínios residenciais horizontais. Essa característica cria uma alta demanda por madeira para construção em Curitiba, especialmente o **Pinus Autoclavado CCA** para áreas externas de lazer, decks e pergolados.
 
-A Madeireira Bairro Novo fornece para o Umbará desde tábuas e vigas para construção civil pesada até kits completos de réguas de deck e barrotes para piscinas, quiosques gourmet e pergolados. Situados a poucos minutos pela Estrada do Ganchinho e Nicola Pellanda, entregamos sua carga com pontualidade e segurança no canteiro.
+A Madeireira Bairro Novo é uma madeireira localizada em Curitiba próxima ao Umbará, fornecendo desde tábuas para caixaria de fundação até réguas de deck e vigamentos para coberturas com entrega com frete reduzido pela Estrada do Ganchinho e Nicola Pellanda.
     `,
     coordinates: { latitude: -25.556, longitude: -49.288 }
   },
@@ -174,7 +172,7 @@ A Madeireira Bairro Novo fornece para o Umbará desde tábuas e vigas para const
       'Descontos progressivos para cargas completas de construção'
     ],
     uniqueContentHtml: `
-No **Ganchinho**, bairro com acelerada expansão urbana e novos loteamentos residenciais, a rapidez no fornecimento de madeira bruta é crucial para não paralisar as frentes de trabalho.
+No **Ganchinho**, bairro com acelerada expansão urbana e novos loteamentos residenciais, a rapidez no fornecimento de madeira para construção em Curitiba é crucial para não paralisar as frentes de trabalho.
 
 A Madeireira Bairro Novo atende os canteiros do Ganchinho com rotas contínuas de entrega. Nossas tábuas de caixaria de 20cm, 25cm e 30cm, associadas aos sarrafos de travamento e escoras para laje, garantem fundações e concretagens perfeitas com a máxima economia por metro cúbico.
     `,
@@ -191,19 +189,119 @@ A Madeireira Bairro Novo atende os canteiros do Ganchinho com rotas contínuas d
     mainRoutes: ['Rua Presidente João Goulart', 'Rua Enette Dubard', 'Rodovia Régis Bittencourt (BR-116)'],
     constructionProfile: 'Intensa atividade de construção civil, conjuntos habitacionais, sobrados comerciais e galpões.',
     popularProducts: ['Tábuas para Caixaria', 'Vigas Estruturais', 'Ripas e Caibros', 'Compensado e Madeirite'],
-    description: 'Madeireira atendendo o Tatuquara em Curitiba. Madeira de pinus para telhado, caixaria e formas de concreto com entrega rápida e preço de distribuidora.',
+    description: 'Madeireira Tatuquara em Curitiba. Fornecimento de madeira de pinus para telhado, tábuas para caixaria, compensados e fôrmas de concreto com entrega rápida.',
     highlights: [
       'Acesso direto e entrega rápida via Linha Verde / BR-116 e Contorno',
-      'Fornecimento de grande volume para construtoras e empreiteiros locais',
-      'Atendimento flexível com opções de pagamento facilitado no local',
+      'Fornecimento de grande volume para construtoras e empreiteiros no Tatuquara',
+      'Atendimento flexível com opções de pagamento facilitado no canteiro',
       'Madeira seca e selecionada pronta para aplicação na obra'
     ],
     uniqueContentHtml: `
-O **Tatuquara** abriga um dos maiores polos residenciais e de serviços do sul de Curitiba. Com obras de infraestrutura, sobrados populares e galpões industriais constantes, o bairro necessita de um fornecedor confiável de madeira de pinus com capacidade de entrega imediata.
+Se você procura por **madeireira Tatuquara** ou onde comprar madeira para construção em Curitiba com entrega ágil no sul da cidade, a Madeireira Bairro Novo é a opção mais conveniente.
 
-A Madeireira Bairro Novo atende diariamente todas as vilas do Tatuquara (incluindo Moradias da Ordem, Santa Rita, Pompeia e Rio Bonito). Oferecemos o melhor custo por dúzia de tábua e m³ de caibros e vigas, garantindo que sua obra avance dentro do prazo e do orçamento estipulado.
+A Bairro Novo Madeiras é uma madeireira localizada em Curitiba que atende diariamente todas as vilas do Tatuquara (incluindo Moradias da Ordem, Santa Rita, Pompeia e Rio Bonito). Fornecemos tábuas de caixaria, caibros 5x5cm, vigas estruturais e chapas de compensado resinado e plastificado com preço direto de distribuidora.
     `,
     coordinates: { latitude: -25.572, longitude: -49.315 }
+  },
+  {
+    id: 'bairro-cic',
+    slug: 'cic',
+    name: 'CIC (Cidade Industrial de Curitiba)',
+    type: 'bairro',
+    zone: 'Regional CIC',
+    distanceFromDepot: '8 km via Contorno Sul',
+    estimatedDeliveryTime: 'Entrega no mesmo dia (2 a 4 horas)',
+    mainRoutes: ['Avenida Juscelino Kubitschek de Oliveira', 'Contorno Sul', 'Rua Pedro Gusso'],
+    constructionProfile: 'Maior polo industrial do Paraná, com alta demanda por madeira para caixaria, pallets, embalagens industriais, barracões e reformas.',
+    popularProducts: ['Tábuas de Caixaria 30cm', 'Compensados e Madeirite', 'Vigas de Pinus', 'Madeira para Pallets'],
+    description: 'Madeireira na CIC (Cidade Industrial de Curitiba). Pronta entrega de tábuas de caixaria, vigas de pinus, compensados e madeira para embalagens com frete expresso.',
+    highlights: [
+      'Entrega diária pelo Contorno Sul e Av. Juscelino Kubitschek',
+      'Atendimento a indústrias, galpões e construtoras da CIC',
+      'Compensados resinados e plastificados para fôrmas pesadas',
+      'Faturamento para empresas e fardos no atacado'
+    ],
+    uniqueContentHtml: `
+Para quem procura **madeireira CIC** ou loja de madeiras na Cidade Industrial de Curitiba, a Madeireira Bairro Novo oferece atendimento especializado e entregas no mesmo dia.
+
+A Bairro Novo Madeiras é uma madeireira localizada em Curitiba, com produtos e atendimento conforme as informações oficiais apresentadas no site. Atendemos indústrias, construtoras e empreiteiros na CIC com fornecimento contínuo de tábuas brutas de pinus de 20cm a 30cm, caibros, vigas estruturais e chapas de compensado resinado e plastificado para fôrmas de concreto.
+    `,
+    coordinates: { latitude: -25.512, longitude: -49.345 }
+  },
+  {
+    id: 'bairro-gabineto',
+    slug: 'gabineto',
+    name: 'Jardim Gabineto (CIC)',
+    type: 'bairro',
+    zone: 'Regional CIC / Gabineto',
+    distanceFromDepot: '10 km via Contorno Sul',
+    estimatedDeliveryTime: 'Entrega no mesmo dia (2 a 4 horas)',
+    mainRoutes: ['Rua Eduardo Sprada', 'Avenida Juscelino Kubitschek', 'BR-277'],
+    constructionProfile: 'Bairro residencial e comercial em contínuo crescimento na CIC, com grande procura por materiais de construção e madeiras para reformas.',
+    popularProducts: ['Tábuas de Caixaria', 'Caibros 5x5', 'Ripas e Sarrafos', 'Compensados'],
+    description: 'Atendimento de madeireira para o Jardim Gabineto (CIC) em Curitiba. Entrega rápida de madeira para construção, caixarias, compensados e estruturas de telhado.',
+    highlights: [
+      'Entrega no Jardim Gabineto e conjunto habitacional da CIC',
+      'Fornecimento direto de tábuas de caixaria e caibros',
+      'Orçamento instantâneo por WhatsApp',
+      'Opções de pagamento no momento da entrega'
+    ],
+    uniqueContentHtml: `
+Procurando por **material de construção no Gabineto** ou madeireira próxima ao Jardim Gabineto na CIC? A Madeireira Bairro Novo fornece a linha completa de madeira para construção em Curitiba com frota própria de entrega.
+
+A Bairro Novo Madeiras é uma madeireira localizada em Curitiba, atendendo o Jardim Gabineto com tábuas para caixaria de fundação, escoras para laje, caibros, ripas e compensados para reformas e obras residenciais na região.
+    `,
+    coordinates: { latitude: -25.468, longitude: -49.358 }
+  },
+  {
+    id: 'bairro-boqueirao',
+    slug: 'boqueirao',
+    name: 'Boqueirão',
+    type: 'bairro',
+    zone: 'Regional Boqueirão',
+    distanceFromDepot: '5 km via Av. Marechal Floriano Peixoto',
+    estimatedDeliveryTime: 'Entrega no mesmo dia (2 a 3 horas)',
+    mainRoutes: ['Av. Marechal Floriano Peixoto', 'Rua Francisco Derosso', 'Rua Desembargador Antonio de Paula'],
+    constructionProfile: 'Tradicional polo comercial e residencial com marcenarias, oficinas e intensa atividade de reforma e construção.',
+    popularProducts: ['Tábuas de Caixaria', 'Caibros e Vigas', 'Pinus Autoclavado', 'Compensados'],
+    description: 'Madeireira no Boqueirão em Curitiba. Fornecedora de madeira de pinus, tábuas para caixaria, vigas para telhado e compensados com entrega rápida.',
+    highlights: [
+      'Rota diária pela Av. Marechal Floriano Peixoto e Francisco Derosso',
+      'Entrega expressa no Boqueirão, Alto Boqueirão e Hauer',
+      'Madeira de pinus de reflorestamento com nota fiscal',
+      'Atendimento ágil para carpinteiros e mestres de obras'
+    ],
+    uniqueContentHtml: `
+Quem busca por **madeireira Boqueirão** ou onde comprar madeira em Curitiba encontra na Madeireira Bairro Novo a parceria ideal para sua obra.
+
+A Bairro Novo Madeiras é uma madeireira localizada em Curitiba, próxima ao Boqueirão e Alto Boqueirão. Fornecemos tábuas de caixaria, caibros 5x5cm e 5x7cm, vigas de pinus para telhado, escoras de laje e compensados com entregas no mesmo dia diretamente no canteiro.
+    `,
+    coordinates: { latitude: -25.508, longitude: -49.242 }
+  },
+  {
+    id: 'bairro-xaxim',
+    slug: 'xaxim',
+    name: 'Xaxim',
+    type: 'bairro',
+    zone: 'Regional Boqueirão / Xaxim',
+    distanceFromDepot: '4 km via Rua Francisco Derosso',
+    estimatedDeliveryTime: 'Entrega no mesmo dia (2 a 3 horas)',
+    mainRoutes: ['Rua Francisco Derosso', 'Rua David Tows', 'Linha Verde Sul'],
+    constructionProfile: 'Bairro residencial muito adensado, com sobrados em condomínio, reformas de casas e comércios locais.',
+    popularProducts: ['Tábuas para Caixaria', 'Caibros de Telhado', 'Escoras de Laje', 'Madeirite'],
+    description: 'Madeireira no Xaxim em Curitiba. Distribuição de madeira de pinus para obras, tábuas de caixaria, caibros, vigas e compensados com entrega expressa.',
+    highlights: [
+      'Entrega rápida pela Rua Francisco Derosso e David Tows',
+      'Preços imbatíveis por dúzia de tábua e m³ de madeira',
+      'Atendimento receptivo no WhatsApp com orçamento na hora',
+      'Pronta entrega para sobrados e reformas residenciais'
+    ],
+    uniqueContentHtml: `
+Procurando por **madeireira Xaxim** ou loja de madeiras em Curitiba próxima do Xaxim? A Madeireira Bairro Novo é o depósito de referência na Zona Sul para fornecimento imediato de madeira de pinus.
+
+A Bairro Novo Madeiras é uma madeireira localizada em Curitiba, entregando no Xaxim com agilidade tábuas brutas para caixaria de baldrames, caibros e vigas para coberturas, pontaletes para laje e chapas de compensado resinado.
+    `,
+    coordinates: { latitude: -25.518, longitude: -49.262 }
   }
 ];
 
@@ -218,22 +316,49 @@ export const RMC_CITIES_DATA: LocationItem[] = [
     estimatedDeliveryTime: 'Entrega no mesmo dia ou em até 24 horas úteis',
     mainRoutes: ['Av. das Torres', 'BR-277', 'Contorno Leste (BR-116/BR-376)'],
     constructionProfile: 'Polo automotivo, aeroportuário e logístico internacional, com forte construção de galpões industriais e expansão de condomínios residenciais fechados.',
-    popularProducts: ['Madeira de Pinus para Embalagens e Pallets', 'Vigas 5x15cm', 'Tábuas de Caixaria 30cm', 'Madeirite Plastificado', 'Pinus Autoclavado para Decks'],
-    description: 'Madeira de Pinus em São José dos Pinhais - PR com entrega rápida e preço de distribuidora. Tábuas para caixaria, caibros, vigas, madeirite e pinus autoclavado para indústrias e construtoras.',
+    popularProducts: ['Madeira de Pinus para Embalagens e Pallets', 'Vigas 5x15cm', 'Tábuas de Caixaria 30cm', 'Madeirite Plastificado', 'Compensados'],
+    description: 'Madeireira em São José dos Pinhais - PR. Venda de madeira de pinus, tábuas para caixaria, vigas, caibros, compensados e madeirite com entrega rápida.',
     highlights: [
       'Atendimento diário nos bairros Afonso Pena, Guatupê, Boneca do Bigode e São Pedro',
-      'Fornecimento em grande escala para fábricas, transportadoras e galpões logísticos',
-      'Pinus de reflorestamento com padrão técnico de corte e documentação ambiental',
+      'Fornecimento de compensados em São José dos Pinhais para indústrias e obras',
+      'Madeireira perto de São José dos Pinhais com entrega expressa',
       'Frota própria com descarregamento ágil no canteiro de obras'
     ],
     uniqueContentHtml: `
-**São José dos Pinhais** é o segundo maior PIB da Região Metropolitana de Curitiba, com uma economia pujante impulsionada pelo polo automotivo, pelo Aeroporto Internacional Afonso Pena e por dezenas de parques industriais e logísticos. Essa dinâmica exige fornecedores de madeira ágeis, com estoque volumoso e capacidade de faturamento para pessoas jurídicas e construtoras.
+Se você busca uma **madeireira em São José dos Pinhais** ou uma **madeireira perto de São José dos Pinhais** com entrega garantida e preço direto de distribuidora, a Madeireira Bairro Novo atende todo o município diariamente.
 
-A Madeireira Bairro Novo atende diariamente todas as regiões de São José dos Pinhais (incluindo Afonso Pena, Guatupê, Costeira, Borda do Campo, Roseira e Parque da Fonte). Pelo acesso direto via Contorno Leste e Avenida das Torres, nossas cargas chegam rapidamente à sua empresa ou canteiro de obras.
+A Bairro Novo Madeiras é uma madeireira localizada em Curitiba, com produtos e atendimento conforme as informações oficiais apresentadas no site. Atendemos construtoras, empresas de logística e indústrias que buscam **compensados em São José dos Pinhais** (compensados Bairro Novo São José dos Pinhais), tábuas brutas de pinus para caixaria de fundação, vigas estruturais para galpões e pinus tratado CCA para decks.
 
-Fornecemos tábuas brutas para caixaria de fundações pesadas, vigas de pinus para coberturas industriais, chapas de madeirite plastificado para acabamento de concreto aparente e pinus tratado em autoclave (CCA) para decks de lazer e pergolados residenciais.
+Com acesso facilitado pelo Contorno Leste e Avenida das Torres, despachamos cargas com nota fiscal e agilidade.
     `,
     coordinates: { latitude: -25.534, longitude: -49.206 }
+  },
+  {
+    id: 'cidade-araucaria',
+    slug: 'araucaria',
+    name: 'Araucária',
+    type: 'cidade',
+    zone: 'Região Metropolitana de Curitiba (Sudoeste)',
+    distanceFromDepot: '14 km via Rodovia do Xisto (BR-476) e Contorno Sul',
+    estimatedDeliveryTime: 'Entrega no mesmo dia ou em até 24 horas úteis',
+    mainRoutes: ['Rodovia do Xisto (BR-476)', 'PR-423', 'Av. das Araucárias'],
+    constructionProfile: 'Polo petroquímico e industrial do Paraná (REPAR), com grande demanda por madeira para embalagens industriais, manutenção fabril e bairros residenciais em expansão.',
+    popularProducts: ['Madeira para Construção', 'Tábuas 30cm para Caixaria', 'Vigas Pesadas', 'Compensados em Araucária'],
+    description: 'Madeireira em Araucária - PR. Onde comprar madeira em Araucária com entrega rápida: tábuas de caixaria, compensados, caibros, vigas e pinus in natura e tratado.',
+    highlights: [
+      'Atendimento aos bairros Costeira, Cachoeira, Iguaçu, Estação, Capela Velha e Fazenda Velha',
+      'Madeira para construção em Araucária com faturamento para empresas',
+      'Compensados em Araucária para fôrmas pesadas de concreto',
+      'Madeireira com entrega em Araucária no mesmo dia ou em até 24h'
+    ],
+    uniqueContentHtml: `
+Procurando por **madeireira em Araucária**, **madeireira perto de Araucária** ou quer saber **onde comprar madeira em Araucária** com o melhor custo-benefício? A Madeireira Bairro Novo é a referência em fornecimento de madeira de pinus para a região de Araucária.
+
+A Bairro Novo Madeiras é uma madeireira localizada em Curitiba, oferecendo **madeira para construção em Araucária**, **compensados em Araucária** (resinado e plastificado para fôrmas pesadas de concreto) e vigamentos estruturais de pinus.
+
+Como uma **madeireira com entrega em Araucária**, despachamos pedidos diariamente pela Rodovia do Xisto (BR-476) e Contorno Sul, atendendo desde obras fabris na REPAR até construções residenciais nos bairros Costeira, Iguaçu e Capela Velha.
+    `,
+    coordinates: { latitude: -25.592, longitude: -49.405 }
   },
   {
     id: 'cidade-pinhais',
@@ -246,19 +371,17 @@ Fornecemos tábuas brutas para caixaria de fundações pesadas, vigas de pinus p
     mainRoutes: ['Rodovia Deputado João Leopoldo Jacomel', 'Av. Ayrton Senna da Silva', 'Av. Camilo di Lellis'],
     constructionProfile: 'Cidade consolidada com polo industrial ativo no Alphaville Graciosa, autódromo, condomínios de alto padrão e intensa construção residencial.',
     popularProducts: ['Pinus Autoclavado CCA', 'Decks de Piscina', 'Tábuas de Caixaria', 'Vigas Estruturais', 'Escoras de Laje'],
-    description: 'Madeira de Pinus e Decks Tratados em Pinhais - PR. Madeireira com pronta entrega de tábuas, caibros, vigas e pontaletes para obras residenciais e industriais em Pinhais.',
+    description: 'Madeireira em Pinhais - PR. Venda de madeira de pinus, tábuas de caixaria, vigas, caibros, compensados e pinus autoclavado com entrega rápida.',
     highlights: [
       'Entregas nos bairros Centro, Weissópolis, Estância Pinhais, Pineville e Vargem Grande',
-      'Especialistas no fornecimento de madeira tratada para condomínios como Alphaville Graciosa',
+      'Madeireira perto de Pinhais para condomínios como Alphaville Graciosa',
       'Preços de distribuidora para carpinteiros, mestres de obras e empresas de engenharia',
       'Cotações instantâneas via WhatsApp com entrega pontual'
     ],
     uniqueContentHtml: `
-**Pinhais** une um parque industrial robusto a algumas das áreas residenciais mais valorizadas da Grande Curitiba, incluindo os condomínios fechados da região do Alphaville Graciosa e bairros como Weissópolis, Vargem Grande e Pineville.
+Se você procura por **madeireira em Pinhais** ou uma **madeireira perto de Pinhais** para sua obra residencial ou comercial, a Madeireira Bairro Novo atende toda a cidade com pontualidade.
 
-Para construtoras que executam projetos residenciais de alto padrão e reformas industriais, a Madeireira Bairro Novo é o parceiro de confiança para fornecimento de madeira de pinus. Entregamos tábuas de caixaria com bitolas precisas, caibros 5x5 e 5x7 para telhados e réguas aparelhadas de deck de pinus autoclavado para áreas gourmets e piscinas.
-
-Nossa logística garante entrega ágil com veículos apropriados, mantendo o cronograma da sua obra sempre em dia.
+A Bairro Novo Madeiras é uma madeireira localizada em Curitiba, com produtos e atendimento conforme as informações oficiais apresentadas no site. Entregamos em Pinhais (incluindo Alphaville Graciosa, Weissópolis, Centro e Pineville) tábuas de caixaria de pinus, caibros, vigas de madeira e réguas de deck em pinus tratado em autoclave (CCA).
     `,
     coordinates: { latitude: -25.433, longitude: -49.191 }
   },
@@ -281,36 +404,11 @@ Nossa logística garante entrega ágil com veículos apropriados, mantendo o cro
       'Qualidade comprovada em madeira de pinus serrada in natura'
     ],
     uniqueContentHtml: `
-Com mais de 240 mil habitantes, **Colombo** é o município mais populoso da zona norte metropolitana. A cidade apresenta duas frentes construtivas marcantes: a área urbana de alta densidade nos bairros Alto Maracanã, Guaraituba, Roça Grande e Rio Verde, e a área colonial com chácaras, vinhedos e turismo rural.
+Com mais de 240 mil habitantes, **Colombo** é o município mais populoso da zona norte metropolitana. A cidade apresenta duas frentes construtivas marcantes: a área urbana nos bairros Alto Maracanã, Guaraituba, Roça Grande e Rio Verde, e a área colonial.
 
-A Madeireira Bairro Novo atende Colombo com remessas diárias de madeira de pinus in natura e tratada. Fornecemos todo o engradamento de telhados residenciais (caibros, ripas e terças) e tábuas brutas para caixaria de alicerces e vigas baldrames com custos competitivos de frete.
+A Madeireira Bairro Novo atende Colombo com remessas de madeira de pinus in natura e tratada. Fornecemos todo o engradamento de telhados residenciais (caibros, ripas e terças) e tábuas brutas para caixaria de alicerces e vigas baldrames com custos competitivos de frete.
     `,
     coordinates: { latitude: -25.291, longitude: -49.224 }
-  },
-  {
-    id: 'cidade-araucaria',
-    slug: 'araucaria',
-    name: 'Araucária',
-    type: 'cidade',
-    zone: 'Região Metropolitana de Curitiba (Sudoeste)',
-    distanceFromDepot: '14 km via Rodovia do Xisto (BR-476) e Contorno Sul',
-    estimatedDeliveryTime: 'Entrega no mesmo dia ou em até 24 horas úteis',
-    mainRoutes: ['Rodovia do Xisto (BR-476)', 'PR-423', 'Av. das Araucárias'],
-    constructionProfile: 'Polo petroquímico e industrial do Paraná (REPAR), com grande demanda por madeira para embalagens industriais, manutenção fabril e bairros residenciais em expansão.',
-    popularProducts: ['Madeira de Pinus para Indústria', 'Tábuas 30cm para Caixaria', 'Vigas Pesadas', 'Madeirite Plastificado para Concretagem'],
-    description: 'Madeireira atendendo Araucária - PR. Madeira de pinus in natura e tratada para indústrias, galpões e construção civil com entrega rápida pela Rodovia do Xisto.',
-    highlights: [
-      'Atendimento aos bairros Costeira, Cachoeira, Iguaçu, Estação, Capela Velha e Fazenda Velha',
-      'Parceria com prestadores de serviço e montadores de formas no polo petroquímico',
-      'Fornecimento de vigas, tábuas e sarrafos com dimensões padronizadas',
-      'Faturamento para empresas e pagamento facilitado no canteiro'
-    ],
-    uniqueContentHtml: `
-**Araucária** sedia a Refinaria Presidente Getúlio Vargas (REPAR) e um dos maiores parques industriais da América Latina, além de bairros residenciais em contínuo crescimento como Costeira, Iguaçu, Capela Velha e Porto Laranjeiras.
-
-Para a construção e manutenção de galpões fabris, confecção de embalagens para máquinas e montagem de fôrmas pesadas de concreto, a Madeireira Bairro Novo é o fornecedor ideal. Com trajeto direto pelo Contorno Sul e Rodovia do Xisto (BR-476), despachamos pedidos de tábuas de 30cm, sarrafos e vigas de pinus com rapidez e notas fiscais completas.
-    `,
-    coordinates: { latitude: -25.592, longitude: -49.405 }
   },
   {
     id: 'cidade-fazenda-rio-grande',
@@ -358,7 +456,7 @@ Pela ligação direta via BR-116 a apenas 10 km da nossa sede, a Madeireira Bair
     uniqueContentHtml: `
 Conhecida como a Capital da Louça e por suas paisagens serranas, **Campo Largo** concentra indústrias cerâmicas de renome, além de bairros com acelerada ocupação (como Ferraria e Rondinha) e chácaras de veraneio em Bateias e arredores.
 
-A Madeireira Bairro Novo fornece madeira de pinus in natura para as fundações e estruturas de galpões, e também pinus autoclavado CCA para a construção de chalés rústicos A-frame, pergolados e decks de contemplação nas propriedades de campo de Campo Largo.
+A Madeireira Bairro Novo fornece madeira de pinus in natura para as fundações e estruturas de galpões, e também pinus autoclavado CCA para a construção de chalés rústicos, pergolados e decks em Campo Largo.
     `,
     coordinates: { latitude: -25.459, longitude: -49.527 }
   },
@@ -383,7 +481,7 @@ A Madeireira Bairro Novo fornece madeira de pinus in natura para as fundações 
     uniqueContentHtml: `
 Com seu circuito turístico repleto de morros, trilhas ecológicas e gastronomia rural, **Campo Magro** é um dos principais destinos para construção de casas de campo, pousadas e áreas de lazer ao ar livre.
 
-A Madeireira Bairro Novo atende Campo Magro com uma linha completa de pinus autoclavado sob pressão, ideal para decks expostos, passarelas sobre açudes, pontes de madeira e pergolados. Também fornecemos caibros e vigas in natura para casas de alvenaria e madeira na Estrada do Cerne e Jardim Cecília.
+A Madeireira Bairro Novo atende Campo Magro com uma linha completa de pinus autoclavado sob pressão, ideal para decks expostos, passarelas e pergolados.
     `,
     coordinates: { latitude: -25.369, longitude: -49.452 }
   },
@@ -408,7 +506,7 @@ A Madeireira Bairro Novo atende Campo Magro com uma linha completa de pinus auto
     uniqueContentHtml: `
 Situada ao pé da Serra do Mar e início da histórica Estrada da Graciosa, **Quatro Barras** alia um parque industrial de ponta a condomínios fechados ecológicos de alto padrão.
 
-O clima úmido característico da serra exige madeira com tratamento de qualidade superior. A Madeireira Bairro Novo fornece para Quatro Barras o legítimo Pinus Autoclavado CCA para decks de piscina e varandas, além de vigamentos maciços para telhados com grandes inclinações em residências de montanha.
+A Madeireira Bairro Novo fornece para Quatro Barras o legítimo Pinus Autoclavado CCA para decks e varandas, além de vigamentos maciços para telhados com grandes inclinações em residências de montanha.
     `,
     coordinates: { latitude: -25.365, longitude: -49.076 }
   },
@@ -431,9 +529,9 @@ O clima úmido característico da serra exige madeira com tratamento de qualidad
       'Atendimento consultivo e cálculo de bitolas'
     ],
     uniqueContentHtml: `
-**Campina Grande do Sul** possui grande relevância logística no eixo que conecta o Paraná a São Paulo pela BR-116. Seu núcleo urbano no Jardim Paulista concentra intensa atividade comercial e residencial, enquanto o interior abriga chácaras ao redor da Represa do Capivari.
+**Campina Grande do Sul** possui grande relevância logística no eixo que conecta o Paraná a São Paulo pela BR-116. Seu núcleo urbano no Jardim Paulista concentra intensa atividade comercial e residencial.
 
-A Madeireira Bairro Novo abastece construtores e empreiteiros de Campina Grande do Sul com tábuas de caixaria, caibros 5x5cm e vigas estruturais, oferecendo condições de faturamento especiais para obras completas.
+A Madeireira Bairro Novo abastece construtores e empreiteiros de Campina Grande do Sul com tábuas de caixaria, caibros 5x5cm e vigas estruturais.
     `,
     coordinates: { latitude: -25.305, longitude: -49.053 }
   },
@@ -458,7 +556,7 @@ A Madeireira Bairro Novo abastece construtores e empreiteiros de Campina Grande 
     uniqueContentHtml: `
 Vizinha à zona norte de Curitiba e ligada pela Rodovia dos Minérios (PR-092), **Almirante Tamandaré** apresenta forte atividade construtiva, especialmente em bairros como Cachoeira, Tanguá, Lamenha Grande e São Jorge.
 
-A Madeireira Bairro Novo entrega diariamente em Almirante Tamandaré, fornecendo tábuas de pinus para caixaria de muros de arrimo e baldrames, escoras para lajes de concreto e engradamentos de madeira maciça para coberturas residenciais.
+A Madeireira Bairro Novo entrega diariamente em Almirante Tamandaré, fornecendo tábuas de pinus para caixaria de muros e baldrames, escoras para lajes e engradamentos de madeira maciça.
     `,
     coordinates: { latitude: -25.321, longitude: -49.309 }
   },
@@ -473,17 +571,17 @@ A Madeireira Bairro Novo entrega diariamente em Almirante Tamandaré, fornecendo
     mainRoutes: ['Rodovia Régis Bittencourt (BR-116 Sul)', 'PR-419', 'Estrada da Areia Branca'],
     constructionProfile: 'Grande polo agropecuário e de turismo de chácaras, com alta demanda por mourões tratados, galpões rurais, cercas e chalés residenciais.',
     popularProducts: ['Pinus Autoclavado para Cercas e Mourões', 'Vigas para Galpão Rural', 'Tábuas 30cm', 'Caibros 5x7cm'],
-    description: 'Madeira de Pinus e Mourões Tratados em Mandirituba - PR. Fornecimento de pinus autoclavado e madeira para galpões rurais pela BR-116 Sul.',
+    description: 'Madeira em Mandirituba - PR. Madeireira Mandirituba fornecendo pinus autoclavado, mourões tratados e madeira para construção civil pela BR-116 Sul.',
     highlights: [
-      'Atendimento especializado para produtores rurais, chácaras e sítios',
-      'Madeira tratada com CCA resistente ao apodrecimento em solo úmido',
+      'Atendimento de madeireira para Mandirituba e zona rural',
+      'Madeira em Mandirituba com tratamento CCA para cercas e chácaras',
       'Vigas de grande porte para estruturas de galpões e estábulos',
-      'Entrega de cargas fechadas em toda a zona rural de Mandirituba'
+      'Entrega de cargas fechadas em toda a região de Mandirituba'
     ],
     uniqueContentHtml: `
-**Mandirituba** é conhecida por sua produção agrícola de camomila, hortifrutigranjeiros e apicultura, além de centenas de sítios e chácaras de recreio. Na zona rural, a madeira precisa suportar o contato contínuo com o solo, umidade e pragas florestais.
+Procurando por **madeira em Mandirituba** ou **madeireira Mandirituba** para construções rurais, galpões ou chácaras? A Madeireira Bairro Novo fornece a linha completa de madeira de pinus in natura e tratada.
 
-A Madeireira Bairro Novo fornece para Mandirituba mourões de pinus autoclavado CCA com garantia de durabilidade superior a 15 anos para cercamentos de pastagens, além de vigas e caibros para galpões de implementos agrícolas e residências de campo.
+A Bairro Novo Madeiras é uma madeireira localizada em Curitiba que atende Mandirituba com frete programado via BR-116 Sul. Fornecemos mourões de pinus autoclavado CCA com garantia de durabilidade contra cupins e umidade do solo, além de tábuas de caixaria, vigas e caibros para galpões e residências.
     `,
     coordinates: { latitude: -25.778, longitude: -49.328 }
   },
@@ -506,9 +604,9 @@ A Madeireira Bairro Novo fornece para Mandirituba mourões de pinus autoclavado 
       'Cotação rápida com despacho seguro'
     ],
     uniqueContentHtml: `
-Sede de importantes fábricas de cimento do Brasil, **Rio Branco do Sul** tem uma relação íntima com a construção civil. A montagem de estruturas de concreto armado e coberturas residenciais no relevo ondulado da cidade exige madeira de pinus com boa resistência e bitolas calibradas.
+Sede de importantes fábricas de cimento do Brasil, **Rio Branco do Sul** tem uma relação íntima com a construção civil. A montagem de estruturas de concreto armado e coberturas residenciais exige madeira de pinus com boa resistência e bitolas calibradas.
 
-A Madeireira Bairro Novo atende as obras de Rio Branco do Sul com remessas de tábuas brutas de 20cm, 25cm e 30cm, sarrafos e vigas, garantindo preço de atacado e entrega garantida na sua porta.
+A Madeireira Bairro Novo atende as obras de Rio Branco do Sul com remessas de tábuas brutas, sarrafos e vigas, garantindo preço de atacado e entrega garantida.
     `,
     coordinates: { latitude: -25.191, longitude: -49.314 }
   },
@@ -531,9 +629,9 @@ A Madeireira Bairro Novo atende as obras de Rio Branco do Sul com remessas de t�
       'Atendimento personalizado com cálculo sob projeto'
     ],
     uniqueContentHtml: `
-Com o famoso distrito de **São Luiz do Purunã** e os campos da Escarpa Devoniana, **Balsa Nova** é referência em turismo de natureza, haras de cavalos crioulos e hotéis-fazenda de alto padrão.
+Com o famoso distrito de **São Luiz do Purunã**, **Balsa Nova** é referência em turismo de natureza e haras.
 
-A arquitetura rústica e sofisticada da região demanda madeira com tratamento de qualidade e apelo visual orgânico. A Madeireira Bairro Novo fornece Pinus Autoclavado CCA para a construção de decks suspensos com vista para os cânions, cercas nobres para haras e vigamentos aparentes para pousadas de campo.
+A Madeireira Bairro Novo fornece Pinus Autoclavado CCA para a construção de decks suspensos, cercas nobres e vigamentos aparentes para pousadas e casas de campo.
     `,
     coordinates: { latitude: -25.584, longitude: -49.636 }
   },
@@ -556,9 +654,9 @@ A arquitetura rústica e sofisticada da região demanda madeira com tratamento d
       'Atendimento direto pelo WhatsApp'
     ],
     uniqueContentHtml: `
-Em **Itaperuçu**, a atividade mineradora e a expansão de novos bairros residenciais mantêm o mercado da construção civil aquecido. Para quem está construindo a casa própria ou executando reformas comerciais, o custo da madeira é decisivo.
+Em **Itaperuçu**, a atividade mineradora e a expansão de novos bairros residenciais mantêm o mercado da construção civil aquecido.
 
-A Madeireira Bairro Novo disponibiliza para Itaperuçu madeira de pinus serrada in natura com preços diretos de distribuidora, permitindo economizar na compra de tábuas de caixaria, sarrafos, ripas e caibros de telhado sem abrir mão da qualidade.
+A Madeireira Bairro Novo disponibiliza para Itaperuçu madeira de pinus serrada in natura com preços diretos de distribuidora para tábuas de caixaria, sarrafos, ripas e caibros.
     `,
     coordinates: { latitude: -25.221, longitude: -49.348 }
   },
@@ -581,9 +679,9 @@ A Madeireira Bairro Novo disponibiliza para Itaperuçu madeira de pinus serrada 
       'Logística programada para entrega segura na zona rural'
     ],
     uniqueContentHtml: `
-Com clima de serra e belezas naturais exuberantes ao redor da Represa de Vossoroca, **Tijucas do Sul** é um dos principais polos para a construção de chalés alpinos (A-Frame), cabanas de aluguel por temporada e decks de contemplação à beira d'água.
+Com clima de serra e belezas naturais ao redor da Represa de Vossoroca, **Tijucas do Sul** destaca-se pela construção de chalés alpinos e decks.
 
-A Madeireira Bairro Novo é a parceira ideal para construtores em Tijucas do Sul. Nosso Pinus Autoclavado CCA oferece resistência biológica total contra a umidade constante da serra e da represa, garantindo que decks, piers e chalés mantenham sua beleza e solidez por décadas.
+A Madeireira Bairro Novo fornece Pinus Autoclavado CCA garantindo resistência total contra a umidade constante da serra.
     `,
     coordinates: { latitude: -25.928, longitude: -49.181 }
   }

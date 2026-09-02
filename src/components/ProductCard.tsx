@@ -22,6 +22,7 @@ export function ProductCard({
             alt={product.imageAlt}
             className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700 ease-out brightness-[0.97] group-hover:brightness-100"
             loading="lazy"
+            referrerPolicy="no-referrer"
           />
           {/* Subtle Image Gradient Vignette */}
           <div className="absolute inset-0 bg-gradient-to-t from-stone-950/85 via-stone-950/20 to-transparent" />

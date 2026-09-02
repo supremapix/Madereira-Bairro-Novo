@@ -29,10 +29,13 @@ export function AboutView({ onOpenBudget }: { onOpenBudget?: () => void }) {
           <div className="bg-stone-50 rounded-3xl p-8 sm:p-12 border border-stone-200 shadow-sm space-y-6">
             <h2 className="text-2xl font-black text-amber-800">Nossa História e Compromisso</h2>
             <p className="text-sm text-stone-700 leading-relaxed">
-              Localizada no Sítio Cercado (Bairro Novo) em Curitiba, a <strong>Bairro Novo Comércio de Madeiras Ltda. (CNPJ: 44.205.587/0001-40)</strong> se consolidou como referência no mercado paranaense na distribuição de Madeira de Pinus Serrada, Caibros, Vigas, Ripas, Sarrafos, Tábuas de Caixaria e Escoras para laje.
+              A <strong>Bairro Novo Madeiras</strong> é uma <strong>madeireira localizada em Curitiba</strong>, com produtos e atendimento conforme as informações oficiais apresentadas no site.
             </p>
             <p className="text-sm text-stone-700 leading-relaxed">
-              Com foco em sustentabilidade, trabalhamos exclusivamente com madeira proveniente de florestas renováveis de reflorestamento. Nossa estrutura conta com frota própria para garantir entregas pontuais diretamente nos canteiros de obras de Curitiba e RMC.
+              Sediada no Sítio Cercado (Bairro Novo) em Curitiba, a <strong>Bairro Novo Comércio de Madeiras Ltda. (CNPJ: 44.205.587/0001-40)</strong> é uma referência consolidada como <strong>loja de madeiras em Curitiba</strong> e distribuidora de <strong>madeira para construção em Curitiba</strong>. Atuamos como <strong>madeireira na região de Curitiba</strong> e <strong>madeireira com entrega em Curitiba</strong> e em toda a <strong>região metropolitana de Curitiba</strong>.
+            </p>
+            <p className="text-sm text-stone-700 leading-relaxed">
+              Seja para <strong>onde comprar madeira em Curitiba</strong>, <strong>onde comprar madeira em Araucária</strong>, encontrar uma <strong>madeireira perto de Araucária</strong> ou <strong>madeireira perto de São José dos Pinhais</strong>, fornecemos <strong>madeira de pinus</strong> in natura e tratada, caibros, vigas, tábuas para caixaria, escoras para laje e <strong>compensados em Curitiba</strong>, <strong>compensados em Araucária</strong> e <strong>compensados em São José dos Pinhais</strong>, com frota própria e <strong>entrega em Araucária</strong> e demais cidades da RMC.
             </p>
           </div>
 

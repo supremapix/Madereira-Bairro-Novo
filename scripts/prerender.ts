@@ -194,7 +194,7 @@ export function generateRouteData(): RouteMeta[] {
             ${PRODUCTS_DATA.map(
               (p) => `
               <article class="bg-white p-6 rounded-3xl border border-stone-200 shadow-sm space-y-3">
-                <img src="${p.imageUrl}" alt="${escapeHtml(p.imageAlt)}" class="w-full h-48 object-cover rounded-2xl" />
+                <img src="${p.imageUrl}" alt="${escapeHtml(p.imageAlt)}" referrerpolicy="no-referrer" class="w-full h-48 object-cover rounded-2xl" />
                 <h3 class="text-xl font-bold text-stone-900"><a href="/produto/${p.slug}" class="hover:text-amber-700">${escapeHtml(p.name)}</a></h3>
                 <p class="text-xs text-stone-600 leading-relaxed">${escapeHtml(p.shortDescription)}</p>
                 <div class="pt-2">
@@ -411,7 +411,7 @@ export function generateRouteData(): RouteMeta[] {
           ${PRODUCTS_DATA.map(
             (p) => `
             <article class="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm space-y-3">
-              <img src="${p.imageUrl}" alt="${escapeHtml(p.imageAlt)}" class="w-full h-48 object-cover rounded-xl" />
+              <img src="${p.imageUrl}" alt="${escapeHtml(p.imageAlt)}" referrerpolicy="no-referrer" class="w-full h-48 object-cover rounded-xl" />
               <h2 class="text-lg font-bold text-stone-900"><a href="/produto/${p.slug}" class="hover:text-amber-700">${escapeHtml(p.name)}</a></h2>
               <p class="text-xs text-stone-600">${escapeHtml(p.shortDescription)}</p>
               <a href="/produto/${p.slug}" class="inline-block text-xs font-bold text-amber-700 hover:underline">Ver Medidas e Cotação &rarr;</a>
@@ -458,7 +458,7 @@ export function generateRouteData(): RouteMeta[] {
       contentHtml: `
         <div class="max-w-7xl mx-auto px-4 py-12 space-y-8">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-            <img src="${product.imageUrl}" alt="${escapeHtml(product.imageAlt)}" class="w-full h-96 object-cover rounded-3xl border border-stone-200" />
+            <img src="${product.imageUrl}" alt="${escapeHtml(product.imageAlt)}" referrerpolicy="no-referrer" class="w-full h-96 object-cover rounded-3xl border border-stone-200" />
             <div class="space-y-4">
               <span class="text-xs font-black uppercase text-amber-800 bg-amber-100 px-3 py-1 rounded-full">${escapeHtml(product.treatmentType)}</span>
               <h1 class="text-3xl font-black text-stone-900">${escapeHtml(product.name)}</h1>
@@ -525,6 +525,7 @@ export function generateRouteData(): RouteMeta[] {
         <div class="max-w-7xl mx-auto px-4 py-12 space-y-8">
           <h1 class="text-4xl font-black text-stone-900">Madeira de Pinus em ${escapeHtml(loc.name)}</h1>
           <p class="text-stone-700 leading-relaxed">${escapeHtml(loc.description)}</p>
+          ${loc.uniqueContentHtml ? `<div class="prose max-w-none text-stone-800 leading-relaxed">${loc.uniqueContentHtml.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\n\n/g, '<br/><br/>')}</div>` : ''}
           <div class="bg-stone-50 p-6 rounded-2xl border border-stone-200 space-y-2 text-xs">
             <p><strong>Prazo de Entrega:</strong> ${escapeHtml(loc.estimatedDeliveryTime)}</p>
             <p><strong>Região/Zona:</strong> ${escapeHtml(loc.zone)}</p>

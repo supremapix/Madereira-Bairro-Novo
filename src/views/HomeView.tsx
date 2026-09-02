@@ -362,6 +362,38 @@ export function HomeView({ onOpenBudget }: { onOpenBudget?: (slug?: string) => v
         </div>
       </section>
 
+      {/* Semantic Local SEO Informational Block */}
+      <section className="py-12 bg-stone-100 border-t border-stone-200 text-stone-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+          <div className="space-y-2">
+            <span className="text-xs font-black uppercase tracking-widest text-amber-800 bg-amber-200/60 px-3 py-1 rounded-full">
+              Sobre a Madeireira Bairro Novo
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-black text-stone-900">
+              Madeireira em Curitiba e Região Metropolitana
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-xs sm:text-sm text-stone-700 leading-relaxed">
+            <div className="space-y-4 bg-white p-6 rounded-2xl border border-stone-200">
+              <p>
+                A <strong>Bairro Novo Madeiras</strong> é uma <strong>madeireira localizada em Curitiba</strong>, com produtos e atendimento conforme as informações oficiais apresentadas no site. Se você procura por <strong>madeireira em Curitiba</strong>, <strong>madeireira na região de Curitiba</strong> ou <strong>loja de madeiras em Curitiba</strong>, oferecemos fornecimento especializado de <strong>madeira para construção em Curitiba</strong> e <strong>madeireira com entrega em Curitiba</strong> e toda a <strong>região metropolitana de Curitiba</strong>.
+              </p>
+              <p>
+                Disponibilizamos a linha completa de <strong>madeira de pinus</strong> in natura e tratada, tábuas para caixaria de fôrmas, caibros 5x5cm e 5x7cm, vigas estruturais e <strong>compensados em Curitiba</strong> (resinado e plastificado) para obras residenciais, comerciais e industriais.
+              </p>
+            </div>
+            <div className="space-y-4 bg-white p-6 rounded-2xl border border-stone-200">
+              <p>
+                Para quem busca <strong>onde comprar madeira em Curitiba</strong>, <strong>onde comprar madeira em Araucária</strong> ou procura uma <strong>madeireira perto de Araucária</strong> ou <strong>madeireira perto de São José dos Pinhais</strong>, entregamos com logística própria.
+              </p>
+              <p>
+                Fornecemos <strong>madeira para construção em Araucária</strong>, <strong>compensados em Araucária</strong>, <strong>compensados em São José dos Pinhais</strong> e atuamos como <strong>madeireira com entrega em Araucária</strong> e municípios vizinhos, garantindo frota adaptada e atendimento ágil direto com nossa equipe.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Accordion Section */}
       <section className="py-16 bg-white text-stone-900">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
@@ -424,6 +456,7 @@ export function HomeView({ onOpenBudget }: { onOpenBudget?: (slug?: string) => v
                   src={post.imageUrl}
                   alt={post.imageAlt}
                   className="w-full h-44 object-cover"
+                  referrerPolicy="no-referrer"
                 />
                 <div className="p-6 space-y-3 flex-1 flex flex-col justify-between">
                   <div className="space-y-2">

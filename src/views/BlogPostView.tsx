@@ -94,6 +94,7 @@ export function BlogPostView({ onOpenBudget }: { onOpenBudget?: (slug?: string) 
               src={post.imageUrl}
               alt={post.imageAlt}
               className="w-full h-[320px] sm:h-[420px] object-cover"
+              referrerPolicy="no-referrer"
             />
           </div>
 

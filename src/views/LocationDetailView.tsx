@@ -139,6 +139,23 @@ export function LocationDetailView({ onOpenBudget }: { onOpenBudget?: (slug?: st
             </div>
           </div>
 
+          {/* Unique Content for Local Intent SEO */}
+          {location.uniqueContentHtml && (
+            <div className="bg-white p-8 rounded-3xl border border-stone-200 shadow-sm space-y-4 text-sm text-stone-700 leading-relaxed">
+              <h2 className="text-xl font-bold text-stone-900">
+                Fornecimento de Madeira e Compensados em {location.name}
+              </h2>
+              <div
+                className="space-y-3 prose prose-stone max-w-none text-xs sm:text-sm"
+                dangerouslySetInnerHTML={{
+                  __html: location.uniqueContentHtml
+                    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                    .replace(/\n\n/g, '<br/><br/>')
+                }}
+              />
+            </div>
+          )}
+
           {/* Featured Products Ready for Dispatch to this Location */}
           <div className="space-y-6 pt-4">
             <div className="flex items-center justify-between">

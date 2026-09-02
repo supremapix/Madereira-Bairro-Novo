@@ -81,6 +81,7 @@ export function ProductDetailView({ onOpenBudget }: { onOpenBudget?: (slug?: str
                   src={product.imageUrl}
                   alt={product.imageAlt}
                   className="w-full h-[380px] sm:h-[460px] object-cover"
+                  referrerPolicy="no-referrer"
                 />
                 <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-md border border-stone-200 text-stone-900 text-xs font-bold uppercase px-3 py-1 rounded-full shadow-sm">
                   {product.category}
@@ -234,6 +235,7 @@ export function ProductDetailView({ onOpenBudget }: { onOpenBudget?: (slug?: str
                     src={rel.imageUrl}
                     alt={rel.name}
                     className="w-16 h-16 rounded-xl object-cover shrink-0"
+                    referrerPolicy="no-referrer"
                   />
                   <div>
                     <h4 className="text-sm font-bold text-stone-900 group-hover:text-amber-700 transition-colors">

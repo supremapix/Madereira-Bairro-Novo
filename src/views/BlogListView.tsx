@@ -58,6 +58,7 @@ export function BlogListView() {
                   src={post.imageUrl}
                   alt={post.imageAlt}
                   className="w-full h-48 object-cover"
+                  referrerPolicy="no-referrer"
                 />
                 <div className="p-6 space-y-3 flex-1 flex flex-col justify-between">
                   <div className="space-y-2">

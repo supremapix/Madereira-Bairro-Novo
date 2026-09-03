@@ -42,8 +42,8 @@ export function HomeView({ onOpenBudget }: { onOpenBudget?: (slug?: string) => v
   return (
     <>
       <EnhancedSEO
-        title="Madeira de Pinus em Curitiba - PR | Madeireira Bairro Novo"
-        description="Madeireira Bairro Novo em Curitiba - PR. Distribuidora especialista em Madeira de Pinus Serrada In Natura, Caibros, Vigas, Ripas e Tábuas de Caixaria. Pronta entrega em todos os 75 bairros e Região Metropolitana."
+        title="Madeireira em Curitiba | Pinus – Bairro Novo"
+        description="Compre madeira de pinus em Curitiba: tábuas, caibros, vigas, ripas e sarrafos. Consulte medidas, preços e entrega na região pelo WhatsApp."
         canonicalPath="/"
         keywords={[
           'Madeira de Pinus Curitiba',
@@ -197,9 +197,9 @@ export function HomeView({ onOpenBudget }: { onOpenBudget?: (slug?: string) => v
               <div className="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-600 flex items-center justify-center">
                 <Truck className="w-6 h-6 stroke-[2.25]" />
               </div>
-              <h3 className="text-xl font-bold text-stone-900">Entrega Rápida com Frota Própria</h3>
+              <h3 className="text-xl font-bold text-stone-900">Entrega Programada com Frota Própria</h3>
               <p className="text-xs text-stone-600 leading-relaxed">
-                Entregamos no mesmo dia ou em até 24h na sua obra ou marcenaria em todos os 75 bairros de Curitiba e municípios da Região Metropolitana.
+                Entregas agendadas na sua obra ou marcenaria em todos os 75 bairros de Curitiba e municípios da Região Metropolitana. Consulte taxas de frete e prazos para a sua região.
               </p>
             </div>
 
@@ -492,7 +492,7 @@ export function HomeView({ onOpenBudget }: { onOpenBudget?: (slug?: string) => v
             Precisa de Madeira de Pinus para Sua Obra Hoje?
           </h2>
           <p className="text-sm sm:text-base text-stone-700">
-            Fale diretamente com nossa equipe de vendas. Garantimos o melhor preço de Curitiba com entrega rápida no seu endereço.
+            Fale diretamente com nossa equipe de vendas. Orçamentos ágeis sob consulta e entregas agendadas para o seu endereço.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
@@ -505,14 +505,14 @@ export function HomeView({ onOpenBudget }: { onOpenBudget?: (slug?: string) => v
             </button>
             <a
               href={`https://wa.me/${COMPANY_DATA.phones.whatsappRaw}?text=${encodeURIComponent(
-                'Olá! Preciso de um orçamento de madeira com entrega para hoje.'
+                'Olá! Vim pelo site da Madeireira Bairro Novo e gostaria de um orçamento.\nProduto:\nMedidas:\nQuantidade:\nBairro, cidade e CEP:\nEntrega ou retirada:\nData desejada:'
               )}`}
               target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-auto bg-stone-950 hover:bg-stone-900 text-white font-bold px-7 py-3.5 rounded-2xl text-sm shadow-xl border border-emerald-400/60 hover:border-emerald-300 transition-all active:scale-95 flex items-center justify-center gap-2 min-h-[50px]"
             >
               <MessageCircle className="w-4 h-4 text-emerald-400 stroke-[2]" />
-              <span>WhatsApp Directo</span>
+              <span>WhatsApp Direto</span>
             </a>
           </div>
         </div>

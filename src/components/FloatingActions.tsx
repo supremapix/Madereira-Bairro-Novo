@@ -432,11 +432,11 @@ export function FloatingActions({ onOpenBudget }: FloatingActionsProps) {
           {/* Botão "WhatsApp" */}
           <a
             href={`https://wa.me/${COMPANY_DATA.phones.whatsappRaw}?text=${encodeURIComponent(
-              `Olá! Vi o site da ${companyName} e gostaria de solicitar um orçamento rápido de madeira de pinus.`
+              `Olá! Vim pelo site da Madeireira Bairro Novo e gostaria de um orçamento.\nProduto:\nMedidas:\nQuantidade:\nBairro, cidade e CEP:\nEntrega ou retirada:\nData desejada:`
             )}`}
             target="_blank"
             rel="noopener noreferrer"
-            title="Atendimento WhatsApp 24h"
+            title="Atendimento WhatsApp"
             className="group relative flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-black text-xs transition-all active:scale-95 shadow-sm"
           >
             <span className="relative flex h-2 w-2 shrink-0">

@@ -163,11 +163,11 @@ export function generateRouteData(): RouteMeta[] {
   // 1. Home: /
   routes.push({
     path: '',
-    title: 'Madeira de Pinus em Curitiba | Madeireira Bairro Novo - Tábuas, Vigas, Caibros e Decks',
-    description: 'Madeireira em Curitiba especializada em Madeira de Pinus Serrada In Natura e Tratada CCA. Tábuas para caixaria, caibros, vigas, ripas e pontaletes com entrega rápida no Sítio Cercado e toda Curitiba.',
+    title: 'Madeireira em Curitiba | Pinus – Bairro Novo',
+    description: 'Compre madeira de pinus em Curitiba: tábuas, caibros, vigas, ripas e sarrafos. Consulte medidas, preços e entrega na região pelo WhatsApp.',
     canonical: COMPANY_DATA.canonicalUrl,
-    h1: 'Madeira de Pinus em Curitiba: Distribuidora e Madeireira Bairro Novo',
-    h2: 'Tábuas para Caixaria, Vigas, Caibros, Escoras e Pinus Autoclavado com Entrega Imediata',
+    h1: 'Madeireira em Curitiba: madeira de pinus para sua obra',
+    h2: 'Tábuas para Caixaria, Vigas, Caibros, Escoras e Pinus Autoclavado com Entrega Programada',
     contentHtml: `
       <div class="max-w-7xl mx-auto px-4 py-12 space-y-12">
         <section class="space-y-4 text-center max-w-4xl mx-auto">
@@ -762,6 +762,12 @@ export function runPrerender() {
     }
 
     count++;
+  }
+
+  // Copy llms.txt if exists in public
+  const publicLlms = path.join(__dirname, '../public/llms.txt');
+  if (fs.existsSync(publicLlms)) {
+    fs.copyFileSync(publicLlms, path.join(distDir, 'llms.txt'));
   }
 
   console.log(`✅ Successfully pre-rendered and saved ${count} static HTML routes into dist/`);

@@ -401,7 +401,7 @@ export const PRODUCTS_DATA: Product[] = [
     lengthMeters: '3,00m e 3,50m',
     approximateMoisture: 'In natura',
     indicatedUse: 'Escoramento de lajes treliçadas, lajes maciças, vigas aéreas e reforço provisório',
-    imageUrl: 'https://img.supremasite.com.br/madeiras/pine_props_stack.webp',
+    imageUrl: 'https://pinus.madeireirabairronovo.com.br/img/escoras-pinus-7x7-8x8-lajes-vigas-curitiba.jpg',
     imageAlt: 'Escoras de pinus 7x7cm e pontaletes resistentes para sustentação de lajes e fôrmas de vigas',
     dimensionsAvailable: [
       'Escora de Pinus 7x7 cm (3,00m e 3,50m)',
@@ -455,7 +455,7 @@ export const PRODUCTS_DATA: Product[] = [
     lengthMeters: 'Chapas 1,10x2,20m e 1,22x2,44m',
     approximateMoisture: 'Compensado prensado e selado',
     indicatedUse: 'Fôrmas de lajes, vigas de concreto aparente, painéis de vedação e tapumes de obras',
-    imageUrl: 'https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&w=1000&q=80',
+    imageUrl: 'https://pinus.madeireirabairronovo.com.br/img/madeirite-resinado-plastificado-fenolico-lajes.jpg',
     imageAlt: 'Chapas de madeirite resinado e plastificado fenólico para fôrmas de lajes e concreto aparente',
     dimensionsAvailable: [
       'Madeirite Resinado: 6mm, 10mm, 12mm, 14mm, 17mm (1,10x2,20m)',

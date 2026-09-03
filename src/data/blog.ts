@@ -12,7 +12,7 @@ export const BLOG_POSTS_DATA: BlogPost[] = [
     readTime: '7 min',
     category: 'Preços e Orçamentos',
     tags: ['Preço Madeira de Pinus', 'Metro Cúbico m3', 'Economia na Obra', 'Curitiba', 'Sítio Cercado'],
-    imageUrl: 'https://images.unsplash.com/photo-1546484396-fb3fc6f95f98?auto=format&fit=crop&w=1000&q=80',
+    imageUrl: 'https://pinus.madeireirabairronovo.com.br/img/quanto-custa-madeira-pinus-curitiba-preco-m3.jpg',
     imageAlt: 'Lote de madeira de pinus serrada in natura em distribuidora de Curitiba',
     relatedProducts: ['madeira-de-pinus', 'tabuas', 'caibros', 'vigas'],
     content: `
@@ -49,7 +49,7 @@ Para economizar de verdade:
     readTime: '6 min',
     category: 'Guia Técnico',
     tags: ['Medidas de Madeira', 'Bitolas de Pinus', 'Tábua de 30', 'Caibro 5x5', 'Curitiba'],
-    imageUrl: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1000&q=80',
+    imageUrl: 'https://pinus.madeireirabairronovo.com.br/img/tabela-medidas-madeira-pinus-bitolas-nominais-reais.jpg',
     imageAlt: 'Trena medindo bitola de tábua de pinus serrada',
     relatedProducts: ['tabuas', 'caibros', 'ripas', 'sarrafos'],
     content: `
@@ -81,7 +81,7 @@ Para aprofundar nas conversões e calcular automaticamente as peças da sua obra
     readTime: '6 min',
     category: 'Dicas de Construção',
     tags: ['Pinus', 'Guia de Compra', 'Construção Civil', 'Curitiba'],
-    imageUrl: 'https://images.unsplash.com/photo-1546484396-fb3fc6f95f98?auto=format&fit=crop&w=1000&q=80',
+    imageUrl: 'https://pinus.madeireirabairronovo.com.br/img/como-escolher-madeira-pinus-obra-curitiba.jpg',
     imageAlt: 'Série de tábuas de pinus selecionadas e alinhadas em pátio',
     relatedProducts: ['madeira-de-pinus', 'tabuas', 'caibros'],
     content: `
@@ -109,7 +109,7 @@ Para formas de concreto, use tábuas brutas in natura. Para móveis, forros e pe
     readTime: '7 min',
     category: 'Telhados e Coberturas',
     tags: ['Telhado', 'Vigas de Pinus', 'Caibros', 'Ripas', 'Cobertura Curitiba'],
-    imageUrl: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1000&q=80',
+    imageUrl: 'https://pinus.madeireirabairronovo.com.br/img/madeira-para-telhado-calcular-vigas-caibros-ripas.jpg',
     imageAlt: 'Estrutura de telhado de madeira montada em residência',
     relatedProducts: ['caibros', 'ripas', 'vigas', 'madeira-de-pinus'],
     content: `
@@ -137,7 +137,7 @@ O engradamento de telhado é o esqueleto que sustenta toda a cobertura da resid�
     readTime: '8 min',
     category: 'Madeira Tratada',
     tags: ['Pinus Autoclavado', 'Tratamento CCA', 'Decks', 'Pergolados', 'Curitiba'],
-    imageUrl: 'https://images.unsplash.com/photo-1546484396-fb3fc6f95f98?auto=format&fit=crop&w=1000&q=80',
+    imageUrl: 'https://pinus.madeireirabairronovo.com.br/img/pinus-autoclavado-cca-tratamento-onde-usar.jpg',
     imageAlt: 'Peças de pinus tratadas em autoclave com tom esverdeado característico do CCA',
     relatedProducts: ['deck', 'pergolado', 'barrotes'],
     content: `
@@ -163,7 +163,7 @@ A durabilidade comprovada supera 15 a 20 anos em decks, mourões, pergolados e q
     readTime: '7 min',
     category: 'Caixaria e Formas',
     tags: ['Caixaria de Concreto', 'Tábua de 30', 'Viga Baldrame', 'Sarrafos', 'Curitiba'],
-    imageUrl: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1000&q=80',
+    imageUrl: 'https://pinus.madeireirabairronovo.com.br/img/tabuas-pinus-caixaria-concreto-vigas-baldrames.jpg',
     imageAlt: 'Montagem de caixaria de madeira com tábuas de pinus e sarrafos',
     relatedProducts: ['tabuas', 'sarrafos', 'escoras'],
     content: `
@@ -187,7 +187,7 @@ Na concretagem de vigas baldrames, colunas e pilares, a pressão hidrostática d
     readTime: '6 min',
     category: 'Escoramento e Lajes',
     tags: ['Escora de Laje', 'Pontaletes', 'Concretagem', 'Segurança na Obra'],
-    imageUrl: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=80',
+    imageUrl: 'https://pinus.madeireirabairronovo.com.br/img/escoramento-laje-pontaletes-pinus-normas-seguranca.jpg',
     imageAlt: 'Escoramento de laje pré-moldada com pontaletes de pinus',
     relatedProducts: ['escoras', 'vigas', 'tabuas'],
     content: `
@@ -211,7 +211,7 @@ O escoramento provisório de lajes é uma das etapas mais críticas de qualquer 
     readTime: '6 min',
     category: 'Compensados e Painéis',
     tags: ['Madeirite Resinado', 'Madeirite Plastificado', 'Fôrmas de Concreto', 'Tapumes'],
-    imageUrl: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=1000&q=80',
+    imageUrl: 'https://pinus.madeireirabairronovo.com.br/img/madeirite-resinado-x-plastificado-diferencas.jpg',
     imageAlt: 'Chapas de madeirite plastificado com acabamento brilhante',
     relatedProducts: ['madeirite', 'tabuas', 'sarrafos'],
     content: `
@@ -239,7 +239,7 @@ Ao planejar fôrmas de concreto ou tapumes de obras, a escolha entre madeirite r
     readTime: '8 min',
     category: 'Madeira Tratada',
     tags: ['Deck de Pinus', 'Instalação de Deck', 'Piscina', 'Stain Protetor', 'Curitiba'],
-    imageUrl: 'https://images.unsplash.com/photo-1546484396-fb3fc6f95f98?auto=format&fit=crop&w=1000&q=80',
+    imageUrl: 'https://pinus.madeireirabairronovo.com.br/img/deck-pinus-tratado-instalacao-manutencao.jpg',
     imageAlt: 'Deck de madeira de pinus tratado ao redor de piscina',
     relatedProducts: ['deck', 'barrotes', 'pergolado'],
     content: `
@@ -264,7 +264,7 @@ O deck de madeira transforma qualquer quintal ou área de piscina em um espaço 
     readTime: '7 min',
     category: 'Madeira Tratada',
     tags: ['Pergolado de Madeira', 'Pinus Tratado', 'Área Gourmet', 'Jardim', 'Curitiba'],
-    imageUrl: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1000&q=80',
+    imageUrl: 'https://pinus.madeireirabairronovo.com.br/img/pergolado-pinus-tratado-montar-estrutura.jpg',
     imageAlt: 'Pergolado de madeira de pinus com vigas trabalhadas em área gourmet',
     relatedProducts: ['pergolado', 'vigas', 'deck'],
     content: `
@@ -290,7 +290,7 @@ Instale sapatas metálicas chumbadas no concreto para elevar a base do pilar a 5
     readTime: '6 min',
     category: 'Armazenamento e Cuidados',
     tags: ['Mancha Azul Pinus', 'Azulamento', 'Fungos da Madeira', 'Armazenamento'],
-    imageUrl: 'https://images.unsplash.com/photo-1546484396-fb3fc6f95f98?auto=format&fit=crop&w=1000&q=80',
+    imageUrl: 'https://pinus.madeireirabairronovo.com.br/img/fungo-azulamento-pinus-prevenir-canteiro.jpg',
     imageAlt: 'Tábuas de pinus armazenadas em galpão ventilado',
     relatedProducts: ['madeira-de-pinus', 'tabuas', 'caibros'],
     content: `
@@ -316,7 +316,7 @@ O azulamento é uma coloração acinzentada ou azulada que surge na madeira de p
     readTime: '7 min',
     category: 'Comparativos Técnicos',
     tags: ['Pinus vs Eucalipto', 'Madeira de Reflorestamento', 'Comparativo', 'Construção Civil'],
-    imageUrl: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1000&q=80',
+    imageUrl: 'https://pinus.madeireirabairronovo.com.br/img/pinus-x-eucalipto-qual-melhor-madeira-construcao.jpg',
     imageAlt: 'Comparativo entre toras e peças serradas de pinus e eucalipto',
     relatedProducts: ['madeira-de-pinus', 'tabuas', 'vigas'],
     content: `
@@ -339,13 +339,13 @@ Tanto o pinus quanto o eucalipto são as principais madeiras de reflorestamento 
     readTime: '8 min',
     category: 'Arquitetura e Projetos',
     tags: ['Chalé A-Frame', 'Cabana Alpina', 'Madeira Estrutural', 'RMC', 'Ecoturismo'],
-    imageUrl: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1000&q=80',
+    imageUrl: 'https://pinus.madeireirabairronovo.com.br/img/pergolado-pinus-tratado-montar-estrutura.jpg',
     imageAlt: 'Chalé estilo A-frame de madeira em meio à natureza',
     relatedProducts: ['vigas', 'deck', 'pergolado', 'caibros'],
     content: `
 A arquitetura de chalés alpinos (A-Frame) virou febre na Região Metropolitana de Curitiba, impulsionada pelo turismo de natureza e aluguel de cabanas por temporada.
 
-Nesse estilo construtivo, as vigas inclinadas do telhado formam simultaneamente as paredes e a cobertura da cabana. A Madeireira Bairro Novo fornece vigas de pinus estruturais de 5x15cm e 6x15cm com até 6 metros de comprimento e pinus autoclavado para decks suspensos com vista panorâmica.
+Nesses estilo construtivo, as vigas inclinadas do telhado formam simultaneamente as paredes e a cobertura da cabana. A Madeireira Bairro Novo fornece vigas de pinus estruturais de 5x15cm e 6x15cm com até 6 metros de comprimento e pinus autoclavado para decks suspensos com vista panorâmica.
     `
   },
   {
@@ -359,7 +359,7 @@ Nesse estilo construtivo, as vigas inclinadas do telhado formam simultaneamente 
     readTime: '6 min',
     category: 'Armazenamento e Cuidados',
     tags: ['Armazenamento de Madeira', 'Empilhamento', 'Canteiro de Obras', 'Cuidados'],
-    imageUrl: 'https://images.unsplash.com/photo-1546484396-fb3fc6f95f98?auto=format&fit=crop&w=1000&q=80',
+    imageUrl: 'https://pinus.madeireirabairronovo.com.br/img/fungo-azulamento-pinus-prevenir-canteiro.jpg',
     imageAlt: 'Empilhamento técnico de tábuas de madeira com sarrafos separadores',
     relatedProducts: ['tabuas', 'caibros', 'sarrafos'],
     content: `
@@ -383,7 +383,7 @@ Armazenar a madeira corretamente no canteiro de obras garante que as peças perm
     readTime: '6 min',
     category: 'Sustentabilidade',
     tags: ['Madeira de Reflorestamento', 'Sustentabilidade', 'ESG', 'Pinus Paraná'],
-    imageUrl: 'https://images.unsplash.com/photo-1546484396-fb3fc6f95f98?auto=format&fit=crop&w=1000&q=80',
+    imageUrl: 'https://pinus.madeireirabairronovo.com.br/img/como-escolher-madeira-pinus-obra-curitiba.jpg',
     imageAlt: 'Floresta sustentável de pinus para reflorestamento no Paraná',
     relatedProducts: ['madeira-de-pinus', 'tabuas', 'vigas'],
     content: `
@@ -403,7 +403,7 @@ Ao comprar pinus certificado na Madeireira Bairro Novo, sua obra utiliza matéri
     readTime: '6 min',
     category: 'Dicas de Construção',
     tags: ['Fixação de Madeira', 'Pregos', 'Parafusos Estruturais', 'Caixaria'],
-    imageUrl: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1000&q=80',
+    imageUrl: 'https://pinus.madeireirabairronovo.com.br/img/tabela-medidas-madeira-pinus-bitolas-nominais-reais.jpg',
     imageAlt: 'Fixação de sarrafos com pregos de aço em canteiro de obras',
     relatedProducts: ['tabuas', 'sarrafos', 'caibros'],
     content: `
@@ -426,7 +426,7 @@ A fixação correta das peças de madeira de pinus é essencial para garantir a 
     readTime: '7 min',
     category: 'Obras Industriais',
     tags: ['Galpões Industriais', 'SJP', 'CIC', 'Araucária', 'Madeira Industrial'],
-    imageUrl: 'https://images.unsplash.com/photo-1541888946425-d0fbb18086f6?auto=format&fit=crop&w=1000&q=80',
+    imageUrl: 'https://pinus.madeireirabairronovo.com.br/img/tabuas-pinus-caixaria-concreto-vigas-baldrames.jpg',
     imageAlt: 'Construção de galpão industrial com estruturas e fôrmas de madeira',
     relatedProducts: ['vigas', 'madeirite', 'tabuas'],
     content: `
@@ -446,7 +446,7 @@ A Madeireira Bairro Novo fornece faturamento corporativo para pessoas jurídicas
     readTime: '7 min',
     category: 'Reformas e Manutenção',
     tags: ['Reforma de Telhado', 'Troca de Caibros', 'Curitiba', 'Manutenção Residencial'],
-    imageUrl: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1000&q=80',
+    imageUrl: 'https://pinus.madeireirabairronovo.com.br/img/madeira-para-telhado-calcular-vigas-caibros-ripas.jpg',
     imageAlt: 'Reforma e substituição de engradamento de telhado residencial',
     relatedProducts: ['caibros', 'ripas', 'vigas'],
     content: `
@@ -466,7 +466,7 @@ A substituição preventiva por caibros e vigas de pinus novas garante seguranç
     readTime: '6 min',
     category: 'Guia Técnico',
     tags: ['Pinus Seco em Estufa', 'KD Kiln Dried', 'Marcenaria', 'Secagem de Madeira'],
-    imageUrl: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1000&q=80',
+    imageUrl: 'https://pinus.madeireirabairronovo.com.br/img/tabela-medidas-madeira-pinus-bitolas-nominais-reais.jpg',
     imageAlt: 'Lotes de madeira de pinus seco em estufa para marcenaria fina',
     relatedProducts: ['madeira-de-pinus', 'tabuas', 'deck'],
     content: `
@@ -486,7 +486,7 @@ Enquanto o pinus in natura é a melhor escolha econômica para caixarias de conc
     readTime: '6 min',
     category: 'Dicas de Compra Segura',
     tags: ['Compra Segura', 'Madeireira Curitiba', 'Golpes Online', 'CNPJ'],
-    imageUrl: 'https://images.unsplash.com/photo-1546484396-fb3fc6f95f98?auto=format&fit=crop&w=1000&q=80',
+    imageUrl: 'https://pinus.madeireirabairronovo.com.br/img/quanto-custa-madeira-pinus-curitiba-preco-m3.jpg',
     imageAlt: 'Pátio físico da distribuidora Madeireira Bairro Novo no Sítio Cercado',
     relatedProducts: ['madeira-de-pinus', 'tabuas', 'vigas'],
     content: `
@@ -506,7 +506,7 @@ A **Madeireira Bairro Novo (CNPJ 44.205.587/0001-40)** está estabelecida na Rua
     readTime: '6 min',
     category: 'Decoração e DIY',
     tags: ['Painel Ripado', 'Decoração com Madeira', 'DIY Pinus', 'Design de Interiores'],
-    imageUrl: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=1000&q=80',
+    imageUrl: 'https://pinus.madeireirabairronovo.com.br/img/deck-pinus-tratado-instalacao-manutencao.jpg',
     imageAlt: 'Painel ripado de madeira de pinus aplicado em parede residencial',
     relatedProducts: ['ripas', 'sarrafos', 'madeira-de-pinus'],
     content: `
@@ -524,7 +524,7 @@ Os painéis ripados tornaram-se o grande destaque do design de interiores contem
     readTime: '7 min',
     category: 'Normas e Engenharia',
     tags: ['Normas ABNT', 'NBR 7190', 'NBR 9480', 'Engenharia Civil'],
-    imageUrl: 'https://images.unsplash.com/photo-1541888946425-d0fbb18086f6?auto=format&fit=crop&w=1000&q=80',
+    imageUrl: 'https://pinus.madeireirabairronovo.com.br/img/escoramento-laje-pontaletes-pinus-normas-seguranca.jpg',
     imageAlt: 'Projeto de engenharia estrutural de madeira com prancheta técnica',
     relatedProducts: ['vigas', 'caibros', 'madeira-de-pinus'],
     content: `
@@ -542,7 +542,7 @@ A norma ABNT NBR 7190 (Projeto de Estruturas de Madeira) e a NBR 9480 (Mourões 
     readTime: '6 min',
     category: 'Obras Industriais',
     tags: ['Pallets de Madeira', 'Embalagens Industriais', 'Logística Curitiba', 'Pinus'],
-    imageUrl: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1000&q=80',
+    imageUrl: 'https://pinus.madeireirabairronovo.com.br/img/quanto-custa-madeira-pinus-curitiba-preco-m3.jpg',
     imageAlt: 'Pallets de madeira de pinus montados em galpão logístico',
     relatedProducts: ['tabuas', 'sarrafos', 'barrotes'],
     content: `
@@ -560,7 +560,7 @@ O polo logístico de Curitiba e São José dos Pinhais consome milhares de metro
     readTime: '5 min',
     category: 'Institucional',
     tags: ['Madeireira Bairro Novo', 'Curitiba', 'Sítio Cercado', 'Sobre Nós'],
-    imageUrl: 'https://images.unsplash.com/photo-1546484396-fb3fc6f95f98?auto=format&fit=crop&w=1000&q=80',
+    imageUrl: 'https://pinus.madeireirabairronovo.com.br/img/como-escolher-madeira-pinus-obra-curitiba.jpg',
     imageAlt: 'Equipe e pátio da Madeireira Bairro Novo no Sítio Cercado em Curitiba',
     relatedProducts: ['madeira-de-pinus', 'tabuas', 'caibros', 'deck'],
     content: `

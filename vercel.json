@@ -3,28 +3,32 @@
     {
       "source": "/bairro/cic-(cidade-industrial-de-curitiba)",
       "destination": "/bairro/cic",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/bairro/cic-(cidade-industrial-de-curitiba)/",
       "destination": "/bairro/cic",
-      "permanent": true
+      "statusCode": 301
+    },
+    {
+      "source": "/bairro/cic-%28cidade-industrial-de-curitiba%29",
+      "destination": "/bairro/cic",
+      "statusCode": 301
+    },
+    {
+      "source": "/bairro/cic-%28cidade-industrial-de-curitiba%29/",
+      "destination": "/bairro/cic",
+      "statusCode": 301
     },
     {
       "source": "/bairro/cic-cidade-industrial-de-curitiba",
       "destination": "/bairro/cic",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/bairro/cic-cidade-industrial-de-curitiba/",
       "destination": "/bairro/cic",
-      "permanent": true
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/((?!.*\\.).*)",
-      "destination": "/index.html"
+      "statusCode": 301
     }
   ]
 }

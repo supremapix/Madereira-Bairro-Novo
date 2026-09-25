@@ -788,7 +788,37 @@ export function runPrerender() {
 </html>`;
   fs.writeFileSync(path.join(legacyCicDir, 'index.html'), redirectHtml, 'utf-8');
 
-  console.log(`✅ Successfully pre-rendered and saved ${count} static HTML routes into dist/`);
+  // Generate 404.html for Vercel custom 404 handling
+  const notFoundHtml = `<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Página Não Encontrada (404) | Madeireira Bairro Novo Curitiba</title>
+  <meta name="description" content="A página solicitada não foi encontrada. Consulte nosso catálogo de madeira de pinus, tabela de medidas e preços em Curitiba.">
+  <link rel="canonical" href="https://www.madeireirabairronovo.com.br/404">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <style>
+    body { font-family: system-ui, sans-serif; background: #fafaf9; color: #1c1917; margin: 0; padding: 0; display: flex; flex-direction: column; min-height: 100vh; }
+    main { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 2rem; }
+    h1 { font-size: 4rem; font-weight: 900; color: #d97706; margin-bottom: 0.5rem; }
+    h2 { font-size: 1.75rem; font-weight: 800; color: #1c1917; margin-bottom: 1rem; }
+    p { font-size: 1.1rem; color: #57534e; max-width: 32rem; margin-bottom: 2rem; line-height: 1.6; }
+    .btn { background: #d97706; color: white; padding: 0.75rem 1.75rem; border-radius: 0.75rem; font-weight: bold; text-decoration: none; display: inline-block; transition: background 0.2s; }
+    .btn:hover { background: #b45309; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>404</h1>
+    <h2>Página não encontrada</h2>
+    <p>A página que você está procurando não existe, foi alterada ou o endereço foi digitado incorretamente. Visite nossa página inicial ou consulte nossa tabela de medidas e preços de pinus em Curitiba.</p>
+    <a href="/" class="btn">Voltar para Início</a>
+  </main>
+</body>
+</html>`;
+  fs.writeFileSync(path.join(distDir, '404.html'), notFoundHtml, 'utf-8');
+
+  console.log(`✅ Successfully pre-rendered and saved ${count} static HTML routes and 404.html into dist/`);
 }
 
 // If invoked directly

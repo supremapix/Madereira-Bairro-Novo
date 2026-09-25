@@ -35,6 +35,8 @@ async function startServer() {
   app.get([
     '/bairro/cic-(cidade-industrial-de-curitiba)',
     '/bairro/cic-(cidade-industrial-de-curitiba)/',
+    '/bairro/cic-%28cidade-industrial-de-curitiba%29',
+    '/bairro/cic-%28cidade-industrial-de-curitiba%29/',
     '/bairro/cic-cidade-industrial-de-curitiba',
     '/bairro/cic-cidade-industrial-de-curitiba/'
   ], (req, res) => {
@@ -165,21 +167,23 @@ async function startServer() {
     const distPath = path.join(process.cwd(), 'dist');
     app.use(express.static(distPath));
 
-    // Express v4 route handler that serves route-specific pre-rendered HTML first
+    // Express v4 route handler that serves route-specific pre-rendered HTML first or real 404
     app.get('*', (req, res) => {
       const cleanPath = req.path.replace(/^\/+|\/+$/g, '');
       const routeSpecificPath = path.join(distPath, cleanPath, 'index.html');
       const directHtmlPath = path.join(distPath, `${cleanPath}.html`);
-      const defaultIndexPath = path.join(distPath, 'index.html');
+      const notFoundPath = path.join(distPath, '404.html');
 
       if (cleanPath && fs.existsSync(routeSpecificPath)) {
         res.sendFile(routeSpecificPath);
       } else if (cleanPath && fs.existsSync(directHtmlPath)) {
         res.sendFile(directHtmlPath);
-      } else if (fs.existsSync(defaultIndexPath)) {
-        res.sendFile(defaultIndexPath);
       } else {
-        res.status(404).send('Not Found');
+        if (fs.existsSync(notFoundPath)) {
+          res.status(404).sendFile(notFoundPath);
+        } else {
+          res.status(404).send('404 Not Found - Madeireira Bairro Novo');
+        }
       }
     });
   }

@@ -101,29 +101,41 @@ Para formas de concreto, use tábuas brutas in natura. Para móveis, forros e pe
   {
     id: 'madeira-para-telhado',
     slug: 'madeira-para-telhado',
-    title: 'Madeira para Telhado: Como Calcular Vigas, Caibros e Ripas de Pinus',
-    excerpt: 'Guia prático para dimensionar o engradamento de madeira da sua cobertura com as bitolas corretas e espaçamento ideal.',
+    title: 'Madeira para Telhado: Como Calcular Vigas, Caibros e Ripas',
+    excerpt: 'Aprenda a calcular caibros 5x5, ripas e vigas de pinus por m² de telhado. Tabela de consumo, espaçamento e dicas para evitar flechas na cobertura.',
     author: 'Engenharia de Estruturas Bairro Novo',
     date: '2026-07-15',
-    dateModified: '2026-08-18',
+    dateModified: '2026-09-24',
     readTime: '7 min',
     category: 'Telhados e Coberturas',
-    tags: ['Telhado', 'Vigas de Pinus', 'Caibros', 'Ripas', 'Cobertura Curitiba'],
+    tags: ['Madeira para Telhado', 'Calcular Engradamento', 'Caibros 5x5', 'Ripas e Vigas', 'Curitiba'],
     imageUrl: 'https://pinus.madeireirabairronovo.com.br/img/madeira-para-telhado-calcular-vigas-caibros-ripas.jpg',
     imageAlt: 'Estrutura de telhado de madeira montada em residência',
     relatedProducts: ['caibros', 'ripas', 'vigas', 'madeira-de-pinus'],
     content: `
-O engradamento de telhado é o esqueleto que sustenta toda a cobertura da residência. Um telhado bem dimensionado com madeira de pinus resiste ao peso das telhas, à pressão de ventos fortes e às chuvas intensas típicas de Curitiba.
+O engradamento de telhado é o esqueleto que sustenta toda a cobertura da residência. Um telhado bem dimensionado com madeira de pinus resiste ao peso das telhas, à pressão de ventos fortes e às chuvas intensas típicas de Curitiba e Região Metropolitana.
 
 ### A Estrutura Básica do Engradamento:
-1. **Terças e Vigas (5x11cm, 5x15cm, 6x15cm):** Peças horizontais que apoiam os caibros e distribuem a carga para as paredes ou tesouras.
-2. **Caibros (5x5cm e 5x7cm):** Dispostos no sentido da inclinação da água. O espaçamento padrão não deve ultrapassar 50 cm entre eixos para telhas cerâmicas.
+1. **Terças e Vigas (5x11cm, 5x15cm, 6x15cm):** Peças horizontais que apoiam os caibros e distribuem a carga para as paredes ou tesouras. Vãos entre terças costumam ficar entre 1,50m e 2,00m.
+2. **Caibros (5x5cm e 5x7cm):** Dispostos no sentido da inclinação da água. O espaçamento padrão não deve ultrapassar 50 cm entre eixos para telhas cerâmicas e de concreto.
 3. **Ripas (1,2x5cm):** Pregadas transversalmente sobre os caibros na distância exata da galga da telha escolhida.
 
-### Regra Rápida de Consumo por m²:
-- Cerca de **2,1 metros de caibro** por m² de telhado.
-- Cerca de **3,2 a 3,5 metros de ripa** por m² para telhas cerâmicas.
-- Cerca de **0,45 metros de viga/terça** por m².
+### Tabela de Consumo Médio por m² de Telhado:
+- **Telha Cerâmica (Romana, Portuguesa, Americana):**
+  - Caibros 5x5cm: ~2,1 metros lineares por m² (~0,7 peça de 3m)
+  - Ripas 1,2x5cm: ~3,2 a 3,5 metros lineares por m² (~1,1 peça de 3m)
+  - Vigas/Terças 5x11 ou 5x15cm: ~0,4 a 0,5 metros lineares por m²
+- **Telha de Concreto:**
+  - Caibros 5x5cm reforçados (ou 5x7cm): ~2,2 metros lineares por m²
+  - Ripas reforçadas: ~3,0 metros lineares por m²
+  - Vigas/Terças: ~0,5 a 0,6 metros lineares por m²
+- **Telha de Fibrocimento ou Metálica:**
+  - Dispensa ripas finas; utiliza terças de pinus 5x11cm ou 5x15cm espaçadas conforme a especificação do fabricante da telha (normalmente a cada 1,20m a 1,50m).
+
+### Como Calcular a Quantidade Total:
+1. Meça a área da cobertura considerando a inclinação (área inclinada real, e não apenas a projeção horizontal da laje).
+2. Adicione 10% a 15% de margem técnica para recortes em espigões, rincões e sobreposições.
+3. Para simular e converter sua lista em metros cúbicos (m³) e dúzias automaticamente, use nossa [Calculadora de Medidas e m³](/medidas).
     `
   },
   {
@@ -308,24 +320,36 @@ O azulamento é uma coloração acinzentada ou azulada que surge na madeira de p
   {
     id: 'pinus-vs-eucalipto-comparativo',
     slug: 'pinus-vs-eucalipto-comparativo',
-    title: 'Pinus x Eucalipto: Qual a Melhor Madeira para Sua Construção?',
-    excerpt: 'Comparativo técnico entre pinus e eucalipto para caixaria, mourões, telhados e estruturas residenciais no Sul do Brasil.',
+    title: 'Pinus ou Eucalipto? Diferenças, Usos e Qual Escolher na Obra',
+    excerpt: 'Compare pinus e eucalipto para caixaria, telhado, decks e mourões. Veja diferenças de resistência, trabalhabilidade, peso e custo para sua construção.',
     author: 'Engenharia Florestal Bairro Novo',
     date: '2026-03-05',
-    dateModified: '2026-08-18',
+    dateModified: '2026-09-24',
     readTime: '7 min',
     category: 'Comparativos Técnicos',
-    tags: ['Pinus vs Eucalipto', 'Madeira de Reflorestamento', 'Comparativo', 'Construção Civil'],
+    tags: ['Pinus vs Eucalipto', 'Madeira de Reflorestamento', 'Madeira para Caixaria', 'Construção Civil Curitiba'],
     imageUrl: 'https://pinus.madeireirabairronovo.com.br/img/pinus-x-eucalipto-qual-melhor-madeira-construcao.jpg',
-    imageAlt: 'Comparativo entre toras e peças serradas de pinus e eucalipto',
+    imageAlt: 'Comparativo entre peças serradas de pinus e eucalipto',
     relatedProducts: ['madeira-de-pinus', 'tabuas', 'vigas'],
     content: `
-Tanto o pinus quanto o eucalipto são as principais madeiras de reflorestamento do Brasil, mas suas propriedades físicas e mecânicas determinam usos muito distintos.
+Tanto o Pinus (*Pinus elliottii* e *Pinus taeda*) quanto o Eucalipto (*Eucalyptus grandis* e outros) são as principais fontes de madeira de reflorestamento no Paraná e Sul do Brasil. No entanto, suas propriedades físicas, densidade e trabalhabilidade determinam aplicações muito distintas no canteiro de obras.
 
-### Principais Diferenças:
-- **Trabalhabilidade e Pregagem:** O pinus é macio, leve e recebe pregos e parafusos facilmente sem rachar. O eucalipto serrado é mais duro e tende a rachar se não houver pré-furação.
-- **Alinhamento Dimensional:** O pinus serrado em serra fita mantém faces perfeitamente planas e esquadrejadas, ideal para caixarias de vigas e telhados. O eucalipto roliço é ótimo para mourões e postes.
-- **Retenção de Tratamento:** O alburno do pinus absorve os sais de CCA com penetração profunda e uniforme em autoclave, tornando os decks e pergolados de pinus extremamente duráveis.
+### Quadro Comparativo Técnico:
+- **Trabalhabilidade e Pregagem:**
+  - *Pinus:* Madeira macia e flexível. Permite pregar pregos e parafusar sem necessidade de pré-furação, reduzindo em até 40% o tempo de montagem de fôrmas.
+  - *Eucalipto serrado:* Madeira muito densa e dura. Tende a rachar nas pontas se pregada sem furação prévia e entorta serras de corte manual com facilidade.
+- **Formato e Alinhamento para Fôrmas:**
+  - *Pinus:* Serrado em bitolas retangulares e planas (tábuas de 20cm, 25cm e 30cm) que encaixam com precisão milimétrica, evitando vazamento da nata de cimento em vigas e baldrames.
+  - *Eucalipto:* Comum em formato roliço (estacas e mourões). Quando serrado em tábuas finas, tem maior tendência a tensões internas de secagem (empenamento e encurvamento).
+- **Tratamento Preservativo em Autoclave (CCA):**
+  - *Pinus:* O alburno é permeável e absorve os sais de CCA de forma profunda até o cerne, oferecendo mais de 15 a 20 anos de durabilidade para decks e pérgolas expostas ao clima de Curitiba.
+  - *Eucalipto:* O cerne é pouco permeável; apenas a casca externa do alburno recebe a impregnação, sendo excelente para mourões roliços de cerca, mas menos estável para réguas finas de piso.
+- **Peso Estrutural na Cobertura:**
+  - O pinus é mais leve (~500 a 600 kg/m³ seco), aliviando a carga permanente sobre as alvenarias e lajes.
+
+### Onde Usar Cada Madeira:
+- **Use Pinus para:** Caixarias de concreto, baldrames, pilares, formas de laje, engradamento de telhado (caibros, ripas e terças), decks residenciais e pergolados tratados.
+- **Use Eucalipto para:** Mourões rurais roliços de cerca, postes de sustentação direta em terra e escoramentos pesados de grande porte.
     `
   },
   {
@@ -395,24 +419,37 @@ Ao comprar pinus certificado na Madeireira Bairro Novo, sua obra utiliza matéri
   {
     id: 'guia-parafusos-pregos-madeira-pinus',
     slug: 'guia-parafusos-pregos-madeira-pinus',
-    title: 'Guia de Pregos e Parafusos para Madeira de Pinus em Telhados e Caixarias',
-    excerpt: 'Quais os tipos e tamanhos de pregos e parafusos mais recomendados para cada bitola de pinus na construção civil.',
+    title: 'Pregos e Parafusos para Pinus: Tipos e Medidas | Guia de Obra',
+    excerpt: 'Descubra qual tamanho de prego e parafuso usar em caibros, tábuas de caixaria e ripas de pinus para fixações firmes sem rachar a madeira na obra.',
     author: 'Mestre de Obras Bairro Novo',
     date: '2026-01-08',
-    dateModified: '2026-08-18',
+    dateModified: '2026-09-24',
     readTime: '6 min',
     category: 'Dicas de Construção',
-    tags: ['Fixação de Madeira', 'Pregos', 'Parafusos Estruturais', 'Caixaria'],
+    tags: ['Fixação de Madeira', 'Pregos para Madeira', 'Parafusos Estruturais', 'Caixaria de Pinus', 'Curitiba'],
     imageUrl: 'https://pinus.madeireirabairronovo.com.br/img/tabela-medidas-madeira-pinus-bitolas-nominais-reais.jpg',
     imageAlt: 'Fixação de sarrafos com pregos de aço em canteiro de obras',
     relatedProducts: ['tabuas', 'sarrafos', 'caibros'],
     content: `
-A fixação correta das peças de madeira de pinus é essencial para garantir a rigidez de fôrmas e telhados.
+A escolha do fixador correto para madeira de pinus evita problemas comuns no canteiro de obras, como rachaduras nas extremidades das peças, folgas em fôrmas de concreto ou estufamento durante a concretagem.
 
-### Principais Tipos de Pregos Recomendados:
-- **Prego 18x27 ou 17x27 com cabeça:** Ideal para fixação de caibros 5x5 em vigas e tábuas grossas de caixaria.
-- **Prego 15x15 ou 16x18 sem cabeça:** Usado na fixação de ripas e acabamentos onde a cabeça não deve ficar saliente.
-- **Prego com ponta dupla (Duas Cabeças):** Excelente para caixarias provisórias, pois facilita a desforma rápida sem danificar as tábuas.
+### Guia Rápido de Pregos por Aplicação:
+1. **Prego 18x27 ou 17x27 com Cabeça (Padrão de Caixaria e Telhado):**
+   - *Onde usar:* Fixação de tábuas de 20cm, 25cm e 30cm nos sarrafos de gravata e fixação de caibros 5x5 nas vigas e terças.
+   - *Vantagem:* Corpo robusto com alto poder de arrancamento para suportar o empuxo do concreto vibrado e sucção do vento na cobertura.
+2. **Prego sem Cabeça 15x15 ou 16x18 (Enripamento e Acabamento):**
+   - *Onde usar:* Fixação de ripas 1,2x5cm sobre os caibros e colocação de forros e molduras.
+   - *Vantagem:* A ausência de cabeça saliente impede que as telhas cerâmicas fiquem desniveladas e evita rachaduras nas ripas finas.
+3. **Prego de Ponta Dupla / Duas Cabeças (Caixarias Reutilizáveis):**
+   - *Onde usar:* Montagem de formas de vigas baldrames, pilares provisórios e escoramentos.
+   - *Vantagem:* A segunda cabeça fica saliente, permitindo encaixar o pé-de-cabra e desformar em segundos sem quebrar as tábuas, possibilitando reaproveitar a madeira em novas concretagens.
+4. **Prego Ardox / Espiralado (Máxima Fixação):**
+   - *Onde usar:* Pallets, caixas de transporte pesado e estruturas submetidas a vibração contínua.
+
+### Parafusos para Madeira de Pinus Tratada (Decks e Pergolados):
+- Em pinus autoclavado CCA, utilize sempre **parafusos de aço inoxidável ou galvanizados a fogo**, pois os sais de cobre do tratamento oxidam parafusos bicromatizados comuns.
+- Para decks: parafusos autoatarraxantes com rosca dupla e ponta broca (4,5x50mm ou 5,0x60mm).
+- Para pergolados e vigamentos: barras roscadas com porcas e arruelas de pressão ou parafusos sextavados 5/16" e 3/8" com pré-furação.
     `
   },
   {

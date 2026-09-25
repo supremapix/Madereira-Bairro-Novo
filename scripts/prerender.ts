@@ -349,11 +349,11 @@ export function generateRouteData(): RouteMeta[] {
   // 4. Measurements Page: /medidas
   routes.push({
     path: 'medidas',
-    title: 'Tabela de Medidas de Madeira de Pinus & Calculadora de m³ | Curitiba',
-    description: 'Guia completo de bitolas e medidas comerciais de madeira de pinus: tábuas, caibros, vigas, sarrafos e ripas. Calculadora de metro cúbico (m³) para orçamentos precisos.',
+    title: 'Tabela de Medidas de Pinus e Calculadora de m³ | Curitiba',
+    description: 'Tabela completa de bitolas nominais e reais de pinus em Curitiba. Calcule o volume em m³, caixaria e envie sua lista para orçamento rápido via WhatsApp.',
     canonical: `${COMPANY_DATA.canonicalUrl}/medidas`,
-    h1: 'Tabela de Medidas e Bitolas de Madeira de Pinus',
-    h2: 'Padrões Comerciais e Calculadora de Metragem Cúbica para Obras',
+    h1: 'Tabela de Medidas de Pinus e Calculadora de m³ para Obra',
+    h2: 'Padrões Comerciais e Calculadora de Metragem Cúbica e Caixaria para Construção Civil',
     contentHtml: `
       <div class="max-w-7xl mx-auto px-4 py-12 space-y-12">
         <div class="space-y-4">
@@ -769,6 +769,24 @@ export function runPrerender() {
   if (fs.existsSync(publicLlms)) {
     fs.copyFileSync(publicLlms, path.join(distDir, 'llms.txt'));
   }
+
+  // Generate legacy redirect fallback for /bairro/cic-(cidade-industrial-de-curitiba)
+  const legacyCicDir = path.join(distDir, 'bairro/cic-(cidade-industrial-de-curitiba)');
+  fs.mkdirSync(legacyCicDir, { recursive: true });
+  const redirectHtml = `<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecionando para Madeireira CIC...</title>
+  <meta http-equiv="refresh" content="0; url=/bairro/cic">
+  <link rel="canonical" href="https://www.madeireirabairronovo.com.br/bairro/cic">
+  <script>window.location.replace("/bairro/cic");</script>
+</head>
+<body>
+  <p>Redirecionando para <a href="/bairro/cic">Madeira de Pinus na CIC - Madeireira Bairro Novo</a>...</p>
+</body>
+</html>`;
+  fs.writeFileSync(path.join(legacyCicDir, 'index.html'), redirectHtml, 'utf-8');
 
   console.log(`✅ Successfully pre-rendered and saved ${count} static HTML routes into dist/`);
 }

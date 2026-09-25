@@ -1,4 +1,26 @@
 {
+  "redirects": [
+    {
+      "source": "/bairro/cic-(cidade-industrial-de-curitiba)",
+      "destination": "/bairro/cic",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/cic-(cidade-industrial-de-curitiba)/",
+      "destination": "/bairro/cic",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/cic-cidade-industrial-de-curitiba",
+      "destination": "/bairro/cic",
+      "permanent": true
+    },
+    {
+      "source": "/bairro/cic-cidade-industrial-de-curitiba/",
+      "destination": "/bairro/cic",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/((?!.*\\.).*)",

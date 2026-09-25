@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import { AnimatePresence, motion } from 'motion/react';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
@@ -66,6 +66,8 @@ function AnimatedRoutes({ onOpenBudget }: { onOpenBudget: (slug?: string) => voi
           <Route path="/produtos" element={<ProductsListView onOpenBudget={onOpenBudget} />} />
           <Route path="/produto/:slug" element={<ProductDetailView onOpenBudget={onOpenBudget} />} />
           <Route path="/regioes-atendidas" element={<LocationsListView />} />
+          <Route path="/bairro/cic-(cidade-industrial-de-curitiba)" element={<Navigate to="/bairro/cic" replace />} />
+          <Route path="/bairro/cic-cidade-industrial-de-curitiba" element={<Navigate to="/bairro/cic" replace />} />
           <Route path="/bairro/:slug" element={<LocationDetailView onOpenBudget={onOpenBudget} />} />
           <Route path="/cidade/:slug" element={<LocationDetailView onOpenBudget={onOpenBudget} />} />
           <Route path="/blog" element={<BlogListView />} />

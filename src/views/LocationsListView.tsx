@@ -1,8 +1,26 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { EnhancedSEO } from '../components/EnhancedSEO';
-import { LOCATIONS_DATA, OFFICIAL_NEIGHBORHOODS, RMC_CITIES, POPULAR_COMMUNITIES } from '../data/locations';
-import { MapPin, Search, Truck, Users } from 'lucide-react';
+import {
+  LOCATIONS_DATA,
+  OFFICIAL_NEIGHBORHOODS,
+  RMC_CITIES,
+  POPULAR_COMMUNITIES,
+  slugify
+} from '../data/locations';
+import { MapPin, Search, Truck, Users, CheckCircle2 } from 'lucide-react';
+
+function getBairroLink(name: string): string {
+  if (name.includes('CIC') || name.includes('Cidade Industrial')) {
+    return '/bairro/cic';
+  }
+  const cleanSlug = slugify(name);
+  const found = LOCATIONS_DATA.find((l) => l.slug === cleanSlug && l.type === 'bairro');
+  if (found) {
+    return `/bairro/${found.slug}`;
+  }
+  return `/bairro/${cleanSlug}`;
+}
 
 export function LocationsListView() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -74,18 +92,15 @@ export function LocationsListView() {
                   Todos os 75 Bairros Oficiais de Curitiba
                 </h2>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 text-xs">
-                  {OFFICIAL_NEIGHBORHOODS.map((b) => {
-                    const slug = b.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, '-');
-                    return (
-                      <Link
-                        key={b}
-                        to={`/bairro/${slug}`}
-                        className="p-2.5 rounded-xl bg-white hover:bg-amber-100 text-stone-800 hover:text-amber-900 border border-stone-200 transition-colors text-center line-clamp-1"
-                      >
-                        {b}
-                      </Link>
-                    );
-                  })}
+                  {OFFICIAL_NEIGHBORHOODS.map((b) => (
+                    <Link
+                      key={b}
+                      to={getBairroLink(b)}
+                      className="p-2.5 rounded-xl bg-white hover:bg-amber-100 text-stone-800 hover:text-amber-900 border border-stone-200 transition-colors text-center line-clamp-1"
+                    >
+                      {b}
+                    </Link>
+                  ))}
                 </div>
               </div>
 
@@ -96,18 +111,15 @@ export function LocationsListView() {
                   Comunidades e Vilas Populares
                 </h2>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 text-xs">
-                  {POPULAR_COMMUNITIES.map((c) => {
-                    const slug = c.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, '-');
-                    return (
-                      <Link
-                        key={c}
-                        to={`/bairro/${slug}`}
-                        className="p-2.5 rounded-xl bg-white hover:bg-amber-100 text-stone-800 hover:text-amber-900 border border-stone-200 transition-colors text-center line-clamp-1"
-                      >
-                        {c}
-                      </Link>
-                    );
-                  })}
+                  {POPULAR_COMMUNITIES.map((c) => (
+                    <Link
+                      key={c}
+                      to={getBairroLink(c)}
+                      className="p-2.5 rounded-xl bg-white hover:bg-amber-100 text-stone-800 hover:text-amber-900 border border-stone-200 transition-colors text-center line-clamp-1"
+                    >
+                      {c}
+                    </Link>
+                  ))}
                 </div>
               </div>
 
@@ -119,7 +131,7 @@ export function LocationsListView() {
                 </h2>
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 text-xs">
                   {RMC_CITIES.map((city) => {
-                    const slug = city.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, '-');
+                    const slug = slugify(city);
                     return (
                       <Link
                         key={city}

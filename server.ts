@@ -31,6 +31,16 @@ async function startServer() {
     }
   });
 
+  // 301 Permanent Redirects for legacy and non-canonical URLs
+  app.get([
+    '/bairro/cic-(cidade-industrial-de-curitiba)',
+    '/bairro/cic-(cidade-industrial-de-curitiba)/',
+    '/bairro/cic-cidade-industrial-de-curitiba',
+    '/bairro/cic-cidade-industrial-de-curitiba/'
+  ], (req, res) => {
+    res.redirect(301, '/bairro/cic');
+  });
+
   // API Health Check
   app.get('/api/health', (req, res) => {
     res.json({

@@ -302,6 +302,261 @@ Procurando por **madeireira Xaxim** ou loja de madeiras em Curitiba próxima do 
 A Bairro Novo Madeiras é uma madeireira localizada em Curitiba, entregando no Xaxim com agilidade tábuas brutas para caixaria de baldrames, caibros e vigas para coberturas, pontaletes para laje e chapas de compensado resinado.
     `,
     coordinates: { latitude: -25.518, longitude: -49.262 }
+  },
+  {
+    id: 'bairro-pinheirinho',
+    slug: 'pinheirinho',
+    name: 'Pinheirinho',
+    type: 'bairro',
+    zone: 'Regional Pinheirinho (Zona Sul)',
+    distanceFromDepot: '3 km do depósito central',
+    estimatedDeliveryTime: 'Entrega Imediata no mesmo dia (1 a 2 horas)',
+    mainRoutes: ['Av. Winston Churchill', 'Linha Verde Sul (BR-476)', 'Rua Izaac Ferreira da Cruz'],
+    constructionProfile: 'Polo residencial e comercial de grande fluxo, sobrados em condomínio, barracões industriais e reformas diárias.',
+    popularProducts: ['Tábuas de Caixaria 30cm', 'Caibros 5x5cm', 'Vigas Estruturais', 'Escoras de Laje', 'Madeirite Resinado'],
+    description: 'Madeireira no Pinheirinho em Curitiba. Entrega rápida de madeira de pinus para obras, tábuas de caixaria, caibros, vigas de telhado e compensados.',
+    highlights: [
+      'Acesso direto pela Av. Winston Churchill e Linha Verde Sul',
+      'Entrega em até 2 horas para pedidos confirmados pela manhã',
+      'Preços direto de serraria para construtoras e mestres de obras do Pinheirinho',
+      'Atendimento consultivo e cotação imediata por WhatsApp'
+    ],
+    uniqueContentHtml: `
+A **Madeireira Bairro Novo** atende construtores e moradores do **Pinheirinho** com extrema agilidade logística. Pela proximidade direta com nosso pátio no Sítio Cercado e acesso pela Linha Verde, nossas entregas de tábuas de caixaria, caibros e vigas chegam em tempo recorde no seu canteiro.
+
+Fornecemos tábuas brutas de pinus de 20cm a 30cm para formas de concreto, vigas 5x15cm para engradamento de telhados e chapas de madeirite para canteiros de obras no Pinheirinho.
+    `,
+    coordinates: { latitude: -25.518, longitude: -49.295 }
+  },
+  {
+    id: 'bairro-capao-raso',
+    slug: 'capao-raso',
+    name: 'Capão Raso',
+    type: 'bairro',
+    zone: 'Regional Pinheirinho / Capão Raso',
+    distanceFromDepot: '4 km do depósito central',
+    estimatedDeliveryTime: 'Entrega no mesmo dia (2 a 3 horas)',
+    mainRoutes: ['Av. República Argentina', 'Rua Pedro Gusso', 'Av. Brasília'],
+    constructionProfile: 'Bairro consolidado com reformas residenciais, novos edifícios de apartamentos e condomínios de sobrados.',
+    popularProducts: ['Tábuas de Caixaria', 'Vigas de Pinus', 'Caibros e Ripas', 'Compensados'],
+    description: 'Madeira de Pinus no Capão Raso em Curitiba. Fornecedora de tábuas para caixaria, vigas para engradamento e compensados com entrega expressa.',
+    highlights: [
+      'Rota diária pela Rua Pedro Gusso e Av. República Argentina',
+      'Entregas ágeis para reformas e novas construções',
+      'Madeira seca e selecionada para evitar desperdícios',
+      'Cotação instantânea pelo WhatsApp'
+    ],
+    uniqueContentHtml: `
+Para construtores e empreiteiros do **Capão Raso**, a Madeireira Bairro Novo despacha pedidos com agilidade para reformas de telhados, caixarias de muros e baldrames, e escoramentos de laje com descarga no canteiro.
+    `,
+    coordinates: { latitude: -25.498, longitude: -49.298 }
+  },
+  {
+    id: 'bairro-campo-de-santana',
+    slug: 'campo-de-santana',
+    name: 'Campo de Santana',
+    type: 'bairro',
+    zone: 'Regional Tatuquara / Zona Sul',
+    distanceFromDepot: '6 km do depósito central',
+    estimatedDeliveryTime: 'Entrega no mesmo dia (2 a 3 horas)',
+    mainRoutes: ['Estrada Delegado Bruno de Almeida', 'Rua Ângelo Tozim', 'Linha Verde Sul'],
+    constructionProfile: 'Bairro em rápida expansão com centenas de moradias unifamiliares, loteamentos populares e novos sobrados.',
+    popularProducts: ['Tábuas de Pinus 30cm', 'Caibros 5x5', 'Ripas para Telha', 'Sarrafos de Gravata'],
+    description: 'Madeireira atendendo o Campo de Santana em Curitiba. Pronta entrega de tábuas de caixaria, vigas, caibros e sarrafos com frete econômico.',
+    highlights: [
+      'Entregas frequentes pela Estrada Delegado Bruno de Almeida',
+      'Preços populares e condições especiais no atacado',
+      'Atendimento direto para mestres de obras e pedreiros',
+      'Pagamento facilitado no recebimento da madeira'
+    ],
+    uniqueContentHtml: `
+O **Campo de Santana** é uma das regiões que mais constrói habitações na Zona Sul de Curitiba. A Madeireira Bairro Novo atende os canteiros do bairro com tábuas brutas e vigamentos com o melhor custo-benefício.
+    `,
+    coordinates: { latitude: -25.589, longitude: -49.332 }
+  },
+  {
+    id: 'bairro-hauer',
+    slug: 'hauer',
+    name: 'Hauer',
+    type: 'bairro',
+    zone: 'Regional Boqueirão / Hauer',
+    distanceFromDepot: '5 km do depósito central',
+    estimatedDeliveryTime: 'Entrega no mesmo dia (2 a 3 horas)',
+    mainRoutes: ['Av. Marechal Floriano Peixoto', 'Linha Verde', 'Rua Anne Frank'],
+    constructionProfile: 'Polo tradicional de comércio, marcenarias e galpões industriais, além de residências consolidadas.',
+    popularProducts: ['Tábuas de Pinus 25cm e 30cm', 'Compensados e Madeirite', 'Vigas Pesadas', 'Caibros'],
+    description: 'Madeireira no Hauer em Curitiba. Distribuição de madeira de pinus para fôrmas, telhados, caixarias e compensados com entrega expressa.',
+    highlights: [
+      'Acesso rápido pela Av. Marechal Floriano Peixoto e Linha Verde',
+      'Compensados resinados e plastificados para indústrias',
+      'Venda por dúzia, m³ e peça com nota fiscal',
+      'Cotações rápidas para marcenarias e obras'
+    ],
+    uniqueContentHtml: `
+No **Hauer**, fornecemos madeira de pinus in natura e compensados com entrega diária para construtoras, oficinas e reformas prediais.
+    `,
+    coordinates: { latitude: -25.485, longitude: -49.255 }
+  },
+  {
+    id: 'bairro-uberaba',
+    slug: 'uberaba',
+    name: 'Uberaba',
+    type: 'bairro',
+    zone: 'Regional Cajuru / Uberaba',
+    distanceFromDepot: '7 km do depósito central',
+    estimatedDeliveryTime: 'Entrega no mesmo dia (2 a 4 horas)',
+    mainRoutes: ['Av. Senador Salgado Filho', 'Av. Comendador Franco (Av. das Torres)', 'BR-277'],
+    constructionProfile: 'Grande bairro com intensa construção de condomínios residenciais horizontais, sobrados e barracões comerciais.',
+    popularProducts: ['Tábuas de Caixaria', 'Caibros de Telhado', 'Vigas 5x15cm', 'Compensado e Madeirite'],
+    description: 'Madeireira no Uberaba em Curitiba. Venda de madeira de pinus para caixarias, vigamentos de telhado e compensados com entrega rápida.',
+    highlights: [
+      'Entregas pelas Avenidas das Torres e Salgado Filho',
+      'Estoque completo de bitolas comerciais para sobrados',
+      'Atendimento corporativo e faturamento para construtoras',
+      'Orçamento imediato por WhatsApp'
+    ],
+    uniqueContentHtml: `
+O **Uberaba** concentra dezenas de novos condomínios de sobrados. A Madeireira Bairro Novo fornece madeiramento de fundação e engradamento de telhado com pontualidade e frete rápido.
+    `,
+    coordinates: { latitude: -25.475, longitude: -49.225 }
+  },
+  {
+    id: 'bairro-cajuru',
+    slug: 'cajuru',
+    name: 'Cajuru',
+    type: 'bairro',
+    zone: 'Regional Cajuru',
+    distanceFromDepot: '9 km do depósito central',
+    estimatedDeliveryTime: 'Entrega no mesmo dia ou em até 24h',
+    mainRoutes: ['BR-277', 'Rua Maurício Fruet', 'Rua Luiz França'],
+    constructionProfile: 'Bairro residencial tradicional com constante atividade de ampliação de residências, reformas e comércios.',
+    popularProducts: ['Tábuas de Caixaria 30cm', 'Caibros 5x5', 'Ripas e Sarrafos', 'Escoras de Laje'],
+    description: 'Madeira de Pinus no Cajuru em Curitiba. Entrega rápida de caibros, vigas, tábuas para caixaria e compensados pela BR-277.',
+    highlights: [
+      'Rota contínua pela BR-277 e Rua Maurício Fruet',
+      'Preços diretos de serraria com qualidade garantida',
+      'Suporte técnico para conferência de bitolas',
+      'Entrega direta no canteiro de obras'
+    ],
+    uniqueContentHtml: `
+No **Cajuru**, a Madeireira Bairro Novo atende carpinteiros e proprietários com materiais selecionados de pinus para telhados e fundações.
+    `,
+    coordinates: { latitude: -25.445, longitude: -49.225 }
+  },
+  {
+    id: 'bairro-portao',
+    slug: 'portao',
+    name: 'Portão',
+    type: 'bairro',
+    zone: 'Regional Portão',
+    distanceFromDepot: '7 km do depósito central',
+    estimatedDeliveryTime: 'Entrega no mesmo dia (2 a 4 horas)',
+    mainRoutes: ['Rua João Bettega', 'Av. República Argentina', 'Rua Carlos Dietzsch'],
+    constructionProfile: 'Polo residencial e comercial verticalizado, reformas corporativas e obras residenciais de alto padrão.',
+    popularProducts: ['Compensados Resinado e Plastificado', 'Tábuas de Caixaria', 'Vigas Estruturais', 'Pinus Tratado CCA'],
+    description: 'Madeireira no Portão em Curitiba. Pronta entrega de compensados, madeira de pinus para formas de concreto e vigas estruturais com frete expresso.',
+    highlights: [
+      'Acesso pela Rua João Bettega e República Argentina',
+      'Compensados para fôrmas pesadas de concreto',
+      'Entrega programada para condomínios e edifícios',
+      'Atendimento técnico com cálculo de cubagem'
+    ],
+    uniqueContentHtml: `
+O **Portão** é um dos bairros mais dinâmicos de Curitiba. A Madeireira Bairro Novo fornece tábuas de caixaria e chapas de compensado para fôrmas de concreto com agilidade logística.
+    `,
+    coordinates: { latitude: -25.478, longitude: -49.292 }
+  },
+  {
+    id: 'bairro-novo-mundo',
+    slug: 'novo-mundo',
+    name: 'Novo Mundo',
+    type: 'bairro',
+    zone: 'Regional Portão / Novo Mundo',
+    distanceFromDepot: '5 km do depósito central',
+    estimatedDeliveryTime: 'Entrega no mesmo dia (2 a 3 horas)',
+    mainRoutes: ['Av. Brasília', 'Rua Pedro Gusso', 'Linha Verde Sul'],
+    constructionProfile: 'Bairro residencial consolidado, condomínios fechados, reformas e pequenas indústrias.',
+    popularProducts: ['Tábuas de Caixaria', 'Caibros 5x5', 'Escoras para Laje', 'Madeirite'],
+    description: 'Madeireira no Novo Mundo em Curitiba. Entrega rápida de madeira de pinus serrada in natura, caibros e tábuas de caixaria pela Av. Brasília.',
+    highlights: [
+      'Deslocamento rápido via Linha Verde e Av. Brasília',
+      'Fornecimento para reformas residenciais e novos sobrados',
+      'Atendimento direto pelo WhatsApp com orçamento na hora',
+      'Entrega com veículos próprios'
+    ],
+    uniqueContentHtml: `
+No **Novo Mundo**, atendemos com entregas diárias mestres de obras e construtores que precisam de tábuas de pinus, vigas e caibros sem atrasos na concretagem.
+    `,
+    coordinates: { latitude: -25.488, longitude: -49.282 }
+  },
+  {
+    id: 'bairro-agua-verde',
+    slug: 'agua-verde',
+    name: 'Água Verde',
+    type: 'bairro',
+    zone: 'Regional Portão / Água Verde',
+    distanceFromDepot: '8 km do depósito central',
+    estimatedDeliveryTime: 'Entrega no mesmo dia ou em até 24h úteis',
+    mainRoutes: ['Av. Silva Jardim', 'Av. República Argentina', 'Av. Iguaçu'],
+    constructionProfile: 'Bairro nobre com reformas residenciais de alto padrão, projetos corporativos, áreas gourmet e decks de lazer.',
+    popularProducts: ['Pinus Tratado em Autoclave (CCA)', 'Decks de Madeira', 'Pergolados de Pinus', 'Compensados'],
+    description: 'Madeireira atendendo o Água Verde em Curitiba. Venda de Pinus Tratado CCA para decks, pergolados, tábuas e vigas com entrega programada.',
+    highlights: [
+      'Logística adaptada para entrega em condomínios e edifícios',
+      'Especialistas em Pinus Autoclavado CCA para áreas externas',
+      'Material de primeira linha para arquitetura e interiores',
+      'Faturamento facilitado e nota fiscal eletrônica'
+    ],
+    uniqueContentHtml: `
+O **Água Verde** destaca-se pela alta exigência de acabamento em reformas de coberturas, quintais e varandas gourmet. A Madeireira Bairro Novo fornece Pinus Autoclavado CCA com retenção controlada de preservativo para máxima durabilidade.
+    `,
+    coordinates: { latitude: -25.452, longitude: -49.278 }
+  },
+  {
+    id: 'bairro-batel',
+    slug: 'batel',
+    name: 'Batel',
+    type: 'bairro',
+    zone: 'Regional Matriz / Batel',
+    distanceFromDepot: '10 km do depósito central',
+    estimatedDeliveryTime: 'Entrega programada em até 24h úteis',
+    mainRoutes: ['Av. do Batel', 'Av. Visconde de Guarapuava', 'Av. Sete de Setembro'],
+    constructionProfile: 'Bairro nobre de Curitiba com arquitetura refinada, reformas de alto padrão, restaurantes e empreendimentos comerciais de luxo.',
+    popularProducts: ['Pinus Autoclavado para Decks', 'Madeira para Pergolados', 'Vigas Estruturais Nobres', 'Compensados'],
+    description: 'Madeira de Pinus Tratada e Estrutural para o Batel em Curitiba. Entrega programada de decks, pergolados e madeiras selecionadas para arquitetura e obras.',
+    highlights: [
+      'Logística com respeito às normas de tráfego e horários do Batel',
+      'Peças selecionadas para decks de piscinas e pergolados',
+      'Atendimento consultivo para arquitetos e decoradores',
+      'Suporte técnico por especialistas'
+    ],
+    uniqueContentHtml: `
+No **Batel**, os projetos exigem estética impecável e madeira com procedência comprovada. Fornecemos Pinus Tratado CCA para decks residenciais, painéis ripados e estruturas de pérgolas gourmet com entrega programada.
+    `,
+    coordinates: { latitude: -25.442, longitude: -49.288 }
+  },
+  {
+    id: 'bairro-santa-felicidade',
+    slug: 'santa-felicidade',
+    name: 'Santa Felicidade',
+    type: 'bairro',
+    zone: 'Regional Santa Felicidade',
+    distanceFromDepot: '14 km via Contorno Norte / Av. Manoel Ribas',
+    estimatedDeliveryTime: 'Entrega no mesmo dia ou em até 24h úteis',
+    mainRoutes: ['Av. Manoel Ribas', 'Contorno Norte', 'Via Vêneto'],
+    constructionProfile: 'Polo gastronômico e residencial nobre, repleto de condomínios fechados horizontais, casas de alto padrão e restaurantes coloniais.',
+    popularProducts: ['Pinus Tratado CCA para Decks e Pergolados', 'Vigas Pesadas', 'Caibros 5x7cm', 'Tábuas de Caixaria'],
+    description: 'Madeireira atendendo Santa Felicidade em Curitiba. Fornecedora de Pinus Tratado CCA para decks, pergolados e madeira para telhados coloniais.',
+    highlights: [
+      'Entrega em condomínios fechados de Santa Felicidade e Cascatinha',
+      'Madeira tratada com garantia de durabilidade para jardins',
+      'Vigamentos compridos para coberturas e quiosques rústicos',
+      'Cotação rápida por WhatsApp'
+    ],
+    uniqueContentHtml: `
+Com seus famosos restaurantes e condomínios de alto padrão, **Santa Felicidade** tem forte consumo de madeira de pinus tratada em autoclave para quiosques, decks ao redor de piscinas e estruturas de pergolado.
+    `,
+    coordinates: { latitude: -25.405, longitude: -49.332 }
   }
 ];
 
@@ -684,6 +939,31 @@ Com clima de serra e belezas naturais ao redor da Represa de Vossoroca, **Tijuca
 A Madeireira Bairro Novo fornece Pinus Autoclavado CCA garantindo resistência total contra a umidade constante da serra.
     `,
     coordinates: { latitude: -25.928, longitude: -49.181 }
+  },
+  {
+    id: 'cidade-piraquara',
+    slug: 'piraquara',
+    name: 'Piraquara',
+    type: 'cidade',
+    zone: 'Região Metropolitana de Curitiba (Leste)',
+    distanceFromDepot: '22 km via Contorno Leste e Rodovia Dep. João Leopoldo Jacomel',
+    estimatedDeliveryTime: 'Entrega em até 24 horas úteis',
+    mainRoutes: ['Rodovia Dep. João Leopoldo Jacomel (PR-415)', 'Contorno Leste (BR-116)', 'Estrada da Barragem'],
+    constructionProfile: 'Cidade dos Mananciais com crescimento residencial no Guarituba, chácaras de lazer ao redor das represas do Iraí e Piraquara e pousadas ecológicas.',
+    popularProducts: ['Pinus Tratado CCA para Cercas e Decks', 'Tábuas de Caixaria 30cm', 'Caibros de Telhado', 'Escoras de Laje'],
+    description: 'Madeira de Pinus em Piraquara - PR com entrega rápida. Madeireira atendendo o Guarituba, chácaras e centro com tábuas de caixaria, caibros e pinus tratado.',
+    highlights: [
+      'Atendimento a obras no Guarituba, Vila Macedo e Centro de Piraquara',
+      'Madeira tratada CCA para trapiches, cercas e decks de chácaras',
+      'Preços de atacado para construtores da RMC',
+      'Despacho ágil com frota própria'
+    ],
+    uniqueContentHtml: `
+Em **Piraquara**, município que abriga as principais represas e mananciais da Grande Curitiba, a Madeireira Bairro Novo atende desde canteiros no Guarituba até chácaras e pousadas rurais.
+
+Fornecemos tábuas de caixaria para baldrames e alicerces, caibros e vigas de pinus para coberturas residenciais e Pinus Tratado CCA para decks e cercas resistentes à umidade das represas.
+    `,
+    coordinates: { latitude: -25.442, longitude: -49.062 }
   }
 ];
 
@@ -713,6 +993,7 @@ export function slugify(text: string): string {
     .replace(/[\u0300-\u036f]/g, '')
     .toLowerCase()
     .replace(/[^\w\s-]/g, '')
+    .trim()
     .replace(/\s+/g, '-')
     .replace(/-+/g, '-');
 }
@@ -723,7 +1004,18 @@ export function getLocationBySlug(slugOrPath: string): LocationItem | undefined 
     .replace(/^bairro\//, '')
     .replace(/^cidade\//, '')
     .replace(/^madeireira-em-/, '')
-    .replace(/^madeira-de-pinus-em-/, '');
+    .replace(/^madeira-de-pinus-em-/, '')
+    .replace(/\/$/, '')
+    .toLowerCase();
+
+  // Alias checks for CIC legacy URL variations
+  if (
+    clean === 'cic' ||
+    clean === 'cic-(cidade-industrial-de-curitiba)' ||
+    clean === 'cic-cidade-industrial-de-curitiba'
+  ) {
+    return LOCATIONS_DATA.find((l) => l.slug === 'cic');
+  }
 
   return LOCATIONS_DATA.find((l) => l.slug === clean || slugify(l.name) === clean);
 }

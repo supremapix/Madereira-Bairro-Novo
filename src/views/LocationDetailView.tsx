@@ -1,8 +1,9 @@
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, Navigate } from 'react-router-dom';
 import { EnhancedSEO } from '../components/EnhancedSEO';
 import { getLocationBySlug, LOCATIONS_DATA } from '../data/locations';
 import { PRODUCTS_DATA } from '../data/products';
 import { COMPANY_DATA } from '../data/company';
+import { NotFoundView } from './NotFoundView';
 import {
   MapPin,
   Truck,
@@ -18,7 +19,21 @@ import {
 export function LocationDetailView({ onOpenBudget }: { onOpenBudget?: (slug?: string) => void }) {
   const { slug } = useParams<{ slug: string }>();
 
-  const location = getLocationBySlug(slug || '') || LOCATIONS_DATA[0];
+  // Redirect legacy CIC URL variants to the canonical /bairro/cic
+  const cleanSlug = (slug || '').toLowerCase().trim();
+  if (
+    cleanSlug === 'cic-(cidade-industrial-de-curitiba)' ||
+    cleanSlug === 'cic-cidade-industrial-de-curitiba'
+  ) {
+    return <Navigate to="/bairro/cic" replace />;
+  }
+
+  const location = getLocationBySlug(cleanSlug);
+
+  // If the location is not registered in LOCATIONS_DATA, render 404 instead of silent duplicate fallback
+  if (!location) {
+    return <NotFoundView />;
+  }
 
   const featuredProducts = PRODUCTS_DATA.slice(0, 6);
 

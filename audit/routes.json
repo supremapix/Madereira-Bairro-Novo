@@ -171,517 +171,176 @@
     {
       "url": "/contato",
       "title": "Contato e WhatsApp | Madeireira Bairro Novo Curitiba"
+    },
+    {
+      "url": "/bairro/sitio-cercado",
+      "title": "Madeira de pinus para Sítio Cercado | Bairro Novo"
+    },
+    {
+      "url": "/bairro/bairro-novo",
+      "title": "Madeira de pinus para Bairro Novo | Bairro Novo"
+    },
+    {
+      "url": "/bairro/umbara",
+      "title": "Madeira de pinus para Umbará | Bairro Novo"
+    },
+    {
+      "url": "/bairro/ganchinho",
+      "title": "Madeira de pinus para Ganchinho | Bairro Novo"
+    },
+    {
+      "url": "/bairro/tatuquara",
+      "title": "Madeira de pinus para Tatuquara | Bairro Novo"
+    },
+    {
+      "url": "/bairro/cic",
+      "title": "Madeira de pinus para CIC (Cidade Industrial de Curitiba) | Bairro Novo"
+    },
+    {
+      "url": "/bairro/gabineto",
+      "title": "Madeira de pinus para Jardim Gabineto (CIC) | Bairro Novo"
+    },
+    {
+      "url": "/bairro/boqueirao",
+      "title": "Madeira de pinus para Boqueirão | Bairro Novo"
+    },
+    {
+      "url": "/bairro/xaxim",
+      "title": "Madeira de pinus para Xaxim | Bairro Novo"
+    },
+    {
+      "url": "/bairro/pinheirinho",
+      "title": "Madeira de pinus para Pinheirinho | Bairro Novo"
+    },
+    {
+      "url": "/bairro/capao-raso",
+      "title": "Madeira de pinus para Capão Raso | Bairro Novo"
+    },
+    {
+      "url": "/bairro/campo-de-santana",
+      "title": "Madeira de pinus para Campo de Santana | Bairro Novo"
+    },
+    {
+      "url": "/bairro/hauer",
+      "title": "Madeira de pinus para Hauer | Bairro Novo"
+    },
+    {
+      "url": "/bairro/uberaba",
+      "title": "Madeira de pinus para Uberaba | Bairro Novo"
+    },
+    {
+      "url": "/bairro/cajuru",
+      "title": "Madeira de pinus para Cajuru | Bairro Novo"
+    },
+    {
+      "url": "/bairro/portao",
+      "title": "Madeira de pinus para Portão | Bairro Novo"
+    },
+    {
+      "url": "/bairro/novo-mundo",
+      "title": "Madeira de pinus para Novo Mundo | Bairro Novo"
+    },
+    {
+      "url": "/bairro/agua-verde",
+      "title": "Madeira de pinus para Água Verde | Bairro Novo"
+    },
+    {
+      "url": "/bairro/batel",
+      "title": "Madeira de pinus para Batel | Bairro Novo"
+    },
+    {
+      "url": "/bairro/santa-felicidade",
+      "title": "Madeira de pinus para Santa Felicidade | Bairro Novo"
+    },
+    {
+      "url": "/cidade/sao-jose-dos-pinhais",
+      "title": "Madeira de pinus para São José dos Pinhais | Bairro Novo"
+    },
+    {
+      "url": "/cidade/araucaria",
+      "title": "Madeira de pinus para Araucária | Bairro Novo"
+    },
+    {
+      "url": "/cidade/pinhais",
+      "title": "Madeira de pinus para Pinhais | Bairro Novo"
+    },
+    {
+      "url": "/cidade/colombo",
+      "title": "Madeira de pinus para Colombo | Bairro Novo"
+    },
+    {
+      "url": "/cidade/fazenda-rio-grande",
+      "title": "Madeira de pinus para Fazenda Rio Grande | Bairro Novo"
+    },
+    {
+      "url": "/cidade/campo-largo",
+      "title": "Madeira de pinus para Campo Largo | Bairro Novo"
+    },
+    {
+      "url": "/cidade/campo-magro",
+      "title": "Madeira de pinus para Campo Magro | Bairro Novo"
+    },
+    {
+      "url": "/cidade/quatro-barras",
+      "title": "Madeira de pinus para Quatro Barras | Bairro Novo"
+    },
+    {
+      "url": "/cidade/campina-grande-do-sul",
+      "title": "Madeira de pinus para Campina Grande do Sul | Bairro Novo"
+    },
+    {
+      "url": "/cidade/almirante-tamandare",
+      "title": "Madeira de pinus para Almirante Tamandaré | Bairro Novo"
+    },
+    {
+      "url": "/cidade/mandirituba",
+      "title": "Madeira de pinus para Mandirituba | Bairro Novo"
+    },
+    {
+      "url": "/cidade/rio-branco-do-sul",
+      "title": "Madeira de pinus para Rio Branco do Sul | Bairro Novo"
+    },
+    {
+      "url": "/cidade/balsa-nova",
+      "title": "Madeira de pinus para Balsa Nova | Bairro Novo"
+    },
+    {
+      "url": "/cidade/itaperucu",
+      "title": "Madeira de pinus para Itaperuçu | Bairro Novo"
+    },
+    {
+      "url": "/cidade/tijucas-do-sul",
+      "title": "Madeira de pinus para Tijucas do Sul | Bairro Novo"
+    },
+    {
+      "url": "/cidade/piraquara",
+      "title": "Madeira de pinus para Piraquara | Bairro Novo"
     }
   ],
   "redirects": [
-    {
-      "source": "/bairro/sitio-cercado",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/ganchinho",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/umbara",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/bairro-novo",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/pinheirinho",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/capao-raso",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/tatuquara",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/campo-de-santana",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/caximba",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/boqueirao",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/alto-boqueirao",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/hauer",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/xaxim",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/cic-(cidade-industrial-de-curitiba)",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/jardim-gabineto",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/augusta",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/riviera",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/sao-miguel",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/portao",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/fazendinha",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/novo-mundo",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/santa-quiteria",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/lindoia",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/guaira",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/parolin",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/vila-izabel",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/agua-verde",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/seminario",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/cajuru",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/uberaba",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/guabirotuba",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/jardim-das-americas",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/capao-da-imbuia",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/centro",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/batel",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/reboucas",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/cristo-rei",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/jardim-botanico",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/merces",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/bom-retiro",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/ahu",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/juveve",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/cabral",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/alto-da-gloria",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/alto-da-rua-xv",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/sao-francisco",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/centro-civico",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/prado-velho",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/santa-felicidade",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/cascatinha",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/sao-braz",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/orleans",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/santo-inacio",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/campina-do-siqueira",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/campo-comprido",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/mossungue-(ecoville)",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/sao-joao",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/vista-alegre",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/butiatuvinha",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/boa-vista",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/bacacheri",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/bairro-alto",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/santa-candida",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/atuba",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/tingui",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/barreirinha",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/abranches",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/pilarzinho",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/sao-lourenco",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/taboao",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/cachoeira",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/lamenha-pequena",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/vila-osternack",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/jardim-paranaense",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/moradias-23-de-agosto",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/bairro-novo-a,-b-e-c",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/xapinhal",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/vila-tecnologica",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/vila-autodromo",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/caiua",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/fazendinha-vila-nossa-senhora-da-luz",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/cidade/sao-jose-dos-pinhais",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/cidade/araucaria",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/cidade/pinhais",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/cidade/colombo",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/cidade/fazenda-rio-grande",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/cidade/campo-largo",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/cidade/campo-magro",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/cidade/quatro-barras",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/cidade/campina-grande-do-sul",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/cidade/almirante-tamandare",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/cidade/mandirituba",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/cidade/rio-branco-do-sul",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/cidade/balsa-nova",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/cidade/itaperucu",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/cidade/tijucas-do-sul",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/cidade/piraquara",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/cic",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
-    {
-      "source": "/bairro/gabineto",
-      "destination": "/regioes-atendidas",
-      "statusCode": 301
-    },
     {
       "source": "/produto/madeira-de-pinus",
       "destination": "/madeira-de-pinus",
       "statusCode": 301
     },
     {
+      "source": "/bairro/jardim-gabineto",
+      "destination": "/bairro/gabineto",
+      "statusCode": 301
+    },
+    {
+      "source": "/bairro/cic-(cidade-industrial-de-curitiba)",
+      "destination": "/bairro/cic",
+      "statusCode": 301
+    },
+    {
       "source": "/bairro/cic-%28cidade-industrial-de-curitiba%29",
-      "destination": "/regioes-atendidas",
+      "destination": "/bairro/cic",
       "statusCode": 301
     },
     {
       "source": "/bairro/cic-cidade-industrial-de-curitiba",
-      "destination": "/regioes-atendidas",
+      "destination": "/bairro/cic",
       "statusCode": 301
     },
     {

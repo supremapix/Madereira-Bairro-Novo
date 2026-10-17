@@ -15,6 +15,8 @@ Os arquivos React anteriores em `src/`, `scripts/prerender.ts`, `server.ts` e o 
 
 Revisar `audit/RELATORIO.md` e `site/redirects.json` antes de publicar. A configuração `vercel.json` deve acompanhar `dist/`: os arquivos estáticos sozinhos não implementam redirects HTTP. Não enviar para KingHost. Não mudar DNS, plano, disco, credenciais ou permissões.
 
-Na Vercel, confirmar que este repositório e projeto são os responsáveis pelo domínio e revisar o deployment atual. Publicação requer decisão do responsável sobre a nova versão e a consolidação geográfica. Não usar push em main como forma indireta de publicar antes dessa revisão.
+Projeto Vercel identificado em leitura: supremapixs-projects/madereira-bairro-novo, main ec4e589. A v2 preserva 36 páginas locais e propõe apenas 10 redirects equivalentes. Publicação exige aprovação desta candidata. Não usar push em main antes da autorização: o Git dispara deploy automático.
 
 O sitemap gerado tem apenas URLs canônicas com conteúdo. Não há operação de Search Console neste trabalho e não há garantia de indexação.
+
+A v2 acrescenta site/locations.mjs e audit/preservation.json. São 79 URLs indexáveis; as 61 URLs antigas sem conteúdo continuam 404. O relatório histórico de 98ecf8d está superado. Endereço confirmado: Rua Laertes Luiz Foggiato, 1565, Curitiba/PR.

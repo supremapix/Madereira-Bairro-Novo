@@ -25,13 +25,21 @@ for(const p of inventory.pages){
  for(const match of html.matchAll(/href="https:\/\/wa\.me\/(\d+)/g))assert.equal(match[1],'5541991217114');
 }
 for(const [from,to] of redirects){assert.ok(paths.has(to)||to==='/sitemap.xml',from+' redirect target');assert.ok(!redirects.has(to),'redirect chain');}
-const live=JSON.parse(fs.readFileSync(path.join(root,'audit/live-location-paths.json')));for(const url of live)assert.ok(redirects.has(url),url+' uncovered live location');
+const live=JSON.parse(fs.readFileSync(path.join(root,'audit/live-location-paths.json')));
+const missing=JSON.parse(fs.readFileSync(path.join(root,'audit/known-not-found.json')));
+const legacy=JSON.parse(fs.readFileSync(path.join(root,'audit/legacy-locations.json')));
+assert.equal(legacy.length,36); assert.equal(missing.length,61);
+for(const l of legacy){const url='/'+l.type+'/'+l.slug;assert.ok(paths.has(url),url+' lost preserved page');assert.ok(!redirects.has(url),url+' unexpectedly redirected');}
+for(const url of missing){assert.ok(!paths.has(url)&&!redirects.has(url),url+' must remain 404');}
+for(const url of live)assert.ok(paths.has(url)||redirects.has(url)||missing.includes(url),url+' unclassified');
+for(const [from,to] of redirects)if(/^\/(bairro|cidade)\//.test(from))assert.equal(to,from.includes('cic')?'/bairro/cic':'/bairro/gabineto',from+' equivalent locality');
+assert.equal(redirects.size,10); assert.equal(paths.size,79);
 for(const file of fs.readdirSync(path.join(root,'public')).filter(n=>/^sitemap.*\.xml$/.test(n))){
  const xml=fs.readFileSync(path.join(root,'public',file),'utf8');
  for(const m of xml.matchAll(/<loc>https:\/\/www\.madeireirabairronovo\.com\.br([^<]*)<\/loc>/g)){const url=m[1]||'/';assert.ok(paths.has(url)||redirects.has(url)||url==='/sitemap.xml','Legacy URL lost '+url)}
 }
 const sitemap=fs.readFileSync(path.join(dist,'sitemap.xml'),'utf8');assert.equal((sitemap.match(/<url>/g)||[]).length,paths.size);
-assert.ok(!sitemap.includes('/bairro/')&&!sitemap.includes('/cidade/'));
+assert.equal((sitemap.match(/<loc>[^<]*\/bairro\//g)||[]).length,20);assert.equal((sitemap.match(/<loc>[^<]*\/cidade\//g)||[]).length,16);
 assert.equal(products.length,10);assert.equal(guides.length,24);
 // Execute the actual progressive-enhancement handler against form values.
 let handler,values={thickness:'2',width:'10',length:'3',quantity:'10'},result={textContent:''};

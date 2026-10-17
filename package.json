@@ -7,7 +7,7 @@
     "dev": "node site/build.mjs && node site/serve.mjs",
     "build": "node site/build.mjs",
     "start": "node site/serve.mjs",
-    "lint": "node --check site/build.mjs && node --check site/catalog.mjs && node --check site/client.js && node --check site/serve.mjs && node --check site/address-pending.mjs && node --check site/check.mjs && node --check site/http-check.mjs",
+    "lint": "node --check site/build.mjs && node --check site/catalog.mjs && node --check site/client.js && node --check site/serve.mjs && node --check site/check.mjs && node --check site/http-check.mjs && node --check site/locations.mjs",
     "test": "node site/check.mjs"
   },
   "dependencies": {

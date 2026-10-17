@@ -1,67 +1,100 @@
-# Madeireira Bairro Novo — auditoria e versão para revisão
+# Madeireira Bairro Novo — candidata revisada v2
 
-Data: 17/10/2026. Projeto independente. **Não publicado. Search Console não operado.**
+Data: 17/10/2026. Somente local. Nenhum push, deploy, DNS ou Search Console executado nesta revisão.
+Este relatório substitui a recomendação de consolidação geográfica da candidata 98ecf8d. O relatório antigo fica arquivado como RELATORIO-98ecf8d-superado.md, sem validade para publicação.
 
-## Fontes e auditoria
+## Resultado e correção desde 98ecf8d
 
-- Repositório: https://github.com/supremapix/Madereira-Bairro-Novo ; base `ec4e589`. Clone isolado em `C:\Users\user\Documents\Codex\2026-10-17\task-7\madeireira`. Nenhum AGENTS.md encontrado no repositório.
-- Site auditado no navegador: https://www.madeireirabairronovo.com.br/ . HTML inicial e cabeçalhos em `audit/live-home.html` e `audit/live-headers.txt`.
-- O domínio sem www responde 308 para www. Resposta pública contém `Server: Vercel`, `X-Vercel-Cache: HIT`. O repositório também aponta para `madereira-bairro-novo.vercel.app`. Não foi auditado painel Vercel nem confirmado vínculo de deployment/commit. A produção apresenta mais localidades que a base Git; não presumir que push de main corresponde à versão pública atual.
-- Catálogo observado: entrada geral de pinus + tábuas, caibros, vigas, ripas, sarrafos, barrotes, escoras, madeirite, deck e pergolado. A frase “19 produtos” não correspondia às 11 entradas do código. Não há base para adicionar eucalipto, cumaru, itaúba ou outras espécies como ofertas.
-- Contatos publicados, iguais no código e no site: WhatsApp `5541991217114`, fixo `554130134692`, `bairronovomadeiras@gmail.com`. Os links da nova versão usam esses números. Não foi enviada mensagem, feita chamada ou comprovada titularidade da conta WhatsApp por atendimento humano.
-- A versão anterior tinha preço artificial de 100.00 e `InStock` no schema, depoimentos sem fonte, promessas de certificação, resistência, durabilidade, entrega e disponibilidade sem documentação fornecida. O texto React também divergia do HTML inicial.
-- Foram inspecionadas visualmente as quatro imagens reutilizadas: `pinus_timber_stack.webp`, `pine_boards_formwork_yard.webp`, `pine_beams_lumberyard.webp` e `pine_slat_bundle.webp`, provenientes de `img.supremasite.com.br/madeiras/`. Não há comprovação de serem fotos reais da loja ou do estoque. São identificadas como ilustrativas. Nenhuma imagem de produto foi gerada ou alterada; apenas redimensionamento e compressão para entrega responsiva. Fotos reais da fachada, equipe e pátio continuam desejáveis e dependem de material confirmado.
+- Preservadas individualmente as 36 páginas locais antes verificadas com conteúdo e status 200: 20 bairros e 16 cidades. Mantidas URLs e intenção de compra; textos reescritos com contexto específico e produtos relacionados, neutralizando garantias e especificações sem confirmação.
+- Removidos todos os redirects genéricos para /regioes-atendidas. A página agora é um diretório navegável das 36 localidades e orienta consulta de entrega.
+- Três aliases de CIC apontam especificamente para /bairro/cic. /bairro/jardim-gabineto aponta para /bairro/gabineto. Não foram criadas novas localidades.
+- Das 62 URLs anteriormente 404, uma tem equivalência inequívoca (Jardim Gabineto); as outras 61 continuam 404/noindex, sem links internos. Inventário completo: audit/preservation.json e audit/known-not-found.json.
+- Mantido /produto/madeira-de-pinus → /madeira-de-pinus. Cinco sitemaps legados → /sitemap.xml. Total: 10 redirects 301, sem cadeia.
+- Endereço confirmado por Omar: Rua Laertes Luiz Foggiato, 1565, Curitiba/PR. Atualizado no conteúdo ativo, rodapé e HardwareStore. Removido módulo de endereço pendente e CEP antigo. Link Maps existente confere com o endereço confirmado; nenhum perfil comercial foi editado.
+- Sitemap passa de 43 para 79 URLs canônicas: 9 principais + 10 produtos + 24 guias + 36 localidades. HTML completo, título/descrição próprios, canonical e schema verdadeiro. Sem Product/Offer com preço ou estoque inventados, sem avaliações fabricadas.
+- Preservados visual editorial, contraste, menu móvel, hub de pinus, catálogo, guias, imagens responsivas e calculadora. Acrescentada lista de localidades em uma coluna no celular e duas no desktop.
+- Novos testes garantem preservação geográfica, equivalência dos aliases e 404 real de cada URL sem conteúdo. Documentação e arquivos gerados atualizados.
 
-## Pendência factual: endereço
+## Fontes e limites factuais
 
-O site e o código divulgam Rua Coronel Joaquim Antônio de Azevedo, 1459. Entretanto o link de rotas publicado `https://maps.app.goo.gl/cCwvjeDfxpL8RkZMA` foi aberto e resolveu para **Madereira Bairro Novo, Rua Laertes Luiz Foggiato, 1565**, Sítio Cercado, Curitiba.
+Repositório: https://github.com/supremapix/Madereira-Bairro-Novo, base ec4e589cb87dd7eab227bd3bf39c8d575b10cf91.
+Site auditado: https://www.madeireirabairronovo.com.br/; HTML original salvo em audit/live-home.html. Os 36 registros legados constam em audit/legacy-locations.json. A auditoria HTTP anterior percorreu 101 origens: 36 páginas, três aliases CIC e 62 URLs 404. O arquivo preservation.json registra a classificação e o tratamento agora implementado.
+Catálogo efetivamente publicado: pinus como linha geral; tábuas, caibros, vigas, ripas, sarrafos, barrotes, escoras, madeirite, deck e pergolado. Não foram acrescentadas espécies ou linhas por suposição.
+WhatsApp publicado e preservado: +55 41 99121-7114. Telefone: (41) 3013-4692. E-mail e horários preservados das fontes da empresa; não houve envio de mensagem nem teste de atendimento humano.
+Mapa: https://maps.app.goo.gl/cCwvjeDfxpL8RkZMA. Endereço confirmado pelo usuário; sem novo CEP presumido.
+As quatro imagens vêm do catálogo anterior e foram inspecionadas visualmente. Não há comprovação de que mostrem o estoque físico da loja; continuam identificadas como ilustrativas. Não foram geradas imagens nem alterado o produto representado.
+Disponibilidade, preços, dimensões de estoque, tratamento, origem, certificações, prazo e abrangência de entrega continuam sujeitos à confirmação da loja. Não há dados de tráfego ou indexação nesta auditoria.
 
-Foi solicitada confirmação do endereço atual. Até a resposta, a versão candidata mostra apenas Sítio Cercado/Curitiba e um CTA para confirmar o ponto de retirada. O endereço de rua e o CEP foram retirados do schema. Isso evita escolher arbitrariamente entre fontes conflitantes. A camada temporária está em `site/address-pending.mjs`; deve ser substituída pelo dado confirmado antes da publicação.
+## Deploy efetivamente identificado — somente leitura
 
-## Implementação
+Projeto Vercel supremapixs-projects/madereira-bairro-novo, conectado ao repositório acima. Deployment 3mHWnKYibFoVgU4BXUgLVMdTHrZZ: Ready / Production Current, main ec4e589. Domínio www.madeireirabairronovo.com.br válido; domínio sem www redireciona 308 para www. Projeto .vercel.app também vinculado.
+Painel verificado: https://vercel.com/supremapixs-projects/madereira-bairro-novo/3mHWnKYibFoVgU4BXUgLVMdTHrZZ
+Configuração efetiva observada: Vite, raiz ./, saída dist, Node24.x, comandos padrão sem override, Git com deploy automático. Analytics e Speed Insights não habilitados. Nenhuma configuração foi alterada.
+A candidata propõe vercel.json com framework null, npm ci, npm run build, dist, cleanUrls e redirects explícitos; esse arquivo ainda não foi enviado. Não usar KingHost para este pacote. Disco, plano, DNS, credenciais e permissões permanecem intocados.
 
-- 43 páginas HTML indexáveis: 9 páginas principais, 10 produtos específicos e 24 guias existentes reescritos. Prioridade ao hub `/madeira-de-pinus`, com conexão a produtos, preço, medidas, tratamento e entrega.
-- Páginas de aplicação de telhado, caixaria, escoramento, madeirite, deck, pergolado e ripado conectam produtos pertinentes. Nada foi criado por combinação em massa de produto/localidade.
-- `/precos` passou a orientar cotação sem preço inventado. `/medidas` contém calculadora de volume geométrico, com exemplo explicitamente hipotético e sem dimensionar estruturas.
-- Conteúdo próprio por tipo de peça e intenção de compra, sem seções, cargas, vãos, espaçamentos ou equivalências técnicas presumidas. Tratamento, origem, medidas, estoque e entrega dependem de confirmação comercial/documental.
-- HTML estático completo, sem substituição por React. CSS local, fontes do sistema, JS de melhoria progressiva só para calculadora e atualização do antigo service worker. Navegação e conteúdo funcionam sem JS.
-- Marca/nome e favicon existentes preservados; visual claro em tons de madeira, contraste forte, links claros, menu móvel nativo e footer reduzido. Não há faixa animada de promoções, falsa urgência, ranking, avaliação ou depoimento sem fonte.
-- Um canonical, título e descrição próprios por página. Schema HardwareStore e BreadcrumbList sem preços, ratings, estoque ou certificações presumidos. Sitemap único com 43 URLs canônicas, sem datas artificiais ou redirects.
-- O build copia apenas ativos permitidos: não leva para produção os sitemaps, textos e componentes legados. O React antigo permanece como referência, explicitamente fora do build ativo.
+## Validação da v2
 
-## Plano de URLs a aprovar
+npm run build, npm test e npm run lint: aprovados.
+79 páginas; 79 títulos e descrições distintos; canonical, H1, JSON-LD, conteúdo HTML e 2.501 referências internas verificados. Calculadora testada com valor válido e quantidades inválidas.
+HTTP local: 79 páginas 200 + 10 aliases 301 + 61 URLs 404 = 150 verificações, além de URL inexistente 404/noindex e sitemap 200. O teste foi repetido após o servidor terminar de iniciar (a primeira tentativa imediata encontrou conexão recusada).
+Navegador Chrome: diretório → São José dos Pinhais; menu móvel → contato; página CIC no desktop. Sem overflow horizontal em 390px (página local), 320px (contato) e 1534px (CIC). Endereço e CTAs conferidos no DOM. As verificações anteriores de home, tablet, calculadora e catálogo permanecem registradas no relatório histórico; não representam nova medição de produção.
+Peso sem compressão da home: 8.841 bytes HTML; CSS 7.225 bytes; JS 904 bytes. Conteúdo e navegação independem de JavaScript. Imagens WebP responsivas. Não há nova pontuação Lighthouse ou Core Web Vitals de produção: esses números são orçamento de recursos, não prova de desempenho real.
+Evidências automatizadas: audit/check-results.json, audit/http-results.json, audit/routes.json, audit/preservation.json.
 
-`site/redirects.json` contém 107 regras literais; `vercel.json` contém sua representação para Vercel. `audit/routes.json` reúne páginas e redirects.
+## Plano para aprovação posterior
 
-1. Preservar URLs principais, dos 10 produtos específicos e dos 24 artigos.
-2. Consolidar a entrada duplicada `/produto/madeira-de-pinus` em `/madeira-de-pinus` com 301.
-3. Consolidar páginas locais antigas de bairro/cidade no hub de logística `/regioes-atendidas` com 301. Foram inventariados 97 links de localidade na página pública, além de URLs do sitemap anterior e aliases. Não foi utilizado wildcard que redirecione qualquer URL desconhecida.
-4. Redirecionar os cinco sitemaps auxiliares antigos para `/sitemap.xml`.
-5. URLs desconhecidas continuam 404, com noindex. Configuração do host deve acompanhar os arquivos: um ZIP de HTML sozinho não implementa redirects HTTP.
+Revisar esta v2 e os 10 redirects. Após autorização explícita, publicar exclusivamente no projeto Vercel identificado, preferencialmente validar primeiro deployment de preview com as mesmas regras e só depois promover produção. Evitar push em main antes da autorização, pois dispara deploy automático. Após a publicação aprovada, repetir HTTP/canonicals/sitemap no domínio e verificar aliases literais/escapados no provedor, HTTPS e domínio canônico. Reversão: deployment anterior e backup original ec4e589.
+Limite: testes locais não confirmam interpretação de redirects no edge Vercel. Essa verificação fica para o preview autorizado. Publicação permanece pendente por instrução do usuário; nenhuma ação foi negada ou tem resultado incerto.
+Search Console fica em tarefa separada; não há promessa de ranking ou indexação.
 
-A consolidação geográfica é mudança editorial relevante. O destino cobre consulta de atendimento e entrega, sem prometer servir automaticamente cada região. Avaliar esse mapa antes de autorizar publicação. Não há garantia de manutenção de posições ou indexação.
+## URLs preservadas
 
-## Validação
+- /bairro/sitio-cercado — Compra de madeira perto da loja
+- /bairro/bairro-novo — Da lista da obra ao pedido
+- /bairro/umbara — Área externa: detalhe a exposição
+- /bairro/ganchinho — Caixaria por etapa de execução
+- /bairro/tatuquara — Fundação e cobertura em listas separadas
+- /bairro/cic — Organize compras para obra ou empresa
+- /bairro/gabineto — Reforma com caixaria planejada
+- /bairro/boqueirao — Diferencie peças de telhado e fôrmas
+- /bairro/xaxim — Lista de madeira para a fundação
+- /bairro/pinheirinho — Planeje a compra da cobertura
+- /bairro/capao-raso — Reposição de peças em uma reforma
+- /bairro/campo-de-santana — Separe o pedido por fase da obra
+- /bairro/hauer — Madeira para oficina e reforma
+- /bairro/uberaba — Cobertura com especificação completa
+- /bairro/cajuru — Carpintaria e materiais de fôrma
+- /bairro/portao — Fôrmas para concreto: identifique cada item
+- /bairro/novo-mundo — Recebimento conforme o andamento da obra
+- /bairro/agua-verde — Peças aparentes e acabamento
+- /bairro/batel — Deck e ripado: duas listas diferentes
+- /bairro/santa-felicidade — Pergolado para área externa
+- /cidade/sao-jose-dos-pinhais — Pedido residencial ou empresarial
+- /cidade/araucaria — Cotação de fôrmas com requisitos definidos
+- /cidade/pinhais — Madeira para ambiente residencial ou comercial
+- /cidade/colombo — Telhado e caixaria com destino completo
+- /cidade/fazenda-rio-grande — Coordene fundação e telhado
+- /cidade/campo-largo — Peças para chalé ou galpão
+- /cidade/campo-magro — Deck com compra orientada pelo projeto
+- /cidade/quatro-barras — Pergolado e cobertura: defina a função
+- /cidade/campina-grande-do-sul — Planeje peças e acesso ao recebimento
+- /cidade/almirante-tamandare — Materiais de fôrma e cobertura
+- /cidade/mandirituba — Galpão com lista técnica de madeira
+- /cidade/rio-branco-do-sul — Fôrmas e telhado em uma cotação clara
+- /cidade/balsa-nova — Área externa de imóvel de campo
+- /cidade/itaperucu — Caixaria para obra ou reforma
+- /cidade/tijucas-do-sul — Chalé e deck com peças discriminadas
+- /cidade/piraquara — Projeto residencial e área externa
 
-- `npm run build`: aprovado, 43 páginas.
-- `npm run lint`: aprovado para código ativo.
-- `npm test`: aprovado; 1.313 referências internas, 43 títulos/descrições únicos, h1 único, canonical, JSON-LD parseável, cobertura dos sitemaps antigos e das 97 URLs locais públicas, ausência de ciclos/cadeias e alegações bloqueadas.
-- Calculadora testada com entrada decimal, quantidade inválida e exemplo 2 cm × 10 cm × 3 m × 10 = 0,06 m³. Resultado também confirmado visualmente no Chrome móvel.
-- Teste HTTP local: 150 respostas (43 páginas 200 + 107 redirects 301), sitemap 200 e URL desconhecida 404. Resultados em `audit/http-results.json`. Não é validação de redirects em produção Vercel.
-- Inspeção visual no Chrome: desktop 1534px, celular 390px, produto em 320px; sem rolagem horizontal. Menu móvel aberto/fechado e navegação para medidas conferidos. Não foi executado Lighthouse ou teste de campo de Core Web Vitals.
-- Contraste calculado: texto principal 13,78:1; secundário 6,65:1; botão verde 8,49:1; destaque marrom 6,29:1. Foco visível, skip link, controles grandes e movimento reduzido respeitado.
-- Home: 8.876 bytes de HTML; CSS 7.075 bytes; JS 904 bytes. Imagem principal responsiva: 27.290 bytes (480px), 74.896 bytes (960px). São medidas de arquivo, não pontuação ou promessa de velocidade real.
-- Instalação npm: 223 pacotes auditados, zero vulnerabilidades reportadas naquela execução. Dependências antigas permanecem instaláveis por compatibilidade; não fazem parte do payload do navegador.
+## Redirects da v2
 
-## Publicação e reversão
-
-1. Confirmar endereço atual e, idealmente, fornecer fotos reais aprovadas.
-2. Revisar a prévia local, conteúdo e mapa de URLs com Omar.
-3. Identificar no painel Vercel o projeto que serve o domínio e conferir a configuração efetiva, inclusive integração Git. Não alterar DNS, domínio, credenciais ou permissões.
-4. Após autorização suficiente, criar preview Vercel e testar configuração real de redirects, canonical, sitemap, 404 e versão móvel antes de promover para produção.
-5. Guardar o identificador do deployment anterior para rollback; o backup Git é complementar, não substitui backup de ambiente/deployment.
-6. Search Console e medição de indexação ficam em tarefa separada, depois da publicação. Não foram operados aqui.
-
-Não houve alteração da KingHost, disco, DNS, credenciais, permissões, produção ou projeto Suprema. Nenhuma ação permanece com resultado externo incerto. Pendências: endereço e aprovação/publicação. Não houve rejeição automática de aprovação; operações locais necessárias foram autorizadas pelo mecanismo disponível.
-
-Documentação consultada para a configuração: https://vercel.com/docs/project-configuration/vercel-json e https://vercel.com/docs/routing/redirects/configuration-redirects . A configuração ainda deve ser validada em preview do host real antes de promover.
+- /produto/madeira-de-pinus → /madeira-de-pinus (301)
+- /bairro/jardim-gabineto → /bairro/gabineto (301)
+- /bairro/cic-(cidade-industrial-de-curitiba) → /bairro/cic (301)
+- /bairro/cic-%28cidade-industrial-de-curitiba%29 → /bairro/cic (301)
+- /bairro/cic-cidade-industrial-de-curitiba → /bairro/cic (301)
+- /sitemap-pages.xml → /sitemap.xml (301)
+- /sitemap-products.xml → /sitemap.xml (301)
+- /sitemap-blog.xml → /sitemap.xml (301)
+- /sitemap-images.xml → /sitemap.xml (301)
+- /sitemap-locations.xml → /sitemap.xml (301)

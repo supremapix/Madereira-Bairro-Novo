@@ -1,6 +1,8 @@
 {
-  "date": "2026-10-17T22:58:11.114Z",
+  "date": "2026-10-17T23:10:46.705Z",
   "checked": 150,
+  "preservedLocalities": 36,
+  "known404": 61,
   "notFound": 404,
   "sitemap": 200,
   "environment": "local preview, not production"

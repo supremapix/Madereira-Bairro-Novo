@@ -1,14 +1,14 @@
 {
-  "name": "react-example",
+  "name": "madeireira-bairro-novo",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "tsx server.ts",
-    "build": "vite build && tsx scripts/prerender.ts && esbuild server.ts --bundle --platform=node --format=cjs --packages=external --sourcemap --outfile=dist/server.cjs",
-    "start": "node dist/server.cjs",
-    "clean": "rm -rf dist server.js",
-    "lint": "tsc --noEmit"
+    "dev": "node site/build.mjs && node site/serve.mjs",
+    "build": "node site/build.mjs",
+    "start": "node site/serve.mjs",
+    "lint": "node --check site/build.mjs && node --check site/catalog.mjs && node --check site/client.js && node --check site/serve.mjs && node --check site/address-pending.mjs && node --check site/check.mjs && node --check site/http-check.mjs",
+    "test": "node site/check.mjs"
   },
   "dependencies": {
     "@google/genai": "^2.4.0",
@@ -33,5 +33,8 @@
     "tsx": "^4.21.0",
     "typescript": "~5.8.2",
     "vite": "^6.2.3"
+  },
+  "engines": {
+    "node": ">=22"
   }
 }

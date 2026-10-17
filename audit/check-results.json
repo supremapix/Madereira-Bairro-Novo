@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-17T23:00:11.038Z",
+  "pages": 43,
+  "redirects": 107,
+  "internalReferencesChecked": 1313,
+  "liveLocationUrlsCovered": 97,
+  "products": 10,
+  "guides": 24,
+  "uniqueTitles": 43,
+  "uniqueDescriptions": 43,
+  "calculator": "valid decimal and invalid quantity passed",
+  "htmlBytes": 8876,
+  "cssBytes": 7075,
+  "jsBytes": 904
+}

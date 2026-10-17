@@ -1,0 +1,182 @@
+[
+  {
+    "slug": "sitio-cercado",
+    "name": "Sítio Cercado",
+    "type": "bairro"
+  },
+  {
+    "slug": "bairro-novo",
+    "name": "Bairro Novo",
+    "type": "bairro"
+  },
+  {
+    "slug": "umbara",
+    "name": "Umbará",
+    "type": "bairro"
+  },
+  {
+    "slug": "ganchinho",
+    "name": "Ganchinho",
+    "type": "bairro"
+  },
+  {
+    "slug": "tatuquara",
+    "name": "Tatuquara",
+    "type": "bairro"
+  },
+  {
+    "slug": "cic",
+    "name": "CIC (Cidade Industrial de Curitiba)",
+    "type": "bairro"
+  },
+  {
+    "slug": "gabineto",
+    "name": "Jardim Gabineto (CIC)",
+    "type": "bairro"
+  },
+  {
+    "slug": "boqueirao",
+    "name": "Boqueirão",
+    "type": "bairro"
+  },
+  {
+    "slug": "xaxim",
+    "name": "Xaxim",
+    "type": "bairro"
+  },
+  {
+    "slug": "pinheirinho",
+    "name": "Pinheirinho",
+    "type": "bairro"
+  },
+  {
+    "slug": "capao-raso",
+    "name": "Capão Raso",
+    "type": "bairro"
+  },
+  {
+    "slug": "campo-de-santana",
+    "name": "Campo de Santana",
+    "type": "bairro"
+  },
+  {
+    "slug": "hauer",
+    "name": "Hauer",
+    "type": "bairro"
+  },
+  {
+    "slug": "uberaba",
+    "name": "Uberaba",
+    "type": "bairro"
+  },
+  {
+    "slug": "cajuru",
+    "name": "Cajuru",
+    "type": "bairro"
+  },
+  {
+    "slug": "portao",
+    "name": "Portão",
+    "type": "bairro"
+  },
+  {
+    "slug": "novo-mundo",
+    "name": "Novo Mundo",
+    "type": "bairro"
+  },
+  {
+    "slug": "agua-verde",
+    "name": "Água Verde",
+    "type": "bairro"
+  },
+  {
+    "slug": "batel",
+    "name": "Batel",
+    "type": "bairro"
+  },
+  {
+    "slug": "santa-felicidade",
+    "name": "Santa Felicidade",
+    "type": "bairro"
+  },
+  {
+    "slug": "sao-jose-dos-pinhais",
+    "name": "São José dos Pinhais",
+    "type": "cidade"
+  },
+  {
+    "slug": "araucaria",
+    "name": "Araucária",
+    "type": "cidade"
+  },
+  {
+    "slug": "pinhais",
+    "name": "Pinhais",
+    "type": "cidade"
+  },
+  {
+    "slug": "colombo",
+    "name": "Colombo",
+    "type": "cidade"
+  },
+  {
+    "slug": "fazenda-rio-grande",
+    "name": "Fazenda Rio Grande",
+    "type": "cidade"
+  },
+  {
+    "slug": "campo-largo",
+    "name": "Campo Largo",
+    "type": "cidade"
+  },
+  {
+    "slug": "campo-magro",
+    "name": "Campo Magro",
+    "type": "cidade"
+  },
+  {
+    "slug": "quatro-barras",
+    "name": "Quatro Barras",
+    "type": "cidade"
+  },
+  {
+    "slug": "campina-grande-do-sul",
+    "name": "Campina Grande do Sul",
+    "type": "cidade"
+  },
+  {
+    "slug": "almirante-tamandare",
+    "name": "Almirante Tamandaré",
+    "type": "cidade"
+  },
+  {
+    "slug": "mandirituba",
+    "name": "Mandirituba",
+    "type": "cidade"
+  },
+  {
+    "slug": "rio-branco-do-sul",
+    "name": "Rio Branco do Sul",
+    "type": "cidade"
+  },
+  {
+    "slug": "balsa-nova",
+    "name": "Balsa Nova",
+    "type": "cidade"
+  },
+  {
+    "slug": "itaperucu",
+    "name": "Itaperuçu",
+    "type": "cidade"
+  },
+  {
+    "slug": "tijucas-do-sul",
+    "name": "Tijucas do Sul",
+    "type": "cidade"
+  },
+  {
+    "slug": "piraquara",
+    "name": "Piraquara",
+    "type": "cidade"
+  }
+]

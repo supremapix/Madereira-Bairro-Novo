@@ -1,0 +1,17 @@
+{
+  "products": 10,
+  "guides": 24,
+  "localities": 36,
+  "extraHubs": 3,
+  "totalCatalogImages": 10,
+  "source": "Existing repository catalog URLs; no verified store photographs",
+  "newMedia": [
+    "caibros",
+    "barrotes",
+    "deck",
+    "pergolado",
+    "escoras",
+    "madeirite"
+  ],
+  "caption": "Illustrative; not proof of stock, treatment or completed work"
+}

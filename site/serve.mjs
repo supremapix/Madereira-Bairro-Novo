@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 const base=path.resolve(import.meta.dirname,'../dist');
 const redirects=JSON.parse(fs.readFileSync(new URL('./redirects.json',import.meta.url)));
-const types={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/javascript','.xml':'application/xml','.webp':'image/webp','.svg':'image/svg+xml','.ico':'image/x-icon','.png':'image/png','.txt':'text/plain; charset=utf-8'};
+const types={'.jpg':'image/jpeg','.webmanifest':'application/manifest+json','.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/javascript','.xml':'application/xml','.webp':'image/webp','.svg':'image/svg+xml','.ico':'image/x-icon','.png':'image/png','.txt':'text/plain; charset=utf-8'};
 http.createServer((req,res)=>{let url;try{url=decodeURIComponent(new URL(req.url,'http://localhost').pathname)}catch{res.writeHead(400);res.end();return}
  const redirect=redirects.find(r=>r.source===url.replace(/\/$/,''));if(redirect){res.writeHead(301,{Location:redirect.destination});res.end();return}
  let file=path.resolve(base,'.'+url);if(file!==base&&!file.startsWith(base+path.sep)){res.writeHead(403);res.end();return}

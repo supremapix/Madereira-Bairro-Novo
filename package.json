@@ -7,8 +7,8 @@
     "dev": "node site/build.mjs && node site/serve.mjs",
     "build": "node site/build.mjs",
     "start": "node site/serve.mjs",
-    "lint": "node --check site/build.mjs && node --check site/catalog.mjs && node --check site/client.js && node --check site/serve.mjs && node --check site/check.mjs && node --check site/http-check.mjs && node --check site/locations.mjs",
-    "test": "node site/check.mjs"
+    "lint": "node --check site/build.mjs && node --check site/catalog.mjs && node --check site/client.js && node --check site/serve.mjs && node --check site/check.mjs && node --check site/http-check.mjs && node --check site/locations.mjs && node --check site/brand-assets.mjs && node --check site/media.mjs",
+    "test": "node site/check.mjs && node site/check-controls.mjs"
   },
   "dependencies": {
     "@google/genai": "^2.4.0",

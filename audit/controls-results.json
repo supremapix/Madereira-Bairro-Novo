@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-18T14:05:55.660Z",
+  "pages": 79,
+  "preservedRoutes": true,
+  "illustratedDetailPages": 70,
+  "shareDestinations": 6,
+  "og": "1200x630",
+  "faviconPngSizes": [
+    16,
+    32,
+    48,
+    96,
+    180,
+    192,
+    512
+  ],
+  "icoSizes": [
+    16,
+    32,
+    48
+  ],
+  "reactBundleBytes": 231906,
+  "reactBundleGzipBytes": 72507
+}

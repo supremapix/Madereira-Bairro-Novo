@@ -20,3 +20,7 @@ Projeto Vercel identificado em leitura: supremapixs-projects/madereira-bairro-no
 O sitemap gerado tem apenas URLs canônicas com conteúdo. Não há operação de Search Console neste trabalho e não há garantia de indexação.
 
 A v2 acrescenta site/locations.mjs e audit/preservation.json. São 79 URLs indexáveis; as 61 URLs antigas sem conteúdo continuam 404. O relatório histórico de 98ecf8d está superado. Endereço confirmado: Rua Laertes Luiz Foggiato, 1565, Curitiba/PR.
+
+## Correção de 18/10/2026
+
+Conteúdo preservado em HTML estático; os controles SupremaCredit e FloatingActions são renderizados no build e hidratados com React/Lucide, Tailwind utilitário e estilos do site. site/suprema-components.jsx concentra o padrão. site/brand-assets.mjs gera OG e pacote de favicons a partir da marca existente. Não há mudança de URLs. A faixa de controles ocupa espaço próprio fora de .site-scroll para evitar sobreposição; considerar este contrato ao reutilizar. Fotografias novas não foram confirmadas: imagens legadas são explicitamente ilustrativas.

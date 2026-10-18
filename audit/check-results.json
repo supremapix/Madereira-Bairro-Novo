@@ -1,15 +1,15 @@
 {
-  "date": "2026-10-18T14:05:55.200Z",
+  "date": "2026-10-18T14:09:40.329Z",
   "pages": 79,
   "redirects": 10,
-  "internalReferencesChecked": 2966,
+  "internalReferencesChecked": 2987,
   "liveLocationUrlsCovered": 97,
   "products": 10,
   "guides": 24,
   "uniqueTitles": 79,
   "uniqueDescriptions": 79,
   "calculator": "valid decimal and invalid quantity passed",
-  "htmlBytes": 18557,
+  "htmlBytes": 18858,
   "cssBytes": 11626,
   "jsBytes": 904
 }

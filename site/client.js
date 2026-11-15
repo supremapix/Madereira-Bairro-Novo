@@ -1,4 +1,8 @@
 const volume=document.querySelector('#volume');
+volume?.addEventListener('input',()=>{
+  const result=document.querySelector('#result');
+  if(result)result.textContent='Medidas alteradas. Calcule novamente para atualizar o volume.';
+});
 volume?.addEventListener('submit',event=>{
   event.preventDefault();
   const data=new FormData(volume);
